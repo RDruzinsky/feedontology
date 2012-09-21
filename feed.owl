@@ -18,6 +18,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
     <owl:Ontology rdf:about="&obo;feed.owl">
+        <owl:imports rdf:resource="&obo;pato.owl"/>
         <owl:imports rdf:resource="&obo;ro.owl"/>
         <owl:versionIRI rdf:resource="&obo;2012-08-04/feed.owl"/>
     </owl:Ontology>
@@ -96,6 +97,7 @@
 
     <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNOMEDCT/370641002">
         <rdfs:label>Ceratohyoid bone</rdfs:label>
+        <rdfs:comment></rdfs:comment>
     </owl:Class>
     
 
@@ -173,19 +175,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0002397"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
                 <owl:someValuesFrom rdf:resource="&obo;UBERON_0011349"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0001684"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -194,8 +184,19 @@
                 <owl:someValuesFrom rdf:resource="&obo;UBERON_0002097"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0002397"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0001684"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:comment>The buccinator is a muscle that is attached to the mandible, skin, pterygomandibular raphe and maxilla, and is innervated by Cranial Nerve VII and participates in oropharyngeal behavior.</rdfs:comment>
-        <rdfs:comment></rdfs:comment>
     </owl:Class>
     
 
