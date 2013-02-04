@@ -88,6 +88,7 @@
 
     <owl:ObjectProperty rdf:about="&obo;feed.owl#deep_to">
         <rdfs:label>deep to</rdfs:label>
+        <oboInOwl:hasDbXref>BSPO:0000107</oboInOwl:hasDbXref>
         <obo:IAO_0000115>underneath, in the sense of being closer to the center of the individual and farther from the external surface</obo:IAO_0000115>
         <owl:inverseOf rdf:resource="&obo;feed.owl#superficial_to"/>
     </owl:ObjectProperty>
@@ -99,6 +100,7 @@
     <owl:ObjectProperty rdf:about="&obo;feed.owl#superficial_to">
         <rdfs:label>superficial to</rdfs:label>
         <obo:IAO_0000115>above, in the sense of being closer to the external surface of the individual and farther from the center</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>BSPO:0000108</oboInOwl:hasDbXref>
     </owl:ObjectProperty>
     
 
@@ -261,13 +263,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0007268"/>
+                <owl:someValuesFrom rdf:resource="&obo;&obo;UBERON_0001570"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="&obo;&obo;UBERON_0001570"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0007268"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
