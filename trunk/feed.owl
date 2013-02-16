@@ -84,6 +84,42 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/feed.owl#attached_to_dorsal_surface_of -->
+
+    <owl:ObjectProperty rdf:about="&obo;feed.owl#attached_to_dorsal_surface_of">
+        <rdfs:label>attached to dorsal surface of</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="&obo;MFMO_0000001"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/feed.owl#attached_to_lateral_surface_of -->
+
+    <owl:ObjectProperty rdf:about="&obo;feed.owl#attached_to_lateral_surface_of">
+        <rdfs:label>attached to lateral surface of</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="&obo;MFMO_0000001"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/feed.owl#attached_to_medial_surface_of -->
+
+    <owl:ObjectProperty rdf:about="&obo;feed.owl#attached_to_medial_surface_of">
+        <rdfs:label>attached to medial surface of</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="&obo;MFMO_0000001"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/feed.owl#attached_to_ventral_surface_of -->
+
+    <owl:ObjectProperty rdf:about="&obo;feed.owl#attached_to_ventral_surface_of">
+        <rdfs:label>attached to ventral surface of</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="&obo;MFMO_0000001"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/feed.owl#deep_to -->
 
     <owl:ObjectProperty rdf:about="&obo;feed.owl#deep_to">
@@ -276,13 +312,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;RO_0002202"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0003115"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0003117"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;RO_0002202"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0003117"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0003115"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>The cricopharyngeus is a pharyngeal arch 4/6 muscle that participates in oral/pharyngeal behaviors and is innervated by the pharyngeal plexus and the recurrent laryngeal n. (from Vagus, CN X), and is an integral part of the pharyngeal tube, and attaches to the cricoid cartilage and the midline raphe.  It acts as a sphincter between the pharynx and esophagus.</obo:IAO_0000115>
@@ -593,6 +629,12 @@
 
     <owl:Class rdf:about="&obo;feed.owl#deep_masseter_muscle">
         <rdfs:label>deep masseter muscle</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;feed.owl#attached_to_ventral_surface_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;feed.owl#zygomatic_arch"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;feed.owl#deep_to"/>
@@ -966,6 +1008,12 @@
 
     <owl:Class rdf:about="&obo;feed.owl#pars_reflexa">
         <rdfs:label>pars reflexa</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;feed.owl#attached_to_medial_surface_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0001684"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;feed.owl#masseter_muscle"/>
         <obo:IAO_0000115>The pars reflexa is a separable part of the superficial masseter muscle that attaches to the medial surface of the mandible.</obo:IAO_0000115>
     </owl:Class>
