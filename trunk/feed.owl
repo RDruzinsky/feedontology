@@ -157,6 +157,7 @@
 
     <owl:Class rdf:about="&obo;MFMO_0000004">
         <rdfs:label xml:lang="en">non ceratohyal part of hyoid apparatus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;UBERON_0001685"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
@@ -249,6 +250,10 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="&obo;UBERON_0007268"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
                         <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
                         <owl:someValuesFrom rdf:resource="&obo;MFMO_0000008"/>
                     </owl:Restriction>
@@ -270,26 +275,14 @@
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000010"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0007268"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0002202"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0003115"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;RO_0002202"/>
                 <owl:someValuesFrom rdf:resource="&obo;UBERON_0003117"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="&obo;&obo;UBERON_0001570"/>
+                <owl:onProperty rdf:resource="&obo;RO_0002202"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0003115"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>The cricopharyngeus is a pharyngeal arch 4/6 muscle that participates in oral/pharyngeal behaviors and is innervated by the pharyngeal plexus and the recurrent laryngeal n. (from Vagus, CN X), and is an integral part of the pharyngeal tube, and attaches to the cricoid cartilage and the midline raphe.  It acts as a sphincter between the pharynx and esophagus.</obo:IAO_0000115>
@@ -429,7 +422,21 @@
 
     <owl:Class rdf:about="&obo;UBERON_0007268">
         <rdfs:label>upper esophageal sphincter muscle</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MFMO_0000009"/>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="&obo;feed.owl#esophagus"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="&obo;&obo;UBERON_0001570"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;MFMO_0000010"/>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0007268</oboInOwl:hasDbXref>
     </owl:Class>
     
@@ -457,6 +464,7 @@
 
     <owl:Class rdf:about="&obo;UBERON_0011611">
         <rdfs:label>ceratohyal bone</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;UBERON_0001685"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
@@ -466,6 +474,15 @@
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0010272</oboInOwl:hasDbXref>
         <obo:IAO_0000115>part of the hyoid apparatus</obo:IAO_0000115>
         <rdfs:comment></rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/feed.owl#angle_of_the_mandible -->
+
+    <owl:Class rdf:about="&obo;feed.owl#angle_of_the_mandible">
+        <rdfs:label>angle of the mandible</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;UBERON_0001684"/>
     </owl:Class>
     
 
@@ -501,6 +518,31 @@
         </rdfs:subClassOf>
         <obo:IAO_0000115>The anterior digastric is a pharyngeal arch I muscle that participates in oral/pharygeal behaviors and is innervated by the nerve to mylohyoid and superficial to mylohyoid muscle, and lacks the midline raphe.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0010943</oboInOwl:hasDbXref>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/feed.owl#anterior_masseter_muscle -->
+
+    <owl:Class rdf:about="&obo;feed.owl#anterior_masseter_muscle">
+        <rdfs:label>anterior masseter muscle</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
+                <owl:someValuesFrom rdf:resource="&obo;feed.owl#anterior_root_of_zygomatic_arch"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;feed.owl#masseter_muscle"/>
+        <obo:IAO_0000115>The anterior masseter is a separable part of the masseter muscle that is attached to anterior root of zygomatic arch</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/feed.owl#anterior_root_of_zygomatic_arch -->
+
+    <owl:Class rdf:about="&obo;feed.owl#anterior_root_of_zygomatic_arch">
+        <rdfs:label>anterior root of zygomatic arch</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;feed.owl#zygomatic_arch"/>
     </owl:Class>
     
 
@@ -541,7 +583,16 @@
                 <owl:someValuesFrom rdf:resource="&obo;UBERON_0001684"/>
             </owl:Restriction>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;UBERON_0001684"/>
         <obo:IAO_0000115>articular part of the mandible bone</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/feed.owl#esophagus -->
+
+    <owl:Class rdf:about="&obo;feed.owl#esophagus">
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001043</oboInOwl:hasDbXref>
     </owl:Class>
     
 
@@ -746,6 +797,10 @@
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
+                        <owl:someValuesFrom rdf:resource="&obo;feed.owl#pharyngotympanic_tube"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
                         <owl:someValuesFrom rdf:resource="&obo;feed.owl#soft_palate"/>
                     </owl:Restriction>
                     <owl:Restriction>
@@ -765,6 +820,35 @@
         <obo:IAO_0000115>The levator veli palatini is part of the soft palate that attaches to the cranial base, pharyngotympanic tube and the soft palate and is innervated by Cranial Nerve X via the pharyngeal plexus.</obo:IAO_0000115>
         <oboInOwl:hasSynonym>levator palati</oboInOwl:hasSynonym>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0008585</oboInOwl:hasDbXref>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/feed.owl#masseter_muscle -->
+
+    <owl:Class rdf:about="&obo;feed.owl#masseter_muscle">
+        <rdfs:label>masseter muscle</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
+                        <owl:someValuesFrom rdf:resource="&obo;UBERON_0001684"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
+                        <owl:someValuesFrom rdf:resource="&obo;feed.owl#zygomatic_arch"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
+                        <owl:someValuesFrom rdf:resource="&obo;feed.owl#trigeminal_nerve"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;feed.owl#muscles_innervated_by_trigeminal_nerve"/>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001597</oboInOwl:hasDbXref>
+        <obo:IAO_0000115>Pharyngeal arch 1 muscle that participates in oral/pharyngeal behaviors, is innervated by masseteric nerve branches of the trigeminal nerve (CN V), and attaches to mandible and zygomatic arch.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -867,6 +951,32 @@
     <owl:Class rdf:about="&obo;feed.owl#pharyngeal_arch_1">
         <rdfs:label>pharyngeal arch 1</rdfs:label>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0004362</oboInOwl:hasDbXref>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/feed.owl#pharyngeal_tube -->
+
+    <owl:Class rdf:about="&obo;feed.owl#pharyngeal_tube">
+        <obo:IAO_0000115>the wall of the pharynx</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/feed.owl#pharyngotympanic_tube -->
+
+    <owl:Class rdf:about="&obo;feed.owl#pharyngotympanic_tube">
+        <rdfs:label>pharyngotympanic tube</rdfs:label>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0002393</oboInOwl:hasDbXref>
+        <oboInOwl:hasSynonym>auditory tube</oboInOwl:hasSynonym>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/feed.owl#pharynx -->
+
+    <owl:Class rdf:about="&obo;feed.owl#pharynx">
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0006562</oboInOwl:hasDbXref>
     </owl:Class>
     
 
@@ -985,6 +1095,22 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/feed.owl#superficial_masseter_muscle -->
+
+    <owl:Class rdf:about="&obo;feed.owl#superficial_masseter_muscle">
+        <rdfs:label>superficial masseter muscle</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
+                <owl:someValuesFrom rdf:resource="&obo;feed.owl#angle_of_the_mandible"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;feed.owl#masseter_muscle"/>
+        <obo:IAO_0000115>The superficial masseter is a separable part of the masseter muscle, is superficial to all other masseter muscle parts, and attaches to the mandibular angle.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/feed.owl#tensor_veli_palatini -->
 
     <owl:Class rdf:about="&obo;feed.owl#tensor_veli_palatini">
@@ -1021,6 +1147,15 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/feed.owl#thyroid_cartilage -->
+
+    <owl:Class rdf:about="&obo;feed.owl#thyroid_cartilage">
+        <rdfs:label>thyroid cartilage</rdfs:label>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001738</oboInOwl:hasDbXref>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/feed.owl#tongue -->
 
     <owl:Class rdf:about="&obo;feed.owl#tongue">
@@ -1039,11 +1174,52 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/feed.owl#zygomatic_arch -->
+
+    <owl:Class rdf:about="&obo;feed.owl#zygomatic_arch">
+        <rdfs:label>zygomatic arch</rdfs:label>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0002500</oboInOwl:hasDbXref>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/http://purl.obolibrary.org/obo/UBERON_0001570 -->
 
     <owl:Class rdf:about="&obo;&obo;UBERON_0001570">
         <rdfs:label>inferior pharyngeal constrictor muscle</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MFMO_0000009"/>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="&obo;UBERON_0007268"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
+                        <owl:someValuesFrom rdf:resource="&obo;MFMO_0000008"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
+                        <owl:someValuesFrom rdf:resource="&obo;UBERON_0002375"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
+                        <owl:someValuesFrom rdf:resource="&obo;feed.owl#thyroid_cartilage"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
+                        <owl:someValuesFrom rdf:resource="&obo;UBERON_0003716"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
+                        <owl:someValuesFrom rdf:resource="&obo;UBERON_0011325"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;MFMO_0000010"/>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001570</oboInOwl:hasDbXref>
+        <obo:IAO_0000115>This is a pharyngeal arch 4/6 muscle that is integral to the pharyngeal tube, participates in oral/pharyngeal behaviors, is innervated by the pharyngeal plexus of the vagus n. (CNX) and attaches to the laryngeal cartilages and the midline raphe.</obo:IAO_0000115>
     </owl:Class>
 </rdf:RDF>
 
