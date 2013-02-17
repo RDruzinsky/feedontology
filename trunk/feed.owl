@@ -84,6 +84,15 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/feed.owl#attached_to_anterior_surface_of -->
+
+    <owl:ObjectProperty rdf:about="&obo;feed.owl#attached_to_anterior_surface_of">
+        <rdfs:label>attached to anterior surface of</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="&obo;MFMO_0000001"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/feed.owl#attached_to_dorsal_surface_of -->
 
     <owl:ObjectProperty rdf:about="&obo;feed.owl#attached_to_dorsal_surface_of">
@@ -111,6 +120,15 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/feed.owl#attached_to_posterior_surface_of -->
+
+    <owl:ObjectProperty rdf:about="&obo;feed.owl#attached_to_posterior_surface_of">
+        <rdfs:label>attached to posterior surface of</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="&obo;MFMO_0000001"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/feed.owl#attached_to_ventral_surface_of -->
 
     <owl:ObjectProperty rdf:about="&obo;feed.owl#attached_to_ventral_surface_of">
@@ -127,6 +145,14 @@
         <oboInOwl:hasDbXref>BSPO:0000107</oboInOwl:hasDbXref>
         <obo:IAO_0000115>underneath, in the sense of being closer to the center of the individual and farther from the external surface</obo:IAO_0000115>
         <owl:inverseOf rdf:resource="&obo;feed.owl#superficial_to"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/feed.owl#runs_through -->
+
+    <owl:ObjectProperty rdf:about="&obo;feed.owl#runs_through">
+        <rdfs:label>runs through</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -312,13 +338,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;RO_0002202"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0003117"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0003115"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;RO_0002202"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0003115"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0003117"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>The cricopharyngeus is a pharyngeal arch 4/6 muscle that participates in oral/pharyngeal behaviors and is innervated by the pharyngeal plexus and the recurrent laryngeal n. (from Vagus, CN X), and is an integral part of the pharyngeal tube, and attaches to the cricoid cartilage and the midline raphe.  It acts as a sphincter between the pharynx and esophagus.</obo:IAO_0000115>
@@ -335,6 +361,18 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
                 <owl:someValuesFrom rdf:resource="&obo;UBERON_0001759"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002202"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0003117"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002202"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0003115"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -376,7 +414,7 @@
     <!-- http://purl.obolibrary.org/obo/UBERON_0001685 -->
 
     <owl:Class rdf:about="&obo;UBERON_0001685">
-        <rdfs:label>hyoid bone</rdfs:label>
+        <rdfs:label>hyoid apparatus</rdfs:label>
     </owl:Class>
     
 
@@ -600,6 +638,16 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/feed.owl#cervical_plexus -->
+
+    <owl:Class rdf:about="&obo;feed.owl#cervical_plexus">
+        <rdfs:label>cervical plexus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;feed.owl#spinal_nerve"/>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0003725</oboInOwl:hasDbXref>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/feed.owl#clavicle_bone -->
 
     <owl:Class rdf:about="&obo;feed.owl#clavicle_bone">
@@ -658,6 +706,7 @@
     <!-- http://purl.obolibrary.org/obo/feed.owl#first_cervical_nerve -->
 
     <owl:Class rdf:about="&obo;feed.owl#first_cervical_nerve">
+        <rdfs:subClassOf rdf:resource="&obo;feed.owl#spinal_nerve"/>
         <obo:IAO_0000115>spinal nerve emerging from the first cervical segment superior to the first cervical vertebrae</obo:IAO_0000115>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0005197</oboInOwl:hasDbXref>
     </owl:Class>
@@ -696,6 +745,7 @@
     <!-- http://purl.obolibrary.org/obo/feed.owl#geniohyoid_muscle -->
 
     <owl:Class rdf:about="&obo;feed.owl#geniohyoid_muscle">
+        <rdfs:label>geniohyoid muscle</rdfs:label>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -777,6 +827,14 @@
     <owl:Class rdf:about="&obo;feed.owl#hypoglossal_nerve">
         <rdfs:label>hypoglossal nerve</rdfs:label>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001650</oboInOwl:hasDbXref>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/feed.owl#infraorbital_foramen -->
+
+    <owl:Class rdf:about="&obo;feed.owl#infraorbital_foramen">
+        <rdfs:label>infraorbital foramen</rdfs:label>
     </owl:Class>
     
 
@@ -911,6 +969,70 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/feed.owl#medial_pterygoid_muscle -->
+
+    <owl:Class rdf:about="&obo;feed.owl#medial_pterygoid_muscle">
+        <rdfs:label>medial pterygoid muscle</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
+                        <owl:someValuesFrom rdf:resource="&obo;feed.owl#base_of_cranium"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;feed.owl#attached_to_medial_surface_of"/>
+                        <owl:someValuesFrom rdf:resource="&obo;UBERON_0001684"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;feed.owl#muscles_innervated_by_trigeminal_nerve"/>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0006718</oboInOwl:hasDbXref>
+        <obo:IAO_0000115>The medial pterygoid is a pharyngeal arch 1 muscle that participates in oral/pharyngeal behaviors and is innervated by the nerve to the medial pterygoid and attaches to the cranial base and the medial side of the mandibular angle.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/feed.owl#middle_pharyngeal_constrictor_muscle -->
+
+    <owl:Class rdf:about="&obo;feed.owl#middle_pharyngeal_constrictor_muscle">
+        <rdfs:label>middle pharyngeal constrictor muscle</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
+                        <owl:someValuesFrom rdf:resource="&obo;MFMO_0000008"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
+                        <owl:someValuesFrom rdf:resource="&obo;UBERON_0001685"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
+                        <owl:someValuesFrom rdf:resource="&obo;UBERON_0011325"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;MFMO_0000010"/>
+        <oboInOwl:hasSynonym>hyopharyngeus</oboInOwl:hasSynonym>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0010749</oboInOwl:hasDbXref>
+        <obo:IAO_0000115>The middle constrictor is a pharyngeal arches 4/6 muscle that participates in oral/pharyngeal behaviors and is innervated by the pharyngeal plexus of Vagus (CN X) and attaches to the hyoid apparatus and the midline raphe.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/feed.owl#modiolus -->
+
+    <owl:Class rdf:about="&obo;feed.owl#modiolus">
+        <rdfs:label>modiolus</rdfs:label>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0011386</oboInOwl:hasDbXref>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/feed.owl#muscles_innervated_by_hypoglossal_nerve -->
 
     <owl:Class rdf:about="&obo;feed.owl#muscles_innervated_by_hypoglossal_nerve">
@@ -935,6 +1057,7 @@
     <!-- http://purl.obolibrary.org/obo/feed.owl#muscles_innervated_by_spinal_nerve -->
 
     <owl:Class rdf:about="&obo;feed.owl#muscles_innervated_by_spinal_nerve">
+        <rdfs:label>muscles innervated by spinal nerve</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0001630"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1004,6 +1127,151 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/feed.owl#non_stylohyal_part_of_hyoid_apparatus -->
+
+    <owl:Class rdf:about="&obo;feed.owl#non_stylohyal_part_of_hyoid_apparatus">
+        <rdfs:label>non stylohyal part of hyoid apparatus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;UBERON_0001685"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0001685"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="&obo;feed.owl#stylohyal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/feed.owl#omohyoid -->
+
+    <owl:Class rdf:about="&obo;feed.owl#omohyoid">
+        <rdfs:label>omohyoid muscle</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
+                        <owl:someValuesFrom rdf:resource="&obo;UBERON_0001685"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
+                        <owl:someValuesFrom rdf:resource="&obo;feed.owl#scapula"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
+                        <owl:someValuesFrom rdf:resource="&obo;feed.owl#cervical_plexus"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;feed.owl#muscles_innervated_by_spinal_nerve"/>
+        <obo:IAO_0000115>The omohyoid is a somitic muscle that participates in oral/pharyngeal behaviors and is innervated by the cervical plexus; it attaches to the hyoid appratus and the scapula.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001108</oboInOwl:hasDbXref>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/feed.owl#orbicularis_oris_muscle -->
+
+    <owl:Class rdf:about="&obo;feed.owl#orbicularis_oris_muscle">
+        <rdfs:label>orbicularis oris muscle</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
+                        <owl:someValuesFrom rdf:resource="&obo;UBERON_0002097"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
+                        <owl:someValuesFrom rdf:resource="&obo;feed.owl#modiolus"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
+                        <owl:someValuesFrom rdf:resource="&obo;UBERON_0001647"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;MFMO_0000005"/>
+        <obo:IAO_0000115>The orbicularis oris is a superficial facial muscle that attaches to the skin and modiolus, and that participates in oral/pharyngeal behaviors, and is innervated by the facial nerve (CN VII).</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0010933</oboInOwl:hasDbXref>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/feed.owl#palatine_bone -->
+
+    <owl:Class rdf:about="&obo;feed.owl#palatine_bone">
+        <rdfs:label>palatine bone</rdfs:label>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001682</oboInOwl:hasDbXref>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/feed.owl#palatoglossus_muscle -->
+
+    <owl:Class rdf:about="&obo;feed.owl#palatoglossus_muscle">
+        <rdfs:label>palatoglossus muscle</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
+                        <owl:someValuesFrom rdf:resource="&obo;feed.owl#soft_palate"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
+                        <owl:someValuesFrom rdf:resource="&obo;feed.owl#tongue"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
+                        <owl:someValuesFrom rdf:resource="&obo;UBERON_0011325"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;MFMO_0000010"/>
+        <obo:IAO_0000115>Palatoglossus is a muscle that attaches to the soft palate and the tongue and is innervated by Cranial Nerve X via the pharyngeal plexus.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001574</oboInOwl:hasDbXref>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/feed.owl#palatopharyngeus_muscle -->
+
+    <owl:Class rdf:about="&obo;feed.owl#palatopharyngeus_muscle">
+        <rdfs:label>palatopharyngeus muscle</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
+                        <owl:someValuesFrom rdf:resource="&obo;feed.owl#palatine_bone"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
+                        <owl:someValuesFrom rdf:resource="&obo;feed.owl#pharynx"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
+                        <owl:someValuesFrom rdf:resource="&obo;feed.owl#soft_palate"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
+                        <owl:someValuesFrom rdf:resource="&obo;UBERON_0011325"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;MFMO_0000010"/>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0010234</oboInOwl:hasDbXref>
+        <obo:IAO_0000115>Palatopharyngeus is a muscle that attaches to the palatine bones, soft palate, and pharynx and is innervated by Cranial Nerve X via the pharyngeal plexus.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/feed.owl#pars_reflexa -->
 
     <owl:Class rdf:about="&obo;feed.owl#pars_reflexa">
@@ -1014,7 +1282,7 @@
                 <owl:someValuesFrom rdf:resource="&obo;UBERON_0001684"/>
             </owl:Restriction>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="&obo;feed.owl#masseter_muscle"/>
+        <rdfs:subClassOf rdf:resource="&obo;feed.owl#superficial_masseter_muscle"/>
         <obo:IAO_0000115>The pars reflexa is a separable part of the superficial masseter muscle that attaches to the medial surface of the mandible.</obo:IAO_0000115>
     </owl:Class>
     
@@ -1117,6 +1385,68 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/feed.owl#posterior_masseter_muscle -->
+
+    <owl:Class rdf:about="&obo;feed.owl#posterior_masseter_muscle">
+        <rdfs:label>posterior masseter muscle</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;feed.owl#attached_to_posterior_surface_of"/>
+                        <owl:someValuesFrom rdf:resource="&obo;feed.owl#zygomatic_arch"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;feed.owl#attached_to_ventral_surface_of"/>
+                        <owl:someValuesFrom rdf:resource="&obo;feed.owl#zygomatic_arch"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;feed.owl#deep_masseter_muscle"/>
+        <obo:IAO_0000115>The posterior masseter is a separable part of the deep masseter muscle that attaches to the postero-ventral surface of the zygomatic arch.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/feed.owl#salpingopharyngeus_muscle -->
+
+    <owl:Class rdf:about="&obo;feed.owl#salpingopharyngeus_muscle">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
+                        <owl:someValuesFrom rdf:resource="&obo;feed.owl#pharyngotympanic_tube"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
+                        <owl:someValuesFrom rdf:resource="&obo;feed.owl#pharynx"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
+                        <owl:someValuesFrom rdf:resource="&obo;UBERON_0011325"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;MFMO_0000010"/>
+        <obo:IAO_0000115>Salpingopharyngeus is a muscle that attaches to pharyngotympanic tube and the pharynx and is innervated by pharyngeal plexus of CN X and participates in oral/pharyngeal behaviors
+</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0010937</oboInOwl:hasDbXref>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/feed.owl#scapula -->
+
+    <owl:Class rdf:about="&obo;feed.owl#scapula">
+        <rdfs:label>scapula</rdfs:label>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0006849</oboInOwl:hasDbXref>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/feed.owl#soft_palate -->
 
     <owl:Class rdf:about="&obo;feed.owl#soft_palate">
@@ -1131,6 +1461,81 @@
 
     <owl:Class rdf:about="&obo;feed.owl#somite">
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0002329</oboInOwl:hasDbXref>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/feed.owl#spinal_nerve -->
+
+    <owl:Class rdf:about="&obo;feed.owl#spinal_nerve">
+        <rdfs:label>spinal nerve</rdfs:label>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001780</oboInOwl:hasDbXref>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/feed.owl#sternohyoid_muscle -->
+
+    <owl:Class rdf:about="&obo;feed.owl#sternohyoid_muscle">
+        <rdfs:label>sternohyoid muscle</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
+                        <owl:someValuesFrom rdf:resource="&obo;UBERON_0001685"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
+                        <owl:someValuesFrom rdf:resource="&obo;feed.owl#sternum"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
+                        <owl:someValuesFrom rdf:resource="&obo;feed.owl#cervical_plexus"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;feed.owl#muscles_innervated_by_spinal_nerve"/>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001107</oboInOwl:hasDbXref>
+        <obo:IAO_0000115>The sternohyoid is a somitic muscle that participates in oral/pharyngeal behaviors and is innervated by the cervical plexus; it attaches to the hyoid appratus and the sternum.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/feed.owl#sternothyroid_muscle -->
+
+    <owl:Class rdf:about="&obo;feed.owl#sternothyroid_muscle">
+        <rdfs:label>sternothyroid muscle</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
+                        <owl:someValuesFrom rdf:resource="&obo;feed.owl#sternum"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
+                        <owl:someValuesFrom rdf:resource="&obo;feed.owl#thyroid_cartilage"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
+                        <owl:someValuesFrom rdf:resource="&obo;feed.owl#cervical_plexus"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;feed.owl#muscles_innervated_by_spinal_nerve"/>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001109</oboInOwl:hasDbXref>
+        <obo:IAO_0000115>The sternothyroid is a somitic muscle that participates in oral/pharyngeal behaviors and is innervated by the cervical plexus; it attaches to the thyroid cartilage and the sternum.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/feed.owl#sternum -->
+
+    <owl:Class rdf:about="&obo;feed.owl#sternum">
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0000975</oboInOwl:hasDbXref>
     </owl:Class>
     
 
@@ -1163,8 +1568,38 @@
     <!-- http://purl.obolibrary.org/obo/feed.owl#stylohyal -->
 
     <owl:Class rdf:about="&obo;feed.owl#stylohyal">
+        <rdfs:subClassOf rdf:resource="&obo;UBERON_0001685"/>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0010272</oboInOwl:hasDbXref>
         <obo:IAO_0000115>part of the hyoid apparatus</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/feed.owl#stylohyoid_muscle -->
+
+    <owl:Class rdf:about="&obo;feed.owl#stylohyoid_muscle">
+        <rdfs:label>stylohyoid muscle</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
+                        <owl:someValuesFrom rdf:resource="&obo;feed.owl#non_stylohyal_part_of_hyoid_apparatus"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
+                        <owl:someValuesFrom rdf:resource="&obo;feed.owl#stylohyal"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
+                        <owl:someValuesFrom rdf:resource="&obo;UBERON_0001647"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;MFMO_0000005"/>
+        <obo:IAO_0000115>The stylohyoid is a pharyngeal arch II muscle that participates in oral/pharygeal behaviors and is innervated by the stylohoid branch of the facial nerve and attaches to the stylohyal</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0008712</oboInOwl:hasDbXref>
     </owl:Class>
     
 
@@ -1253,6 +1688,38 @@
     <owl:Class rdf:about="&obo;feed.owl#zygomatic_arch">
         <rdfs:label>zygomatic arch</rdfs:label>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0002500</oboInOwl:hasDbXref>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/feed.owl#zygomaticomandibularis,_infraorbital_portion -->
+
+    <owl:Class rdf:about="&obo;feed.owl#zygomaticomandibularis,_infraorbital_portion">
+        <rdfs:label>zygomaticomandibularis, infraorbital portion</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;feed.owl#runs_through"/>
+                <owl:someValuesFrom rdf:resource="&obo;feed.owl#infraorbital_foramen"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;feed.owl#zygomaticomandibularis_muscle"/>
+        <obo:IAO_0000115>The zygomaticomandibularis infraorbital part, is a separable part of the zygomaticomandibularis that runs through the infraorbital foramen</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/feed.owl#zygomaticomandibularis_muscle -->
+
+    <owl:Class rdf:about="&obo;feed.owl#zygomaticomandibularis_muscle">
+        <rdfs:label>zygomaticomandibularis muscle</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;feed.owl#attached_to_medial_surface_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;feed.owl#zygomatic_arch"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;feed.owl#masseter_muscle"/>
+        <obo:IAO_0000115>The zygomaticomandibularis is a separable part of the masseter muscle that attaches to the medial surface of the zygomatic arch</obo:IAO_0000115>
     </owl:Class>
     
 
