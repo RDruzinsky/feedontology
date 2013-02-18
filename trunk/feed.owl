@@ -713,6 +713,22 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/feed.owl#deep_temporalis_muscle -->
+
+    <owl:Class rdf:about="&obo;feed.owl#deep_temporalis_muscle">
+        <rdfs:label>deep temporalis muscle</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;feed.owl#temporalis_muscle"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;feed.owl#temporalis_muscle"/>
+        <obo:IAO_0000115>The deep temporalis muscle is a separable part of the temporalis muscle that  that attaches to the bony wall of the braincase and is deep to the superficial temporalis.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/feed.owl#esophagus -->
 
     <owl:Class rdf:about="&obo;feed.owl#esophagus">
@@ -1718,6 +1734,22 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/feed.owl#suprazygomatic_portion_of_the_temporalis_muscle -->
+
+    <owl:Class rdf:about="&obo;feed.owl#suprazygomatic_portion_of_the_temporalis_muscle">
+        <rdfs:label>suprazygomatic portion of the temporalis muscle</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;feed.owl#attached_to_dorsal_surface_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;feed.owl#zygomatic_arch"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;feed.owl#temporalis_muscle"/>
+        <obo:IAO_0000115>The suprazygomatic part of the temporalis muscle is a separable part of the deep temporalis that attaches to the superior surface of the temporal root of the zygomatic arch.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/feed.owl#temporalis_fascia -->
 
     <owl:Class rdf:about="&obo;feed.owl#temporalis_fascia">
@@ -1814,6 +1846,37 @@
     <owl:Class rdf:about="&obo;feed.owl#trigeminal_nerve">
         <rdfs:label>trigeminal nerve</rdfs:label>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001645</oboInOwl:hasDbXref>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/feed.owl#uvular_muscle -->
+
+    <owl:Class rdf:about="&obo;feed.owl#uvular_muscle">
+        <rdfs:label>uvular muscle</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
+                        <owl:someValuesFrom rdf:resource="&obo;UBERON_0011325"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
+                        <owl:allValuesFrom rdf:resource="&obo;feed.owl#soft_palate"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;MFMO_0000010"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;feed.owl#soft_palate"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>The muscle of the uvuli is an integral part of the soft palate and is innervated by Cranial Nerve X (Vagus via the pharyngeal plexus).</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0010235</oboInOwl:hasDbXref>
     </owl:Class>
     
 
