@@ -629,6 +629,15 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/feed.owl#basioccipital_bone -->
+
+    <owl:Class rdf:about="&obo;feed.owl#basioccipital_bone">
+        <rdfs:label>basioccipital bone</rdfs:label>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001692</oboInOwl:hasDbXref>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/feed.owl#capsule_of_the_temporomandibular_joint -->
 
     <owl:Class rdf:about="&obo;feed.owl#capsule_of_the_temporomandibular_joint">
@@ -669,6 +678,15 @@
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0001684"/>
         <obo:IAO_0000115>articular part of the mandible bone</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/feed.owl#cranium -->
+
+    <owl:Class rdf:about="&obo;feed.owl#cranium">
+        <rdfs:label>cranium</rdfs:label>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001598</oboInOwl:hasDbXref>
     </owl:Class>
     
 
@@ -1409,6 +1427,16 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/feed.owl#pterygoid_process_of_the_sphenoid_bone -->
+
+    <owl:Class rdf:about="&obo;feed.owl#pterygoid_process_of_the_sphenoid_bone">
+        <rdfs:label>pterygoid process of the sphenoid bone</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;feed.owl#sphenoid_bone"/>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0004649</oboInOwl:hasDbXref>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/feed.owl#salpingopharyngeus_muscle -->
 
     <owl:Class rdf:about="&obo;feed.owl#salpingopharyngeus_muscle">
@@ -1461,6 +1489,15 @@
 
     <owl:Class rdf:about="&obo;feed.owl#somite">
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0002329</oboInOwl:hasDbXref>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/feed.owl#sphenoid_bone -->
+
+    <owl:Class rdf:about="&obo;feed.owl#sphenoid_bone">
+        <rdfs:label>sphenoid bone</rdfs:label>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001677</oboInOwl:hasDbXref>
     </owl:Class>
     
 
@@ -1620,6 +1657,104 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/feed.owl#superficial_temporalis_muscle -->
+
+    <owl:Class rdf:about="&obo;feed.owl#superficial_temporalis_muscle">
+        <rdfs:label>superficial temporalis muscle</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="&obo;feed.owl#temporalis_muscle"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
+                        <owl:someValuesFrom rdf:resource="&obo;feed.owl#temporalis_fascia"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;feed.owl#temporalis_muscle"/>
+        <obo:IAO_0000115>The superficial temporalis muscle is a separable part of the temporalis muscle that attaches to the temporalis fascia</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/feed.owl#superior_pharyngeal_constrictor_muscle -->
+
+    <owl:Class rdf:about="&obo;feed.owl#superior_pharyngeal_constrictor_muscle">
+        <rdfs:label>superior pharyngeal constrictor muscle</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
+                        <owl:someValuesFrom rdf:resource="&obo;UBERON_0001684"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
+                        <owl:someValuesFrom rdf:resource="&obo;UBERON_0011349"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
+                        <owl:someValuesFrom rdf:resource="&obo;feed.owl#basioccipital_bone"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
+                        <owl:someValuesFrom rdf:resource="&obo;feed.owl#pterygoid_process_of_the_sphenoid_bone"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
+                        <owl:someValuesFrom rdf:resource="&obo;UBERON_0011325"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;MFMO_0000010"/>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0006329</oboInOwl:hasDbXref>
+        <obo:IAO_0000115>The superior constrictor is a muscle that is an integral part of the pharyngeal tube that is attached to the mandible, pterygomandibular raphe, basioccipital bone, pterygoid process and midline raphe and is innervated by Cranial Nerve X via the pharyngeal plexus.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/feed.owl#temporalis_fascia -->
+
+    <owl:Class rdf:about="&obo;feed.owl#temporalis_fascia">
+        <rdfs:label>temporalis fascia</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/feed.owl#temporalis_muscle -->
+
+    <owl:Class rdf:about="&obo;feed.owl#temporalis_muscle">
+        <rdfs:label>temporalis muscle</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
+                        <owl:someValuesFrom rdf:resource="&obo;UBERON_0001684"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
+                        <owl:someValuesFrom rdf:resource="&obo;feed.owl#trigeminal_nerve"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;feed.owl#attached_to_lateral_surface_of"/>
+                        <owl:someValuesFrom rdf:resource="&obo;feed.owl#cranium"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;feed.owl#muscles_innervated_by_trigeminal_nerve"/>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001598</oboInOwl:hasDbXref>
+        <obo:IAO_0000115>Pharyngeal arch 1 muscle that is innervated by the deep temporal branches of the trigeminal nerve and attaches to the wall of the braincase (including the cranial vault) and mandible.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/feed.owl#tensor_veli_palatini -->
 
     <owl:Class rdf:about="&obo;feed.owl#tensor_veli_palatini">
@@ -1697,10 +1832,18 @@
     <owl:Class rdf:about="&obo;feed.owl#zygomaticomandibularis,_infraorbital_portion">
         <rdfs:label>zygomaticomandibularis, infraorbital portion</rdfs:label>
         <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;feed.owl#runs_through"/>
-                <owl:someValuesFrom rdf:resource="&obo;feed.owl#infraorbital_foramen"/>
-            </owl:Restriction>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="&obo;feed.owl#zygomaticomandibularis_muscle"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;feed.owl#runs_through"/>
+                        <owl:someValuesFrom rdf:resource="&obo;feed.owl#infraorbital_foramen"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;feed.owl#zygomaticomandibularis_muscle"/>
         <obo:IAO_0000115>The zygomaticomandibularis infraorbital part, is a separable part of the zygomaticomandibularis that runs through the infraorbital foramen</obo:IAO_0000115>
