@@ -293,6 +293,12 @@
 
     <owl:Class rdf:about="&obo;MFMO_0000007">
         <rdfs:label xml:lang="en">muscles innervated by glossopharyngeal nerve</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0001649"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0001630"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -364,6 +370,18 @@
 
     <owl:Class rdf:about="&obo;MFMO_0000010">
         <rdfs:label xml:lang="en">muscles innervated by vagus nerve</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0001759"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFMO_0000009"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0001630"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -375,12 +393,6 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;RO_0002202"/>
                 <owl:someValuesFrom rdf:resource="&obo;UBERON_0003115"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0001759"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -507,20 +519,6 @@
 
     <owl:Class rdf:about="&obo;UBERON_0007268">
         <rdfs:label>upper esophageal sphincter muscle</rdfs:label>
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;RO_0002131"/>
-                        <owl:someValuesFrom rdf:resource="&obo;feed.owl#esophagus"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;RO_0002131"/>
-                        <owl:someValuesFrom rdf:resource="&obo;&obo;UBERON_0001570"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000010"/>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0007268</oboInOwl:hasDbXref>
     </owl:Class>
@@ -714,14 +712,14 @@
         <rdfs:label>deep masseter muscle</rdfs:label>
         <owl:equivalentClass>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;feed.owl#attached_to_ventral_surface_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;feed.owl#zygomatic_arch"/>
+                <owl:onProperty rdf:resource="&obo;feed.owl#deep_to"/>
+                <owl:someValuesFrom rdf:resource="&obo;feed.owl#superficial_masseter_muscle"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <owl:equivalentClass>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;feed.owl#deep_to"/>
-                <owl:someValuesFrom rdf:resource="&obo;feed.owl#superficial_masseter_muscle"/>
+                <owl:onProperty rdf:resource="&obo;feed.owl#attached_to_ventral_surface_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;feed.owl#zygomatic_arch"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;feed.owl#masseter_muscle"/>
@@ -749,6 +747,13 @@
     <!-- http://purl.obolibrary.org/obo/feed.owl#esophagus -->
 
     <owl:Class rdf:about="&obo;feed.owl#esophagus">
+        <rdfs:label>esophagus</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0007268"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001043</oboInOwl:hasDbXref>
     </owl:Class>
     
@@ -1115,6 +1120,12 @@
 
     <owl:Class rdf:about="&obo;feed.owl#muscles_innervated_by_spinal_nerve">
         <rdfs:label>muscles innervated by spinal nerve</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
+                <owl:someValuesFrom rdf:resource="&obo;feed.owl#spinal_nerve"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0001630"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1997,10 +2008,6 @@
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
                         <owl:someValuesFrom rdf:resource="&obo;UBERON_0011325"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;RO_0002131"/>
-                        <owl:someValuesFrom rdf:resource="&obo;UBERON_0007268"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
