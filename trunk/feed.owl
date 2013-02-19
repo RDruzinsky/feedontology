@@ -149,6 +149,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/feed.owl#is_a -->
+
+    <owl:ObjectProperty rdf:about="&obo;feed.owl#is_a"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/feed.owl#runs_through -->
 
     <owl:ObjectProperty rdf:about="&obo;feed.owl#runs_through">
@@ -209,6 +215,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000005"/>
+        <rdfs:subClassOf rdf:resource="&obo;UBERON_0001630"/>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001582</oboInOwl:hasDbXref>
         <obo:IAO_0000115>The buccinator is a muscle that is attached to the mandible, skin, pterygomandibular raphe and maxilla, and is innervated by Cranial Nerve VII and participates in oropharyngeal behavior.</obo:IAO_0000115>
     </owl:Class>
@@ -256,8 +263,7 @@
 
     <owl:Class rdf:about="&obo;MFMO_0000006">
         <rdfs:label xml:lang="en">ceratohyoideus muscle</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MFMO_0000007"/>
-        <rdfs:subClassOf>
+        <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
@@ -274,7 +280,9 @@
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
-        </rdfs:subClassOf>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;MFMO_0000007"/>
+        <rdfs:subClassOf rdf:resource="&obo;UBERON_0001630"/>
         <obo:IAO_0000115>The ceratohyoideus is a muscle of Pharyngeal Arch III that participates in oral/pharyngeal behaviors and is innervated by the glossopharyngeal n. (CN IX), and attaches to the ceratohyal part of the hyoid apparatus and also to a non-ceratohyal part of the hyoid apparatus</obo:IAO_0000115>
         <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
     </owl:Class>
@@ -359,12 +367,6 @@
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0001630"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0001759"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;RO_0002202"/>
                 <owl:someValuesFrom rdf:resource="&obo;UBERON_0003117"/>
             </owl:Restriction>
@@ -373,6 +375,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;RO_0002202"/>
                 <owl:someValuesFrom rdf:resource="&obo;UBERON_0003115"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0001759"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -391,6 +399,7 @@
 
     <owl:Class rdf:about="&obo;UBERON_0001647">
         <rdfs:label>facial nerve</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;feed.owl#nerve"/>
     </owl:Class>
     
 
@@ -399,6 +408,7 @@
 
     <owl:Class rdf:about="&obo;UBERON_0001649">
         <rdfs:label>glossopharyngeal nerve</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;feed.owl#nerve"/>
     </owl:Class>
     
 
@@ -423,6 +433,7 @@
 
     <owl:Class rdf:about="&obo;UBERON_0001759">
         <rdfs:label>vagus nerve</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;feed.owl#nerve"/>
     </owl:Class>
     
 
@@ -580,9 +591,14 @@
                         <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
                         <owl:someValuesFrom rdf:resource="&obo;feed.owl#trigeminal_nerve"/>
                     </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;feed.owl#superficial_to"/>
+                        <owl:someValuesFrom rdf:resource="&obo;feed.owl#mylohyoid_muscle"/>
+                    </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;UBERON_0001630"/>
         <rdfs:subClassOf rdf:resource="&obo;feed.owl#muscles_innervated_by_trigeminal_nerve"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -651,6 +667,7 @@
 
     <owl:Class rdf:about="&obo;feed.owl#cervical_plexus">
         <rdfs:label>cervical plexus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;feed.owl#nerve"/>
         <rdfs:subClassOf rdf:resource="&obo;feed.owl#spinal_nerve"/>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0003725</oboInOwl:hasDbXref>
     </owl:Class>
@@ -740,6 +757,7 @@
     <!-- http://purl.obolibrary.org/obo/feed.owl#first_cervical_nerve -->
 
     <owl:Class rdf:about="&obo;feed.owl#first_cervical_nerve">
+        <rdfs:subClassOf rdf:resource="&obo;feed.owl#nerve"/>
         <rdfs:subClassOf rdf:resource="&obo;feed.owl#spinal_nerve"/>
         <obo:IAO_0000115>spinal nerve emerging from the first cervical segment superior to the first cervical vertebrae</obo:IAO_0000115>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0005197</oboInOwl:hasDbXref>
@@ -769,6 +787,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;UBERON_0001630"/>
         <rdfs:subClassOf rdf:resource="&obo;feed.owl#muscles_innervated_by_hypoglossal_nerve"/>
         <owl:disjointWith rdf:resource="&obo;feed.owl#intrinsic_tongue_muscle"/>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001571</oboInOwl:hasDbXref>
@@ -802,6 +821,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;UBERON_0001630"/>
         <rdfs:subClassOf rdf:resource="&obo;feed.owl#muscles_innervated_by_spinal_nerve"/>
         <obo:IAO_0000115>The geniohyoid is a muscle that attaches to the mandible and the hyoid apparatus and is innervated by the first cervical nerve (C1).</obo:IAO_0000115>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001565</oboInOwl:hasDbXref>
@@ -849,6 +869,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;UBERON_0001630"/>
         <rdfs:subClassOf rdf:resource="&obo;feed.owl#muscles_innervated_by_hypoglossal_nerve"/>
         <owl:disjointWith rdf:resource="&obo;feed.owl#intrinsic_tongue_muscle"/>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001572</oboInOwl:hasDbXref>
@@ -860,6 +881,7 @@
 
     <owl:Class rdf:about="&obo;feed.owl#hypoglossal_nerve">
         <rdfs:label>hypoglossal nerve</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;feed.owl#nerve"/>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001650</oboInOwl:hasDbXref>
     </owl:Class>
     
@@ -891,6 +913,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;UBERON_0001630"/>
         <rdfs:subClassOf rdf:resource="&obo;feed.owl#muscles_innervated_by_hypoglossal_nerve"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1154,9 +1177,18 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;UBERON_0001630"/>
         <rdfs:subClassOf rdf:resource="&obo;feed.owl#muscles_innervated_by_trigeminal_nerve"/>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001564</oboInOwl:hasDbXref>
         <obo:IAO_0000115>The mylohyoid is a pharyngeal arch I muscle that participates in oral/pharyngeal behaviors and is innervated by the nerve to mylohyoid and attaches to the midline raphe linking right and left mylohyoid and the mandible.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/feed.owl#nerve -->
+
+    <owl:Class rdf:about="&obo;feed.owl#nerve">
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001021</oboInOwl:hasDbXref>
     </owl:Class>
     
 
@@ -1199,6 +1231,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;UBERON_0001630"/>
         <rdfs:subClassOf rdf:resource="&obo;feed.owl#muscles_innervated_by_spinal_nerve"/>
         <obo:IAO_0000115>The omohyoid is a somitic muscle that participates in oral/pharyngeal behaviors and is innervated by the cervical plexus; it attaches to the hyoid appratus and the scapula.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001108</oboInOwl:hasDbXref>
@@ -1229,6 +1262,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000005"/>
+        <rdfs:subClassOf rdf:resource="&obo;UBERON_0001630"/>
         <obo:IAO_0000115>The orbicularis oris is a superficial facial muscle that attaches to the skin and modiolus, and that participates in oral/pharyngeal behaviors, and is innervated by the facial nerve (CN VII).</obo:IAO_0000115>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0010933</oboInOwl:hasDbXref>
     </owl:Class>
@@ -1380,6 +1414,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000005"/>
+        <rdfs:subClassOf rdf:resource="&obo;UBERON_0001630"/>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0005467</oboInOwl:hasDbXref>
         <obo:IAO_0000115>The platysma is a pharyngeal arch 2 muscle and a superficial facial muscle that participates in oral/pharyngeal behaviors and is innervated by the cervical branch of the facial nerve, and attaches to the skin.</obo:IAO_0000115>
     </owl:Class>
@@ -1413,6 +1448,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000005"/>
+        <rdfs:subClassOf rdf:resource="&obo;UBERON_0001630"/>
         <obo:IAO_0000115>The posterior digastric is a pharyngeal arch II muscle that participates in oral pharyngeal behavior, is innervated by the digastric branchi of facial nerve and attaches to the posterior cranial base.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0010944</oboInOwl:hasDbXref>
     </owl:Class>
@@ -1522,6 +1558,7 @@
 
     <owl:Class rdf:about="&obo;feed.owl#spinal_nerve">
         <rdfs:label>spinal nerve</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;feed.owl#nerve"/>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001780</oboInOwl:hasDbXref>
     </owl:Class>
     
@@ -1549,6 +1586,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;UBERON_0001630"/>
         <rdfs:subClassOf rdf:resource="&obo;feed.owl#muscles_innervated_by_spinal_nerve"/>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001107</oboInOwl:hasDbXref>
         <obo:IAO_0000115>The sternohyoid is a somitic muscle that participates in oral/pharyngeal behaviors and is innervated by the cervical plexus; it attaches to the hyoid appratus and the sternum.</obo:IAO_0000115>
@@ -1578,6 +1616,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;UBERON_0001630"/>
         <rdfs:subClassOf rdf:resource="&obo;feed.owl#muscles_innervated_by_spinal_nerve"/>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001109</oboInOwl:hasDbXref>
         <obo:IAO_0000115>The sternothyroid is a somitic muscle that participates in oral/pharyngeal behaviors and is innervated by the cervical plexus; it attaches to the thyroid cartilage and the sternum.</obo:IAO_0000115>
@@ -1651,6 +1690,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000005"/>
+        <rdfs:subClassOf rdf:resource="&obo;UBERON_0001630"/>
         <obo:IAO_0000115>The stylohyoid is a pharyngeal arch II muscle that participates in oral/pharygeal behaviors and is innervated by the stylohoid branch of the facial nerve and attaches to the stylohyal</obo:IAO_0000115>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0008712</oboInOwl:hasDbXref>
     </owl:Class>
@@ -1845,6 +1885,7 @@
 
     <owl:Class rdf:about="&obo;feed.owl#trigeminal_nerve">
         <rdfs:label>trigeminal nerve</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;feed.owl#nerve"/>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001645</oboInOwl:hasDbXref>
     </owl:Class>
     
