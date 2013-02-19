@@ -330,6 +330,10 @@
                         <owl:someValuesFrom rdf:resource="&obo;UBERON_0007268"/>
                     </owl:Restriction>
                     <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="&obo;&obo;UBERON_0001570"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
                         <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
                         <owl:someValuesFrom rdf:resource="&obo;MFMO_0000008"/>
                     </owl:Restriction>
