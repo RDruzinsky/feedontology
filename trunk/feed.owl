@@ -1014,10 +1014,6 @@
                         <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
                         <owl:someValuesFrom rdf:resource="&obo;feed.owl#zygomatic_arch"/>
                     </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
-                        <owl:someValuesFrom rdf:resource="&obo;feed.owl#trigeminal_nerve"/>
-                    </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
