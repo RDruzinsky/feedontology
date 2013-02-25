@@ -35,6 +35,10 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000115"/>
+    <owl:AnnotationProperty rdf:about="&oboInOwl;hasDbXref"/>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000119"/>
+    <owl:AnnotationProperty rdf:about="&oboInOwl;hasSynonym"/>
     
 
 
@@ -60,11 +64,19 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/MFMO_0000001 -->
+
+    <owl:ObjectProperty rdf:about="&obo;MFMO_0000001">
+        <rdf:type rdf:resource="&owl;SymmetricProperty"/>
+        <rdfs:label>attached to</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/MFMO_0000003 -->
 
     <owl:ObjectProperty rdf:about="&obo;MFMO_0000003">
         <rdfs:label>innervated by</rdfs:label>
-        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/uberon#innervated_by</oboInOwl:hasDbXref>
         <owl:inverseOf rdf:resource="&obo;RO_0002134"/>
     </owl:ObjectProperty>
     
@@ -72,37 +84,15 @@
 
     <!-- http://purl.obolibrary.org/obo/RO_0002134 -->
 
-    <rdf:Description rdf:about="&obo;RO_0002134"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/attaches_to -->
-
-    <owl:ObjectProperty rdf:about="&obo;attaches_to">
-        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
-        <rdfs:label>attaches to</rdfs:label>
-        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/uberon#attaches_to</oboInOwl:hasDbXref>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/feed.owl#anterior_surface_has_attachment -->
-
-    <owl:ObjectProperty rdf:about="&obo;feed.owl#anterior_surface_has_attachment">
-        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
-        <rdfs:label>anterior surface has attachment</rdfs:label>
-        <owl:inverseOf rdf:resource="&obo;feed.owl#attached_to_anterior_surface_of"/>
-        <rdfs:subPropertyOf rdf:resource="&obo;feed.owl#has_attachment"/>
-    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="&obo;RO_0002134"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/feed.owl#attached_to_anterior_surface_of -->
 
     <owl:ObjectProperty rdf:about="&obo;feed.owl#attached_to_anterior_surface_of">
-        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
         <rdfs:label>attached to anterior surface of</rdfs:label>
-        <rdfs:subPropertyOf rdf:resource="&obo;attaches_to"/>
+        <rdfs:subPropertyOf rdf:resource="&obo;MFMO_0000001"/>
     </owl:ObjectProperty>
     
 
@@ -110,9 +100,8 @@
     <!-- http://purl.obolibrary.org/obo/feed.owl#attached_to_dorsal_surface_of -->
 
     <owl:ObjectProperty rdf:about="&obo;feed.owl#attached_to_dorsal_surface_of">
-        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
         <rdfs:label>attached to dorsal surface of</rdfs:label>
-        <rdfs:subPropertyOf rdf:resource="&obo;attaches_to"/>
+        <rdfs:subPropertyOf rdf:resource="&obo;MFMO_0000001"/>
     </owl:ObjectProperty>
     
 
@@ -120,9 +109,8 @@
     <!-- http://purl.obolibrary.org/obo/feed.owl#attached_to_lateral_surface_of -->
 
     <owl:ObjectProperty rdf:about="&obo;feed.owl#attached_to_lateral_surface_of">
-        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
         <rdfs:label>attached to lateral surface of</rdfs:label>
-        <rdfs:subPropertyOf rdf:resource="&obo;attaches_to"/>
+        <rdfs:subPropertyOf rdf:resource="&obo;MFMO_0000001"/>
     </owl:ObjectProperty>
     
 
@@ -130,9 +118,8 @@
     <!-- http://purl.obolibrary.org/obo/feed.owl#attached_to_medial_surface_of -->
 
     <owl:ObjectProperty rdf:about="&obo;feed.owl#attached_to_medial_surface_of">
-        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
         <rdfs:label>attached to medial surface of</rdfs:label>
-        <rdfs:subPropertyOf rdf:resource="&obo;attaches_to"/>
+        <rdfs:subPropertyOf rdf:resource="&obo;MFMO_0000001"/>
     </owl:ObjectProperty>
     
 
@@ -140,9 +127,8 @@
     <!-- http://purl.obolibrary.org/obo/feed.owl#attached_to_posterior_surface_of -->
 
     <owl:ObjectProperty rdf:about="&obo;feed.owl#attached_to_posterior_surface_of">
-        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
         <rdfs:label>attached to posterior surface of</rdfs:label>
-        <rdfs:subPropertyOf rdf:resource="&obo;attaches_to"/>
+        <rdfs:subPropertyOf rdf:resource="&obo;MFMO_0000001"/>
     </owl:ObjectProperty>
     
 
@@ -150,9 +136,8 @@
     <!-- http://purl.obolibrary.org/obo/feed.owl#attached_to_ventral_surface_of -->
 
     <owl:ObjectProperty rdf:about="&obo;feed.owl#attached_to_ventral_surface_of">
-        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
         <rdfs:label>attached to ventral surface of</rdfs:label>
-        <rdfs:subPropertyOf rdf:resource="&obo;attaches_to"/>
+        <rdfs:subPropertyOf rdf:resource="&obo;MFMO_0000001"/>
     </owl:ObjectProperty>
     
 
@@ -168,63 +153,9 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/feed.owl#dorsal_surface_has_attachment -->
-
-    <owl:ObjectProperty rdf:about="&obo;feed.owl#dorsal_surface_has_attachment">
-        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
-        <rdfs:label>dorsal surface has attachment</rdfs:label>
-        <owl:inverseOf rdf:resource="&obo;feed.owl#attached_to_dorsal_surface_of"/>
-        <rdfs:subPropertyOf rdf:resource="&obo;feed.owl#has_attachment"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/feed.owl#has_attachment -->
-
-    <owl:ObjectProperty rdf:about="&obo;feed.owl#has_attachment">
-        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
-        <rdfs:label>has attachment</rdfs:label>
-        <owl:inverseOf rdf:resource="&obo;attaches_to"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/feed.owl#is_a -->
 
     <owl:ObjectProperty rdf:about="&obo;feed.owl#is_a"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/feed.owl#lateral_surface_has_attachment -->
-
-    <owl:ObjectProperty rdf:about="&obo;feed.owl#lateral_surface_has_attachment">
-        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
-        <rdfs:label>lateral surface has attachment</rdfs:label>
-        <owl:inverseOf rdf:resource="&obo;feed.owl#attached_to_lateral_surface_of"/>
-        <rdfs:subPropertyOf rdf:resource="&obo;feed.owl#has_attachment"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/feed.owl#medial_surface_has_attachment -->
-
-    <owl:ObjectProperty rdf:about="&obo;feed.owl#medial_surface_has_attachment">
-        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
-        <rdfs:label>medial surface has attachment</rdfs:label>
-        <owl:inverseOf rdf:resource="&obo;feed.owl#attached_to_medial_surface_of"/>
-        <rdfs:subPropertyOf rdf:resource="&obo;feed.owl#has_attachment"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/feed.owl#posterior_surface_has_attachment -->
-
-    <owl:ObjectProperty rdf:about="&obo;feed.owl#posterior_surface_has_attachment">
-        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
-        <rdfs:label>posterior surface has attachment</rdfs:label>
-        <owl:inverseOf rdf:resource="&obo;feed.owl#attached_to_posterior_surface_of"/>
-        <rdfs:subPropertyOf rdf:resource="&obo;feed.owl#has_attachment"/>
-    </owl:ObjectProperty>
     
 
 
@@ -242,17 +173,6 @@
         <rdfs:label>superficial to</rdfs:label>
         <obo:IAO_0000115>above, in the sense of being closer to the external surface of the individual and farther from the center</obo:IAO_0000115>
         <oboInOwl:hasDbXref>BSPO:0000108</oboInOwl:hasDbXref>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/feed.owl#ventral_surface_has_attachment -->
-
-    <owl:ObjectProperty rdf:about="&obo;feed.owl#ventral_surface_has_attachment">
-        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
-        <rdfs:label>ventral surface has attachment</rdfs:label>
-        <owl:inverseOf rdf:resource="&obo;feed.owl#attached_to_ventral_surface_of"/>
-        <rdfs:subPropertyOf rdf:resource="&obo;feed.owl#has_attachment"/>
     </owl:ObjectProperty>
     
 
@@ -276,24 +196,24 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
-                        <owl:someValuesFrom rdf:resource="&obo;UBERON_0001647"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;attaches_to"/>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
                         <owl:someValuesFrom rdf:resource="&obo;UBERON_0001684"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;attaches_to"/>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
                         <owl:someValuesFrom rdf:resource="&obo;UBERON_0002097"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;attaches_to"/>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
                         <owl:someValuesFrom rdf:resource="&obo;UBERON_0002397"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;attaches_to"/>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
                         <owl:someValuesFrom rdf:resource="&obo;UBERON_0011349"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
+                        <owl:someValuesFrom rdf:resource="&obo;UBERON_0001647"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -350,16 +270,16 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
-                        <owl:someValuesFrom rdf:resource="&obo;UBERON_0001649"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;attaches_to"/>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
                         <owl:someValuesFrom rdf:resource="&obo;MFMO_0000004"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;attaches_to"/>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
                         <owl:someValuesFrom rdf:resource="&obo;UBERON_0011611"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
+                        <owl:someValuesFrom rdf:resource="&obo;UBERON_0001649"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -416,20 +336,20 @@
                         <owl:someValuesFrom rdf:resource="&obo;&obo;UBERON_0001570"/>
                     </owl:Restriction>
                     <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
+                        <owl:someValuesFrom rdf:resource="&obo;MFMO_0000008"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
+                        <owl:someValuesFrom rdf:resource="&obo;UBERON_0002375"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
                         <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
                         <owl:someValuesFrom rdf:resource="&obo;UBERON_0003716"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
                         <owl:someValuesFrom rdf:resource="&obo;UBERON_0011325"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;attaches_to"/>
-                        <owl:someValuesFrom rdf:resource="&obo;MFMO_0000008"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;attaches_to"/>
-                        <owl:someValuesFrom rdf:resource="&obo;UBERON_0002375"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -458,14 +378,14 @@
         <rdfs:label xml:lang="en">muscles innervated by vagus nerve</rdfs:label>
         <owl:equivalentClass>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="&obo;MFMO_0000009"/>
+                <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0001759"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <owl:equivalentClass>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0001759"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFMO_0000009"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0001630"/>
@@ -660,20 +580,33 @@
 
     <owl:Class rdf:about="&obo;feed.owl#anterior_digastric_muscle">
         <rdfs:label>anterior digastric muscle</rdfs:label>
-        <owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;feed.owl#muscles_innervated_by_trigeminal_nerve"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002163"/>
+                <owl:someValuesFrom rdf:resource="&obo;feed.owl#mylohyoid_muscle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002202"/>
+                <owl:someValuesFrom rdf:resource="&obo;feed.owl#pharyngeal_arch_1"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
-                        <owl:someValuesFrom rdf:resource="&obo;feed.owl#trigeminal_nerve"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;attaches_to"/>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
                         <owl:someValuesFrom rdf:resource="&obo;UBERON_0001684"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;attaches_to"/>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
                         <owl:someValuesFrom rdf:resource="&obo;UBERON_0001685"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
+                        <owl:someValuesFrom rdf:resource="&obo;feed.owl#trigeminal_nerve"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="&obo;feed.owl#superficial_to"/>
@@ -681,13 +614,6 @@
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="&obo;feed.owl#muscles_innervated_by_trigeminal_nerve"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0002202"/>
-                <owl:someValuesFrom rdf:resource="&obo;feed.owl#pharyngeal_arch_1"/>
-            </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>The anterior digastric is a pharyngeal arch I muscle that participates in oral/pharygeal behaviors and is innervated by the nerve to mylohyoid and superficial to mylohyoid muscle, and lacks the midline raphe.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0010943</oboInOwl:hasDbXref>
@@ -701,7 +627,7 @@
         <rdfs:label>anterior masseter muscle</rdfs:label>
         <owl:equivalentClass>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;attaches_to"/>
+                <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
                 <owl:someValuesFrom rdf:resource="&obo;feed.owl#anterior_root_of_zygomatic_arch"/>
             </owl:Restriction>
         </owl:equivalentClass>
@@ -797,14 +723,14 @@
         <rdfs:label>deep masseter muscle</rdfs:label>
         <owl:equivalentClass>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;feed.owl#attached_to_ventral_surface_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;feed.owl#zygomatic_arch"/>
+                <owl:onProperty rdf:resource="&obo;feed.owl#deep_to"/>
+                <owl:someValuesFrom rdf:resource="&obo;feed.owl#superficial_masseter_muscle"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <owl:equivalentClass>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;feed.owl#deep_to"/>
-                <owl:someValuesFrom rdf:resource="&obo;feed.owl#superficial_masseter_muscle"/>
+                <owl:onProperty rdf:resource="&obo;feed.owl#attached_to_ventral_surface_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;feed.owl#zygomatic_arch"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;feed.owl#masseter_muscle"/>
@@ -863,16 +789,16 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
-                        <owl:someValuesFrom rdf:resource="&obo;feed.owl#hypoglossal_nerve"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;attaches_to"/>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
                         <owl:someValuesFrom rdf:resource="&obo;UBERON_0001684"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;attaches_to"/>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
                         <owl:someValuesFrom rdf:resource="&obo;feed.owl#tongue"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
+                        <owl:someValuesFrom rdf:resource="&obo;feed.owl#hypoglossal_nerve"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -892,20 +818,20 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
+                        <owl:someValuesFrom rdf:resource="&obo;UBERON_0001684"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
+                        <owl:someValuesFrom rdf:resource="&obo;UBERON_0001685"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
                         <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
                         <owl:someValuesFrom rdf:resource="&obo;feed.owl#first_cervical_nerve"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="&obo;RO_0002202"/>
                         <owl:someValuesFrom rdf:resource="&obo;feed.owl#somite"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;attaches_to"/>
-                        <owl:someValuesFrom rdf:resource="&obo;UBERON_0001684"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;attaches_to"/>
-                        <owl:someValuesFrom rdf:resource="&obo;UBERON_0001685"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -939,26 +865,31 @@
 
     <owl:Class rdf:about="&obo;feed.owl#hyoglossus_muscle">
         <rdfs:label>hyoglossus muscle</rdfs:label>
-        <owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;feed.owl#muscles_innervated_by_hypoglossal_nerve"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002163"/>
+                <owl:someValuesFrom rdf:resource="&obo;feed.owl#anterior_digastric_muscle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
+                        <owl:someValuesFrom rdf:resource="&obo;UBERON_0001685"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
+                        <owl:someValuesFrom rdf:resource="&obo;feed.owl#tongue"/>
+                    </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
                         <owl:someValuesFrom rdf:resource="&obo;feed.owl#hypoglossal_nerve"/>
                     </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;attaches_to"/>
-                        <owl:someValuesFrom rdf:resource="&obo;UBERON_0001685"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;attaches_to"/>
-                        <owl:someValuesFrom rdf:resource="&obo;feed.owl#tongue"/>
-                    </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="&obo;feed.owl#muscles_innervated_by_hypoglossal_nerve"/>
-        <owl:disjointWith rdf:resource="&obo;feed.owl#intrinsic_tongue_muscle"/>
+        </rdfs:subClassOf>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001572</oboInOwl:hasDbXref>
     </owl:Class>
     
@@ -994,7 +925,7 @@
                         <owl:someValuesFrom rdf:resource="&obo;feed.owl#hypoglossal_nerve"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;attaches_to"/>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
                         <owl:allValuesFrom rdf:resource="&obo;feed.owl#tongue"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -1021,16 +952,16 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
-                        <owl:someValuesFrom rdf:resource="&obo;feed.owl#trigeminal_nerve"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;attaches_to"/>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
                         <owl:someValuesFrom rdf:resource="&obo;feed.owl#base_of_cranium"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;attaches_to"/>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
                         <owl:someValuesFrom rdf:resource="&obo;feed.owl#condyle_of_the_mandible"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
+                        <owl:someValuesFrom rdf:resource="&obo;feed.owl#trigeminal_nerve"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -1051,20 +982,20 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
-                        <owl:someValuesFrom rdf:resource="&obo;UBERON_0001759"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;attaches_to"/>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
                         <owl:someValuesFrom rdf:resource="&obo;feed.owl#base_of_cranium"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;attaches_to"/>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
                         <owl:someValuesFrom rdf:resource="&obo;feed.owl#pharyngotympanic_tube"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;attaches_to"/>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
                         <owl:someValuesFrom rdf:resource="&obo;feed.owl#soft_palate"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
+                        <owl:someValuesFrom rdf:resource="&obo;UBERON_0001759"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -1091,11 +1022,11 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;attaches_to"/>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
                         <owl:someValuesFrom rdf:resource="&obo;UBERON_0001684"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;attaches_to"/>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
                         <owl:someValuesFrom rdf:resource="&obo;feed.owl#zygomatic_arch"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -1116,7 +1047,7 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;attaches_to"/>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
                         <owl:someValuesFrom rdf:resource="&obo;feed.owl#base_of_cranium"/>
                     </owl:Restriction>
                     <owl:Restriction>
@@ -1127,6 +1058,18 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;feed.owl#muscles_innervated_by_trigeminal_nerve"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;attaches_to"/>
+                <owl:someValuesFrom rdf:resource="&obo;feed.owl#base_of_cranium"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;feed.owl#attached_to_medial_surface_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0001684"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0006718</oboInOwl:hasDbXref>
         <obo:IAO_0000115>The medial pterygoid is a pharyngeal arch 1 muscle that participates in oral/pharyngeal behaviors and is innervated by the nerve to the medial pterygoid and attaches to the cranial base and the medial side of the mandibular angle.</obo:IAO_0000115>
     </owl:Class>
@@ -1141,16 +1084,16 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
-                        <owl:someValuesFrom rdf:resource="&obo;UBERON_0011325"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;attaches_to"/>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
                         <owl:someValuesFrom rdf:resource="&obo;MFMO_0000008"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;attaches_to"/>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
                         <owl:someValuesFrom rdf:resource="&obo;UBERON_0001685"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
+                        <owl:someValuesFrom rdf:resource="&obo;UBERON_0011325"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -1243,9 +1186,38 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
+                        <owl:someValuesFrom rdf:resource="&obo;MFMO_0000008"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
+                        <owl:someValuesFrom rdf:resource="&obo;UBERON_0001684"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
+                        <owl:someValuesFrom rdf:resource="&obo;UBERON_0001685"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
                         <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
                         <owl:someValuesFrom rdf:resource="&obo;feed.owl#trigeminal_nerve"/>
                     </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;feed.owl#deep_to"/>
+                        <owl:someValuesFrom rdf:resource="&obo;feed.owl#anterior_digastric_muscle"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002163"/>
+                <owl:someValuesFrom rdf:resource="&obo;feed.owl#anterior_digastric_muscle"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;feed.owl#muscles_innervated_by_trigeminal_nerve"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="&obo;attaches_to"/>
                         <owl:someValuesFrom rdf:resource="&obo;MFMO_0000008"/>
@@ -1264,8 +1236,7 @@
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="&obo;feed.owl#muscles_innervated_by_trigeminal_nerve"/>
+        </rdfs:subClassOf>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001564</oboInOwl:hasDbXref>
         <obo:IAO_0000115>The mylohyoid is a pharyngeal arch I muscle that participates in oral/pharyngeal behaviors and is innervated by the nerve to mylohyoid and attaches to the midline raphe linking right and left mylohyoid and the mandible.</obo:IAO_0000115>
     </owl:Class>
@@ -1304,16 +1275,16 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
-                        <owl:someValuesFrom rdf:resource="&obo;feed.owl#cervical_plexus"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;attaches_to"/>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
                         <owl:someValuesFrom rdf:resource="&obo;UBERON_0001685"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;attaches_to"/>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
                         <owl:someValuesFrom rdf:resource="&obo;feed.owl#scapula"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
+                        <owl:someValuesFrom rdf:resource="&obo;feed.owl#cervical_plexus"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -1333,16 +1304,16 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
-                        <owl:someValuesFrom rdf:resource="&obo;UBERON_0001647"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;attaches_to"/>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
                         <owl:someValuesFrom rdf:resource="&obo;UBERON_0002097"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;attaches_to"/>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
                         <owl:someValuesFrom rdf:resource="&obo;feed.owl#modiolus"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
+                        <owl:someValuesFrom rdf:resource="&obo;UBERON_0001647"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -1371,16 +1342,16 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
-                        <owl:someValuesFrom rdf:resource="&obo;UBERON_0011325"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;attaches_to"/>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
                         <owl:someValuesFrom rdf:resource="&obo;feed.owl#soft_palate"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;attaches_to"/>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
                         <owl:someValuesFrom rdf:resource="&obo;feed.owl#tongue"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
+                        <owl:someValuesFrom rdf:resource="&obo;UBERON_0011325"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -1400,20 +1371,20 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
-                        <owl:someValuesFrom rdf:resource="&obo;UBERON_0011325"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;attaches_to"/>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
                         <owl:someValuesFrom rdf:resource="&obo;feed.owl#palatine_bone"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;attaches_to"/>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
                         <owl:someValuesFrom rdf:resource="&obo;feed.owl#pharynx"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;attaches_to"/>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
                         <owl:someValuesFrom rdf:resource="&obo;feed.owl#soft_palate"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
+                        <owl:someValuesFrom rdf:resource="&obo;UBERON_0011325"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -1429,18 +1400,13 @@
 
     <owl:Class rdf:about="&obo;feed.owl#pars_reflexa">
         <rdfs:label>pars reflexa</rdfs:label>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;feed.owl#attached_to_medial_surface_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0001684"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
+        <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
                 <owl:someValuesFrom rdf:resource="&obo;feed.owl#superficial_masseter_muscle"/>
             </owl:Restriction>
-        </rdfs:subClassOf>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;feed.owl#superficial_masseter_muscle"/>
         <obo:IAO_0000115>The pars reflexa is a separable part of the superficial masseter muscle that attaches to the medial surface of the mandible.</obo:IAO_0000115>
     </owl:Class>
     
@@ -1489,11 +1455,11 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;attaches_to"/>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
                         <owl:someValuesFrom rdf:resource="&obo;UBERON_0001684"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;attaches_to"/>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
                         <owl:someValuesFrom rdf:resource="&obo;UBERON_0002097"/>
                     </owl:Restriction>
                     <owl:Restriction>
@@ -1518,16 +1484,16 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
-                        <owl:someValuesFrom rdf:resource="&obo;UBERON_0001647"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;attaches_to"/>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
                         <owl:someValuesFrom rdf:resource="&obo;UBERON_0001685"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;attaches_to"/>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
                         <owl:someValuesFrom rdf:resource="&obo;feed.owl#base_of_cranium"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
+                        <owl:someValuesFrom rdf:resource="&obo;UBERON_0001647"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="&obo;feed.owl#superficial_to"/>
@@ -1584,16 +1550,16 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
-                        <owl:someValuesFrom rdf:resource="&obo;UBERON_0011325"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;attaches_to"/>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
                         <owl:someValuesFrom rdf:resource="&obo;feed.owl#pharyngotympanic_tube"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;attaches_to"/>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
                         <owl:someValuesFrom rdf:resource="&obo;feed.owl#pharynx"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
+                        <owl:someValuesFrom rdf:resource="&obo;UBERON_0011325"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -1660,16 +1626,16 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
-                        <owl:someValuesFrom rdf:resource="&obo;feed.owl#cervical_plexus"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;attaches_to"/>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
                         <owl:someValuesFrom rdf:resource="&obo;UBERON_0001685"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;attaches_to"/>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
                         <owl:someValuesFrom rdf:resource="&obo;feed.owl#sternum"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
+                        <owl:someValuesFrom rdf:resource="&obo;feed.owl#cervical_plexus"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -1689,16 +1655,16 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
-                        <owl:someValuesFrom rdf:resource="&obo;feed.owl#cervical_plexus"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;attaches_to"/>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
                         <owl:someValuesFrom rdf:resource="&obo;feed.owl#sternum"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;attaches_to"/>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
                         <owl:someValuesFrom rdf:resource="&obo;feed.owl#thyroid_cartilage"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
+                        <owl:someValuesFrom rdf:resource="&obo;feed.owl#cervical_plexus"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -1725,11 +1691,11 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;attaches_to"/>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
                         <owl:someValuesFrom rdf:resource="&obo;feed.owl#stylohyal"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;attaches_to"/>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
                         <owl:someValuesFrom rdf:resource="&obo;feed.owl#tongue"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -1761,16 +1727,16 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
-                        <owl:someValuesFrom rdf:resource="&obo;UBERON_0001647"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;attaches_to"/>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
                         <owl:someValuesFrom rdf:resource="&obo;feed.owl#non_stylohyal_part_of_hyoid_apparatus"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;attaches_to"/>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
                         <owl:someValuesFrom rdf:resource="&obo;feed.owl#stylohyal"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
+                        <owl:someValuesFrom rdf:resource="&obo;UBERON_0001647"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -1788,7 +1754,7 @@
         <rdfs:label>superficial masseter muscle</rdfs:label>
         <owl:equivalentClass>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;attaches_to"/>
+                <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
                 <owl:someValuesFrom rdf:resource="&obo;feed.owl#angle_of_the_mandible"/>
             </owl:Restriction>
         </owl:equivalentClass>
@@ -1810,7 +1776,7 @@
                         <owl:someValuesFrom rdf:resource="&obo;feed.owl#temporalis_muscle"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;attaches_to"/>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
                         <owl:someValuesFrom rdf:resource="&obo;feed.owl#temporalis_fascia"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -1830,24 +1796,24 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
-                        <owl:someValuesFrom rdf:resource="&obo;UBERON_0011325"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;attaches_to"/>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
                         <owl:someValuesFrom rdf:resource="&obo;UBERON_0001684"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;attaches_to"/>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
                         <owl:someValuesFrom rdf:resource="&obo;UBERON_0011349"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;attaches_to"/>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
                         <owl:someValuesFrom rdf:resource="&obo;feed.owl#basioccipital_bone"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;attaches_to"/>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
                         <owl:someValuesFrom rdf:resource="&obo;feed.owl#pterygoid_process_of_the_sphenoid_bone"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
+                        <owl:someValuesFrom rdf:resource="&obo;UBERON_0011325"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -1891,12 +1857,12 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
-                        <owl:someValuesFrom rdf:resource="&obo;feed.owl#trigeminal_nerve"/>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
+                        <owl:someValuesFrom rdf:resource="&obo;UBERON_0001684"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;attaches_to"/>
-                        <owl:someValuesFrom rdf:resource="&obo;UBERON_0001684"/>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
+                        <owl:someValuesFrom rdf:resource="&obo;feed.owl#trigeminal_nerve"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="&obo;feed.owl#attached_to_lateral_surface_of"/>
@@ -1920,16 +1886,16 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
-                        <owl:someValuesFrom rdf:resource="&obo;feed.owl#trigeminal_nerve"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;attaches_to"/>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
                         <owl:someValuesFrom rdf:resource="&obo;feed.owl#base_of_cranium"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;attaches_to"/>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
                         <owl:someValuesFrom rdf:resource="&obo;feed.owl#soft_palate"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
+                        <owl:someValuesFrom rdf:resource="&obo;feed.owl#trigeminal_nerve"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -1988,7 +1954,7 @@
                         <owl:someValuesFrom rdf:resource="&obo;UBERON_0011325"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;attaches_to"/>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
                         <owl:allValuesFrom rdf:resource="&obo;feed.owl#soft_palate"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -2064,24 +2030,24 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
+                        <owl:someValuesFrom rdf:resource="&obo;MFMO_0000008"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
+                        <owl:someValuesFrom rdf:resource="&obo;UBERON_0002375"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
+                        <owl:someValuesFrom rdf:resource="&obo;feed.owl#thyroid_cartilage"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
                         <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
                         <owl:someValuesFrom rdf:resource="&obo;UBERON_0003716"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
                         <owl:someValuesFrom rdf:resource="&obo;UBERON_0011325"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;attaches_to"/>
-                        <owl:someValuesFrom rdf:resource="&obo;MFMO_0000008"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;attaches_to"/>
-                        <owl:someValuesFrom rdf:resource="&obo;UBERON_0002375"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;attaches_to"/>
-                        <owl:someValuesFrom rdf:resource="&obo;feed.owl#thyroid_cartilage"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
