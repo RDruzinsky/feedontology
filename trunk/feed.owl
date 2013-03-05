@@ -267,7 +267,7 @@
     <!-- http://purl.obolibrary.org/obo/MFMO_0000005 -->
 
     <owl:Class rdf:about="&obo;MFMO_0000005">
-        <rdfs:label>muscles innervated by facial nerve</rdfs:label>
+        <rdfs:label>muscle innervated by facial nerve</rdfs:label>
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
@@ -307,7 +307,6 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="&obo;MFMO_0000007"/>
         <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
         <obo:IAO_0000115>The ceratohyoideus is a muscle of Pharyngeal Arch III that participates in oral/pharyngeal behaviors and is innervated by the glossopharyngeal n. (CN IX), and attaches to the ceratohyal part of the hyoid apparatus and also to a non-ceratohyal part of the hyoid apparatus</obo:IAO_0000115>
     </owl:Class>
@@ -317,7 +316,7 @@
     <!-- http://purl.obolibrary.org/obo/MFMO_0000007 -->
 
     <owl:Class rdf:about="&obo;MFMO_0000007">
-        <rdfs:label xml:lang="en">muscles innervated by glossopharyngeal nerve</rdfs:label>
+        <rdfs:label xml:lang="en">muscle innervated by glossopharyngeal nerve</rdfs:label>
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
@@ -381,13 +380,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;RO_0002202"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0003117"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0003115"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;RO_0002202"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0003115"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0003117"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>The cricopharyngeus is a pharyngeal arch 4/6 muscle that participates in oral/pharyngeal behaviors and is innervated by the pharyngeal plexus and the recurrent laryngeal n. (from Vagus, CN X), and is an integral part of the pharyngeal tube, and attaches to the cricoid cartilage and the midline raphe.  It acts as a sphincter between the pharynx and esophagus.</obo:IAO_0000115>
@@ -398,7 +397,7 @@
     <!-- http://purl.obolibrary.org/obo/MFMO_0000010 -->
 
     <owl:Class rdf:about="&obo;MFMO_0000010">
-        <rdfs:label xml:lang="en">muscles innervated by vagus nerve</rdfs:label>
+        <rdfs:label xml:lang="en">muscle innervated by vagus nerve</rdfs:label>
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
@@ -611,18 +610,6 @@
         <rdfs:label>anterior digastric muscle</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;feed.owl#muscles_innervated_by_trigeminal_nerve"/>
         <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0002202"/>
-                <owl:someValuesFrom rdf:resource="&obo;feed.owl#pharyngeal_arch_1"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0002163"/>
-                <owl:someValuesFrom rdf:resource="&obo;feed.owl#mylohyoid_muscle"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
@@ -644,7 +631,22 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
+<<<<<<< .mine
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002163"/>
+                <owl:someValuesFrom rdf:resource="&obo;feed.owl#mylohyoid_muscle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002202"/>
+                <owl:someValuesFrom rdf:resource="&obo;feed.owl#pharyngeal_arch_1"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+=======
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0010943</oboInOwl:hasDbXref>
+>>>>>>> .r34
         <obo:IAO_0000115>The anterior digastric is a pharyngeal arch I muscle that participates in oral/pharygeal behaviors and is innervated by the nerve to mylohyoid and superficial to mylohyoid muscle, and lacks the midline raphe.</obo:IAO_0000115>
     </owl:Class>
     
@@ -823,8 +825,13 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+<<<<<<< .mine
+                <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0001684"/>
+=======
                 <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
                 <owl:someValuesFrom rdf:resource="&obo;feed.owl#tongue"/>
+>>>>>>> .r34
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1133,7 +1140,7 @@
     <!-- http://purl.obolibrary.org/obo/feed.owl#muscles_innervated_by_hypoglossal_nerve -->
 
     <owl:Class rdf:about="&obo;feed.owl#muscles_innervated_by_hypoglossal_nerve">
-        <rdfs:label>muscles innervated by hypoglossal nerve</rdfs:label>
+        <rdfs:label>muscle innervated by hypoglossal nerve</rdfs:label>
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
@@ -1154,7 +1161,7 @@
     <!-- http://purl.obolibrary.org/obo/feed.owl#muscles_innervated_by_spinal_nerve -->
 
     <owl:Class rdf:about="&obo;feed.owl#muscles_innervated_by_spinal_nerve">
-        <rdfs:label>muscles innervated by spinal nerve</rdfs:label>
+        <rdfs:label>muscle innervated by spinal nerve</rdfs:label>
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
@@ -1175,13 +1182,7 @@
     <!-- http://purl.obolibrary.org/obo/feed.owl#muscles_innervated_by_trigeminal_nerve -->
 
     <owl:Class rdf:about="&obo;feed.owl#muscles_innervated_by_trigeminal_nerve">
-        <rdfs:label>muscles innervated by trigeminal nerve</rdfs:label>
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
-                <owl:someValuesFrom rdf:resource="&obo;feed.owl#trigeminal_nerve"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
+        <rdfs:label>muscle innervated by trigeminal nerve</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0001630"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -2071,6 +2072,29 @@
         <obo:IAO_0000115>This is a pharyngeal arch 4/6 muscle that is integral to the pharyngeal tube, participates in oral/pharyngeal behaviors, is innervated by the pharyngeal plexus of the vagus n. (CNX) and attaches to the laryngeal cartilages and the midline raphe.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001570</oboInOwl:hasDbXref>
     </owl:Class>
+<<<<<<< .mine
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:Restriction>
+        <owl:disjointWith>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;feed.owl#mylohyoid_muscle"/>
+            </owl:Restriction>
+        </owl:disjointWith>
+        <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+        <owl:someValuesFrom rdf:resource="&obo;feed.owl#anterior_digastric_muscle"/>
+    </owl:Restriction>
+=======
     
 
 
@@ -2098,6 +2122,7 @@
         <rdfs:label>Human buccinator muscle</rdfs:label>
         <rdfs:comment>Image from Gray&apos;s Anatomy in a wiki</rdfs:comment>
     </owl:NamedIndividual>
+>>>>>>> .r34
 </rdf:RDF>
 
 
