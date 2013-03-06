@@ -594,12 +594,6 @@
         <rdfs:label>anterior digastric muscle</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;feed.owl#muscles_innervated_by_trigeminal_nerve"/>
         <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0002163"/>
-                <owl:someValuesFrom rdf:resource="&obo;feed.owl#mylohyoid_muscle"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
@@ -625,6 +619,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;RO_0002202"/>
                 <owl:someValuesFrom rdf:resource="&obo;feed.owl#pharyngeal_arch_1"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002163"/>
+                <owl:someValuesFrom rdf:resource="&obo;feed.owl#mylohyoid_muscle"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>The anterior digastric is a pharyngeal arch I muscle that participates in oral/pharygeal behaviors and is innervated by the nerve to mylohyoid and superficial to mylohyoid muscle, and lacks the midline raphe.</obo:IAO_0000115>
@@ -800,8 +800,8 @@
         <rdfs:subClassOf rdf:resource="&obo;feed.owl#muscles_innervated_by_hypoglossal_nerve"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0001684"/>
+                <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
+                <owl:someValuesFrom rdf:resource="&obo;feed.owl#hypoglossal_nerve"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -812,8 +812,8 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
-                <owl:someValuesFrom rdf:resource="&obo;feed.owl#hypoglossal_nerve"/>
+                <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0001684"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="&obo;feed.owl#intrinsic_tongue_muscle"/>
@@ -879,12 +879,6 @@
         <rdfs:label>hyoglossus muscle</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;feed.owl#muscles_innervated_by_hypoglossal_nerve"/>
         <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0002163"/>
-                <owl:someValuesFrom rdf:resource="&obo;feed.owl#anterior_digastric_muscle"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
@@ -901,6 +895,12 @@
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002163"/>
+                <owl:someValuesFrom rdf:resource="&obo;feed.owl#anterior_digastric_muscle"/>
+            </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001572</oboInOwl:hasDbXref>
     </owl:Class>
@@ -2060,6 +2060,33 @@
     <!-- http://xmlns.com/foaf/0.1/Image -->
 
     <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Image"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://upload.wikimedia.org/wikipedia/commons/d/df/Buccinator.jpg -->
+
+    <owl:NamedIndividual rdf:about="http://upload.wikimedia.org/wikipedia/commons/d/df/Buccinator.jpg">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Image"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://xmlns.com/foaf/0.1/depicts"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFMO_0000002"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label>Human buccinator muscle</rdfs:label>
+        <rdfs:comment>Image from Gray&apos;s Anatomy 1918 edition from Wiki</rdfs:comment>
+    </owl:NamedIndividual>
 </rdf:RDF>
 
 
