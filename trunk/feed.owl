@@ -413,13 +413,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;RO_0002202"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0003115"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0003117"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;RO_0002202"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0003117"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0003115"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -1067,14 +1067,14 @@
         <rdfs:subClassOf rdf:resource="&obo;feed.owl#muscles_innervated_by_trigeminal_nerve"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;attaches_to"/>
-                <owl:someValuesFrom rdf:resource="&obo;feed.owl#base_of_cranium"/>
+                <owl:onProperty rdf:resource="&obo;feed.owl#attached_to_medial_surface_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0001684"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;feed.owl#attached_to_medial_surface_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0001684"/>
+                <owl:onProperty rdf:resource="&obo;attaches_to"/>
+                <owl:someValuesFrom rdf:resource="&obo;feed.owl#base_of_cranium"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>The medial pterygoid is a pharyngeal arch 1 muscle that participates in oral/pharyngeal behaviors and is innervated by the nerve to the medial pterygoid and attaches to the cranial base and the medial side of the mandibular angle.</obo:IAO_0000115>
@@ -1190,12 +1190,6 @@
     <owl:Class rdf:about="&obo;feed.owl#mylohyoid_muscle">
         <rdfs:label>mylohyoid muscle</rdfs:label>
         <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0002163"/>
-                <owl:someValuesFrom rdf:resource="&obo;feed.owl#anterior_digastric_muscle"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
@@ -1220,6 +1214,12 @@
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002163"/>
+                <owl:someValuesFrom rdf:resource="&obo;feed.owl#anterior_digastric_muscle"/>
+            </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;feed.owl#muscles_innervated_by_trigeminal_nerve"/>
         <rdfs:subClassOf>
@@ -2124,6 +2124,21 @@
     
 
 
+    <!-- http://upload.wikimedia.org/wikipedia/commons/2/2c/Geniohyoid_muscle.PNG -->
+
+    <owl:NamedIndividual rdf:about="http://upload.wikimedia.org/wikipedia/commons/2/2c/Geniohyoid_muscle.PNG">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Image"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://xmlns.com/foaf/0.1/depicts"/>
+                <owl:someValuesFrom rdf:resource="&obo;feed.owl#geniohyoid_muscle"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label>Human geniohyoid muscle</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://upload.wikimedia.org/wikipedia/commons/6/67/Sternohyoid_muscle.PNG -->
 
     <owl:NamedIndividual rdf:about="http://upload.wikimedia.org/wikipedia/commons/6/67/Sternohyoid_muscle.PNG">
@@ -2131,12 +2146,10 @@
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://xmlns.com/foaf/0.1/depicts"/>
-                <owl:someValuesFrom rdf:resource="&obo;MFMO_0000006"/>
+                <owl:someValuesFrom rdf:resource="&obo;feed.owl#sternohyoid_muscle"/>
             </owl:Restriction>
         </rdf:type>
-        <rdfs:label>Human Ceratohyoideus Muscle</rdfs:label>
-        <rdfs:comment>Formerly known as sternohyoid muscle.
-Drawing from Gray&apos;s Anatomy</rdfs:comment>
+        <rdfs:label>Human sternohyoid muscle</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2169,6 +2182,21 @@ Drawing from Gray&apos;s Anatomy</rdfs:comment>
         </rdf:type>
         <rdfs:label>Human Hyoglossus Muscle</rdfs:label>
         <rdfs:comment>Drawing from Gray&apos;s Anatomy</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://upload.wikimedia.org/wikipedia/commons/8/8a/Musculus_omohyoideus.png -->
+
+    <owl:NamedIndividual rdf:about="http://upload.wikimedia.org/wikipedia/commons/8/8a/Musculus_omohyoideus.png">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Image"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://xmlns.com/foaf/0.1/depicts"/>
+                <owl:someValuesFrom rdf:resource="&obo;feed.owl#omohyoid"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label>Human omohyoid muscle</rdfs:label>
     </owl:NamedIndividual>
     
 
