@@ -2093,8 +2093,17 @@
                 <owl:someValuesFrom rdf:resource="&obo;feed.owl#stylohyoid_muscle"/>
             </owl:Restriction>
         </rdf:type>
-        <rdfs:label>Human Stylohyoid Musce</rdfs:label>
+        <rdfs:label>Human Stylohyoid Muscle</rdfs:label>
         <rdfs:comment>Photo from Wiki</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://upload.wikimedia.org/wikipedia/commons/1/16/Styloglossus.png -->
+
+    <owl:NamedIndividual rdf:about="http://upload.wikimedia.org/wikipedia/commons/1/16/Styloglossus.png">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Image"/>
+        <rdfs:label>Human styloglossus Muscle</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2125,7 +2134,7 @@
                 <owl:someValuesFrom rdf:resource="&obo;MFMO_0000006"/>
             </owl:Restriction>
         </rdf:type>
-        <rdfs:label>Ceratohyoideus muscle</rdfs:label>
+        <rdfs:label>Human Ceratohyoideus Muscle</rdfs:label>
         <rdfs:comment>Formerly known as sternohyoid muscle.
 Drawing from Gray&apos;s Anatomy</rdfs:comment>
     </owl:NamedIndividual>
@@ -2143,6 +2152,22 @@ Drawing from Gray&apos;s Anatomy</rdfs:comment>
             </owl:Restriction>
         </rdf:type>
         <rdfs:label>Human Genioglosssus Muscle</rdfs:label>
+        <rdfs:comment>Drawing from Gray&apos;s Anatomy</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://upload.wikimedia.org/wikipedia/commons/7/7e/Hyoglossus.png -->
+
+    <owl:NamedIndividual rdf:about="http://upload.wikimedia.org/wikipedia/commons/7/7e/Hyoglossus.png">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Image"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://xmlns.com/foaf/0.1/depicts"/>
+                <owl:someValuesFrom rdf:resource="&obo;feed.owl#hyoglossus_muscle"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label>Human Hyoglossus Muscle</rdfs:label>
         <rdfs:comment>Drawing from Gray&apos;s Anatomy</rdfs:comment>
     </owl:NamedIndividual>
     
