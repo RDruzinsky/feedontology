@@ -414,14 +414,14 @@
         <rdfs:label xml:lang="en">muscles innervated by vagus nerve</rdfs:label>
         <owl:equivalentClass>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0001759"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFMO_0000009"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <owl:equivalentClass>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="&obo;MFMO_0000009"/>
+                <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0001759"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0001630"/>
@@ -627,6 +627,8 @@
         <rdfs:label>anterior digastric muscle</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;feed.owl#muscles_innervated_by_trigeminal_nerve"/>
         <rdfs:subClassOf>
+<<<<<<< .mine
+=======
             <owl:Restriction>
 <<<<<<< .mine
                 <owl:onProperty rdf:resource="&obo;RO_0002202"/>
@@ -640,6 +642,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
+>>>>>>> .r48
 >>>>>>> .r47
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -677,7 +680,16 @@
                 <owl:someValuesFrom rdf:resource="&obo;feed.owl#pharyngeal_arch_1"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+<<<<<<< .mine
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002163"/>
+                <owl:someValuesFrom rdf:resource="&obo;feed.owl#mylohyoid_muscle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+=======
 >>>>>>> .r47
+>>>>>>> .r48
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0010943</oboInOwl:hasDbXref>
     </owl:Class>
     
@@ -863,13 +875,18 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0001684"/>
+                <owl:someValuesFrom rdf:resource="&obo;feed.owl#tongue"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+<<<<<<< .mine
+                <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0001684"/>
+=======
                 <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
                 <owl:someValuesFrom rdf:resource="&obo;feed.owl#tongue"/>
+>>>>>>> .r48
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -878,8 +895,13 @@
                 <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
                 <owl:someValuesFrom rdf:resource="&obo;feed.owl#hypoglossal_nerve"/>
 =======
+<<<<<<< .mine
+                <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
+                <owl:someValuesFrom rdf:resource="&obo;feed.owl#hypoglossal_nerve"/>
+=======
                 <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
                 <owl:someValuesFrom rdf:resource="&obo;feed.owl#tongue"/>
+>>>>>>> .r48
 >>>>>>> .r47
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -946,12 +968,6 @@
         <rdfs:label>hyoglossus muscle</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;feed.owl#muscles_innervated_by_hypoglossal_nerve"/>
         <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0002163"/>
-                <owl:someValuesFrom rdf:resource="&obo;feed.owl#anterior_digastric_muscle"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
@@ -968,6 +984,12 @@
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002163"/>
+                <owl:someValuesFrom rdf:resource="&obo;feed.owl#anterior_digastric_muscle"/>
+            </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001572</oboInOwl:hasDbXref>
     </owl:Class>
@@ -1141,14 +1163,14 @@
         <rdfs:subClassOf rdf:resource="&obo;feed.owl#muscles_innervated_by_trigeminal_nerve"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;attaches_to"/>
-                <owl:someValuesFrom rdf:resource="&obo;feed.owl#base_of_cranium"/>
+                <owl:onProperty rdf:resource="&obo;feed.owl#attached_to_medial_surface_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0001684"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;feed.owl#attached_to_medial_surface_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0001684"/>
+                <owl:onProperty rdf:resource="&obo;attaches_to"/>
+                <owl:someValuesFrom rdf:resource="&obo;feed.owl#base_of_cranium"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0006718</oboInOwl:hasDbXref>
@@ -1264,6 +1286,12 @@
     <owl:Class rdf:about="&obo;feed.owl#mylohyoid_muscle">
         <rdfs:label>mylohyoid muscle</rdfs:label>
         <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002163"/>
+                <owl:someValuesFrom rdf:resource="&obo;feed.owl#anterior_digastric_muscle"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
@@ -1288,12 +1316,6 @@
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0002163"/>
-                <owl:someValuesFrom rdf:resource="&obo;feed.owl#anterior_digastric_muscle"/>
-            </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;feed.owl#muscles_innervated_by_trigeminal_nerve"/>
         <rdfs:subClassOf>
@@ -2220,6 +2242,7 @@
     <owl:NamedIndividual rdf:about="http://upload.wikimedia.org/wikipedia/commons/1/16/Styloglossus.png">
         <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Image"/>
         <rdfs:label>Human styloglossus Muscle</rdfs:label>
+        <rdfs:comment>Drawing from Gray&apos;s Anatomy 1918 Edition, picture from Wiki</rdfs:comment>
     </owl:NamedIndividual>
     
 
