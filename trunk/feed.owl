@@ -1047,12 +1047,7 @@
 
     <owl:Class rdf:about="&obo;feed.owl#ingestion_behavior">
         <rdfs:label>ingestion behavior</rdfs:label>
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="&obo;feed.owl#feeding_behavior"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;feed.owl#feeding_behavior"/>
         <rdfs:comment>GO term for Ingestion is a Cellular Process</rdfs:comment>
         <obo:IAO_0000115>Ingestion is part of feeding behavior during which there is movement of a food or liquid from outside the body into the oral cavity or pharynx.</obo:IAO_0000115>
     </owl:Class>
@@ -1063,12 +1058,7 @@
 
     <owl:Class rdf:about="&obo;feed.owl#intraoral_transport">
         <rdfs:label>intraoral transport</rdfs:label>
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="&obo;feed.owl#feeding_behavior"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;feed.owl#feeding_behavior"/>
         <oboInOwl:hasSynonym>intra-oral transport</oboInOwl:hasSynonym>
         <obo:IAO_0000119>Hiiemae, Karen (2000). The oro-facial complex in macaques: tongue and jaw movements in feeding. Old World Monkeys. Cambridge University Press, Cambridge, 214-236.
 
@@ -2202,12 +2192,7 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
 
     <owl:Class rdf:about="&obo;feed.owl#swallow">
         <rdfs:label>swallow</rdfs:label>
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="&obo;feed.owl#feeding_behavior"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;feed.owl#feeding_behavior"/>
         <obo:IAO_0000115>A part of feeding behavior during which there is movement of food or liquid from out of the oropharynx and into the esophagus.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>NBO_0000545</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonym>swallowing</oboInOwl:hasSynonym>
