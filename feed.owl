@@ -35,30 +35,21 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
-
     <owl:AnnotationProperty rdf:about="&obo;IAO_0000115"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000119 -->
-
-    <owl:AnnotationProperty rdf:about="&obo;IAO_0000119"/>
-    
-
-
-    <!-- http://www.geneontology.org/formats/oboInOwl#hasDbXref -->
-
     <owl:AnnotationProperty rdf:about="&oboInOwl;hasDbXref"/>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000119"/>
+    <owl:AnnotationProperty rdf:about="&oboInOwl;hasSynonym"/>
     
 
 
-    <!-- http://www.geneontology.org/formats/oboInOwl#hasSynonym -->
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
 
-    <owl:AnnotationProperty rdf:about="&oboInOwl;hasSynonym"/>
     
 
 
@@ -185,8 +176,8 @@
 
     <owl:ObjectProperty rdf:about="&obo;feed.owl#deep_to">
         <rdfs:label>deep to</rdfs:label>
-        <obo:IAO_0000115>underneath, in the sense of being closer to the center of the individual and farther from the external surface</obo:IAO_0000115>
         <oboInOwl:hasDbXref>BSPO:0000107</oboInOwl:hasDbXref>
+        <obo:IAO_0000115>underneath, in the sense of being closer to the center of the individual and farther from the external surface</obo:IAO_0000115>
         <owl:inverseOf rdf:resource="&obo;feed.owl#superficial_to"/>
     </owl:ObjectProperty>
     
@@ -210,8 +201,8 @@
 
     <owl:ObjectProperty rdf:about="&obo;feed.owl#superficial_to">
         <rdfs:label>superficial to</rdfs:label>
-        <oboInOwl:hasDbXref>BSPO:0000108</oboInOwl:hasDbXref>
         <obo:IAO_0000115>above, in the sense of being closer to the external surface of the individual and farther from the center</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>BSPO:0000108</oboInOwl:hasDbXref>
     </owl:ObjectProperty>
     
 
@@ -264,8 +255,8 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000005"/>
-        <obo:IAO_0000115>The buccinator is a muscle that is attached to the mandible, skin, pterygomandibular raphe and maxilla, and is innervated by Cranial Nerve VII and participates in oropharyngeal behavior.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001582</oboInOwl:hasDbXref>
+        <obo:IAO_0000115>The buccinator is a muscle that is attached to the mandible, skin, pterygomandibular raphe and maxilla, and is innervated by Cranial Nerve VII and participates in oropharyngeal behavior.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -330,8 +321,8 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000007"/>
-        <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
         <obo:IAO_0000115>The ceratohyoideus is a muscle of Pharyngeal Arch III that participates in oral/pharyngeal behaviors and is innervated by the glossopharyngeal n. (CN IX), and attaches to the ceratohyal part of the hyoid apparatus and also to a non-ceratohyal part of the hyoid apparatus</obo:IAO_0000115>
+        <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -361,6 +352,7 @@
 
     <owl:Class rdf:about="&obo;MFMO_0000008">
         <rdfs:label xml:lang="en">midline raphe</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
     </owl:Class>
     
 
@@ -403,13 +395,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;RO_0002202"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0003115"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0003117"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;RO_0002202"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0003117"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0003115"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>The cricopharyngeus is a pharyngeal arch 4/6 muscle that participates in oral/pharyngeal behaviors and is innervated by the pharyngeal plexus and the recurrent laryngeal n. (from Vagus, CN X), and is an integral part of the pharyngeal tube, and attaches to the cricoid cartilage and the midline raphe.  It acts as a sphincter between the pharynx and esophagus.</obo:IAO_0000115>
@@ -423,14 +415,14 @@
         <rdfs:label xml:lang="en">muscles innervated by vagus nerve</rdfs:label>
         <owl:equivalentClass>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="&obo;MFMO_0000009"/>
+                <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0001759"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <owl:equivalentClass>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0001759"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFMO_0000009"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0001630"/>
@@ -450,10 +442,20 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000465 -->
+
+    <owl:Class rdf:about="&obo;UBERON_0000465">
+        <rdfs:label>material anatomical entity</rdfs:label>
+        <owl:disjointWith rdf:resource="&obo;feed.owl#behavior"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/UBERON_0001630 -->
 
     <owl:Class rdf:about="&obo;UBERON_0001630">
         <rdfs:label>muscle organ</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
     </owl:Class>
     
 
@@ -480,6 +482,7 @@
 
     <owl:Class rdf:about="&obo;UBERON_0001684">
         <rdfs:label>mandible</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
     </owl:Class>
     
 
@@ -488,6 +491,7 @@
 
     <owl:Class rdf:about="&obo;UBERON_0001685">
         <rdfs:label>hyoid apparatus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
     </owl:Class>
     
 
@@ -505,6 +509,7 @@
 
     <owl:Class rdf:about="&obo;UBERON_0002097">
         <rdfs:label>skin of body</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
     </owl:Class>
     
 
@@ -513,6 +518,7 @@
 
     <owl:Class rdf:about="&obo;UBERON_0002375">
         <rdfs:label>cricoid cartilage</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
     </owl:Class>
     
 
@@ -521,6 +527,7 @@
 
     <owl:Class rdf:about="&obo;UBERON_0002397">
         <rdfs:label>maxilla</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
     </owl:Class>
     
 
@@ -529,6 +536,7 @@
 
     <owl:Class rdf:about="&obo;UBERON_0003066">
         <rdfs:label>pharyngeal arch 2</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
     </owl:Class>
     
 
@@ -537,6 +545,7 @@
 
     <owl:Class rdf:about="&obo;UBERON_0003114">
         <rdfs:label>pharyngeal arch 3</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
     </owl:Class>
     
 
@@ -545,6 +554,7 @@
 
     <owl:Class rdf:about="&obo;UBERON_0003115">
         <rdfs:label>pharyngeal arch 4</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
     </owl:Class>
     
 
@@ -553,6 +563,7 @@
 
     <owl:Class rdf:about="&obo;UBERON_0003117">
         <rdfs:label>pharyngeal arch 6</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
     </owl:Class>
     
 
@@ -589,6 +600,7 @@
 
     <owl:Class rdf:about="&obo;UBERON_0011349">
         <rdfs:label>pterygomandibular raphe</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0011349</oboInOwl:hasDbXref>
     </owl:Class>
     
@@ -605,9 +617,9 @@
                 <owl:someValuesFrom rdf:resource="&obo;UBERON_0001685"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment></rdfs:comment>
-        <obo:IAO_0000115>part of the hyoid apparatus</obo:IAO_0000115>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0010272</oboInOwl:hasDbXref>
+        <obo:IAO_0000115>part of the hyoid apparatus</obo:IAO_0000115>
+        <rdfs:comment></rdfs:comment>
     </owl:Class>
     
 
@@ -660,8 +672,8 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
-        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0010943</oboInOwl:hasDbXref>
         <obo:IAO_0000115>The anterior digastric is a pharyngeal arch I muscle that participates in oral/pharygeal behaviors and is innervated by the nerve to mylohyoid and superficial to mylohyoid muscle, and lacks the midline raphe.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0010943</oboInOwl:hasDbXref>
     </owl:Class>
     
 
@@ -695,6 +707,7 @@
 
     <owl:Class rdf:about="&obo;feed.owl#base_of_cranium">
         <rdfs:label>base of cranium</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
     </owl:Class>
     
 
@@ -703,6 +716,7 @@
 
     <owl:Class rdf:about="&obo;feed.owl#basioccipital_bone">
         <rdfs:label>basioccipital bone</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001692</oboInOwl:hasDbXref>
     </owl:Class>
     
@@ -712,8 +726,8 @@
 
     <owl:Class rdf:about="&obo;feed.owl#behavior">
         <rdfs:label>behavior</rdfs:label>
-        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/GO_0007610</oboInOwl:hasDbXref>
         <oboInOwl:hasDefinition>The specific actions or reactions of an organism in response to external or internal stimuli. Patterned activity of a whole organism in a manner dependent upon some combination of that organism&apos;s internal state and external conditions. [database_cross_reference: GOC:ems] [database_cross_reference: ISBN:0395448956]</oboInOwl:hasDefinition>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/GO_0007610</oboInOwl:hasDbXref>
     </owl:Class>
     
 
@@ -732,6 +746,7 @@
 
     <owl:Class rdf:about="&obo;feed.owl#capsule_of_the_temporomandibular_joint">
         <rdfs:label>capsule of the temporomandibular joint</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0011318</oboInOwl:hasDbXref>
     </owl:Class>
     
@@ -752,10 +767,15 @@
 
     <owl:Class rdf:about="&obo;feed.owl#chewing">
         <rdfs:label>chewing</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;feed.owl#feeding_behavior"/>
-        <obo:IAO_0000115>A part of feeding behavior during which food breakdown (mechanical and chemical) by structure(s) of the oropharyngeal apparatus occurs.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref>NBO_0000073</oboInOwl:hasDbXref>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;feed.owl#feeding_behavior"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:comment>mastication is a synonym of chewing in the NBO</rdfs:comment>
+        <oboInOwl:hasDbXref>NBO_0000073</oboInOwl:hasDbXref>
+        <obo:IAO_0000115>A part of feeding behavior during which food breakdown (mechanical and chemical) by structure(s) of the oropharyngeal apparatus occurs.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -764,6 +784,7 @@
 
     <owl:Class rdf:about="&obo;feed.owl#clavicle_bone">
         <rdfs:label>clavicle</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001105</oboInOwl:hasDbXref>
     </owl:Class>
     
@@ -789,6 +810,7 @@
 
     <owl:Class rdf:about="&obo;feed.owl#cranium">
         <rdfs:label>cranium</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001598</oboInOwl:hasDbXref>
     </owl:Class>
     
@@ -862,6 +884,7 @@
                 <owl:someValuesFrom rdf:resource="&obo;UBERON_0007268"/>
             </owl:Restriction>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001043</oboInOwl:hasDbXref>
     </owl:Class>
     
@@ -872,9 +895,9 @@
     <owl:Class rdf:about="&obo;feed.owl#feeding_behavior">
         <rdfs:label>feeding behavior</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;feed.owl#oral/pharyngeal_behavior"/>
-        <rdfs:comment>GO: eating behavior and feeding behavior are both terms. Our definition removes the use of &quot;associated with&quot;.</rdfs:comment>
-        <oboInOwl:hasDbXref>NBO_0000079</oboInOwl:hasDbXref>
         <obo:IAO_0000115>Feeding behavior is an oral/pharyngeal behavior during which there is intake of food or liquid.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>NBO_0000079</oboInOwl:hasDbXref>
+        <rdfs:comment>GO: eating behavior and feeding behavior are both terms. Our definition removes the use of &quot;associated with&quot;.</rdfs:comment>
     </owl:Class>
     
 
@@ -884,8 +907,8 @@
     <owl:Class rdf:about="&obo;feed.owl#first_cervical_nerve">
         <rdfs:subClassOf rdf:resource="&obo;feed.owl#nerve"/>
         <rdfs:subClassOf rdf:resource="&obo;feed.owl#spinal_nerve"/>
-        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0005197</oboInOwl:hasDbXref>
         <obo:IAO_0000115>spinal nerve emerging from the first cervical segment superior to the first cervical vertebrae</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0005197</oboInOwl:hasDbXref>
     </owl:Class>
     
 
@@ -956,8 +979,8 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;feed.owl#muscles_innervated_by_spinal_nerve"/>
-        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001565</oboInOwl:hasDbXref>
         <obo:IAO_0000115>The geniohyoid is a muscle that attaches to the mandible and the hyoid apparatus and is innervated by the first cervical nerve (C1).</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001565</oboInOwl:hasDbXref>
     </owl:Class>
     
 
@@ -966,6 +989,7 @@
 
     <owl:Class rdf:about="&obo;feed.owl#hard_palate">
         <rdfs:label>hard palate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0003216</oboInOwl:hasDbXref>
     </owl:Class>
     
@@ -975,6 +999,7 @@
 
     <owl:Class rdf:about="&obo;feed.owl#head_somite">
         <rdfs:label>head somite</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0005594</oboInOwl:hasDbXref>
     </owl:Class>
     
@@ -985,12 +1010,6 @@
     <owl:Class rdf:about="&obo;feed.owl#hyoglossus_muscle">
         <rdfs:label>hyoglossus muscle</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;feed.owl#muscles_innervated_by_hypoglossal_nerve"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0002163"/>
-                <owl:someValuesFrom rdf:resource="&obo;feed.owl#anterior_digastric_muscle"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -1008,6 +1027,12 @@
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002163"/>
+                <owl:someValuesFrom rdf:resource="&obo;feed.owl#anterior_digastric_muscle"/>
+            </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001572</oboInOwl:hasDbXref>
     </owl:Class>
@@ -1048,6 +1073,7 @@
 
     <owl:Class rdf:about="&obo;feed.owl#infraorbital_foramen">
         <rdfs:label>infraorbital foramen</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
     </owl:Class>
     
 
@@ -1056,9 +1082,14 @@
 
     <owl:Class rdf:about="&obo;feed.owl#ingestion_behavior">
         <rdfs:label>ingestion behavior</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;feed.owl#feeding_behavior"/>
-        <obo:IAO_0000115>Ingestion is part of feeding behavior during which there is movement of a food or liquid from outside the body into the oral cavity or pharynx.</obo:IAO_0000115>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;feed.owl#feeding_behavior"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:comment>GO term for Ingestion is a Cellular Process</rdfs:comment>
+        <obo:IAO_0000115>Ingestion is part of feeding behavior during which there is movement of a food or liquid from outside the body into the oral cavity or pharynx.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1067,12 +1098,17 @@
 
     <owl:Class rdf:about="&obo;feed.owl#intraoral_transport">
         <rdfs:label>intraoral transport</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;feed.owl#feeding_behavior"/>
-        <obo:IAO_0000115>A part of feeding behavior during which there is movement of food or liquid from the lips through the oral cavity and into the pharynx.</obo:IAO_0000115>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;feed.owl#feeding_behavior"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:hasSynonym>intra-oral transport</oboInOwl:hasSynonym>
         <obo:IAO_0000119>Hiiemae, Karen (2000). The oro-facial complex in macaques: tongue and jaw movements in feeding. Old World Monkeys. Cambridge University Press, Cambridge, 214-236.
 
 ISBN 1139471368, 9781139471367</obo:IAO_0000119>
-        <oboInOwl:hasSynonym>intra-oral transport</oboInOwl:hasSynonym>
+        <obo:IAO_0000115>A part of feeding behavior during which there is movement of food or liquid from the lips through the oral cavity and into the pharynx.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1102,8 +1138,8 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
                 <owl:someValuesFrom rdf:resource="&obo;feed.owl#tongue"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>The intrinsic tongue muscles are an integral part of the tongue and completely contained within the tongue that are innervated by Cranial Nerve XII.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001576</oboInOwl:hasDbXref>
+        <obo:IAO_0000115>The intrinsic tongue muscles are an integral part of the tongue and completely contained within the tongue that are innervated by Cranial Nerve XII.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1161,9 +1197,9 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;feed.owl#muscles_innervated_by_trigeminal_nerve"/>
-        <obo:IAO_0000115>Pharyngeal arch 1 muscle that participates in oral/pharyngeal behaviors, is innervated by the lateral pterygoid nerve branches, and attaches to the condylar process of the mandible and temporomandibular joint (TMJ) capsule, and the cranial base.</obo:IAO_0000115>
-        <oboInOwl:hasSynonym>external pterygoid muscle</oboInOwl:hasSynonym>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0006719</oboInOwl:hasDbXref>
+        <oboInOwl:hasSynonym>external pterygoid muscle</oboInOwl:hasSynonym>
+        <obo:IAO_0000115>Pharyngeal arch 1 muscle that participates in oral/pharyngeal behaviors, is innervated by the lateral pterygoid nerve branches, and attaches to the condylar process of the mandible and temporomandibular joint (TMJ) capsule, and the cranial base.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1201,9 +1237,9 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
                 <owl:someValuesFrom rdf:resource="&obo;feed.owl#soft_palate"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000115>The levator veli palatini is part of the soft palate that attaches to the cranial base, pharyngotympanic tube and the soft palate and is innervated by Cranial Nerve X via the pharyngeal plexus.</obo:IAO_0000115>
         <oboInOwl:hasSynonym>levator palati</oboInOwl:hasSynonym>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0008585</oboInOwl:hasDbXref>
-        <obo:IAO_0000115>The levator veli palatini is part of the soft palate that attaches to the cranial base, pharyngotympanic tube and the soft palate and is innervated by Cranial Nerve X via the pharyngeal plexus.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1213,8 +1249,8 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
     <owl:Class rdf:about="&obo;feed.owl#lingual_ingestion">
         <rdfs:label>lingual ingestion</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;feed.owl#ingestion_behavior"/>
-        <oboInOwl:hasSynonym>tongue ingestion</oboInOwl:hasSynonym>
         <obo:IAO_0000115>Ingestion using the tongue.</obo:IAO_0000115>
+        <oboInOwl:hasSynonym>tongue ingestion</oboInOwl:hasSynonym>
     </owl:Class>
     
 
@@ -1258,8 +1294,8 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;feed.owl#muscles_innervated_by_trigeminal_nerve"/>
-        <obo:IAO_0000115>Pharyngeal arch 1 muscle that participates in oral/pharyngeal behaviors, is innervated by masseteric nerve branches of the trigeminal nerve (CN V), and attaches to mandible and zygomatic arch.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001597</oboInOwl:hasDbXref>
+        <obo:IAO_0000115>Pharyngeal arch 1 muscle that participates in oral/pharyngeal behaviors, is innervated by masseteric nerve branches of the trigeminal nerve (CN V), and attaches to mandible and zygomatic arch.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1269,9 +1305,9 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
     <owl:Class rdf:about="&obo;feed.owl#mastication">
         <rdfs:label>mastication</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;feed.owl#chewing"/>
-        <oboInOwl:hasDbXref>NBO_0000073</oboInOwl:hasDbXref>
-        <obo:IAO_0000115>A type of chewing during which food breakdown (mechanical and chemical) using rhythmic movements of the postcanine dentition (molar and premolar teeth) occurs.</obo:IAO_0000115>
         <rdfs:comment>mastication is a synonym of chewing in the NBO</rdfs:comment>
+        <obo:IAO_0000115>A type of chewing during which food breakdown (mechanical and chemical) using rhythmic movements of the postcanine dentition (molar and premolar teeth) occurs.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>NBO_0000073</oboInOwl:hasDbXref>
     </owl:Class>
     
 
@@ -1283,18 +1319,18 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
         <rdfs:subClassOf rdf:resource="&obo;feed.owl#muscles_innervated_by_trigeminal_nerve"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;attaches_to"/>
-                <owl:someValuesFrom rdf:resource="&obo;feed.owl#base_of_cranium"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;feed.owl#attached_to_medial_surface_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;UBERON_0001684"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>The medial pterygoid is a pharyngeal arch 1 muscle that participates in oral/pharyngeal behaviors and is innervated by the nerve to the medial pterygoid and attaches to the cranial base and the medial side of the mandibular angle.</obo:IAO_0000115>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;attaches_to"/>
+                <owl:someValuesFrom rdf:resource="&obo;feed.owl#base_of_cranium"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0006718</oboInOwl:hasDbXref>
+        <obo:IAO_0000115>The medial pterygoid is a pharyngeal arch 1 muscle that participates in oral/pharyngeal behaviors and is innervated by the nerve to the medial pterygoid and attaches to the cranial base and the medial side of the mandibular angle.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1322,9 +1358,9 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000010"/>
-        <obo:IAO_0000115>The middle constrictor is a pharyngeal arches 4/6 muscle that participates in oral/pharyngeal behaviors and is innervated by the pharyngeal plexus of Vagus (CN X) and attaches to the hyoid apparatus and the midline raphe.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0010749</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonym>hyopharyngeus</oboInOwl:hasSynonym>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0010749</oboInOwl:hasDbXref>
+        <obo:IAO_0000115>The middle constrictor is a pharyngeal arches 4/6 muscle that participates in oral/pharyngeal behaviors and is innervated by the pharyngeal plexus of Vagus (CN X) and attaches to the hyoid apparatus and the midline raphe.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1333,6 +1369,7 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
 
     <owl:Class rdf:about="&obo;feed.owl#modiolus">
         <rdfs:label>modiolus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0011386</oboInOwl:hasDbXref>
     </owl:Class>
     
@@ -1470,8 +1507,8 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>The mylohyoid is a pharyngeal arch I muscle that participates in oral/pharyngeal behaviors and is innervated by the nerve to mylohyoid and attaches to the midline raphe linking right and left mylohyoid and the mandible.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001564</oboInOwl:hasDbXref>
+        <obo:IAO_0000115>The mylohyoid is a pharyngeal arch I muscle that participates in oral/pharyngeal behaviors and is innervated by the nerve to mylohyoid and attaches to the midline raphe linking right and left mylohyoid and the mandible.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1481,8 +1518,8 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
     <owl:Class rdf:about="&obo;feed.owl#nasal_ingestion">
         <rdfs:label>nasal ingestion</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;feed.owl#ingestion_behavior"/>
-        <obo:IAO_0000115>Ingestion using the nose.</obo:IAO_0000115>
         <oboInOwl:hasSynonym>proboscis ingestion</oboInOwl:hasSynonym>
+        <obo:IAO_0000115>Ingestion using the nose.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1490,6 +1527,7 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/feed.owl#nerve -->
 
     <owl:Class rdf:about="&obo;feed.owl#nerve">
+        <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001021</oboInOwl:hasDbXref>
     </owl:Class>
     
@@ -1544,8 +1582,8 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;feed.owl#muscles_innervated_by_spinal_nerve"/>
-        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001108</oboInOwl:hasDbXref>
         <obo:IAO_0000115>The omohyoid is a somitic muscle that participates in oral/pharyngeal behaviors and is innervated by the cervical plexus; it attaches to the hyoid appratus and the scapula.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001108</oboInOwl:hasDbXref>
     </owl:Class>
     
 
@@ -1555,8 +1593,8 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
     <owl:Class rdf:about="&obo;feed.owl#oral/pharyngeal_behavior">
         <rdfs:label>oral/pharyngeal behavior</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;feed.owl#behavior"/>
-        <oboInOwl:hasSynonym>oro/pharyngeal behavior</oboInOwl:hasSynonym>
         <obo:IAO_0000115>Oral/pharyngeal behaviors are movements that structures of the oral and/or pharyngeal regions participate in.</obo:IAO_0000115>
+        <oboInOwl:hasSynonym>oro/pharyngeal behavior</oboInOwl:hasSynonym>
     </owl:Class>
     
 
@@ -1584,8 +1622,8 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000005"/>
-        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0010933</oboInOwl:hasDbXref>
         <obo:IAO_0000115>The orbicularis oris is a superficial facial muscle that attaches to the skin and modiolus, and that participates in oral/pharyngeal behaviors, and is innervated by the facial nerve (CN VII).</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0010933</oboInOwl:hasDbXref>
     </owl:Class>
     
 
@@ -1604,6 +1642,7 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
 
     <owl:Class rdf:about="&obo;feed.owl#palatine_bone">
         <rdfs:label>palatine bone</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001682</oboInOwl:hasDbXref>
     </owl:Class>
     
@@ -1632,8 +1671,8 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000010"/>
-        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001574</oboInOwl:hasDbXref>
         <obo:IAO_0000115>Palatoglossus is a muscle that attaches to the soft palate and the tongue and is innervated by Cranial Nerve X via the pharyngeal plexus.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001574</oboInOwl:hasDbXref>
     </owl:Class>
     
 
@@ -1665,8 +1704,8 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000010"/>
-        <obo:IAO_0000115>Palatopharyngeus is a muscle that attaches to the palatine bones, soft palate, and pharynx and is innervated by Cranial Nerve X via the pharyngeal plexus.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0010234</oboInOwl:hasDbXref>
+        <obo:IAO_0000115>Palatopharyngeus is a muscle that attaches to the palatine bones, soft palate, and pharynx and is innervated by Cranial Nerve X via the pharyngeal plexus.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1701,6 +1740,7 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
 
     <owl:Class rdf:about="&obo;feed.owl#pharyngeal_arch_1">
         <rdfs:label>pharyngeal arch 1</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0004362</oboInOwl:hasDbXref>
     </owl:Class>
     
@@ -1709,6 +1749,7 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/feed.owl#pharyngeal_tube -->
 
     <owl:Class rdf:about="&obo;feed.owl#pharyngeal_tube">
+        <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
         <obo:IAO_0000115>the wall of the pharynx</obo:IAO_0000115>
     </owl:Class>
     
@@ -1718,8 +1759,9 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
 
     <owl:Class rdf:about="&obo;feed.owl#pharyngotympanic_tube">
         <rdfs:label>pharyngotympanic tube</rdfs:label>
-        <oboInOwl:hasSynonym>auditory tube</oboInOwl:hasSynonym>
+        <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0002393</oboInOwl:hasDbXref>
+        <oboInOwl:hasSynonym>auditory tube</oboInOwl:hasSynonym>
     </owl:Class>
     
 
@@ -1727,6 +1769,7 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/feed.owl#pharynx -->
 
     <owl:Class rdf:about="&obo;feed.owl#pharynx">
+        <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0006562</oboInOwl:hasDbXref>
     </owl:Class>
     
@@ -1755,8 +1798,8 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000005"/>
-        <obo:IAO_0000115>The platysma is a pharyngeal arch 2 muscle and a superficial facial muscle that participates in oral/pharyngeal behaviors and is innervated by the cervical branch of the facial nerve, and attaches to the skin.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0005467</oboInOwl:hasDbXref>
+        <obo:IAO_0000115>The platysma is a pharyngeal arch 2 muscle and a superficial facial muscle that participates in oral/pharyngeal behaviors and is innervated by the cervical branch of the facial nerve, and attaches to the skin.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1788,8 +1831,8 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000005"/>
-        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0010944</oboInOwl:hasDbXref>
         <obo:IAO_0000115>The posterior digastric is a pharyngeal arch II muscle that participates in oral pharyngeal behavior, is innervated by the digastric branchi of facial nerve and attaches to the posterior cranial base.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0010944</oboInOwl:hasDbXref>
     </owl:Class>
     
 
@@ -1843,8 +1886,8 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
     <owl:Class rdf:about="&obo;feed.owl#puncture_crush">
         <rdfs:label>puncture crush</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;feed.owl#mastication"/>
-        <obo:IAO_0000119>Hiiemae and Kay (1972): DOI:10.1038/240486a0</obo:IAO_0000119>
         <obo:IAO_0000115>A mastication behavior during which there is vertical movement of the lower dentition without tooth-tooth contact.</obo:IAO_0000115>
+        <obo:IAO_0000119>Hiiemae and Kay (1972): DOI:10.1038/240486a0</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -1871,9 +1914,9 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000010"/>
-        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0010937</oboInOwl:hasDbXref>
         <obo:IAO_0000115>Salpingopharyngeus is a muscle that attaches to pharyngotympanic tube and the pharynx and is innervated by pharyngeal plexus of CN X and participates in oral/pharyngeal behaviors
 </obo:IAO_0000115>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0010937</oboInOwl:hasDbXref>
     </owl:Class>
     
 
@@ -1882,6 +1925,7 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
 
     <owl:Class rdf:about="&obo;feed.owl#scapula">
         <rdfs:label>scapula</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0006849</oboInOwl:hasDbXref>
     </owl:Class>
     
@@ -1891,8 +1935,9 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
 
     <owl:Class rdf:about="&obo;feed.owl#soft_palate">
         <rdfs:label>soft palate</rdfs:label>
-        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001733</oboInOwl:hasDbXref>
+        <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
         <obo:IAO_0000115>A muscular arch-shaped structure (an anatomical cluster) that is composed of the musculus uvuli and parts of tensor veli palatini, levator veli palatini, palatoglossus and palatopharyngeus and attaches to the hard palate and modulates the connections between the oral cavity and pharynx soft tissue arch </obo:IAO_0000115>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001733</oboInOwl:hasDbXref>
     </owl:Class>
     
 
@@ -1900,6 +1945,7 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/feed.owl#somite -->
 
     <owl:Class rdf:about="&obo;feed.owl#somite">
+        <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0002329</oboInOwl:hasDbXref>
     </owl:Class>
     
@@ -1909,6 +1955,7 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
 
     <owl:Class rdf:about="&obo;feed.owl#sphenoid_bone">
         <rdfs:label>sphenoid bone</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001677</oboInOwl:hasDbXref>
     </owl:Class>
     
@@ -1977,8 +2024,8 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;feed.owl#muscles_innervated_by_spinal_nerve"/>
-        <obo:IAO_0000115>The sternohyoid is a somitic muscle that participates in oral/pharyngeal behaviors and is innervated by the cervical plexus; it attaches to the hyoid appratus and the sternum.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001107</oboInOwl:hasDbXref>
+        <obo:IAO_0000115>The sternohyoid is a somitic muscle that participates in oral/pharyngeal behaviors and is innervated by the cervical plexus; it attaches to the hyoid appratus and the sternum.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -2006,8 +2053,8 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;feed.owl#muscles_innervated_by_spinal_nerve"/>
-        <obo:IAO_0000115>The sternothyroid is a somitic muscle that participates in oral/pharyngeal behaviors and is innervated by the cervical plexus; it attaches to the thyroid cartilage and the sternum.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001109</oboInOwl:hasDbXref>
+        <obo:IAO_0000115>The sternothyroid is a somitic muscle that participates in oral/pharyngeal behaviors and is innervated by the cervical plexus; it attaches to the thyroid cartilage and the sternum.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -2015,6 +2062,7 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/feed.owl#sternum -->
 
     <owl:Class rdf:about="&obo;feed.owl#sternum">
+        <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0000975</oboInOwl:hasDbXref>
     </owl:Class>
     
@@ -2058,9 +2106,9 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;feed.owl#muscles_innervated_by_hypoglossal_nerve"/>
-        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001573</oboInOwl:hasDbXref>
         <obo:IAO_0000115>Styloglossus is a muscle that attaches to the tongue and stylohyal and is innervated by Cranial Nerve XII.
 </obo:IAO_0000115>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001573</oboInOwl:hasDbXref>
     </owl:Class>
     
 
@@ -2069,8 +2117,8 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
 
     <owl:Class rdf:about="&obo;feed.owl#stylohyal">
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0001685"/>
-        <obo:IAO_0000115>part of the hyoid apparatus</obo:IAO_0000115>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0010272</oboInOwl:hasDbXref>
+        <obo:IAO_0000115>part of the hyoid apparatus</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -2098,8 +2146,8 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000005"/>
-        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0008712</oboInOwl:hasDbXref>
         <obo:IAO_0000115>The stylohyoid is a pharyngeal arch II muscle that participates in oral/pharygeal behaviors and is innervated by the stylohoid branch of the facial nerve and attaches to the stylohyal</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0008712</oboInOwl:hasDbXref>
     </owl:Class>
     
 
@@ -2175,8 +2223,8 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000010"/>
-        <obo:IAO_0000115>The superior constrictor is a muscle that is an integral part of the pharyngeal tube that is attached to the mandible, pterygomandibular raphe, basioccipital bone, pterygoid process and midline raphe and is innervated by Cranial Nerve X via the pharyngeal plexus.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0006329</oboInOwl:hasDbXref>
+        <obo:IAO_0000115>The superior constrictor is a muscle that is an integral part of the pharyngeal tube that is attached to the mandible, pterygomandibular raphe, basioccipital bone, pterygoid process and midline raphe and is innervated by Cranial Nerve X via the pharyngeal plexus.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -2201,10 +2249,15 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
 
     <owl:Class rdf:about="&obo;feed.owl#swallow">
         <rdfs:label>swallow</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;feed.owl#feeding_behavior"/>
-        <oboInOwl:hasSynonym>swallowing</oboInOwl:hasSynonym>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;feed.owl#feeding_behavior"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A part of feeding behavior during which there is movement of food or liquid from out of the oropharynx and into the esophagus.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>NBO_0000545</oboInOwl:hasDbXref>
+        <oboInOwl:hasSynonym>swallowing</oboInOwl:hasSynonym>
     </owl:Class>
     
 
@@ -2213,6 +2266,7 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
 
     <owl:Class rdf:about="&obo;feed.owl#temporalis_fascia">
         <rdfs:label>temporalis fascia</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
     </owl:Class>
     
 
@@ -2240,8 +2294,8 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;feed.owl#muscles_innervated_by_trigeminal_nerve"/>
-        <obo:IAO_0000115>Pharyngeal arch 1 muscle that is innervated by the deep temporal branches of the trigeminal nerve and attaches to the wall of the braincase (including the cranial vault) and mandible.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001598</oboInOwl:hasDbXref>
+        <obo:IAO_0000115>Pharyngeal arch 1 muscle that is innervated by the deep temporal branches of the trigeminal nerve and attaches to the wall of the braincase (including the cranial vault) and mandible.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -2275,9 +2329,9 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
                 <owl:someValuesFrom rdf:resource="&obo;feed.owl#soft_palate"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0008586</oboInOwl:hasDbXref>
-        <oboInOwl:hasSynonym>tensor palati</oboInOwl:hasSynonym>
         <obo:IAO_0000115>The tensor veli palatini is a muscle of the soft palate that attaches to the cranial base and pharyngotympanic tube, wraps around the pterygoid hamulus and then attaches to the midline palatal raphe of the soft palate that is innervated by the trigeminal nerve (cranial nerve (V3)).</obo:IAO_0000115>
+        <oboInOwl:hasSynonym>tensor palati</oboInOwl:hasSynonym>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0008586</oboInOwl:hasDbXref>
     </owl:Class>
     
 
@@ -2286,6 +2340,7 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
 
     <owl:Class rdf:about="&obo;feed.owl#thyroid_cartilage">
         <rdfs:label>thyroid cartilage</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001738</oboInOwl:hasDbXref>
     </owl:Class>
     
@@ -2295,6 +2350,7 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
 
     <owl:Class rdf:about="&obo;feed.owl#tongue">
         <rdfs:label>tongue</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001723</oboInOwl:hasDbXref>
     </owl:Class>
     
@@ -2305,8 +2361,8 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
     <owl:Class rdf:about="&obo;feed.owl#tooth-tooth_contact">
         <rdfs:label>tooth-tooth contact</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;feed.owl#mastication"/>
-        <obo:IAO_0000119>Hiiemae and Kay (1972): DOI:10.1038/240486a0</obo:IAO_0000119>
         <obo:IAO_0000115>A mastication behavior during which there is precise occlusion of the upper and lower dentition.</obo:IAO_0000115>
+        <obo:IAO_0000119>Hiiemae and Kay (1972): DOI:10.1038/240486a0</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -2356,6 +2412,7 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
 
     <owl:Class rdf:about="&obo;feed.owl#zygomatic_arch">
         <rdfs:label>zygomatic arch</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0002500</oboInOwl:hasDbXref>
     </owl:Class>
     
@@ -2432,8 +2489,8 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000010"/>
-        <obo:IAO_0000115>This is a pharyngeal arch 4/6 muscle that is integral to the pharyngeal tube, participates in oral/pharyngeal behaviors, is innervated by the pharyngeal plexus of the vagus n. (CNX) and attaches to the laryngeal cartilages and the midline raphe.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001570</oboInOwl:hasDbXref>
+        <obo:IAO_0000115>This is a pharyngeal arch 4/6 muscle that is integral to the pharyngeal tube, participates in oral/pharyngeal behaviors, is innervated by the pharyngeal plexus of the vagus n. (CNX) and attaches to the laryngeal cartilages and the midline raphe.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -2857,5 +2914,5 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
 
 
 
-<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+<!-- Generated by the OWL API (version 3.3.1957) http://owlapi.sourceforge.net -->
 
