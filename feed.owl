@@ -649,12 +649,6 @@
         <rdfs:subClassOf rdf:resource="&obo;feed.owl#muscles_innervated_by_trigeminal_nerve"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0002163"/>
-                <owl:someValuesFrom rdf:resource="&obo;feed.owl#mylohyoid_muscle"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;RO_0002202"/>
                 <owl:someValuesFrom rdf:resource="&obo;feed.owl#pharyngeal_arch_1"/>
             </owl:Restriction>
@@ -681,6 +675,12 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002163"/>
+                <owl:someValuesFrom rdf:resource="&obo;feed.owl#mylohyoid_muscle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The anterior digastric is a pharyngeal arch I muscle that participates in oral/pharygeal behaviors and is innervated by the nerve to mylohyoid and superficial to mylohyoid muscle, and lacks the midline raphe.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0010943</oboInOwl:hasDbXref>
     </owl:Class>
@@ -698,7 +698,15 @@
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;feed.owl#masseter_muscle"/>
+        <oboInOwl:hasSynonym>Masseter lateralis portio profunda</oboInOwl:hasSynonym>
+        <oboInOwl:hasSynonym>Masseter deep portion (tiefe Portion)</oboInOwl:hasSynonym>
+        <oboInOwl:hasSynonym>Masseter lateralis profunda pars ‘‘maxillo-mandibularis’’</oboInOwl:hasSynonym>
+        <obo:IAO_0000119>doi:10.1093/icb/icr067</obo:IAO_0000119>
+        <oboInOwl:hasSynonym>Masseter major</oboInOwl:hasSynonym>
         <obo:IAO_0000115>The anterior masseter is a separable part of the masseter muscle that is attached to anterior root of zygomatic arch</obo:IAO_0000115>
+        <oboInOwl:hasSynonym>Masseter lateralis profundus pars anterior</oboInOwl:hasSynonym>
+        <oboInOwl:hasSynonym>Masseter lateralis pars anterior</oboInOwl:hasSynonym>
+        <oboInOwl:hasSynonym>Anterior deep masseter</oboInOwl:hasSynonym>
     </owl:Class>
     
 
@@ -831,18 +839,29 @@
         <rdfs:label>deep masseter muscle</rdfs:label>
         <owl:equivalentClass>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;feed.owl#deep_to"/>
-                <owl:someValuesFrom rdf:resource="&obo;feed.owl#superficial_masseter_muscle"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;feed.owl#attached_to_ventral_surface_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;feed.owl#zygomatic_arch"/>
             </owl:Restriction>
         </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;feed.owl#deep_to"/>
+                <owl:someValuesFrom rdf:resource="&obo;feed.owl#superficial_masseter_muscle"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;feed.owl#masseter_muscle"/>
-        <obo:IAO_0000115>The deep masseter is a separable part of the masseter muscle that attaches to lateral surface and/or ventral border of zygomatic arch</obo:IAO_0000115>
+        <oboInOwl:hasSynonym>Superficial part of maxillo-mandibularis</oboInOwl:hasSynonym>
+        <obo:IAO_0000119>doi:10.1093/icb/icr067</obo:IAO_0000119>
+        <oboInOwl:hasSynonym>profunda masseter</oboInOwl:hasSynonym>
+        <oboInOwl:hasSynonym>Masseter deep portion (tiefe Portion)</oboInOwl:hasSynonym>
+        <obo:IAO_0000115>The deep masseter is a separable part of the masseter muscle that attaches to lateral surface and/or ventral border of zygomatic arch.</obo:IAO_0000115>
+        <oboInOwl:hasSynonym>Masseter pars superficialis</oboInOwl:hasSynonym>
+        <oboInOwl:hasSynonym>Masseter lateralis profundus pars posterior</oboInOwl:hasSynonym>
+        <oboInOwl:hasSynonym>Masseter pars profunda</oboInOwl:hasSynonym>
+        <oboInOwl:hasSynonym>Masseter lateralis portio profunda</oboInOwl:hasSynonym>
+        <oboInOwl:hasSynonym>Posterior deep masseter</oboInOwl:hasSynonym>
+        <oboInOwl:hasSynonym>Masseter zygomaticus</oboInOwl:hasSynonym>
+        <oboInOwl:hasSynonym>Masseter lateralis pars posterior</oboInOwl:hasSynonym>
     </owl:Class>
     
 
@@ -858,7 +877,16 @@
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;feed.owl#temporalis_muscle"/>
+        <oboInOwl:hasSynonym>Temporalis posterior head</oboInOwl:hasSynonym>
+        <obo:IAO_0000119>doi:10.1093/icb/icr067</obo:IAO_0000119>
+        <oboInOwl:hasSynonym>Temporalis lamina profunda</oboInOwl:hasSynonym>
+        <oboInOwl:hasSynonym>Medial temporal</oboInOwl:hasSynonym>
+        <oboInOwl:hasSynonym>Temporalis pars profunda</oboInOwl:hasSynonym>
         <obo:IAO_0000115>The deep temporalis muscle is a separable part of the temporalis muscle that  that attaches to the bony wall of the braincase and is deep to the superficial temporalis.</obo:IAO_0000115>
+        <oboInOwl:hasSynonym>Temporalis ‘‘Hauptmasse’’</oboInOwl:hasSynonym>
+        <oboInOwl:hasSynonym>Posterior temporal</oboInOwl:hasSynonym>
+        <oboInOwl:hasSynonym>Temporalis pars posterior</oboInOwl:hasSynonym>
+        <oboInOwl:hasSynonym>Temporal muscle posterior part</oboInOwl:hasSynonym>
     </owl:Class>
     
 
@@ -907,6 +935,12 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="&obo;feed.owl#swallow"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
                 <owl:someValuesFrom rdf:resource="&obo;feed.owl#chewing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -914,12 +948,6 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
                 <owl:someValuesFrom rdf:resource="&obo;feed.owl#ingestion_behavior"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="&obo;feed.owl#swallow"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -963,6 +991,12 @@
         <rdfs:subClassOf rdf:resource="&obo;feed.owl#muscles_innervated_by_hypoglossal_nerve"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
+                <owl:someValuesFrom rdf:resource="&obo;feed.owl#tongue"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
                 <owl:someValuesFrom rdf:resource="&obo;feed.owl#hypoglossal_nerve"/>
             </owl:Restriction>
@@ -971,12 +1005,6 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
                 <owl:someValuesFrom rdf:resource="&obo;UBERON_0001684"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
-                <owl:someValuesFrom rdf:resource="&obo;feed.owl#tongue"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="&obo;feed.owl#intrinsic_tongue_muscle"/>
@@ -1044,6 +1072,12 @@
         <rdfs:label>hyoglossus muscle</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;feed.owl#muscles_innervated_by_hypoglossal_nerve"/>
         <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002163"/>
+                <owl:someValuesFrom rdf:resource="&obo;feed.owl#anterior_digastric_muscle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
@@ -1060,12 +1094,6 @@
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0002163"/>
-                <owl:someValuesFrom rdf:resource="&obo;feed.owl#anterior_digastric_muscle"/>
-            </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001572</oboInOwl:hasDbXref>
     </owl:Class>
@@ -1327,6 +1355,7 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;feed.owl#muscles_innervated_by_trigeminal_nerve"/>
+        <obo:IAO_0000119>doi:10.1093/icb/icr067</obo:IAO_0000119>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001597</oboInOwl:hasDbXref>
         <obo:IAO_0000115>Pharyngeal arch 1 muscle that participates in oral/pharyngeal behaviors, is innervated by masseteric nerve branches of the trigeminal nerve (CN V), and attaches to mandible and zygomatic arch.</obo:IAO_0000115>
     </owl:Class>
@@ -1352,14 +1381,14 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
         <rdfs:subClassOf rdf:resource="&obo;feed.owl#muscles_innervated_by_trigeminal_nerve"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;attaches_to"/>
-                <owl:someValuesFrom rdf:resource="&obo;feed.owl#base_of_cranium"/>
+                <owl:onProperty rdf:resource="&obo;feed.owl#attached_to_medial_surface_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0001684"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;feed.owl#attached_to_medial_surface_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0001684"/>
+                <owl:onProperty rdf:resource="&obo;attaches_to"/>
+                <owl:someValuesFrom rdf:resource="&obo;feed.owl#base_of_cranium"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0006718</oboInOwl:hasDbXref>
@@ -1754,6 +1783,7 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;feed.owl#superficial_masseter_muscle"/>
+        <obo:IAO_0000119>doi:10.1093/icb/icr067</obo:IAO_0000119>
         <obo:IAO_0000115>The pars reflexa is a separable part of the superficial masseter muscle that attaches to the medial surface of the mandible.</obo:IAO_0000115>
     </owl:Class>
     
@@ -1889,6 +1919,8 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;feed.owl#deep_masseter_muscle"/>
+        <obo:IAO_0000119>doi:10.1093/icb/icr067</obo:IAO_0000119>
+        <oboInOwl:hasSynonym>Masseter lateralis profundus, pars posterior</oboInOwl:hasSynonym>
         <obo:IAO_0000115>The posterior masseter is a separable part of the deep masseter muscle that attaches to the postero-ventral surface of the zygomatic arch.</obo:IAO_0000115>
     </owl:Class>
     
@@ -2196,7 +2228,13 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;feed.owl#masseter_muscle"/>
+        <oboInOwl:hasSynonym>Masseter pars superficialis</oboInOwl:hasSynonym>
+        <oboInOwl:hasSynonym>Masseter superficial portion (oberfla¨chliche Portion)</oboInOwl:hasSynonym>
+        <obo:IAO_0000119>doi:10.1093/icb/icr067</obo:IAO_0000119>
         <obo:IAO_0000115>The superficial masseter is a separable part of the masseter muscle, is superficial to all other masseter muscle parts, and attaches to the mandibular angle.</obo:IAO_0000115>
+        <oboInOwl:hasSynonym>Masseter superficialis and masseter intermedius</oboInOwl:hasSynonym>
+        <oboInOwl:hasSynonym>Masseter lateralis portio superficialis</oboInOwl:hasSynonym>
+        <oboInOwl:hasSynonym>Masseter superficialis</oboInOwl:hasSynonym>
     </owl:Class>
     
 
@@ -2220,6 +2258,14 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;feed.owl#temporalis_muscle"/>
+        <oboInOwl:hasSynonym>Temporalis anterior head</oboInOwl:hasSynonym>
+        <oboInOwl:hasSynonym>Temporalis pars superficialis</oboInOwl:hasSynonym>
+        <obo:IAO_0000119>doi:10.1093/icb/icr067</obo:IAO_0000119>
+        <oboInOwl:hasSynonym>Temporales</oboInOwl:hasSynonym>
+        <oboInOwl:hasSynonym>Anterior temporal</oboInOwl:hasSynonym>
+        <oboInOwl:hasSynonym>Temporalis pars anterior</oboInOwl:hasSynonym>
+        <oboInOwl:hasSynonym>Temporal muscle anterolateral part</oboInOwl:hasSynonym>
+        <oboInOwl:hasSynonym>Temporalis ‘‘T1’’</oboInOwl:hasSynonym>
         <obo:IAO_0000115>The superficial temporalis muscle is a separable part of the temporalis muscle that attaches to the temporalis fascia</obo:IAO_0000115>
     </owl:Class>
     
@@ -2273,7 +2319,10 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;feed.owl#temporalis_muscle"/>
+        <oboInOwl:hasSynonym>Zygomatic temporalis</oboInOwl:hasSynonym>
         <obo:IAO_0000115>The suprazygomatic part of the temporalis muscle is a separable part of the deep temporalis that attaches to the superior surface of the temporal root of the zygomatic arch.</obo:IAO_0000115>
+        <oboInOwl:hasSynonym>Temporalis pars suprazygomatica</oboInOwl:hasSynonym>
+        <obo:IAO_0000119>doi:10.1093/icb/icr067</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -2327,8 +2376,14 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;feed.owl#muscles_innervated_by_trigeminal_nerve"/>
+        <obo:IAO_0000119>doi:10.1093/icb/icr067</obo:IAO_0000119>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001598</oboInOwl:hasDbXref>
+        <oboInOwl:hasSynonym>Temporales</oboInOwl:hasSynonym>
         <obo:IAO_0000115>Pharyngeal arch 1 muscle that is innervated by the deep temporal branches of the trigeminal nerve and attaches to the wall of the braincase (including the cranial vault) and mandible.</obo:IAO_0000115>
+        <oboInOwl:hasSynonym>Temporal muscle posterior part</oboInOwl:hasSynonym>
+        <oboInOwl:hasSynonym>Posterior temporal</oboInOwl:hasSynonym>
+        <oboInOwl:hasSynonym>Medial temporal</oboInOwl:hasSynonym>
+        <oboInOwl:hasSynonym>Profunda temporalis</oboInOwl:hasSynonym>
     </owl:Class>
     
 
@@ -2470,7 +2525,12 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;feed.owl#zygomaticomandibularis_muscle"/>
+        <oboInOwl:hasSynonym>Masseter medialis pars infraorbitalis</oboInOwl:hasSynonym>
         <obo:IAO_0000115>The zygomaticomandibularis infraorbital part, is a separable part of the zygomaticomandibularis that runs through the infraorbital foramen</obo:IAO_0000115>
+        <oboInOwl:hasSynonym>Maxillomandibularis</oboInOwl:hasSynonym>
+        <oboInOwl:hasSynonym>Anterior deep masseter infraorbital part</oboInOwl:hasSynonym>
+        <oboInOwl:hasSynonym>Masseter medialis pars anterior</oboInOwl:hasSynonym>
+        <obo:IAO_0000119>doi:10.1093/icb/icr067</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -2486,7 +2546,18 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;feed.owl#masseter_muscle"/>
+        <oboInOwl:hasSynonym>Deepest portion of masseter</oboInOwl:hasSynonym>
+        <oboInOwl:hasSynonym>Masseter profundus</oboInOwl:hasSynonym>
         <obo:IAO_0000115>The zygomaticomandibularis is a separable part of the masseter muscle that attaches to the medial surface of the zygomatic arch</obo:IAO_0000115>
+        <oboInOwl:hasSynonym>Masseter pars profunda</oboInOwl:hasSynonym>
+        <oboInOwl:hasSynonym>Deep masseter</oboInOwl:hasSynonym>
+        <oboInOwl:hasSynonym>Zygomaticomandibularis anterior</oboInOwl:hasSynonym>
+        <obo:IAO_0000119>doi:10.1093/icb/icr067</obo:IAO_0000119>
+        <oboInOwl:hasSynonym>Masseter medialis pars zygomaticomandibularis anterior</oboInOwl:hasSynonym>
+        <oboInOwl:hasSynonym>Deep masseter anterior</oboInOwl:hasSynonym>
+        <oboInOwl:hasSynonym>Masseter pars profundus</oboInOwl:hasSynonym>
+        <oboInOwl:hasSynonym>Masseter medialis pars anterior</oboInOwl:hasSynonym>
+        <oboInOwl:hasSynonym>Zygomaticomandibularis superioris</oboInOwl:hasSynonym>
     </owl:Class>
     
 
