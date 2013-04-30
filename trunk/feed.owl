@@ -22,6 +22,7 @@
     <owl:Ontology rdf:about="&obo;feed.owl">
         <owl:imports rdf:resource="&obo;ma.owl"/>
         <owl:imports rdf:resource="&obo;ro.owl"/>
+        <owl:imports rdf:resource="&obo;uberon-import.owl"/>
         <owl:versionIRI rdf:resource="&obo;2012-08-04/feed.owl"/>
         <owl:imports rdf:resource="&obo;uberon/bridge/uberon-bridge-to-ma.owl"/>
         <owl:imports rdf:resource="http://www.geneontology.org/formats/oboInOwl"/>
@@ -1002,25 +1003,25 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000018"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
                 <owl:someValuesFrom rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000038"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000013"/>
+                <owl:someValuesFrom rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000018"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
                 <owl:someValuesFrom rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000043"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000013"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Feeding behavior is an oral/pharyngeal behavior during which there is intake of food or liquid.</obo:IAO_0000115>
@@ -1908,6 +1909,12 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002202"/>
+                <owl:someValuesFrom rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000095"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
@@ -1928,12 +1935,6 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0002202"/>
-                <owl:someValuesFrom rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000095"/>
-            </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0010943</oboInOwl:hasDbXref>
         <obo:IAO_0000115>The anterior digastric is a pharyngeal arch I muscle that participates in oral/pharygeal behaviors and is innervated by the nerve to mylohyoid and superficial to mylohyoid muscle, and lacks the midline raphe.</obo:IAO_0000115>
@@ -2041,8 +2042,8 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
         <oboInOwl:hasSynonym>Posterior deep masseter</oboInOwl:hasSynonym>
         <oboInOwl:hasSynonym>Masseter deep portion (tiefe Portion)</oboInOwl:hasSynonym>
         <oboInOwl:hasSynonym>Masseter lateralis portio profunda</oboInOwl:hasSynonym>
-        <oboInOwl:hasSynonym>Masseter lateralis profundus pars posterior</oboInOwl:hasSynonym>
         <oboInOwl:hasSynonym>Masseter lateralis pars posterior</oboInOwl:hasSynonym>
+        <oboInOwl:hasSynonym>Masseter lateralis profundus pars posterior</oboInOwl:hasSynonym>
         <oboInOwl:hasSynonym>Masseter zygomaticus</oboInOwl:hasSynonym>
         <obo:IAO_0000115>The deep masseter is a separable part of the masseter muscle that attaches to lateral surface and/or ventral border of zygomatic arch.</obo:IAO_0000115>
         <oboInOwl:hasSynonym>Masseter pars profunda</oboInOwl:hasSynonym>
@@ -2203,6 +2204,12 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
     <owl:Class rdf:about="http:://purl.obolibrary.org/obo/MFMO0000084">
         <rdfs:label>mylohyoid muscle</rdfs:label>
         <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002163"/>
+                <owl:someValuesFrom rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000073"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
@@ -2227,12 +2234,6 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0002163"/>
-                <owl:someValuesFrom rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000073"/>
-            </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000072"/>
         <rdfs:subClassOf>
