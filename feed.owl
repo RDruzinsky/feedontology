@@ -239,6 +239,7 @@
 
     <owl:Class rdf:about="&obo;MFMO_0000002">
         <rdfs:label>buccinator muscle</rdfs:label>
+        <owl:equivalentClass rdf:resource="&obo;UBERON_0001582"/>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -459,6 +460,12 @@
         <rdfs:label>material anatomical entity</rdfs:label>
         <owl:disjointWith rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000011"/>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001582 -->
+
+    <rdf:Description rdf:about="&obo;UBERON_0001582"/>
     
 
 
