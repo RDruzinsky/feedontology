@@ -519,6 +519,10 @@
     <owl:Class rdf:about="&obo;UBERON_0001684">
         <rdfs:label>mandible</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
+        <rdfs:comment>Term in Uberon is equivalent but the definition needs revision.
+</rdfs:comment>
+        <rdfs:comment>Mandible is equivalent to dentary but none of the definitions in Uberon is perfect.  Unfortunately, the term is used in several different ways.  RED</rdfs:comment>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001684</oboInOwl:hasDbXref>
     </owl:Class>
     
 
