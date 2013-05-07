@@ -282,6 +282,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="&obo;UBERON_0011611"/>
+        <rdfs:comment>Request new term but definition needs revision.</rdfs:comment>
     </owl:Class>
     
 
@@ -426,27 +427,27 @@
         <rdfs:label xml:lang="en">muscles innervated by vagus nerve</rdfs:label>
         <owl:equivalentClass>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="&obo;MFMO_0000009"/>
+                <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0001759"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <owl:equivalentClass>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0001759"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFMO_0000009"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0001630"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;RO_0002202"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0003117"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0003115"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;RO_0002202"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0003115"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0003117"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -464,17 +465,13 @@
 
     <!-- http://purl.obolibrary.org/obo/UBERON_0001043 -->
 
-    <owl:Class rdf:about="&obo;UBERON_0001043">
-        <owl:equivalentClass rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000049"/>
-    </owl:Class>
+    <owl:Class rdf:about="&obo;UBERON_0001043"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/UBERON_0001105 -->
 
-    <owl:Class rdf:about="&obo;UBERON_0001105">
-        <owl:equivalentClass rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000047"/>
-    </owl:Class>
+    <owl:Class rdf:about="&obo;UBERON_0001105"/>
     
 
 
@@ -531,15 +528,16 @@
     <owl:Class rdf:about="&obo;UBERON_0001685">
         <rdfs:label>hyoid apparatus</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0005884</oboInOwl:hasDbXref>
+        <rdfs:comment>Uberon term &quot;hyoid arch skeleton&quot; http://purl.obolibrary.org/obo/UBERON_0005884
+is similar.  Definition requires revision.</rdfs:comment>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/UBERON_0001692 -->
 
-    <owl:Class rdf:about="&obo;UBERON_0001692">
-        <owl:equivalentClass rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000045"/>
-    </owl:Class>
+    <owl:Class rdf:about="&obo;UBERON_0001692"/>
     
 
 
@@ -557,6 +555,8 @@
     <owl:Class rdf:about="&obo;UBERON_0002375">
         <rdfs:label>cricoid cartilage</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
+        <rdfs:comment>Term in Uberon is equivalent but the definition needs revision.
+Uberon &apos;external definition&apos; is better.</rdfs:comment>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0002375</oboInOwl:hasDbXref>
     </owl:Class>
     
@@ -617,9 +617,7 @@
 
     <!-- http://purl.obolibrary.org/obo/UBERON_0003128 -->
 
-    <owl:Class rdf:about="&obo;UBERON_0003128">
-        <owl:equivalentClass rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000048"/>
-    </owl:Class>
+    <owl:Class rdf:about="&obo;UBERON_0003128"/>
     
 
 
@@ -634,9 +632,7 @@
 
     <!-- http://purl.obolibrary.org/obo/UBERON_0004362 -->
 
-    <owl:Class rdf:about="&obo;UBERON_0004362">
-        <owl:equivalentClass rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000095"/>
-    </owl:Class>
+    <owl:Class rdf:about="&obo;UBERON_0004362"/>
     
 
 
@@ -680,9 +676,9 @@
                 <owl:someValuesFrom rdf:resource="&obo;UBERON_0001685"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment>Term in Uberon is equivalent but the definition needs revision.</rdfs:comment>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0010272</oboInOwl:hasDbXref>
         <obo:IAO_0000115>part of the hyoid apparatus</obo:IAO_0000115>
-        <rdfs:comment></rdfs:comment>
     </owl:Class>
     
 
@@ -1056,7 +1052,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000018"/>
+                <owl:someValuesFrom rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000013"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1074,7 +1070,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000013"/>
+                <owl:someValuesFrom rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000018"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Feeding behavior is an oral/pharyngeal behavior during which there is intake of food or liquid.</obo:IAO_0000115>
@@ -1398,8 +1394,8 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
     <owl:Class rdf:about="http:://purl.obolibrary.org/obo/MFMO0000046">
         <rdfs:label>capsule of the temporomandibular joint</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
+        <rdfs:comment>Term in Uberon is equivalent but the definition needs revision.</rdfs:comment>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0011318</oboInOwl:hasDbXref>
-        <rdfs:comment>Term in Uberon is equivalent but the definition need revision.</rdfs:comment>
     </owl:Class>
     
 
@@ -1410,6 +1406,7 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
         <rdfs:label>clavicle</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001105</oboInOwl:hasDbXref>
+        <rdfs:comment>Term in Uberon is equivalent.</rdfs:comment>
     </owl:Class>
     
 
@@ -1420,6 +1417,7 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
         <rdfs:label>cranium</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0003128</oboInOwl:hasDbXref>
+        <rdfs:comment>Term in Uberon is equivalent.</rdfs:comment>
     </owl:Class>
     
 
@@ -1435,6 +1433,8 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
+        <rdfs:comment>Term in Uberon is equivalent but the definition needs revision.
+Uberon &apos;external definition&apos; is better.</rdfs:comment>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001043</oboInOwl:hasDbXref>
     </owl:Class>
     
@@ -1446,6 +1446,7 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
         <rdfs:label>hard palate</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0003216</oboInOwl:hasDbXref>
+        <rdfs:comment>Term in Uberon is equivalent but the definition needs revision.</rdfs:comment>
     </owl:Class>
     
 
@@ -1456,6 +1457,7 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
         <rdfs:label>head somite</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0005594</oboInOwl:hasDbXref>
+        <rdfs:comment>Term in Uberon is equivalent but the definition needs revision.</rdfs:comment>
     </owl:Class>
     
 
@@ -1472,6 +1474,7 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000053"/>
+        <rdfs:comment>Request new term but definition needs revision.</rdfs:comment>
     </owl:Class>
     
 
@@ -1482,7 +1485,7 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
         <rdfs:label>stylohyal bone</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0001685"/>
         <obo:IAO_0000115>part of the hyoid apparatus</obo:IAO_0000115>
-        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0010272</oboInOwl:hasDbXref>
+        <rdfs:comment>Request new term but definition needs revision.</rdfs:comment>
     </owl:Class>
     
 
@@ -1492,6 +1495,7 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
     <owl:Class rdf:about="http:://purl.obolibrary.org/obo/MFMO0000054">
         <rdfs:label>infraorbital foramen</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
+        <rdfs:comment>Request new term but definition needs revision.</rdfs:comment>
     </owl:Class>
     
 
@@ -1679,12 +1683,6 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
         <rdfs:subClassOf rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000062"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0001684"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
                 <owl:someValuesFrom rdf:resource="&obo;feed.owl#hypoglossal_nerve"/>
             </owl:Restriction>
@@ -1693,6 +1691,12 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
                 <owl:someValuesFrom rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000107"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0001684"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000065"/>
@@ -1706,6 +1710,12 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
     <owl:Class rdf:about="http:://purl.obolibrary.org/obo/MFMO0000064">
         <rdfs:label>hyoglossus muscle</rdfs:label>
         <rdfs:subClassOf rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000062"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002163"/>
+                <owl:someValuesFrom rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000073"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -1723,12 +1733,6 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0002163"/>
-                <owl:someValuesFrom rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000073"/>
-            </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001572</oboInOwl:hasDbXref>
     </owl:Class>
@@ -2240,14 +2244,14 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
         <rdfs:subClassOf rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000072"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;feed.owl#attached_to_medial_surface_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0001684"/>
+                <owl:onProperty rdf:resource="&obo;attaches_to"/>
+                <owl:someValuesFrom rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000044"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;attaches_to"/>
-                <owl:someValuesFrom rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000044"/>
+                <owl:onProperty rdf:resource="&obo;feed.owl#attached_to_medial_surface_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0001684"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>The medial pterygoid is a pharyngeal arch 1 muscle that participates in oral/pharyngeal behaviors and is innervated by the nerve to the medial pterygoid and attaches to the cranial base and the medial side of the mandibular angle.</obo:IAO_0000115>
@@ -2646,8 +2650,10 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
     <!-- http:://purl.obolibrary.org/obo/MFMO0000107 -->
 
     <owl:Class rdf:about="http:://purl.obolibrary.org/obo/MFMO0000107">
-        <rdfs:label>mammalian tongue</rdfs:label>
+        <rdfs:label>tongue</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
+        <rdfs:comment>Term in Uberon is equivalent but the definition needs revision.</rdfs:comment>
+        <obo:IAO_0000115>Muscular organ in the floor of the mouth.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001723</oboInOwl:hasDbXref>
     </owl:Class>
     
