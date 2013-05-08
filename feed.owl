@@ -517,6 +517,8 @@
     <owl:Class rdf:about="&obo;UBERON_0001649">
         <rdfs:label>glossopharyngeal nerve</rdfs:label>
         <rdfs:subClassOf rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000090"/>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001649</oboInOwl:hasDbXref>
+        <rdfs:comment>Term in Uberon is equivalent but the definition needs revision.</rdfs:comment>
     </owl:Class>
     
 
@@ -557,6 +559,8 @@ is similar.  Definition requires revision.</rdfs:comment>
     <owl:Class rdf:about="&obo;UBERON_0001759">
         <rdfs:label>vagus nerve</rdfs:label>
         <rdfs:subClassOf rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000090"/>
+        <rdfs:comment>Term in Uberon is equivalent but the definition needs revision.</rdfs:comment>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001759</oboInOwl:hasDbXref>
     </owl:Class>
     
 
@@ -639,6 +643,8 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
     <owl:Class rdf:about="&obo;UBERON_0003716">
         <rdfs:label>recurrent branch of vagus nerve</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0001759"/>
+        <rdfs:comment>Term in Uberon is equivalent but the definition needs revision.</rdfs:comment>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0003716</oboInOwl:hasDbXref>
     </owl:Class>
     
 
@@ -664,6 +670,7 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
     <owl:Class rdf:about="&obo;UBERON_0011325">
         <rdfs:label>pharyngeal plexus</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0001759"/>
+        <rdfs:comment>Request new term but the definition needs revision.</rdfs:comment>
     </owl:Class>
     
 
@@ -673,6 +680,7 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
     <owl:Class rdf:about="&obo;UBERON_0011349">
         <rdfs:label>pterygomandibular raphe</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
+        <rdfs:comment>Term in Uberon is equivalent but the definition needs revision.</rdfs:comment>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0011349</oboInOwl:hasDbXref>
     </owl:Class>
     
@@ -701,6 +709,7 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
     <owl:Class rdf:about="&obo;feed.owl#hypoglossal_nerve">
         <rdfs:label>hypoglossal nerve</rdfs:label>
         <rdfs:subClassOf rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000090"/>
+        <rdfs:comment>Term in Uberon is equivalent but the definition needs revision,</rdfs:comment>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001650</oboInOwl:hasDbXref>
     </owl:Class>
     
@@ -2534,6 +2543,7 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
     <owl:Class rdf:about="http:://purl.obolibrary.org/obo/MFMO0000093">
         <rdfs:label>trigeminal nerve</rdfs:label>
         <rdfs:subClassOf rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000090"/>
+        <rdfs:comment>Term in Uberon is equivalent but the definition needs revision.</rdfs:comment>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001645</oboInOwl:hasDbXref>
     </owl:Class>
     
@@ -2545,6 +2555,7 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
         <rdfs:label>palatine bone</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001682</oboInOwl:hasDbXref>
+        <rdfs:comment>Term in Uberon is equivalent but the definition needs revision.</rdfs:comment>
     </owl:Class>
     
 
@@ -2565,7 +2576,14 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
     <owl:Class rdf:about="http:://purl.obolibrary.org/obo/MFMO0000096">
         <rdfs:label>pharyngeal wall</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000110"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>the wall of the pharynx</obo:IAO_0000115>
+        <rdfs:comment>Request new term but the definition needs revision.</rdfs:comment>
     </owl:Class>
     
 
@@ -2575,8 +2593,8 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
     <owl:Class rdf:about="http:://purl.obolibrary.org/obo/MFMO0000097">
         <rdfs:label>pharyngotympanic tube</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
-        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0006562</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonym>auditory tube</oboInOwl:hasSynonym>
+        <rdfs:comment>Term in Uberon is equivalent but the definition needs revision.</rdfs:comment>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0002393</oboInOwl:hasDbXref>
     </owl:Class>
     
@@ -2587,6 +2605,7 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
     <owl:Class rdf:about="http:://purl.obolibrary.org/obo/MFMO0000098">
         <rdfs:label>scapula</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
+        <rdfs:comment>Term in Uberon is equivalent but the definition needs revision.</rdfs:comment>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0006849</oboInOwl:hasDbXref>
     </owl:Class>
     
@@ -2597,6 +2616,8 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
     <owl:Class rdf:about="http:://purl.obolibrary.org/obo/MFMO0000099">
         <rdfs:label>skin of body</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0002097</oboInOwl:hasDbXref>
+        <rdfs:comment>Term in Uberon is equivalent.</rdfs:comment>
     </owl:Class>
     
 
@@ -2605,9 +2626,11 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
 
     <owl:Class rdf:about="http:://purl.obolibrary.org/obo/MFMO0000100">
         <rdfs:label>soft palate</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
+        <rdfs:subClassOf rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000111"/>
+        <rdfs:comment>Ready for review.</rdfs:comment>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001733</oboInOwl:hasDbXref>
         <obo:IAO_0000115>A muscular arch-shaped structure (an anatomical cluster) that is composed of the musculus uvuli and parts of tensor veli palatini, levator veli palatini, palatoglossus and palatopharyngeus and attaches to the hard palate and modulates the connections between the oral cavity and pharynx soft tissue arch </obo:IAO_0000115>
+        <obo:IAO_0000119>FEED group</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -2698,6 +2721,28 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
     <owl:Class rdf:about="http:://purl.obolibrary.org/obo/MFMO0000109">
         <rdfs:label>anterior root of zygomatic arch</rdfs:label>
         <rdfs:subClassOf rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000108"/>
+    </owl:Class>
+    
+
+
+    <!-- http:://purl.obolibrary.org/obo/MFMO0000110 -->
+
+    <owl:Class rdf:about="http:://purl.obolibrary.org/obo/MFMO0000110">
+        <rdfs:label xml:lang="en">pharynx</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0006562</oboInOwl:hasDbXref>
+        <rdfs:comment>Term in Uberon is equivalent but the definition needs revision.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http:://purl.obolibrary.org/obo/MFMO0000111 -->
+
+    <owl:Class rdf:about="http:://purl.obolibrary.org/obo/MFMO0000111">
+        <rdfs:label xml:lang="en">anatomical cluster</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0000477</oboInOwl:hasDbXref>
+        <rdfs:comment>Term in Uberon is equivalent.</rdfs:comment>
     </owl:Class>
     
 
