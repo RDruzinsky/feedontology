@@ -291,12 +291,16 @@
 
     <owl:Class rdf:about="&obo;MFMO_0000005">
         <rdfs:label>muscles innervated by facial nerve</rdfs:label>
-        <owl:equivalentClass rdf:resource="&obo;UBERON_0001577"/>
         <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0001647"/>
-            </owl:Restriction>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;UBERON_0001630"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
+                        <owl:someValuesFrom rdf:resource="&obo;UBERON_0001647"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0001630"/>
         <rdfs:subClassOf>
@@ -305,7 +309,8 @@
                 <owl:someValuesFrom rdf:resource="&obo;UBERON_0003066"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <oboInOwl:hasSynonym>UBERON_0001577</oboInOwl:hasSynonym>
+        <rdfs:comment>Term in Uberon is equivalent but the definition needs revision.</rdfs:comment>
+        <oboInOwl:hasDbXref>UBERON_0001577</oboInOwl:hasDbXref>
     </owl:Class>
     
 
@@ -466,27 +471,9 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/UBERON_0001043 -->
-
-    <owl:Class rdf:about="&obo;UBERON_0001043"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/UBERON_0001105 -->
-
-    <owl:Class rdf:about="&obo;UBERON_0001105"/>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/UBERON_0001577 -->
 
     <owl:Class rdf:about="&obo;UBERON_0001577"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/UBERON_0001582 -->
-
-    <owl:Class rdf:about="&obo;UBERON_0001582"/>
     
 
 
@@ -545,12 +532,6 @@
         <rdfs:comment>Uberon term &quot;hyoid arch skeleton&quot; http://purl.obolibrary.org/obo/UBERON_0005884
 is similar.  Definition requires revision.</rdfs:comment>
     </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/UBERON_0001692 -->
-
-    <owl:Class rdf:about="&obo;UBERON_0001692"/>
     
 
 
@@ -632,12 +613,6 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/UBERON_0003128 -->
-
-    <owl:Class rdf:about="&obo;UBERON_0003128"/>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/UBERON_0003716 -->
 
     <owl:Class rdf:about="&obo;UBERON_0003716">
@@ -646,12 +621,6 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
         <rdfs:comment>Term in Uberon is equivalent but the definition needs revision.</rdfs:comment>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0003716</oboInOwl:hasDbXref>
     </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/UBERON_0004362 -->
-
-    <owl:Class rdf:about="&obo;UBERON_0004362"/>
     
 
 
@@ -2641,6 +2610,7 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
         <rdfs:label>somite</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0002329</oboInOwl:hasDbXref>
+        <rdfs:comment>Term in Uberon is equivalent.</rdfs:comment>
     </owl:Class>
     
 
@@ -2651,6 +2621,7 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
         <rdfs:label>sphenoid bone</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001677</oboInOwl:hasDbXref>
+        <rdfs:comment>Term in Uberon is equivalent but the definition needs revision.</rdfs:comment>
     </owl:Class>
     
 
@@ -2660,6 +2631,7 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
     <owl:Class rdf:about="http:://purl.obolibrary.org/obo/MFMO0000103">
         <rdfs:label>pterygoid process of the sphenoid bone</rdfs:label>
         <rdfs:subClassOf rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000102"/>
+        <rdfs:comment>Term in Uberon is equivalent but the definition needs revision.</rdfs:comment>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0004649</oboInOwl:hasDbXref>
     </owl:Class>
     
@@ -2671,6 +2643,7 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
         <rdfs:label>sternum</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0000975</oboInOwl:hasDbXref>
+        <rdfs:comment>Term in Uberon is equivalent but the definition needs revision.</rdfs:comment>
     </owl:Class>
     
 
@@ -2680,6 +2653,8 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
     <owl:Class rdf:about="http:://purl.obolibrary.org/obo/MFMO0000105">
         <rdfs:label>temporalis fascia</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
+        <oboInOwl:hasSynonym>temporal fascia</oboInOwl:hasSynonym>
+        <rdfs:comment>Request new term but the definition needs revision.</rdfs:comment>
     </owl:Class>
     
 
@@ -2689,6 +2664,7 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
     <owl:Class rdf:about="http:://purl.obolibrary.org/obo/MFMO0000106">
         <rdfs:label>thyroid cartilage</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
+        <rdfs:comment>Term in Uberon is equivalent but the definition needs revision.</rdfs:comment>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001738</oboInOwl:hasDbXref>
     </owl:Class>
     
@@ -2712,6 +2688,7 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
         <rdfs:label>zygomatic arch</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0002500</oboInOwl:hasDbXref>
+        <rdfs:comment>Term in Uberon is equivalent but the definition needs revision.</rdfs:comment>
     </owl:Class>
     
 
