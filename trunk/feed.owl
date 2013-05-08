@@ -571,6 +571,8 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
     <owl:Class rdf:about="&obo;UBERON_0002397">
         <rdfs:label>maxilla</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/MA_0001491</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0004657</oboInOwl:hasDbXref>
     </owl:Class>
     
 
@@ -1056,13 +1058,13 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000013"/>
+                <owl:someValuesFrom rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000043"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000043"/>
+                <owl:someValuesFrom rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000013"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1509,6 +1511,8 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
     <owl:Class rdf:about="http:://purl.obolibrary.org/obo/MFMO0000055">
         <rdfs:label>angle of the mandible</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0001684"/>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/FMA_59459</oboInOwl:hasDbXref>
+        <rdfs:comment>Request new term but the definition needs revision.</rdfs:comment>
     </owl:Class>
     
 
@@ -1524,6 +1528,9 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0001684"/>
+        <rdfs:comment>Request new term but the definition needs revision.</rdfs:comment>
+        <oboInOwl:hasDbXref>Term in Uberon is equivalent but the definition needs revision.</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/MA_0002816</oboInOwl:hasDbXref>
         <obo:IAO_0000115>articular part of the mandible bone</obo:IAO_0000115>
     </owl:Class>
     
@@ -1687,6 +1694,12 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000062"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0001684"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
                 <owl:someValuesFrom rdf:resource="&obo;feed.owl#hypoglossal_nerve"/>
             </owl:Restriction>
@@ -1695,12 +1708,6 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
                 <owl:someValuesFrom rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000107"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0001684"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000065"/>
@@ -1714,12 +1721,6 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
     <owl:Class rdf:about="http:://purl.obolibrary.org/obo/MFMO0000064">
         <rdfs:label>hyoglossus muscle</rdfs:label>
         <rdfs:subClassOf rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000062"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0002163"/>
-                <owl:someValuesFrom rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000073"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -1737,6 +1738,12 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002163"/>
+                <owl:someValuesFrom rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000073"/>
+            </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001572</oboInOwl:hasDbXref>
     </owl:Class>
@@ -2093,14 +2100,14 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
         <rdfs:label>deep masseter muscle</rdfs:label>
         <owl:equivalentClass>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;feed.owl#attached_to_ventral_surface_of"/>
-                <owl:someValuesFrom rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000108"/>
+                <owl:onProperty rdf:resource="&obo;feed.owl#deep_to"/>
+                <owl:someValuesFrom rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000079"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <owl:equivalentClass>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;feed.owl#deep_to"/>
-                <owl:someValuesFrom rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000079"/>
+                <owl:onProperty rdf:resource="&obo;feed.owl#attached_to_ventral_surface_of"/>
+                <owl:someValuesFrom rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000108"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000075"/>
