@@ -341,8 +341,8 @@
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000007"/>
         <obo:IAO_0000115>The ceratohyoideus is a muscle of Pharyngeal Arch III that participates in oral/pharyngeal behaviors and is innervated by the glossopharyngeal n. (CN IX), and attaches to the ceratohyal part of the hyoid apparatus and also to a non-ceratohyal part of the hyoid apparatus</obo:IAO_0000115>
+        <rdfs:comment>Request new term.</rdfs:comment>
         <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
-        <rdfs:comment>Ready for review.</rdfs:comment>
     </owl:Class>
     
 
@@ -1854,6 +1854,8 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
                 <owl:someValuesFrom rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000101"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000115>Muscles innervated by a spinal nerve.</obo:IAO_0000115>
+        <rdfs:comment>Request new term.</rdfs:comment>
     </owl:Class>
     
 
@@ -1887,6 +1889,7 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000067"/>
         <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
         <obo:IAO_0000115>The geniohyoid is a muscle that attaches to the mandible and the hyoid apparatus and is innervated by the first cervical nerve (C1).</obo:IAO_0000115>
+        <rdfs:comment>Ready for review.</rdfs:comment>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001565</oboInOwl:hasDbXref>
     </owl:Class>
     
@@ -1918,6 +1921,7 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001108</oboInOwl:hasDbXref>
         <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
         <obo:IAO_0000115>The omohyoid is a somitic muscle that participates in oral/pharyngeal behaviors and is innervated by the cervical plexus; it attaches to the hyoid appratus and the scapula.</obo:IAO_0000115>
+        <rdfs:comment>Ready for review.</rdfs:comment>
     </owl:Class>
     
 
@@ -1946,6 +1950,7 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000067"/>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001107</oboInOwl:hasDbXref>
+        <rdfs:comment>Ready for review.</rdfs:comment>
         <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
         <obo:IAO_0000115>The sternohyoid is a somitic muscle that participates in oral/pharyngeal behaviors and is innervated by the cervical plexus; it attaches to the hyoid appratus and the sternum.</obo:IAO_0000115>
     </owl:Class>
@@ -1978,6 +1983,7 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
         <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001109</oboInOwl:hasDbXref>
         <obo:IAO_0000115>The sternothyroid is a somitic muscle that participates in oral/pharyngeal behaviors and is innervated by the cervical plexus; it attaches to the thyroid cartilage and the sternum.</obo:IAO_0000115>
+        <rdfs:comment>Ready for review.</rdfs:comment>
     </owl:Class>
     
 
@@ -1999,6 +2005,10 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
                 <owl:someValuesFrom rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000095"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000115>Muscles innervated by the trigeminal nerve (Cranial Nerve V).</obo:IAO_0000115>
+        <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
+        <oboInOwl:hasSynonym>trigeminal muscles</oboInOwl:hasSynonym>
+        <rdfs:comment>Request new term.</rdfs:comment>
     </owl:Class>
     
 
@@ -2042,6 +2052,7 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
+        <rdfs:comment>Ready for review.</rdfs:comment>
         <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0010943</oboInOwl:hasDbXref>
         <obo:IAO_0000115>The anterior digastric is a pharyngeal arch I muscle that participates in oral/pharygeal behaviors and is innervated by the nerve to mylohyoid and superficial to mylohyoid muscle, and lacks the midline raphe.</obo:IAO_0000115>
@@ -2076,6 +2087,7 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0006719</oboInOwl:hasDbXref>
         <obo:IAO_0000115>Pharyngeal arch 1 muscle that participates in oral/pharyngeal behaviors, is innervated by the lateral pterygoid nerve branches, and attaches to the condylar process of the mandible and temporomandibular joint (TMJ) capsule, and the cranial base.</obo:IAO_0000115>
         <oboInOwl:hasSynonym>external pterygoid muscle</oboInOwl:hasSynonym>
+        <rdfs:comment>Ready for review.</rdfs:comment>
     </owl:Class>
     
 
@@ -2084,7 +2096,8 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
 
     <owl:Class rdf:about="http:://purl.obolibrary.org/obo/MFMO0000075">
         <rdfs:label>masseter muscle</rdfs:label>
-        <owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000072"/>
+        <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
@@ -2097,8 +2110,8 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000072"/>
+        </rdfs:subClassOf>
+        <rdfs:comment>Ready for review.</rdfs:comment>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001597</oboInOwl:hasDbXref>
         <obo:IAO_0000115>Pharyngeal arch 1 muscle that participates in oral/pharyngeal behaviors, is innervated by masseteric nerve branches of the trigeminal nerve (CN V), and attaches to mandible and zygomatic arch.</obo:IAO_0000115>
         <obo:IAO_0000119>doi:10.1093/icb/icr067</obo:IAO_0000119>
@@ -2110,21 +2123,21 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
 
     <owl:Class rdf:about="http:://purl.obolibrary.org/obo/MFMO0000076">
         <rdfs:label>anterior masseter muscle</rdfs:label>
-        <owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000075"/>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
                 <owl:someValuesFrom rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000109"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000075"/>
+        </rdfs:subClassOf>
         <oboInOwl:hasSynonym>Masseter lateralis portio profunda</oboInOwl:hasSynonym>
         <oboInOwl:hasSynonym>Masseter deep portion (tiefe Portion)</oboInOwl:hasSynonym>
         <oboInOwl:hasSynonym>Masseter lateralis profunda pars ‘‘maxillo-mandibularis’’</oboInOwl:hasSynonym>
         <oboInOwl:hasSynonym>Masseter lateralis pars anterior</oboInOwl:hasSynonym>
         <obo:IAO_0000119>doi:10.1093/icb/icr067</obo:IAO_0000119>
-        <oboInOwl:hasSynonym>Masseter lateralis profundus pars anterior</oboInOwl:hasSynonym>
         <oboInOwl:hasSynonym>Masseter major</oboInOwl:hasSynonym>
         <obo:IAO_0000115>The anterior masseter is a separable part of the masseter muscle that is attached to anterior root of zygomatic arch</obo:IAO_0000115>
+        <oboInOwl:hasSynonym>Masseter lateralis profundus pars anterior</oboInOwl:hasSynonym>
         <oboInOwl:hasSynonym>Anterior deep masseter</oboInOwl:hasSynonym>
     </owl:Class>
     
