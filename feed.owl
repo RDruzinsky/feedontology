@@ -186,8 +186,8 @@
 
     <owl:ObjectProperty rdf:about="&obo;feed.owl#deep_to">
         <rdfs:label>deep to</rdfs:label>
-        <oboInOwl:hasDbXref>BSPO:0000107</oboInOwl:hasDbXref>
         <obo:IAO_0000115>underneath, in the sense of being closer to the center of the individual and farther from the external surface</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>BSPO:0000107</oboInOwl:hasDbXref>
         <owl:inverseOf rdf:resource="&obo;feed.owl#superficial_to"/>
     </owl:ObjectProperty>
     
@@ -211,8 +211,8 @@
 
     <owl:ObjectProperty rdf:about="&obo;feed.owl#superficial_to">
         <rdfs:label>superficial to</rdfs:label>
-        <obo:IAO_0000115>above, in the sense of being closer to the external surface of the individual and farther from the center</obo:IAO_0000115>
         <oboInOwl:hasDbXref>BSPO:0000108</oboInOwl:hasDbXref>
+        <obo:IAO_0000115>above, in the sense of being closer to the external surface of the individual and farther from the center</obo:IAO_0000115>
     </owl:ObjectProperty>
     
 
@@ -265,10 +265,10 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
-        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001582</oboInOwl:hasDbXref>
-        <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
-        <rdfs:comment>Ready for review.</rdfs:comment>
         <obo:IAO_0000115>The buccinator is a muscle that is attached to the mandible, skin, pterygomandibular raphe and maxilla, and is innervated by Cranial Nerve VII and participates in oropharyngeal behavior.</obo:IAO_0000115>
+        <rdfs:comment>Ready for review.</rdfs:comment>
+        <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001582</oboInOwl:hasDbXref>
     </owl:Class>
     
 
@@ -312,8 +312,8 @@
                 <owl:someValuesFrom rdf:resource="&obo;UBERON_0003066"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001577</oboInOwl:hasDbXref>
         <rdfs:comment>Term in Uberon is equivalent but the definition needs revision.</rdfs:comment>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001577</oboInOwl:hasDbXref>
     </owl:Class>
     
 
@@ -341,9 +341,9 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000007"/>
-        <obo:IAO_0000115>The ceratohyoideus is a muscle of Pharyngeal Arch III that participates in oral/pharyngeal behaviors and is innervated by the glossopharyngeal n. (CN IX), and attaches to the ceratohyal part of the hyoid apparatus and also to a non-ceratohyal part of the hyoid apparatus</obo:IAO_0000115>
-        <rdfs:comment>Request new term.</rdfs:comment>
         <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
+        <rdfs:comment>Request new term.</rdfs:comment>
+        <obo:IAO_0000115>The ceratohyoideus is a muscle of Pharyngeal Arch III that participates in oral/pharyngeal behaviors and is innervated by the glossopharyngeal n. (CN IX), and attaches to the ceratohyal part of the hyoid apparatus and also to a non-ceratohyal part of the hyoid apparatus</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -365,9 +365,9 @@
                 <owl:someValuesFrom rdf:resource="&obo;UBERON_0003114"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment>Request new term.</rdfs:comment>
-        <obo:IAO_0000115>Muscles innervated by the glossopharyngeal nerve (Cranial Nerve IX).</obo:IAO_0000115>
         <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
+        <obo:IAO_0000115>Muscles innervated by the glossopharyngeal nerve (Cranial Nerve IX).</obo:IAO_0000115>
+        <rdfs:comment>Request new term.</rdfs:comment>
     </owl:Class>
     
 
@@ -377,9 +377,9 @@
     <owl:Class rdf:about="&obo;MFMO_0000008">
         <rdfs:label xml:lang="en">midline raphe</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
-        <rdfs:comment>Request new term.</rdfs:comment>
-        <obo:IAO_0000115>The seamlike union of the two lateral halves of a part or organ (as the tongue) having externally a ridge or furrow.</obo:IAO_0000115>
         <obo:IAO_0000119>http://www.merriam-webster.com/dictionary/raphe</obo:IAO_0000119>
+        <obo:IAO_0000115>The seamlike union of the two lateral halves of a part or organ (as the tongue) having externally a ridge or furrow.</obo:IAO_0000115>
+        <rdfs:comment>Request new term.</rdfs:comment>
     </owl:Class>
     
 
@@ -389,18 +389,6 @@
     <owl:Class rdf:about="&obo;MFMO_0000009">
         <rdfs:label xml:lang="en">cricopharyngeus muscle</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000010"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0002202"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0003115"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0002202"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0003117"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -431,9 +419,21 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>The cricopharyngeus is a pharyngeal arch 4/6 muscle that participates in oral/pharyngeal behaviors and is innervated by the pharyngeal plexus and the recurrent laryngeal n. (from Vagus, CN X), and is an integral part of the pharyngeal tube, and attaches to the cricoid cartilage and the midline raphe.  It acts as a sphincter between the pharynx and esophagus.</obo:IAO_0000115>
-        <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002202"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0003117"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002202"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0003115"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:comment>Ready for review.</rdfs:comment>
+        <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
+        <obo:IAO_0000115>The cricopharyngeus is a pharyngeal arch 4/6 muscle that participates in oral/pharyngeal behaviors and is innervated by the pharyngeal plexus and the recurrent laryngeal n. (from Vagus, CN X), and is an integral part of the pharyngeal tube, and attaches to the cricoid cartilage and the midline raphe.  It acts as a sphincter between the pharynx and esophagus.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -458,18 +458,18 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;RO_0002202"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0003115"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0003117"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;RO_0002202"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0003117"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0003115"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>Muscles innervated by the vagus nerve (Cranial Nerve X).</obo:IAO_0000115>
-        <rdfs:comment>Request new term.</rdfs:comment>
         <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
+        <rdfs:comment>Request new term.</rdfs:comment>
+        <obo:IAO_0000115>Muscles innervated by the vagus nerve (Cranial Nerve X).</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -494,8 +494,8 @@
     <owl:Class rdf:about="&obo;UBERON_0001630">
         <rdfs:label>muscle organ</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
-        <rdfs:comment>Term in Uberon is equivalent.</rdfs:comment>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001630</oboInOwl:hasDbXref>
+        <rdfs:comment>Term in Uberon is equivalent.</rdfs:comment>
     </owl:Class>
     
 
@@ -505,8 +505,8 @@
     <owl:Class rdf:about="&obo;UBERON_0001647">
         <rdfs:label>facial nerve</rdfs:label>
         <rdfs:subClassOf rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000090"/>
-        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001647</oboInOwl:hasDbXref>
         <rdfs:comment>Term in Uberon is equivalent but the definition needs revision.</rdfs:comment>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001647</oboInOwl:hasDbXref>
     </owl:Class>
     
 
@@ -516,8 +516,8 @@
     <owl:Class rdf:about="&obo;UBERON_0001649">
         <rdfs:label>glossopharyngeal nerve</rdfs:label>
         <rdfs:subClassOf rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000090"/>
-        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001649</oboInOwl:hasDbXref>
         <rdfs:comment>Term in Uberon is equivalent but the definition needs revision.</rdfs:comment>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001649</oboInOwl:hasDbXref>
     </owl:Class>
     
 
@@ -527,10 +527,10 @@
     <owl:Class rdf:about="&obo;UBERON_0001684">
         <rdfs:label>mandible</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001684</oboInOwl:hasDbXref>
+        <rdfs:comment>Mandible is equivalent to dentary but none of the definitions in Uberon is perfect.  Unfortunately, the term is used in several different ways.  RED</rdfs:comment>
         <rdfs:comment>Term in Uberon is equivalent but the definition needs revision.
 </rdfs:comment>
-        <rdfs:comment>Mandible is equivalent to dentary but none of the definitions in Uberon is perfect.  Unfortunately, the term is used in several different ways.  RED</rdfs:comment>
-        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001684</oboInOwl:hasDbXref>
     </owl:Class>
     
 
@@ -540,9 +540,9 @@
     <owl:Class rdf:about="&obo;UBERON_0001685">
         <rdfs:label>hyoid apparatus</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
-        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0005884</oboInOwl:hasDbXref>
         <rdfs:comment>Uberon term &quot;hyoid arch skeleton&quot; http://purl.obolibrary.org/obo/UBERON_0005884
 is similar.  Definition requires revision.</rdfs:comment>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0005884</oboInOwl:hasDbXref>
     </owl:Class>
     
 
@@ -552,8 +552,8 @@ is similar.  Definition requires revision.</rdfs:comment>
     <owl:Class rdf:about="&obo;UBERON_0001759">
         <rdfs:label>vagus nerve</rdfs:label>
         <rdfs:subClassOf rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000090"/>
-        <rdfs:comment>Term in Uberon is equivalent but the definition needs revision.</rdfs:comment>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001759</oboInOwl:hasDbXref>
+        <rdfs:comment>Term in Uberon is equivalent but the definition needs revision.</rdfs:comment>
     </owl:Class>
     
 
@@ -563,9 +563,9 @@ is similar.  Definition requires revision.</rdfs:comment>
     <owl:Class rdf:about="&obo;UBERON_0002375">
         <rdfs:label>cricoid cartilage</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0002375</oboInOwl:hasDbXref>
         <rdfs:comment>Term in Uberon is equivalent but the definition needs revision.
 Uberon &apos;external definition&apos; is better.</rdfs:comment>
-        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0002375</oboInOwl:hasDbXref>
     </owl:Class>
     
 
@@ -575,8 +575,8 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
     <owl:Class rdf:about="&obo;UBERON_0002397">
         <rdfs:label>maxilla</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
-        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/MA_0001491</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0004657</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/MA_0001491</oboInOwl:hasDbXref>
     </owl:Class>
     
 
@@ -586,8 +586,8 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
     <owl:Class rdf:about="&obo;UBERON_0003066">
         <rdfs:label>branchial arch 2</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
-        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0003066</oboInOwl:hasDbXref>
         <rdfs:comment>Term in Uberon is equivalent.</rdfs:comment>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0003066</oboInOwl:hasDbXref>
     </owl:Class>
     
 
@@ -597,8 +597,8 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
     <owl:Class rdf:about="&obo;UBERON_0003114">
         <rdfs:label>branchial arch 3</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
-        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0003114</oboInOwl:hasDbXref>
         <rdfs:comment>Term in Uberon is equivalent.</rdfs:comment>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0003114</oboInOwl:hasDbXref>
     </owl:Class>
     
 
@@ -608,8 +608,8 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
     <owl:Class rdf:about="&obo;UBERON_0003115">
         <rdfs:label>branchial arch 4</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
-        <rdfs:comment>Term in Uberon is equivalent.</rdfs:comment>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0003115</oboInOwl:hasDbXref>
+        <rdfs:comment>Term in Uberon is equivalent.</rdfs:comment>
     </owl:Class>
     
 
@@ -619,8 +619,8 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
     <owl:Class rdf:about="&obo;UBERON_0003117">
         <rdfs:label>branchial arch 6</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
-        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0003117</oboInOwl:hasDbXref>
         <rdfs:comment>Term in Uberon is equivalent.</rdfs:comment>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0003117</oboInOwl:hasDbXref>
     </owl:Class>
     
 
@@ -630,8 +630,8 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
     <owl:Class rdf:about="&obo;UBERON_0003716">
         <rdfs:label>recurrent branch of vagus nerve</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0001759"/>
-        <rdfs:comment>Term in Uberon is equivalent but the definition needs revision.</rdfs:comment>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0003716</oboInOwl:hasDbXref>
+        <rdfs:comment>Term in Uberon is equivalent but the definition needs revision.</rdfs:comment>
     </owl:Class>
     
 
@@ -641,9 +641,9 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
     <owl:Class rdf:about="&obo;UBERON_0007268">
         <rdfs:label>upper esophageal sphincter muscle</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000010"/>
-        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0007268</oboInOwl:hasDbXref>
-        <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
         <rdfs:comment>Term in Uberon is equivalent but the definition needs revision.</rdfs:comment>
+        <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0007268</oboInOwl:hasDbXref>
     </owl:Class>
     
 
@@ -663,8 +663,8 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
     <owl:Class rdf:about="&obo;UBERON_0011349">
         <rdfs:label>pterygomandibular raphe</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
-        <rdfs:comment>Term in Uberon is equivalent but the definition needs revision.</rdfs:comment>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0011349</oboInOwl:hasDbXref>
+        <rdfs:comment>Term in Uberon is equivalent but the definition needs revision.</rdfs:comment>
     </owl:Class>
     
 
@@ -680,9 +680,9 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
                 <owl:someValuesFrom rdf:resource="&obo;UBERON_0001685"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment>Term in Uberon is equivalent but the definition needs revision.</rdfs:comment>
-        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0010272</oboInOwl:hasDbXref>
         <obo:IAO_0000115>part of the hyoid apparatus</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0010272</oboInOwl:hasDbXref>
+        <rdfs:comment>Term in Uberon is equivalent but the definition needs revision.</rdfs:comment>
     </owl:Class>
     
 
@@ -692,8 +692,8 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
     <owl:Class rdf:about="&obo;feed.owl#hypoglossal_nerve">
         <rdfs:label>hypoglossal nerve</rdfs:label>
         <rdfs:subClassOf rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000090"/>
-        <rdfs:comment>Term in Uberon is equivalent but the definition needs revision,</rdfs:comment>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001650</oboInOwl:hasDbXref>
+        <rdfs:comment>Term in Uberon is equivalent but the definition needs revision,</rdfs:comment>
     </owl:Class>
     
 
@@ -731,11 +731,11 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
-        <rdfs:comment>Ready for review.</rdfs:comment>
-        <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
-        <obo:IAO_0000115>The levator veli palatini is part of the soft palate that attaches to the cranial base, pharyngotympanic tube and the soft palate and is innervated by Cranial Nerve X via the pharyngeal plexus.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0008585</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonym>levator palati</oboInOwl:hasSynonym>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0008585</oboInOwl:hasDbXref>
+        <obo:IAO_0000115>The levator veli palatini is part of the soft palate that attaches to the cranial base, pharyngotympanic tube and the soft palate and is innervated by Cranial Nerve X via the pharyngeal plexus.</obo:IAO_0000115>
+        <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
+        <rdfs:comment>Ready for review.</rdfs:comment>
     </owl:Class>
     
 
@@ -763,11 +763,41 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
-        <oboInOwl:hasSynonym>hyopharyngeus</oboInOwl:hasSynonym>
-        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0010749</oboInOwl:hasDbXref>
-        <rdfs:comment>Ready for review.</rdfs:comment>
-        <obo:IAO_0000115>The middle constrictor is a pharyngeal arches 4/6 muscle that participates in oral/pharyngeal behaviors and is innervated by the pharyngeal plexus of Vagus (CN X) and attaches to the hyoid apparatus and the midline raphe.</obo:IAO_0000115>
         <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
+        <obo:IAO_0000115>The middle constrictor is a pharyngeal arches 4/6 muscle that participates in oral/pharyngeal behaviors and is innervated by the pharyngeal plexus of Vagus (CN X) and attaches to the hyoid apparatus and the midline raphe.</obo:IAO_0000115>
+        <rdfs:comment>Ready for review.</rdfs:comment>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0010749</oboInOwl:hasDbXref>
+        <oboInOwl:hasSynonym>hyopharyngeus</oboInOwl:hasSynonym>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/feed.owl#orangutan_posterior_digastric_muscle -->
+
+    <owl:Class rdf:about="&obo;feed.owl#orangutan_posterior_digastric_muscle">
+        <rdfs:subClassOf rdf:resource="&obo;UBERON_0001630"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
+                        <owl:someValuesFrom rdf:resource="&obo;UBERON_0001684"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
+                        <owl:someValuesFrom rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000044"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
+                        <owl:someValuesFrom rdf:resource="&obo;UBERON_0001647"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;feed.owl#superficial_to"/>
+                        <owl:someValuesFrom rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000084"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -795,10 +825,10 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>Palatoglossus is a muscle that attaches to the soft palate and the tongue and is innervated by Cranial Nerve X via the pharyngeal plexus.</obo:IAO_0000115>
-        <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
-        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001574</oboInOwl:hasDbXref>
         <rdfs:comment>Ready for review.</rdfs:comment>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001574</oboInOwl:hasDbXref>
+        <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
+        <obo:IAO_0000115>Palatoglossus is a muscle that attaches to the soft palate and the tongue and is innervated by Cranial Nerve X via the pharyngeal plexus.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -830,10 +860,10 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
-        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0010234</oboInOwl:hasDbXref>
-        <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
-        <rdfs:comment>Ready for review.</rdfs:comment>
         <obo:IAO_0000115>Palatopharyngeus is a muscle that attaches to the palatine bones, soft palate, and pharynx and is innervated by Cranial Nerve X via the pharyngeal plexus.</obo:IAO_0000115>
+        <rdfs:comment>Ready for review.</rdfs:comment>
+        <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0010234</oboInOwl:hasDbXref>
     </owl:Class>
     
 
@@ -857,11 +887,11 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
-        <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0010937</oboInOwl:hasDbXref>
+        <rdfs:comment>Ready for review.</rdfs:comment>
         <obo:IAO_0000115>Salpingopharyngeus is a muscle that attaches to pharyngotympanic tube and the pharynx and is innervated by pharyngeal plexus of CN X and participates in oral/pharyngeal behaviors
 </obo:IAO_0000115>
-        <rdfs:comment>Ready for review.</rdfs:comment>
-        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0010937</oboInOwl:hasDbXref>
+        <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -871,10 +901,10 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
     <owl:Class rdf:about="&obo;feed.owl#spinal_nerve">
         <rdfs:label>spinal nerve</rdfs:label>
         <rdfs:subClassOf rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000090"/>
-        <rdfs:comment>Term(s) in Uberon are equivalent but the definition needs revision.</rdfs:comment>
-        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001780</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0005197</oboInOwl:hasDbXref>
         <rdfs:comment>Not sure what the point of having two classes in Uberon - Uberon1780 and Uberon5197.  I think they are, more or less, equivalent.  I prefer 5197 - RED</rdfs:comment>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0005197</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001780</oboInOwl:hasDbXref>
+        <rdfs:comment>Term(s) in Uberon are equivalent but the definition needs revision.</rdfs:comment>
     </owl:Class>
     
 
@@ -910,10 +940,10 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
-        <rdfs:comment>Ready for review.</rdfs:comment>
-        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0006329</oboInOwl:hasDbXref>
-        <obo:IAO_0000115>The superior constrictor is a muscle that is an integral part of the pharyngeal tube that is attached to the mandible, pterygomandibular raphe, basioccipital bone, pterygoid process and midline raphe and is innervated by Cranial Nerve X via the pharyngeal plexus.</obo:IAO_0000115>
         <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
+        <obo:IAO_0000115>The superior constrictor is a muscle that is an integral part of the pharyngeal tube that is attached to the mandible, pterygomandibular raphe, basioccipital bone, pterygoid process and midline raphe and is innervated by Cranial Nerve X via the pharyngeal plexus.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0006329</oboInOwl:hasDbXref>
+        <rdfs:comment>Ready for review.</rdfs:comment>
     </owl:Class>
     
 
@@ -943,10 +973,10 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
-        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0010235</oboInOwl:hasDbXref>
-        <obo:IAO_0000115>The muscle of the uvuli is an integral part of the soft palate and is innervated by Cranial Nerve X (Vagus via the pharyngeal plexus).</obo:IAO_0000115>
-        <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
         <rdfs:comment>Term in Uberon is equivalent but the definition needs revision.</rdfs:comment>
+        <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
+        <obo:IAO_0000115>The muscle of the uvuli is an integral part of the soft palate and is innervated by Cranial Nerve X (Vagus via the pharyngeal plexus).</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0010235</oboInOwl:hasDbXref>
     </owl:Class>
     
 
@@ -982,10 +1012,10 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000010"/>
-        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001570</oboInOwl:hasDbXref>
-        <obo:IAO_0000115>This is a pharyngeal arch 4/6 muscle that is integral to the pharyngeal tube, participates in oral/pharyngeal behaviors, is innervated by the pharyngeal plexus of the vagus n. (CNX) and attaches to the laryngeal cartilages and the midline raphe.</obo:IAO_0000115>
-        <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
         <rdfs:comment>Ready for review.</rdfs:comment>
+        <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
+        <obo:IAO_0000115>This is a pharyngeal arch 4/6 muscle that is integral to the pharyngeal tube, participates in oral/pharyngeal behaviors, is innervated by the pharyngeal plexus of the vagus n. (CNX) and attaches to the laryngeal cartilages and the midline raphe.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001570</oboInOwl:hasDbXref>
     </owl:Class>
     
 
@@ -1000,8 +1030,8 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
 
     <owl:Class rdf:about="http:://purl.obolibrary.org/obo/MFMO0000011">
         <rdfs:label>behavior</rdfs:label>
-        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/GO_0007610</oboInOwl:hasDbXref>
         <oboInOwl:hasDefinition>The specific actions or reactions of an organism in response to external or internal stimuli. Patterned activity of a whole organism in a manner dependent upon some combination of that organism&apos;s internal state and external conditions. [database_cross_reference: GOC:ems] [database_cross_reference: ISBN:0395448956]</oboInOwl:hasDefinition>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/GO_0007610</oboInOwl:hasDbXref>
     </owl:Class>
     
 
@@ -1011,8 +1041,8 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
     <owl:Class rdf:about="http:://purl.obolibrary.org/obo/MFMO0000012">
         <rdfs:label>oral/pharyngeal behavior</rdfs:label>
         <rdfs:subClassOf rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000011"/>
-        <obo:IAO_0000115>Oral/pharyngeal behaviors are movements that structures of the oral and/or pharyngeal regions participate in.</obo:IAO_0000115>
         <oboInOwl:hasSynonym>oro/pharyngeal behavior</oboInOwl:hasSynonym>
+        <obo:IAO_0000115>Oral/pharyngeal behaviors are movements that structures of the oral and/or pharyngeal regions participate in.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1028,9 +1058,9 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
                 <owl:someValuesFrom rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000017"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment>mastication is a synonym of chewing in the NBO</rdfs:comment>
-        <obo:IAO_0000115>A part of feeding behavior during which food breakdown (mechanical and chemical) by structure(s) of the oropharyngeal apparatus occurs.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>NBO_0000073</oboInOwl:hasDbXref>
+        <obo:IAO_0000115>A part of feeding behavior during which food breakdown (mechanical and chemical) by structure(s) of the oropharyngeal apparatus occurs.</obo:IAO_0000115>
+        <rdfs:comment>mastication is a synonym of chewing in the NBO</rdfs:comment>
     </owl:Class>
     
 
@@ -1040,9 +1070,9 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
     <owl:Class rdf:about="http:://purl.obolibrary.org/obo/MFMO0000014">
         <rdfs:label>mastication</rdfs:label>
         <rdfs:subClassOf rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000013"/>
-        <rdfs:comment>mastication is a synonym of chewing in the NBO</rdfs:comment>
-        <oboInOwl:hasDbXref>NBO_0000073</oboInOwl:hasDbXref>
         <obo:IAO_0000115>A type of chewing during which food breakdown (mechanical and chemical) using rhythmic movements of the postcanine dentition (molar and premolar teeth) occurs.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>NBO_0000073</oboInOwl:hasDbXref>
+        <rdfs:comment>mastication is a synonym of chewing in the NBO</rdfs:comment>
     </owl:Class>
     
 
@@ -1052,8 +1082,8 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
     <owl:Class rdf:about="http:://purl.obolibrary.org/obo/MFMO0000015">
         <rdfs:label>puncture crush</rdfs:label>
         <rdfs:subClassOf rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000014"/>
-        <obo:IAO_0000119>Hiiemae and Kay (1972): DOI:10.1038/240486a0</obo:IAO_0000119>
         <obo:IAO_0000115>A mastication behavior during which there is vertical movement of the lower dentition without tooth-tooth contact.</obo:IAO_0000115>
+        <obo:IAO_0000119>Hiiemae and Kay (1972): DOI:10.1038/240486a0</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -1063,8 +1093,8 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
     <owl:Class rdf:about="http:://purl.obolibrary.org/obo/MFMO0000016">
         <rdfs:label>tooth-tooth contact</rdfs:label>
         <rdfs:subClassOf rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000014"/>
-        <obo:IAO_0000119>Hiiemae and Kay (1972): DOI:10.1038/240486a0</obo:IAO_0000119>
         <obo:IAO_0000115>A mastication behavior during which there is precise occlusion of the upper and lower dentition.</obo:IAO_0000115>
+        <obo:IAO_0000119>Hiiemae and Kay (1972): DOI:10.1038/240486a0</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -1083,6 +1113,12 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000018"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
                 <owl:someValuesFrom rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000043"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1092,15 +1128,9 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
                 <owl:someValuesFrom rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000038"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000018"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115>Feeding behavior is an oral/pharyngeal behavior during which there is intake of food or liquid.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref>NBO_0000079</oboInOwl:hasDbXref>
         <rdfs:comment>GO: eating behavior and feeding behavior are both terms. Our definition removes the use of &quot;associated with&quot;.</rdfs:comment>
+        <oboInOwl:hasDbXref>NBO_0000079</oboInOwl:hasDbXref>
+        <obo:IAO_0000115>Feeding behavior is an oral/pharyngeal behavior during which there is intake of food or liquid.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1116,8 +1146,8 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
                 <owl:someValuesFrom rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000017"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>Ingestion is part of feeding behavior during which there is movement of a food or liquid from outside the body into the oral cavity or pharynx.</obo:IAO_0000115>
         <rdfs:comment>GO term for Ingestion is a Cellular Process</rdfs:comment>
+        <obo:IAO_0000115>Ingestion is part of feeding behavior during which there is movement of a food or liquid from outside the body into the oral cavity or pharynx.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1257,8 +1287,8 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
     <owl:Class rdf:about="http:://purl.obolibrary.org/obo/MFMO0000032">
         <rdfs:label>lingual ingestion</rdfs:label>
         <rdfs:subClassOf rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000018"/>
-        <oboInOwl:hasSynonym>tongue ingestion</oboInOwl:hasSynonym>
         <obo:IAO_0000115>Ingestion using the tongue.</obo:IAO_0000115>
+        <oboInOwl:hasSynonym>tongue ingestion</oboInOwl:hasSynonym>
     </owl:Class>
     
 
@@ -1288,8 +1318,8 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
     <owl:Class rdf:about="http:://purl.obolibrary.org/obo/MFMO0000035">
         <rdfs:label>nasal ingestion</rdfs:label>
         <rdfs:subClassOf rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000018"/>
-        <obo:IAO_0000115>Ingestion using the nose.</obo:IAO_0000115>
         <oboInOwl:hasSynonym>proboscis ingestion</oboInOwl:hasSynonym>
+        <obo:IAO_0000115>Ingestion using the nose.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1325,11 +1355,11 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
                 <owl:someValuesFrom rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000017"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A part of feeding behavior during which there is movement of food or liquid from the lips through the oral cavity and into the pharynx.</obo:IAO_0000115>
-        <oboInOwl:hasSynonym>intra-oral transport</oboInOwl:hasSynonym>
         <obo:IAO_0000119>Hiiemae, Karen (2000). The oro-facial complex in macaques: tongue and jaw movements in feeding. Old World Monkeys. Cambridge University Press, Cambridge, 214-236.
 
 ISBN 1139471368, 9781139471367</obo:IAO_0000119>
+        <oboInOwl:hasSynonym>intra-oral transport</oboInOwl:hasSynonym>
+        <obo:IAO_0000115>A part of feeding behavior during which there is movement of food or liquid from the lips through the oral cavity and into the pharynx.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1385,9 +1415,9 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
                 <owl:someValuesFrom rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000017"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <oboInOwl:hasDbXref>NBO_0000545</oboInOwl:hasDbXref>
-        <obo:IAO_0000115>A part of feeding behavior during which there is movement of food or liquid from out of the oropharynx and into the esophagus.</obo:IAO_0000115>
         <oboInOwl:hasSynonym>swallowing</oboInOwl:hasSynonym>
+        <obo:IAO_0000115>A part of feeding behavior during which there is movement of food or liquid from out of the oropharynx and into the esophagus.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>NBO_0000545</oboInOwl:hasDbXref>
     </owl:Class>
     
 
@@ -1397,8 +1427,8 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
     <owl:Class rdf:about="http:://purl.obolibrary.org/obo/MFMO0000044">
         <rdfs:label>base of cranium</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
-        <rdfs:comment>Term in Uberon is equivalent.</rdfs:comment>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0002517</oboInOwl:hasDbXref>
+        <rdfs:comment>Term in Uberon is equivalent.</rdfs:comment>
     </owl:Class>
     
 
@@ -1408,8 +1438,8 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
     <owl:Class rdf:about="http:://purl.obolibrary.org/obo/MFMO0000045">
         <rdfs:label>basioccipital bone</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
-        <rdfs:comment>Term in Uberon is equivalent.</rdfs:comment>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001692</oboInOwl:hasDbXref>
+        <rdfs:comment>Term in Uberon is equivalent.</rdfs:comment>
     </owl:Class>
     
 
@@ -1419,8 +1449,8 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
     <owl:Class rdf:about="http:://purl.obolibrary.org/obo/MFMO0000046">
         <rdfs:label>capsule of the temporomandibular joint</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
-        <rdfs:comment>Term in Uberon is equivalent but the definition needs revision.</rdfs:comment>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0011318</oboInOwl:hasDbXref>
+        <rdfs:comment>Term in Uberon is equivalent but the definition needs revision.</rdfs:comment>
     </owl:Class>
     
 
@@ -1430,8 +1460,8 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
     <owl:Class rdf:about="http:://purl.obolibrary.org/obo/MFMO0000047">
         <rdfs:label>clavicle</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
-        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001105</oboInOwl:hasDbXref>
         <rdfs:comment>Term in Uberon is equivalent.</rdfs:comment>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001105</oboInOwl:hasDbXref>
     </owl:Class>
     
 
@@ -1441,8 +1471,8 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
     <owl:Class rdf:about="http:://purl.obolibrary.org/obo/MFMO0000048">
         <rdfs:label>cranium</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
-        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0003128</oboInOwl:hasDbXref>
         <rdfs:comment>Term in Uberon is equivalent.</rdfs:comment>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0003128</oboInOwl:hasDbXref>
     </owl:Class>
     
 
@@ -1458,9 +1488,9 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001043</oboInOwl:hasDbXref>
         <rdfs:comment>Term in Uberon is equivalent but the definition needs revision.
 Uberon &apos;external definition&apos; is better.</rdfs:comment>
-        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001043</oboInOwl:hasDbXref>
     </owl:Class>
     
 
@@ -1470,8 +1500,8 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
     <owl:Class rdf:about="http:://purl.obolibrary.org/obo/MFMO0000050">
         <rdfs:label>hard palate</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
-        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0003216</oboInOwl:hasDbXref>
         <rdfs:comment>Term in Uberon is equivalent but the definition needs revision.</rdfs:comment>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0003216</oboInOwl:hasDbXref>
     </owl:Class>
     
 
@@ -1481,8 +1511,8 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
     <owl:Class rdf:about="http:://purl.obolibrary.org/obo/MFMO0000051">
         <rdfs:label>head somite</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
-        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0005594</oboInOwl:hasDbXref>
         <rdfs:comment>Term in Uberon is equivalent but the definition needs revision.</rdfs:comment>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0005594</oboInOwl:hasDbXref>
     </owl:Class>
     
 
@@ -1509,8 +1539,8 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
     <owl:Class rdf:about="http:://purl.obolibrary.org/obo/MFMO0000053">
         <rdfs:label>stylohyal bone</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0001685"/>
-        <obo:IAO_0000115>part of the hyoid apparatus</obo:IAO_0000115>
         <rdfs:comment>Request new term but definition needs revision.</rdfs:comment>
+        <obo:IAO_0000115>part of the hyoid apparatus</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1530,8 +1560,8 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
     <owl:Class rdf:about="http:://purl.obolibrary.org/obo/MFMO0000055">
         <rdfs:label>angle of the mandible</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0001684"/>
-        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/FMA_59459</oboInOwl:hasDbXref>
         <rdfs:comment>Request new term but the definition needs revision.</rdfs:comment>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/FMA_59459</oboInOwl:hasDbXref>
     </owl:Class>
     
 
@@ -1547,10 +1577,10 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0001684"/>
-        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0004657</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>Term in Uberon is equivalent but the definition needs revision.</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/MA_0002816</oboInOwl:hasDbXref>
         <obo:IAO_0000115>articular part of the mandible bone</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/MA_0002816</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Term in Uberon is equivalent but the definition needs revision.</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0004657</oboInOwl:hasDbXref>
     </owl:Class>
     
 
@@ -1560,8 +1590,8 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
     <owl:Class rdf:about="http:://purl.obolibrary.org/obo/MFMO0000057">
         <rdfs:label>modiolus</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
-        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0011386</oboInOwl:hasDbXref>
         <rdfs:comment>Term in Uberon is equivalent but the definition needs revision.</rdfs:comment>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0011386</oboInOwl:hasDbXref>
     </owl:Class>
     
 
@@ -1589,10 +1619,10 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000005"/>
-        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0010933</oboInOwl:hasDbXref>
-        <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
-        <rdfs:comment>Ready for review.</rdfs:comment>
         <obo:IAO_0000115>The orbicularis oris is a superficial facial muscle that attaches to the skin and modiolus, and that participates in oral/pharyngeal behaviors, and is innervated by the facial nerve (CN VII).</obo:IAO_0000115>
+        <rdfs:comment>Ready for review.</rdfs:comment>
+        <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0010933</oboInOwl:hasDbXref>
     </owl:Class>
     
 
@@ -1620,10 +1650,10 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
-        <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
-        <obo:IAO_0000115>The platysma is a pharyngeal arch 2 muscle and a superficial facial muscle that participates in oral/pharyngeal behaviors and is innervated by the cervical branch of the facial nerve.  It attaches to the mandible and it attaches to the skin of the head, neck, and thoracic region where it is found superficial to the clavicle.</obo:IAO_0000115>
-        <rdfs:comment>Ready for review.</rdfs:comment>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0005467</oboInOwl:hasDbXref>
+        <rdfs:comment>Ready for review.</rdfs:comment>
+        <obo:IAO_0000115>The platysma is a pharyngeal arch 2 muscle and a superficial facial muscle that participates in oral/pharyngeal behaviors and is innervated by the cervical branch of the facial nerve.  It attaches to the mandible and it attaches to the skin of the head, neck, and thoracic region where it is found superficial to the clavicle.</obo:IAO_0000115>
+        <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -1635,10 +1665,7 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
-                        <owl:someValuesFrom rdf:resource="&obo;UBERON_0001685"/>
-                    </owl:Restriction>
+                    <rdf:Description rdf:about="&obo;UBERON_0001630"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
                         <owl:someValuesFrom rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000044"/>
@@ -1654,11 +1681,10 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="&obo;MFMO_0000005"/>
-        <obo:IAO_0000115>The posterior digastric is a pharyngeal arch II muscle that participates in oral pharyngeal behavior, is innervated by the digastric branch of facial nerve and attaches to the posterior cranial base and the hyoid apparatus.  It is found superficial to the mylohyoid muscle.</obo:IAO_0000115>
-        <rdfs:comment>Ready for review.</rdfs:comment>
-        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0010944</oboInOwl:hasDbXref>
         <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0010944</oboInOwl:hasDbXref>
+        <rdfs:comment>Ready for review.</rdfs:comment>
+        <obo:IAO_0000115>The posterior digastric is a pharyngeal arch II muscle that participates in oral pharyngeal behavior, is innervated by the digastric branch of facial nerve and attaches to the posterior cranial base and the hyoid apparatus.  It is found superficial to the mylohyoid muscle.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1686,10 +1712,10 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000005"/>
-        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0008712</oboInOwl:hasDbXref>
-        <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
-        <rdfs:comment>Ready for review.</rdfs:comment>
         <obo:IAO_0000115>The stylohyoid is a pharyngeal arch II muscle that participates in oral/pharygeal behaviors and is innervated by the stylohoid branch of the facial nerve and attaches to the stylohyal and the non-stylohyal part of the hyoid apparatus.</obo:IAO_0000115>
+        <rdfs:comment>Ready for review.</rdfs:comment>
+        <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0008712</oboInOwl:hasDbXref>
     </owl:Class>
     
 
@@ -1698,12 +1724,6 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
 
     <owl:Class rdf:about="http:://purl.obolibrary.org/obo/MFMO0000062">
         <rdfs:label>muscles innervated by hypoglossal nerve</rdfs:label>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0002202"/>
-                <owl:someValuesFrom rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000051"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -1715,9 +1735,15 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
-        <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
-        <rdfs:comment>Request new term.</rdfs:comment>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002202"/>
+                <owl:someValuesFrom rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000051"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>Muscles innervated by the hypoglossal nerve (Cranial Nerve XII).</obo:IAO_0000115>
+        <rdfs:comment>Request new term.</rdfs:comment>
+        <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -1730,6 +1756,12 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
+                <owl:someValuesFrom rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000107"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
                 <owl:someValuesFrom rdf:resource="&obo;UBERON_0001684"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1739,17 +1771,11 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
                 <owl:someValuesFrom rdf:resource="&obo;feed.owl#hypoglossal_nerve"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
-                <owl:someValuesFrom rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000107"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000065"/>
-        <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
-        <rdfs:comment>Ready for review.</rdfs:comment>
-        <obo:IAO_0000115>The genioglossus muscle is attached to the mandible and the tongue, and it is innervated by the hypoglossal nerve (CN XII).</obo:IAO_0000115>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001571</oboInOwl:hasDbXref>
+        <obo:IAO_0000115>The genioglossus muscle is attached to the mandible and the tongue, and it is innervated by the hypoglossal nerve (CN XII).</obo:IAO_0000115>
+        <rdfs:comment>Ready for review.</rdfs:comment>
+        <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -1759,12 +1785,6 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
     <owl:Class rdf:about="http:://purl.obolibrary.org/obo/MFMO0000064">
         <rdfs:label>hyoglossus muscle</rdfs:label>
         <rdfs:subClassOf rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000062"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0002163"/>
-                <owl:someValuesFrom rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000073"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -1783,10 +1803,16 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
-        <rdfs:comment>Ready for review.</rdfs:comment>
-        <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
-        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001572</oboInOwl:hasDbXref>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002163"/>
+                <owl:someValuesFrom rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000073"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The hyoglossus muscle is attached to the hyoid and the tongue, and it is innervated by the hypoglossal nerve (CN XII).</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001572</oboInOwl:hasDbXref>
+        <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
+        <rdfs:comment>Ready for review.</rdfs:comment>
     </owl:Class>
     
 
@@ -1816,10 +1842,10 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
                 <owl:someValuesFrom rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000107"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001576</oboInOwl:hasDbXref>
-        <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
-        <rdfs:comment>Ready for review.</rdfs:comment>
         <obo:IAO_0000115>The intrinsic tongue muscles are an integral part of the tongue and completely contained within the tongue that are innervated by Cranial Nerve XII.</obo:IAO_0000115>
+        <rdfs:comment>Ready for review.</rdfs:comment>
+        <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001576</oboInOwl:hasDbXref>
     </owl:Class>
     
 
@@ -1843,11 +1869,11 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000062"/>
-        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001573</oboInOwl:hasDbXref>
-        <rdfs:comment>Ready for review.</rdfs:comment>
-        <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
         <obo:IAO_0000115>Styloglossus is a muscle that attaches to the tongue and stylohyal and is innervated by Cranial Nerve XII.
 </obo:IAO_0000115>
+        <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
+        <rdfs:comment>Ready for review.</rdfs:comment>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001573</oboInOwl:hasDbXref>
     </owl:Class>
     
 
@@ -1869,8 +1895,8 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
                 <owl:someValuesFrom rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000101"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>Muscles innervated by a spinal nerve.</obo:IAO_0000115>
         <rdfs:comment>Request new term.</rdfs:comment>
+        <obo:IAO_0000115>Muscles innervated by a spinal nerve.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1902,10 +1928,10 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000067"/>
-        <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
-        <obo:IAO_0000115>The geniohyoid is a muscle that attaches to the mandible and the hyoid apparatus and is innervated by the first cervical nerve (C1).</obo:IAO_0000115>
-        <rdfs:comment>Ready for review.</rdfs:comment>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001565</oboInOwl:hasDbXref>
+        <rdfs:comment>Ready for review.</rdfs:comment>
+        <obo:IAO_0000115>The geniohyoid is a muscle that attaches to the mandible and the hyoid apparatus and is innervated by the first cervical nerve (C1).</obo:IAO_0000115>
+        <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -1933,10 +1959,10 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000067"/>
-        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001108</oboInOwl:hasDbXref>
-        <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
-        <obo:IAO_0000115>The omohyoid is a somitic muscle that participates in oral/pharyngeal behaviors and is innervated by the cervical plexus; it attaches to the hyoid appratus and the scapula.</obo:IAO_0000115>
         <rdfs:comment>Ready for review.</rdfs:comment>
+        <obo:IAO_0000115>The omohyoid is a somitic muscle that participates in oral/pharyngeal behaviors and is innervated by the cervical plexus; it attaches to the hyoid appratus and the scapula.</obo:IAO_0000115>
+        <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001108</oboInOwl:hasDbXref>
     </owl:Class>
     
 
@@ -1964,10 +1990,10 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000067"/>
-        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001107</oboInOwl:hasDbXref>
-        <rdfs:comment>Ready for review.</rdfs:comment>
-        <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
         <obo:IAO_0000115>The sternohyoid is a somitic muscle that participates in oral/pharyngeal behaviors and is innervated by the cervical plexus; it attaches to the hyoid appratus and the sternum.</obo:IAO_0000115>
+        <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
+        <rdfs:comment>Ready for review.</rdfs:comment>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001107</oboInOwl:hasDbXref>
     </owl:Class>
     
 
@@ -1995,10 +2021,10 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000067"/>
-        <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
-        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001109</oboInOwl:hasDbXref>
-        <obo:IAO_0000115>The sternothyroid is a somitic muscle that participates in oral/pharyngeal behaviors and is innervated by the cervical plexus; it attaches to the thyroid cartilage and the sternum.</obo:IAO_0000115>
         <rdfs:comment>Ready for review.</rdfs:comment>
+        <obo:IAO_0000115>The sternothyroid is a somitic muscle that participates in oral/pharyngeal behaviors and is innervated by the cervical plexus; it attaches to the thyroid cartilage and the sternum.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001109</oboInOwl:hasDbXref>
+        <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -2020,10 +2046,10 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
                 <owl:someValuesFrom rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000095"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>Muscles innervated by the trigeminal nerve (Cranial Nerve V).</obo:IAO_0000115>
-        <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
-        <oboInOwl:hasSynonym>trigeminal muscles</oboInOwl:hasSynonym>
         <rdfs:comment>Request new term.</rdfs:comment>
+        <oboInOwl:hasSynonym>trigeminal muscles</oboInOwl:hasSynonym>
+        <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
+        <obo:IAO_0000115>Muscles innervated by the trigeminal nerve (Cranial Nerve V).</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -2035,8 +2061,8 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000072"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0002202"/>
-                <owl:someValuesFrom rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000095"/>
+                <owl:onProperty rdf:resource="&obo;RO_0002163"/>
+                <owl:someValuesFrom rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000084"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -2063,14 +2089,14 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0002163"/>
-                <owl:someValuesFrom rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000084"/>
+                <owl:onProperty rdf:resource="&obo;RO_0002202"/>
+                <owl:someValuesFrom rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000095"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment>Ready for review.</rdfs:comment>
-        <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
-        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0010943</oboInOwl:hasDbXref>
         <obo:IAO_0000115>The anterior digastric is a pharyngeal arch I muscle that participates in oral/pharygeal behaviors and is innervated by the nerve to mylohyoid and superficial to mylohyoid muscle, and lacks the midline raphe.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0010943</oboInOwl:hasDbXref>
+        <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
+        <rdfs:comment>Ready for review.</rdfs:comment>
     </owl:Class>
     
 
@@ -2098,11 +2124,11 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000072"/>
-        <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
-        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0006719</oboInOwl:hasDbXref>
-        <obo:IAO_0000115>Pharyngeal arch 1 muscle that participates in oral/pharyngeal behaviors, is innervated by the lateral pterygoid nerve branches, and attaches to the condylar process of the mandible and temporomandibular joint (TMJ) capsule, and the cranial base.</obo:IAO_0000115>
-        <oboInOwl:hasSynonym>external pterygoid muscle</oboInOwl:hasSynonym>
         <rdfs:comment>Ready for review.</rdfs:comment>
+        <oboInOwl:hasSynonym>external pterygoid muscle</oboInOwl:hasSynonym>
+        <obo:IAO_0000115>Pharyngeal arch 1 muscle that participates in oral/pharyngeal behaviors, is innervated by the lateral pterygoid nerve branches, and attaches to the condylar process of the mandible and temporomandibular joint (TMJ) capsule, and the cranial base.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0006719</oboInOwl:hasDbXref>
+        <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -2126,10 +2152,10 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
-        <rdfs:comment>Ready for review.</rdfs:comment>
-        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001597</oboInOwl:hasDbXref>
-        <obo:IAO_0000115>Pharyngeal arch 1 muscle that participates in oral/pharyngeal behaviors, is innervated by masseteric nerve branches of the trigeminal nerve (CN V), and attaches to mandible and zygomatic arch.</obo:IAO_0000115>
         <obo:IAO_0000119>doi:10.1093/icb/icr067</obo:IAO_0000119>
+        <obo:IAO_0000115>Pharyngeal arch 1 muscle that participates in oral/pharyngeal behaviors, is innervated by masseteric nerve branches of the trigeminal nerve (CN V), and attaches to mandible and zygomatic arch.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001597</oboInOwl:hasDbXref>
+        <rdfs:comment>Ready for review.</rdfs:comment>
     </owl:Class>
     
 
@@ -2145,15 +2171,15 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
                 <owl:someValuesFrom rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000109"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <oboInOwl:hasSynonym>Masseter lateralis portio profunda</oboInOwl:hasSynonym>
-        <oboInOwl:hasSynonym>Masseter deep portion (tiefe Portion)</oboInOwl:hasSynonym>
-        <oboInOwl:hasSynonym>Masseter lateralis profunda pars ‘‘maxillo-mandibularis’’</oboInOwl:hasSynonym>
-        <oboInOwl:hasSynonym>Masseter lateralis pars anterior</oboInOwl:hasSynonym>
-        <obo:IAO_0000119>doi:10.1093/icb/icr067</obo:IAO_0000119>
-        <oboInOwl:hasSynonym>Masseter major</oboInOwl:hasSynonym>
-        <obo:IAO_0000115>The anterior masseter is a separable part of the masseter muscle that is attached to anterior root of zygomatic arch</obo:IAO_0000115>
-        <oboInOwl:hasSynonym>Masseter lateralis profundus pars anterior</oboInOwl:hasSynonym>
         <oboInOwl:hasSynonym>Anterior deep masseter</oboInOwl:hasSynonym>
+        <obo:IAO_0000115>The anterior masseter is a separable part of the masseter muscle that is attached to anterior root of zygomatic arch</obo:IAO_0000115>
+        <oboInOwl:hasSynonym>Masseter major</oboInOwl:hasSynonym>
+        <oboInOwl:hasSynonym>Masseter lateralis profundus pars anterior</oboInOwl:hasSynonym>
+        <obo:IAO_0000119>doi:10.1093/icb/icr067</obo:IAO_0000119>
+        <oboInOwl:hasSynonym>Masseter lateralis pars anterior</oboInOwl:hasSynonym>
+        <oboInOwl:hasSynonym>Masseter lateralis profunda pars ‘‘maxillo-mandibularis’’</oboInOwl:hasSynonym>
+        <oboInOwl:hasSynonym>Masseter deep portion (tiefe Portion)</oboInOwl:hasSynonym>
+        <oboInOwl:hasSynonym>Masseter lateralis portio profunda</oboInOwl:hasSynonym>
     </owl:Class>
     
 
@@ -2175,19 +2201,19 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
                 <owl:someValuesFrom rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000079"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <oboInOwl:hasSynonym>Posterior deep masseter</oboInOwl:hasSynonym>
-        <oboInOwl:hasSynonym>Masseter deep portion (tiefe Portion)</oboInOwl:hasSynonym>
-        <oboInOwl:hasSynonym>Masseter lateralis portio profunda</oboInOwl:hasSynonym>
-        <oboInOwl:hasSynonym>Masseter lateralis pars posterior</oboInOwl:hasSynonym>
-        <oboInOwl:hasSynonym>Masseter lateralis profundus pars posterior</oboInOwl:hasSynonym>
-        <oboInOwl:hasSynonym>Masseter zygomaticus</oboInOwl:hasSynonym>
-        <rdfs:comment>Ready for review.</rdfs:comment>
-        <obo:IAO_0000115>The deep masseter is a separable part of the masseter muscle that attaches to lateral surface and/or ventral border of zygomatic arch.</obo:IAO_0000115>
-        <oboInOwl:hasSynonym>Masseter pars profunda</oboInOwl:hasSynonym>
-        <oboInOwl:hasSynonym>profunda masseter</oboInOwl:hasSynonym>
-        <obo:IAO_0000119>doi:10.1093/icb/icr067</obo:IAO_0000119>
-        <oboInOwl:hasSynonym>Superficial part of maxillo-mandibularis</oboInOwl:hasSynonym>
         <oboInOwl:hasSynonym>Masseter pars superficialis</oboInOwl:hasSynonym>
+        <oboInOwl:hasSynonym>Superficial part of maxillo-mandibularis</oboInOwl:hasSynonym>
+        <obo:IAO_0000119>doi:10.1093/icb/icr067</obo:IAO_0000119>
+        <oboInOwl:hasSynonym>profunda masseter</oboInOwl:hasSynonym>
+        <oboInOwl:hasSynonym>Masseter pars profunda</oboInOwl:hasSynonym>
+        <obo:IAO_0000115>The deep masseter is a separable part of the masseter muscle that attaches to lateral surface and/or ventral border of zygomatic arch.</obo:IAO_0000115>
+        <rdfs:comment>Ready for review.</rdfs:comment>
+        <oboInOwl:hasSynonym>Masseter zygomaticus</oboInOwl:hasSynonym>
+        <oboInOwl:hasSynonym>Masseter lateralis profundus pars posterior</oboInOwl:hasSynonym>
+        <oboInOwl:hasSynonym>Masseter lateralis pars posterior</oboInOwl:hasSynonym>
+        <oboInOwl:hasSynonym>Masseter lateralis portio profunda</oboInOwl:hasSynonym>
+        <oboInOwl:hasSynonym>Masseter deep portion (tiefe Portion)</oboInOwl:hasSynonym>
+        <oboInOwl:hasSynonym>Posterior deep masseter</oboInOwl:hasSynonym>
     </owl:Class>
     
 
@@ -2211,10 +2237,10 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>The posterior masseter is a separable part of the deep masseter muscle that attaches to the postero-ventral surface of the zygomatic arch.</obo:IAO_0000115>
-        <oboInOwl:hasSynonym>Masseter lateralis profundus, pars posterior</oboInOwl:hasSynonym>
-        <rdfs:comment>Ready for review.</rdfs:comment>
         <obo:IAO_0000119>doi:10.1093/icb/icr067</obo:IAO_0000119>
+        <rdfs:comment>Ready for review.</rdfs:comment>
+        <oboInOwl:hasSynonym>Masseter lateralis profundus, pars posterior</oboInOwl:hasSynonym>
+        <obo:IAO_0000115>The posterior masseter is a separable part of the deep masseter muscle that attaches to the postero-ventral surface of the zygomatic arch.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -2230,14 +2256,14 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
                 <owl:someValuesFrom rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000055"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <oboInOwl:hasSynonym>Masseter lateralis portio superficialis</oboInOwl:hasSynonym>
-        <oboInOwl:hasSynonym>Masseter superficialis and masseter intermedius</oboInOwl:hasSynonym>
-        <oboInOwl:hasSynonym>Masseter superficialis</oboInOwl:hasSynonym>
-        <obo:IAO_0000119>doi:10.1093/icb/icr067</obo:IAO_0000119>
-        <rdfs:comment>Ready for review.</rdfs:comment>
-        <oboInOwl:hasSynonym>Masseter pars superficialis</oboInOwl:hasSynonym>
-        <oboInOwl:hasSynonym>Masseter superficial portion (oberfla¨chliche Portion)</oboInOwl:hasSynonym>
         <obo:IAO_0000115>The superficial masseter is a separable part of the masseter muscle, is superficial to all other masseter muscle parts, and attaches to the mandibular angle.</obo:IAO_0000115>
+        <oboInOwl:hasSynonym>Masseter superficial portion (oberfla¨chliche Portion)</oboInOwl:hasSynonym>
+        <oboInOwl:hasSynonym>Masseter pars superficialis</oboInOwl:hasSynonym>
+        <rdfs:comment>Ready for review.</rdfs:comment>
+        <obo:IAO_0000119>doi:10.1093/icb/icr067</obo:IAO_0000119>
+        <oboInOwl:hasSynonym>Masseter superficialis</oboInOwl:hasSynonym>
+        <oboInOwl:hasSynonym>Masseter superficialis and masseter intermedius</oboInOwl:hasSynonym>
+        <oboInOwl:hasSynonym>Masseter lateralis portio superficialis</oboInOwl:hasSynonym>
     </owl:Class>
     
 
@@ -2253,9 +2279,9 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
                 <owl:someValuesFrom rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000079"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>The pars reflexa is a separable part of the superficial masseter muscle that attaches to the medial surface of the mandible.</obo:IAO_0000115>
-        <obo:IAO_0000119>doi:10.1093/icb/icr067</obo:IAO_0000119>
         <rdfs:comment>Ready for review.</rdfs:comment>
+        <obo:IAO_0000119>doi:10.1093/icb/icr067</obo:IAO_0000119>
+        <obo:IAO_0000115>The pars reflexa is a separable part of the superficial masseter muscle that attaches to the medial surface of the mandible.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -2271,19 +2297,19 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
                 <owl:someValuesFrom rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000108"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <oboInOwl:hasSynonym>Deep masseter</oboInOwl:hasSynonym>
-        <oboInOwl:hasSynonym>Deepest portion of masseter</oboInOwl:hasSynonym>
-        <obo:IAO_0000115>The zygomaticomandibularis is a separable part of the masseter muscle that attaches to the medial surface of the zygomatic arch</obo:IAO_0000115>
-        <oboInOwl:hasSynonym>Masseter profundus</oboInOwl:hasSynonym>
-        <obo:IAO_0000119>doi:10.1093/icb/icr067</obo:IAO_0000119>
-        <oboInOwl:hasSynonym>Masseter medialis pars anterior</oboInOwl:hasSynonym>
-        <oboInOwl:hasSynonym>Zygomaticomandibularis anterior</oboInOwl:hasSynonym>
-        <oboInOwl:hasSynonym>Masseter pars profundus</oboInOwl:hasSynonym>
-        <rdfs:comment>Ready for review.</rdfs:comment>
-        <oboInOwl:hasSynonym>Deep masseter anterior</oboInOwl:hasSynonym>
-        <oboInOwl:hasSynonym>Masseter medialis pars zygomaticomandibularis anterior</oboInOwl:hasSynonym>
-        <oboInOwl:hasSynonym>Masseter pars profunda</oboInOwl:hasSynonym>
         <oboInOwl:hasSynonym>Zygomaticomandibularis superioris</oboInOwl:hasSynonym>
+        <oboInOwl:hasSynonym>Masseter pars profunda</oboInOwl:hasSynonym>
+        <oboInOwl:hasSynonym>Masseter medialis pars zygomaticomandibularis anterior</oboInOwl:hasSynonym>
+        <oboInOwl:hasSynonym>Deep masseter anterior</oboInOwl:hasSynonym>
+        <rdfs:comment>Ready for review.</rdfs:comment>
+        <oboInOwl:hasSynonym>Masseter pars profundus</oboInOwl:hasSynonym>
+        <oboInOwl:hasSynonym>Zygomaticomandibularis anterior</oboInOwl:hasSynonym>
+        <oboInOwl:hasSynonym>Masseter medialis pars anterior</oboInOwl:hasSynonym>
+        <obo:IAO_0000119>doi:10.1093/icb/icr067</obo:IAO_0000119>
+        <oboInOwl:hasSynonym>Masseter profundus</oboInOwl:hasSynonym>
+        <obo:IAO_0000115>The zygomaticomandibularis is a separable part of the masseter muscle that attaches to the medial surface of the zygomatic arch</obo:IAO_0000115>
+        <oboInOwl:hasSynonym>Deepest portion of masseter</oboInOwl:hasSynonym>
+        <oboInOwl:hasSynonym>Deep masseter</oboInOwl:hasSynonym>
     </owl:Class>
     
 
@@ -2307,13 +2333,13 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>The zygomaticomandibularis infraorbital part, is a separable part of the zygomaticomandibularis that runs through the infraorbital foramen</obo:IAO_0000115>
-        <obo:IAO_0000119>doi:10.1093/icb/icr067</obo:IAO_0000119>
-        <oboInOwl:hasSynonym>Masseter medialis pars anterior</oboInOwl:hasSynonym>
-        <oboInOwl:hasSynonym>Maxillomandibularis</oboInOwl:hasSynonym>
-        <rdfs:comment>Ready for review.</rdfs:comment>
-        <oboInOwl:hasSynonym>Anterior deep masseter infraorbital part</oboInOwl:hasSynonym>
         <oboInOwl:hasSynonym>Masseter medialis pars infraorbitalis</oboInOwl:hasSynonym>
+        <oboInOwl:hasSynonym>Anterior deep masseter infraorbital part</oboInOwl:hasSynonym>
+        <rdfs:comment>Ready for review.</rdfs:comment>
+        <oboInOwl:hasSynonym>Maxillomandibularis</oboInOwl:hasSynonym>
+        <oboInOwl:hasSynonym>Masseter medialis pars anterior</oboInOwl:hasSynonym>
+        <obo:IAO_0000119>doi:10.1093/icb/icr067</obo:IAO_0000119>
+        <obo:IAO_0000115>The zygomaticomandibularis infraorbital part, is a separable part of the zygomaticomandibularis that runs through the infraorbital foramen</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -2325,20 +2351,20 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000072"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;feed.owl#attached_to_medial_surface_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0001684"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
                 <owl:someValuesFrom rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000044"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>The medial pterygoid is a pharyngeal arch 1 muscle that participates in oral/pharyngeal behaviors and is innervated by the nerve to the medial pterygoid and attaches to the cranial base and the medial side of the mandibular angle.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0006718</oboInOwl:hasDbXref>
-        <rdfs:comment>Ready for review.</rdfs:comment>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;feed.owl#attached_to_medial_surface_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0001684"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
+        <rdfs:comment>Ready for review.</rdfs:comment>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0006718</oboInOwl:hasDbXref>
+        <obo:IAO_0000115>The medial pterygoid is a pharyngeal arch 1 muscle that participates in oral/pharyngeal behaviors and is innervated by the nerve to the medial pterygoid and attaches to the cranial base and the medial side of the mandibular angle.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -2376,10 +2402,10 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
                 <owl:someValuesFrom rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000073"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
-        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001564</oboInOwl:hasDbXref>
-        <obo:IAO_0000115>The mylohyoid is a pharyngeal arch I muscle that participates in oral/pharyngeal behaviors and is innervated by the nerve to mylohyoid and attaches to the midline raphe linking right and left mylohyoid and the mandible.</obo:IAO_0000115>
         <rdfs:comment>Ready for review.</rdfs:comment>
+        <obo:IAO_0000115>The mylohyoid is a pharyngeal arch I muscle that participates in oral/pharyngeal behaviors and is innervated by the nerve to mylohyoid and attaches to the midline raphe linking right and left mylohyoid and the mandible.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001564</oboInOwl:hasDbXref>
+        <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -2407,15 +2433,15 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
-        <rdfs:comment>Ready for review.</rdfs:comment>
-        <obo:IAO_0000115>Pharyngeal arch 1 muscle that is innervated by the deep temporal branches of the trigeminal nerve and attaches to the wall of the braincase (including the cranial vault) and mandible.</obo:IAO_0000115>
-        <obo:IAO_0000119>doi:10.1093/icb/icr067</obo:IAO_0000119>
-        <oboInOwl:hasSynonym>Posterior temporal</oboInOwl:hasSynonym>
-        <oboInOwl:hasSynonym>Medial temporal</oboInOwl:hasSynonym>
-        <oboInOwl:hasSynonym>Temporal muscle posterior part</oboInOwl:hasSynonym>
+        <oboInOwl:hasSynonym>Temporales</oboInOwl:hasSynonym>
         <oboInOwl:hasSynonym>Profunda temporalis</oboInOwl:hasSynonym>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001598</oboInOwl:hasDbXref>
-        <oboInOwl:hasSynonym>Temporales</oboInOwl:hasSynonym>
+        <oboInOwl:hasSynonym>Temporal muscle posterior part</oboInOwl:hasSynonym>
+        <oboInOwl:hasSynonym>Medial temporal</oboInOwl:hasSynonym>
+        <oboInOwl:hasSynonym>Posterior temporal</oboInOwl:hasSynonym>
+        <obo:IAO_0000119>doi:10.1093/icb/icr067</obo:IAO_0000119>
+        <obo:IAO_0000115>Pharyngeal arch 1 muscle that is innervated by the deep temporal branches of the trigeminal nerve and attaches to the wall of the braincase (including the cranial vault) and mandible.</obo:IAO_0000115>
+        <rdfs:comment>Ready for review.</rdfs:comment>
     </owl:Class>
     
 
@@ -2431,17 +2457,17 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
                 <owl:someValuesFrom rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000085"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <oboInOwl:hasSynonym>Temporalis ‘‘Hauptmasse’’</oboInOwl:hasSynonym>
-        <oboInOwl:hasSynonym>Posterior temporal</oboInOwl:hasSynonym>
-        <oboInOwl:hasSynonym>Temporalis pars profunda</oboInOwl:hasSynonym>
-        <oboInOwl:hasSynonym>Temporal muscle posterior part</oboInOwl:hasSynonym>
-        <obo:IAO_0000119>doi:10.1093/icb/icr067</obo:IAO_0000119>
-        <rdfs:comment>Ready for review.</rdfs:comment>
-        <obo:IAO_0000115>The deep temporalis muscle is a separable part of the temporalis muscle that  that attaches to the bony wall of the braincase and is deep to the superficial temporalis.</obo:IAO_0000115>
-        <oboInOwl:hasSynonym>Temporalis pars posterior</oboInOwl:hasSynonym>
-        <oboInOwl:hasSynonym>Medial temporal</oboInOwl:hasSynonym>
-        <oboInOwl:hasSynonym>Temporalis posterior head</oboInOwl:hasSynonym>
         <oboInOwl:hasSynonym>Temporalis lamina profunda</oboInOwl:hasSynonym>
+        <oboInOwl:hasSynonym>Temporalis posterior head</oboInOwl:hasSynonym>
+        <oboInOwl:hasSynonym>Medial temporal</oboInOwl:hasSynonym>
+        <oboInOwl:hasSynonym>Temporalis pars posterior</oboInOwl:hasSynonym>
+        <obo:IAO_0000115>The deep temporalis muscle is a separable part of the temporalis muscle that  that attaches to the bony wall of the braincase and is deep to the superficial temporalis.</obo:IAO_0000115>
+        <rdfs:comment>Ready for review.</rdfs:comment>
+        <obo:IAO_0000119>doi:10.1093/icb/icr067</obo:IAO_0000119>
+        <oboInOwl:hasSynonym>Temporal muscle posterior part</oboInOwl:hasSynonym>
+        <oboInOwl:hasSynonym>Temporalis pars profunda</oboInOwl:hasSynonym>
+        <oboInOwl:hasSynonym>Posterior temporal</oboInOwl:hasSynonym>
+        <oboInOwl:hasSynonym>Temporalis ‘‘Hauptmasse’’</oboInOwl:hasSynonym>
     </owl:Class>
     
 
@@ -2465,16 +2491,16 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
-        <oboInOwl:hasSynonym>Temporal muscle anterolateral part</oboInOwl:hasSynonym>
-        <rdfs:comment>Ready for review.</rdfs:comment>
-        <obo:IAO_0000119>doi:10.1093/icb/icr067</obo:IAO_0000119>
-        <obo:IAO_0000115>The superficial temporalis muscle is a separable part of the temporalis muscle that attaches to the temporalis fascia</obo:IAO_0000115>
-        <oboInOwl:hasSynonym>Temporalis pars anterior</oboInOwl:hasSynonym>
-        <oboInOwl:hasSynonym>Temporalis ‘‘T1’’</oboInOwl:hasSynonym>
-        <oboInOwl:hasSynonym>Temporales</oboInOwl:hasSynonym>
-        <oboInOwl:hasSynonym>Temporalis pars superficialis</oboInOwl:hasSynonym>
-        <oboInOwl:hasSynonym>Anterior temporal</oboInOwl:hasSynonym>
         <oboInOwl:hasSynonym>Temporalis anterior head</oboInOwl:hasSynonym>
+        <oboInOwl:hasSynonym>Anterior temporal</oboInOwl:hasSynonym>
+        <oboInOwl:hasSynonym>Temporalis pars superficialis</oboInOwl:hasSynonym>
+        <oboInOwl:hasSynonym>Temporales</oboInOwl:hasSynonym>
+        <oboInOwl:hasSynonym>Temporalis ‘‘T1’’</oboInOwl:hasSynonym>
+        <oboInOwl:hasSynonym>Temporalis pars anterior</oboInOwl:hasSynonym>
+        <obo:IAO_0000115>The superficial temporalis muscle is a separable part of the temporalis muscle that attaches to the temporalis fascia</obo:IAO_0000115>
+        <obo:IAO_0000119>doi:10.1093/icb/icr067</obo:IAO_0000119>
+        <rdfs:comment>Ready for review.</rdfs:comment>
+        <oboInOwl:hasSynonym>Temporal muscle anterolateral part</oboInOwl:hasSynonym>
     </owl:Class>
     
 
@@ -2490,10 +2516,10 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
                 <owl:someValuesFrom rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000112"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <oboInOwl:hasSynonym>Temporalis pars suprazygomatica</oboInOwl:hasSynonym>
-        <oboInOwl:hasSynonym>Zygomatic temporalis</oboInOwl:hasSynonym>
-        <obo:IAO_0000119>doi:10.1093/icb/icr067</obo:IAO_0000119>
         <obo:IAO_0000115>The suprazygomatic part of the temporalis muscle is a separable part of the deep temporalis that attaches to the superior surface of the temporal root of the zygomatic arch.</obo:IAO_0000115>
+        <obo:IAO_0000119>doi:10.1093/icb/icr067</obo:IAO_0000119>
+        <oboInOwl:hasSynonym>Zygomatic temporalis</oboInOwl:hasSynonym>
+        <oboInOwl:hasSynonym>Temporalis pars suprazygomatica</oboInOwl:hasSynonym>
     </owl:Class>
     
 
@@ -2503,6 +2529,12 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
     <owl:Class rdf:about="http:://purl.obolibrary.org/obo/MFMO0000089">
         <rdfs:label>tensor veli palatini</rdfs:label>
         <rdfs:subClassOf rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000072"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000100"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -2521,17 +2553,11 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000100"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115>The tensor veli palatini is a muscle of the soft palate that attaches to the cranial base and pharyngotympanic tube, wraps around the pterygoid hamulus and then attaches to the midline palatal raphe of the soft palate that is innervated by the trigeminal nerve (cranial nerve (V3)).</obo:IAO_0000115>
-        <oboInOwl:hasSynonym>tensor palati</oboInOwl:hasSynonym>
-        <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
-        <rdfs:comment>Ready for review.</rdfs:comment>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0008586</oboInOwl:hasDbXref>
+        <rdfs:comment>Ready for review.</rdfs:comment>
+        <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
+        <oboInOwl:hasSynonym>tensor palati</oboInOwl:hasSynonym>
+        <obo:IAO_0000115>The tensor veli palatini is a muscle of the soft palate that attaches to the cranial base and pharyngotympanic tube, wraps around the pterygoid hamulus and then attaches to the midline palatal raphe of the soft palate that is innervated by the trigeminal nerve (cranial nerve (V3)).</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -2541,8 +2567,8 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
     <owl:Class rdf:about="http:://purl.obolibrary.org/obo/MFMO0000090">
         <rdfs:label>nerve</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
-        <rdfs:comment>Term in Uberon is equivalent.</rdfs:comment>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001021</oboInOwl:hasDbXref>
+        <rdfs:comment>Term in Uberon is equivalent.</rdfs:comment>
     </owl:Class>
     
 
@@ -2553,8 +2579,8 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
         <rdfs:label>cervical plexus</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;feed.owl#spinal_nerve"/>
         <rdfs:subClassOf rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000090"/>
-        <rdfs:comment>Term in Uberon is equivalent but the definition needs revision.</rdfs:comment>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0003725</oboInOwl:hasDbXref>
+        <rdfs:comment>Term in Uberon is equivalent but the definition needs revision.</rdfs:comment>
     </owl:Class>
     
 
@@ -2565,8 +2591,8 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
         <rdfs:label>first cervical nerve</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;feed.owl#spinal_nerve"/>
         <rdfs:subClassOf rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000090"/>
-        <obo:IAO_0000115>Spinal nerve (paired) emerging from the first cervical segment superior to the first cervical vertebrae.</obo:IAO_0000115>
         <rdfs:comment>Request new term.</rdfs:comment>
+        <obo:IAO_0000115>Spinal nerve (paired) emerging from the first cervical segment superior to the first cervical vertebrae.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -2576,8 +2602,8 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
     <owl:Class rdf:about="http:://purl.obolibrary.org/obo/MFMO0000093">
         <rdfs:label>trigeminal nerve</rdfs:label>
         <rdfs:subClassOf rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000090"/>
-        <rdfs:comment>Term in Uberon is equivalent but the definition needs revision.</rdfs:comment>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001645</oboInOwl:hasDbXref>
+        <rdfs:comment>Term in Uberon is equivalent but the definition needs revision.</rdfs:comment>
     </owl:Class>
     
 
@@ -2587,8 +2613,8 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
     <owl:Class rdf:about="http:://purl.obolibrary.org/obo/MFMO0000094">
         <rdfs:label>palatine bone</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
-        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001682</oboInOwl:hasDbXref>
         <rdfs:comment>Term in Uberon is equivalent but the definition needs revision.</rdfs:comment>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001682</oboInOwl:hasDbXref>
     </owl:Class>
     
 
@@ -2598,8 +2624,8 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
     <owl:Class rdf:about="http:://purl.obolibrary.org/obo/MFMO0000095">
         <rdfs:label>branchial arch 1</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
-        <rdfs:comment>Term in Uberon is equivalent.</rdfs:comment>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0004362</oboInOwl:hasDbXref>
+        <rdfs:comment>Term in Uberon is equivalent.</rdfs:comment>
     </owl:Class>
     
 
@@ -2615,8 +2641,8 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
                 <owl:someValuesFrom rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000110"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>the wall of the pharynx</obo:IAO_0000115>
         <rdfs:comment>Request new term but the definition needs revision.</rdfs:comment>
+        <obo:IAO_0000115>the wall of the pharynx</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -2626,9 +2652,9 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
     <owl:Class rdf:about="http:://purl.obolibrary.org/obo/MFMO0000097">
         <rdfs:label>pharyngotympanic tube</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
-        <oboInOwl:hasSynonym>auditory tube</oboInOwl:hasSynonym>
-        <rdfs:comment>Term in Uberon is equivalent but the definition needs revision.</rdfs:comment>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0002393</oboInOwl:hasDbXref>
+        <rdfs:comment>Term in Uberon is equivalent but the definition needs revision.</rdfs:comment>
+        <oboInOwl:hasSynonym>auditory tube</oboInOwl:hasSynonym>
     </owl:Class>
     
 
@@ -2638,8 +2664,8 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
     <owl:Class rdf:about="http:://purl.obolibrary.org/obo/MFMO0000098">
         <rdfs:label>scapula</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
-        <rdfs:comment>Term in Uberon is equivalent but the definition needs revision.</rdfs:comment>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0006849</oboInOwl:hasDbXref>
+        <rdfs:comment>Term in Uberon is equivalent but the definition needs revision.</rdfs:comment>
     </owl:Class>
     
 
@@ -2649,8 +2675,8 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
     <owl:Class rdf:about="http:://purl.obolibrary.org/obo/MFMO0000099">
         <rdfs:label>skin of body</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
-        <rdfs:comment>Term in Uberon is equivalent.</rdfs:comment>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0002097</oboInOwl:hasDbXref>
+        <rdfs:comment>Term in Uberon is equivalent.</rdfs:comment>
     </owl:Class>
     
 
@@ -2660,11 +2686,11 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
     <owl:Class rdf:about="http:://purl.obolibrary.org/obo/MFMO0000100">
         <rdfs:label>soft palate</rdfs:label>
         <rdfs:subClassOf rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000111"/>
-        <rdfs:comment>Ready for review.</rdfs:comment>
-        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001733</oboInOwl:hasDbXref>
-        <obo:IAO_0000115>A muscular arch-shaped structure (an anatomical cluster) that is composed of the musculus uvuli and parts of tensor veli palatini, levator veli palatini, palatoglossus and palatopharyngeus and attaches to the hard palate and modulates the connections between the oral cavity and pharynx soft tissue arch </obo:IAO_0000115>
-        <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
         <obo:IAO_0000119>FEED group</obo:IAO_0000119>
+        <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
+        <obo:IAO_0000115>A muscular arch-shaped structure (an anatomical cluster) that is composed of the musculus uvuli and parts of tensor veli palatini, levator veli palatini, palatoglossus and palatopharyngeus and attaches to the hard palate and modulates the connections between the oral cavity and pharynx soft tissue arch </obo:IAO_0000115>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001733</oboInOwl:hasDbXref>
+        <rdfs:comment>Ready for review.</rdfs:comment>
     </owl:Class>
     
 
@@ -2674,8 +2700,8 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
     <owl:Class rdf:about="http:://purl.obolibrary.org/obo/MFMO0000101">
         <rdfs:label>somite</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
-        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0002329</oboInOwl:hasDbXref>
         <rdfs:comment>Term in Uberon is equivalent.</rdfs:comment>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0002329</oboInOwl:hasDbXref>
     </owl:Class>
     
 
@@ -2685,8 +2711,8 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
     <owl:Class rdf:about="http:://purl.obolibrary.org/obo/MFMO0000102">
         <rdfs:label>sphenoid bone</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
-        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001677</oboInOwl:hasDbXref>
         <rdfs:comment>Term in Uberon is equivalent but the definition needs revision.</rdfs:comment>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001677</oboInOwl:hasDbXref>
     </owl:Class>
     
 
@@ -2696,8 +2722,8 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
     <owl:Class rdf:about="http:://purl.obolibrary.org/obo/MFMO0000103">
         <rdfs:label>pterygoid process of the sphenoid bone</rdfs:label>
         <rdfs:subClassOf rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000102"/>
-        <rdfs:comment>Term in Uberon is equivalent but the definition needs revision.</rdfs:comment>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0004649</oboInOwl:hasDbXref>
+        <rdfs:comment>Term in Uberon is equivalent but the definition needs revision.</rdfs:comment>
     </owl:Class>
     
 
@@ -2707,8 +2733,8 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
     <owl:Class rdf:about="http:://purl.obolibrary.org/obo/MFMO0000104">
         <rdfs:label>sternum</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
-        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0000975</oboInOwl:hasDbXref>
         <rdfs:comment>Term in Uberon is equivalent but the definition needs revision.</rdfs:comment>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0000975</oboInOwl:hasDbXref>
     </owl:Class>
     
 
@@ -2718,8 +2744,8 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
     <owl:Class rdf:about="http:://purl.obolibrary.org/obo/MFMO0000105">
         <rdfs:label>temporalis fascia</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
-        <oboInOwl:hasSynonym>temporal fascia</oboInOwl:hasSynonym>
         <rdfs:comment>Request new term but the definition needs revision.</rdfs:comment>
+        <oboInOwl:hasSynonym>temporal fascia</oboInOwl:hasSynonym>
     </owl:Class>
     
 
@@ -2729,8 +2755,8 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
     <owl:Class rdf:about="http:://purl.obolibrary.org/obo/MFMO0000106">
         <rdfs:label>thyroid cartilage</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
-        <rdfs:comment>Term in Uberon is equivalent but the definition needs revision.</rdfs:comment>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001738</oboInOwl:hasDbXref>
+        <rdfs:comment>Term in Uberon is equivalent but the definition needs revision.</rdfs:comment>
     </owl:Class>
     
 
@@ -2740,9 +2766,9 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
     <owl:Class rdf:about="http:://purl.obolibrary.org/obo/MFMO0000107">
         <rdfs:label>tongue</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
-        <rdfs:comment>Term in Uberon is equivalent but the definition needs revision.</rdfs:comment>
-        <obo:IAO_0000115>Muscular organ in the floor of the mouth.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001723</oboInOwl:hasDbXref>
+        <obo:IAO_0000115>Muscular organ in the floor of the mouth.</obo:IAO_0000115>
+        <rdfs:comment>Term in Uberon is equivalent but the definition needs revision.</rdfs:comment>
     </owl:Class>
     
 
@@ -2752,8 +2778,8 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
     <owl:Class rdf:about="http:://purl.obolibrary.org/obo/MFMO0000108">
         <rdfs:label>zygomatic arch</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
-        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0002500</oboInOwl:hasDbXref>
         <rdfs:comment>Term in Uberon is equivalent but the definition needs revision.</rdfs:comment>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0002500</oboInOwl:hasDbXref>
     </owl:Class>
     
 
@@ -2779,8 +2805,8 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
     <owl:Class rdf:about="http:://purl.obolibrary.org/obo/MFMO0000110">
         <rdfs:label xml:lang="en">pharynx</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
-        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0006562</oboInOwl:hasDbXref>
         <rdfs:comment>Term in Uberon is equivalent but the definition needs revision.</rdfs:comment>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0006562</oboInOwl:hasDbXref>
     </owl:Class>
     
 
@@ -2790,8 +2816,8 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
     <owl:Class rdf:about="http:://purl.obolibrary.org/obo/MFMO0000111">
         <rdfs:label xml:lang="en">anatomical cluster</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
-        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0000477</oboInOwl:hasDbXref>
         <rdfs:comment>Term in Uberon is equivalent.</rdfs:comment>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0000477</oboInOwl:hasDbXref>
     </owl:Class>
     
 
