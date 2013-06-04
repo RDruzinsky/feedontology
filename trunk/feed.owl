@@ -390,6 +390,12 @@
         <rdfs:label xml:lang="en">cricopharyngeus muscle</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000010"/>
         <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002202"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0003115"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
@@ -425,12 +431,6 @@
                 <owl:someValuesFrom rdf:resource="&obo;UBERON_0003117"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0002202"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0003115"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:comment>Ready for review.</rdfs:comment>
         <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
         <obo:IAO_0000115>The cricopharyngeus is a pharyngeal arch 4/6 muscle that participates in oral/pharyngeal behaviors and is innervated by the pharyngeal plexus and the recurrent laryngeal n. (from Vagus, CN X), and is an integral part of the pharyngeal tube, and attaches to the cricoid cartilage and the midline raphe.  It acts as a sphincter between the pharynx and esophagus.</obo:IAO_0000115>
@@ -444,14 +444,14 @@
         <rdfs:label xml:lang="en">muscles innervated by vagus nerve</rdfs:label>
         <owl:equivalentClass>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0001759"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFMO_0000009"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <owl:equivalentClass>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="&obo;MFMO_0000009"/>
+                <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0001759"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0001630"/>
@@ -540,9 +540,7 @@
     <owl:Class rdf:about="&obo;UBERON_0001685">
         <rdfs:label>hyoid apparatus</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
-        <rdfs:comment>Uberon term &quot;hyoid arch skeleton&quot; http://purl.obolibrary.org/obo/UBERON_0005884
-is similar.  Definition requires revision.</rdfs:comment>
-        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0005884</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0010272</oboInOwl:hasDbXref>
     </owl:Class>
     
 
@@ -704,12 +702,6 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
         <rdfs:label>levator veli palatini</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000010"/>
         <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000100"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
@@ -730,6 +722,12 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000100"/>
+            </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasSynonym>levator palati</oboInOwl:hasSynonym>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0008585</oboInOwl:hasDbXref>
@@ -1107,13 +1105,13 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000013"/>
+                <owl:someValuesFrom rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000038"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000018"/>
+                <owl:someValuesFrom rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000013"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1125,7 +1123,7 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000038"/>
+                <owl:someValuesFrom rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000018"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>GO: eating behavior and feeding behavior are both terms. Our definition removes the use of &quot;associated with&quot;.</rdfs:comment>
@@ -1450,7 +1448,7 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
         <rdfs:label>capsule of the temporomandibular joint</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0011318</oboInOwl:hasDbXref>
-        <rdfs:comment>Term in Uberon is equivalent but the definition needs revision.</rdfs:comment>
+        <rdfs:comment>Term in Uberon is equivalent.</rdfs:comment>
     </owl:Class>
     
 
@@ -1489,8 +1487,7 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001043</oboInOwl:hasDbXref>
-        <rdfs:comment>Term in Uberon is equivalent but the definition needs revision.
-Uberon &apos;external definition&apos; is better.</rdfs:comment>
+        <rdfs:comment>Term in Uberon is equivalent.</rdfs:comment>
     </owl:Class>
     
 
@@ -1499,8 +1496,8 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
 
     <owl:Class rdf:about="http:://purl.obolibrary.org/obo/MFMO0000050">
         <rdfs:label>hard palate</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
-        <rdfs:comment>Term in Uberon is equivalent but the definition needs revision.</rdfs:comment>
+        <rdfs:subClassOf rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000111"/>
+        <rdfs:comment>Term in Uberon is equivalent.</rdfs:comment>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0003216</oboInOwl:hasDbXref>
     </owl:Class>
     
@@ -1511,7 +1508,7 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
     <owl:Class rdf:about="http:://purl.obolibrary.org/obo/MFMO0000051">
         <rdfs:label>head somite</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
-        <rdfs:comment>Term in Uberon is equivalent but the definition needs revision.</rdfs:comment>
+        <rdfs:comment>Term in Uberon is equivalent.</rdfs:comment>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0005594</oboInOwl:hasDbXref>
     </owl:Class>
     
@@ -2032,7 +2029,7 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
     <!-- http:://purl.obolibrary.org/obo/MFMO0000072 -->
 
     <owl:Class rdf:about="http:://purl.obolibrary.org/obo/MFMO0000072">
-        <rdfs:label>muscles innervated by trigeminal nerve</rdfs:label>
+        <rdfs:label>muscle innervated by trigeminal nerve</rdfs:label>
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
@@ -2047,9 +2044,9 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Request new term.</rdfs:comment>
-        <oboInOwl:hasSynonym>trigeminal muscles</oboInOwl:hasSynonym>
         <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
-        <obo:IAO_0000115>Muscles innervated by the trigeminal nerve (Cranial Nerve V).</obo:IAO_0000115>
+        <oboInOwl:hasSynonym>trigeminal muscle</oboInOwl:hasSynonym>
+        <obo:IAO_0000115>Muscle innervated by the trigeminal nerve (Cranial Nerve V).</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -2058,16 +2055,10 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
 
     <owl:Class rdf:about="http:://purl.obolibrary.org/obo/MFMO0000073">
         <rdfs:label>anterior digastric muscle</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000072"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0002163"/>
-                <owl:someValuesFrom rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000084"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
+        <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;UBERON_0001630"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
                         <owl:someValuesFrom rdf:resource="&obo;UBERON_0001684"/>
@@ -2081,18 +2072,16 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
                         <owl:someValuesFrom rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000093"/>
                     </owl:Restriction>
                     <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;RO_0002163"/>
+                        <owl:someValuesFrom rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000084"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
                         <owl:onProperty rdf:resource="&obo;feed.owl#superficial_to"/>
                         <owl:someValuesFrom rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000084"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0002202"/>
-                <owl:someValuesFrom rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000095"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+        </owl:equivalentClass>
         <obo:IAO_0000115>The anterior digastric is a pharyngeal arch I muscle that participates in oral/pharygeal behaviors and is innervated by the nerve to mylohyoid and superficial to mylohyoid muscle, and lacks the midline raphe.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0010943</oboInOwl:hasDbXref>
         <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
@@ -2137,13 +2126,17 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
 
     <owl:Class rdf:about="http:://purl.obolibrary.org/obo/MFMO0000075">
         <rdfs:label>masseter muscle</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000072"/>
-        <rdfs:subClassOf>
+        <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;UBERON_0001630"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
                         <owl:someValuesFrom rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000108"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
+                        <owl:someValuesFrom rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000093"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="&obo;feed.owl#attached_to_medial_surface_of"/>
@@ -2151,7 +2144,7 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
-        </rdfs:subClassOf>
+        </owl:equivalentClass>
         <obo:IAO_0000119>doi:10.1093/icb/icr067</obo:IAO_0000119>
         <obo:IAO_0000115>Pharyngeal arch 1 muscle that participates in oral/pharyngeal behaviors, is innervated by masseteric nerve branches of the trigeminal nerve (CN V), and attaches to mandible and zygomatic arch.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001597</oboInOwl:hasDbXref>
@@ -2351,14 +2344,14 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000072"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
-                <owl:someValuesFrom rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000044"/>
+                <owl:onProperty rdf:resource="&obo;feed.owl#attached_to_medial_surface_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0001684"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;feed.owl#attached_to_medial_surface_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0001684"/>
+                <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
+                <owl:someValuesFrom rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000044"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
@@ -2374,6 +2367,12 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
     <owl:Class rdf:about="http:://purl.obolibrary.org/obo/MFMO0000084">
         <rdfs:label>mylohyoid muscle</rdfs:label>
         <rdfs:subClassOf rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000072"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002163"/>
+                <owl:someValuesFrom rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000073"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -2395,12 +2394,6 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0002163"/>
-                <owl:someValuesFrom rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000073"/>
-            </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Ready for review.</rdfs:comment>
         <obo:IAO_0000115>The mylohyoid is a pharyngeal arch I muscle that participates in oral/pharyngeal behaviors and is innervated by the nerve to mylohyoid and attaches to the midline raphe linking right and left mylohyoid and the mandible.</obo:IAO_0000115>
@@ -2530,12 +2523,6 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
         <rdfs:label>tensor veli palatini</rdfs:label>
         <rdfs:subClassOf rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000072"/>
         <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000100"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
@@ -2552,6 +2539,12 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http:://purl.obolibrary.org/obo/MFMO0000100"/>
+            </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0008586</oboInOwl:hasDbXref>
         <rdfs:comment>Ready for review.</rdfs:comment>
