@@ -2336,9 +2336,8 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
         <rdfs:label>mandible</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001684</oboInOwl:hasDbXref>
-        <rdfs:comment>Mandible is equivalent to dentary but none of the definitions in Uberon is perfect.  Unfortunately, the term is used in several different ways.  RED</rdfs:comment>
-        <rdfs:comment>Term in Uberon is equivalent but the definition needs revision.
-</rdfs:comment>
+        <rdfs:comment>Mandible is equivalent to dentary but none of the definitions in Uberon is perfect.  Unfortunately, the term is used in several different ways.  RED
+Term in Uberon is equivalent but the definition needs revision.</rdfs:comment>
     </owl:Class>
     
 
@@ -2746,9 +2745,10 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
     <owl:Class rdf:about="&obo;mfmo.owl#spinal_nerve">
         <rdfs:label>spinal nerve</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000090"/>
-        <rdfs:comment>Term(s) in Uberon are equivalent but the definition needs revision.</rdfs:comment>
+        <rdfs:comment>Not sure what the point of having two classes in Uberon - Uberon1780 and Uberon5197.  I think they are, more or less, equivalent.  I prefer 5197 - RED
+Term(s) in Uberon are equivalent but the definition needs revision.</rdfs:comment>
+        <rdfs:comment></rdfs:comment>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001780</oboInOwl:hasDbXref>
-        <rdfs:comment>Not sure what the point of having two classes in Uberon - Uberon1780 and Uberon5197.  I think they are, more or less, equivalent.  I prefer 5197 - RED</rdfs:comment>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0005197</oboInOwl:hasDbXref>
     </owl:Class>
     
