@@ -1538,6 +1538,7 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;MFMO_0000072"/>
         <rdfs:comment>Ready for review.</rdfs:comment>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0010943</oboInOwl:hasDbXref>
         <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
@@ -1601,6 +1602,7 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;MFMO_0000072"/>
         <obo:IAO_0000119>doi:10.1093/icb/icr067</obo:IAO_0000119>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001597</oboInOwl:hasDbXref>
         <obo:IAO_0000115>Pharyngeal arch 1 muscle that participates in oral/pharyngeal behaviors, is innervated by masseteric nerve branches of the trigeminal nerve (CN V), and attaches to mandible and zygomatic arch.</obo:IAO_0000115>
