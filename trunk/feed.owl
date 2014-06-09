@@ -2688,6 +2688,7 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
     <!-- http://purl.obolibrary.org/obo/mfmo.owl#orangutan_posterior_digastric_muscle -->
 
     <owl:Class rdf:about="&obo;mfmo.owl#orangutan_posterior_digastric_muscle">
+        <rdfs:label>orangutan posterior digastric muscle</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000060"/>
         <rdfs:subClassOf>
             <owl:Class>
@@ -2711,6 +2712,7 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
+        <obo:IAO_0000115>The posterior digastric muscle in orangutans does not have an attachment to the hyoid apparatus. It is attached to the posterior edge of the ascending ramus of the mandible. The anterior digastric muscle is absent in orangutans. Winkler, 1991</obo:IAO_0000115>
     </owl:Class>
     
 
