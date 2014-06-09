@@ -367,25 +367,21 @@
     <!-- http://purl.obolibrary.org/obo/MFMO_0000005 -->
 
     <owl:Class rdf:about="&obo;MFMO_0000005">
+        <rdfs:label>muscles innervated by the facial nerve</rdfs:label>
         <rdfs:label>facial muscle</rdfs:label>
         <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&obo;UBERON_0001630"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
-                        <owl:someValuesFrom rdf:resource="&obo;UBERON_0001647"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="&obo;UBERON_0001630"/>
-        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;RO_0002202"/>
                 <owl:someValuesFrom rdf:resource="&obo;UBERON_0003066"/>
             </owl:Restriction>
-        </rdfs:subClassOf>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0001647"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;UBERON_0001630"/>
         <rdfs:comment>Term in Uberon is equivalent but the definition needs revision.</rdfs:comment>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001577</oboInOwl:hasDbXref>
     </owl:Class>
@@ -426,13 +422,13 @@
 
     <owl:Class rdf:about="&obo;MFMO_0000007">
         <rdfs:label xml:lang="en">muscles innervated by glossopharyngeal nerve</rdfs:label>
-        <owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;UBERON_0001630"/>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
                 <owl:someValuesFrom rdf:resource="&obo;UBERON_0001649"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="&obo;UBERON_0001630"/>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;RO_0002202"/>
@@ -1181,14 +1177,10 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&obo;UBERON_0001630"/>
+                    <rdf:Description rdf:about="&obo;MFMO_0000005"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
                         <owl:someValuesFrom rdf:resource="&obo;MFMO_0000044"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
-                        <owl:someValuesFrom rdf:resource="&obo;UBERON_0001647"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="&obo;mfmo.owl#superficial_to"/>
@@ -1240,16 +1232,12 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
 
     <owl:Class rdf:about="&obo;MFMO_0000062">
         <rdfs:label>muscles innervated by hypoglossal nerve</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;UBERON_0001630"/>
         <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&obo;UBERON_0001630"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
-                        <owl:someValuesFrom rdf:resource="&obo;mfmo.owl#hypoglossal_nerve"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
+                <owl:someValuesFrom rdf:resource="&obo;mfmo.owl#hypoglossal_nerve"/>
+            </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1548,27 +1536,11 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/MFMO_0000072 -->
 
     <owl:Class rdf:about="&obo;MFMO_0000072">
+        <rdfs:label>muscles innervated by the trigeminal nerve</rdfs:label>
         <rdfs:label>trigeminal muscle</rdfs:label>
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&obo;UBERON_0001630"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
-                        <owl:someValuesFrom rdf:resource="&obo;MFMO_0000093"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0001630"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0002202"/>
-                <owl:someValuesFrom rdf:resource="&obo;MFMO_0000095"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000115>Muscle innervated by the trigeminal nerve (Cranial Nerve V).</obo:IAO_0000115>
-        <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
+        <obo:IAO_0000119>http://www.feedexp.org</obo:IAO_0000119>
         <rdfs:comment>Request new term.</rdfs:comment>
     </owl:Class>
     
@@ -1578,33 +1550,37 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
 
     <owl:Class rdf:about="&obo;MFMO_0000073">
         <rdfs:label>anterior digastric muscle</rdfs:label>
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&obo;UBERON_0001630"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
-                        <owl:someValuesFrom rdf:resource="&obo;UBERON_0001684"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
-                        <owl:someValuesFrom rdf:resource="&obo;UBERON_0001685"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
-                        <owl:someValuesFrom rdf:resource="&obo;MFMO_0000093"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;RO_0002163"/>
-                        <owl:someValuesFrom rdf:resource="&obo;MFMO_0000084"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;mfmo.owl#superficial_to"/>
-                        <owl:someValuesFrom rdf:resource="&obo;MFMO_0000084"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;MFMO_0000072"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0001685"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0001684"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002163"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFMO_0000084"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;mfmo.owl#superficial_to"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFMO_0000084"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002163"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFMO_0000060"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:comment>Ready for review.</rdfs:comment>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0010943</oboInOwl:hasDbXref>
         <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
@@ -1620,6 +1596,7 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;MFMO_0000072"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
                         <owl:someValuesFrom rdf:resource="&obo;MFMO_0000044"/>
@@ -1628,14 +1605,9 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
                         <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
                         <owl:someValuesFrom rdf:resource="&obo;MFMO_0000056"/>
                     </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
-                        <owl:someValuesFrom rdf:resource="&obo;MFMO_0000093"/>
-                    </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="&obo;MFMO_0000072"/>
         <obo:IAO_0000115>Pharyngeal arch 1 muscle that participates in oral/pharyngeal behaviors, is innervated by the lateral pterygoid nerve branches, and attaches to the condylar process of the mandible and temporomandibular joint (TMJ) capsule, and the cranial base.</obo:IAO_0000115>
         <rdfs:comment>Ready for review.</rdfs:comment>
         <oboInOwl:hasSynonym>external pterygoid muscle</oboInOwl:hasSynonym>
@@ -2368,6 +2340,19 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
     <owl:Class rdf:about="&obo;UBERON_0001630">
         <rdfs:label>muscle organ</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
+        <rdfs:subClassOf rdf:resource="&obo;UBERON_0001630"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFMO_0000093"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002202"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFMO_0000095"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001630</oboInOwl:hasDbXref>
         <rdfs:comment>Term in Uberon is equivalent.</rdfs:comment>
     </owl:Class>
