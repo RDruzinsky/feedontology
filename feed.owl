@@ -1136,6 +1136,10 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
                         <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
                         <owl:someValuesFrom rdf:resource="&obo;UBERON_0002397"/>
                     </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;RO_0002221"/>
+                        <owl:someValuesFrom rdf:resource="&obo;UBERON_0000166"/>
+                    </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
@@ -2337,6 +2341,14 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Request new term but requires definition.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000166 -->
+
+    <owl:Class rdf:about="&obo;UBERON_0000166">
+        <rdfs:label>oral opening</rdfs:label>
     </owl:Class>
     
 
