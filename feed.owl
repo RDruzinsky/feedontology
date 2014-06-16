@@ -328,8 +328,8 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000005"/>
-        <obo:IAO_0000115>A muscle of facial expression, innervated by the facial nerve, attached to the skin of the lower lip, the orbicularis oris muscle, and the mandible. See Diogo et al., 2009; Burrows et al., 2011)</obo:IAO_0000115>
         <oboInOwl:hasDbXref>UBERON_0008596</oboInOwl:hasDbXref>
+        <obo:IAO_0000115>A muscle of facial expression, innervated by the facial nerve, attached to the skin of the lower lip and inferior to the lower lip (in humans this region is called the chin or mental region), the orbicularis oris muscle, and the mandible. See Diogo et al., 2009; Burrows et al., 2011)</obo:IAO_0000115>
     </owl:Class>
     
 
