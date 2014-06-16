@@ -90,6 +90,22 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/MFMO0000124 -->
+
+    <owl:ObjectProperty rdf:about="&obo;MFMO0000124">
+        <rdfs:label xml:lang="en">lateral to</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFMO0000125 -->
+
+    <owl:ObjectProperty rdf:about="&obo;MFMO0000125">
+        <rdfs:label xml:lang="en">medial to</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/MFMO_0000001 -->
 
     <owl:ObjectProperty rdf:about="&obo;MFMO_0000001">
@@ -276,25 +292,6 @@
 
     <owl:Class rdf:about="&obo;MFMO0000121">
         <rdfs:label xml:lang="en">depressor labii inferioris</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MFMO_0000005"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0001684"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0001835"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0002131"/>
-                <owl:someValuesFrom rdf:resource="&obo;MFMO_0000058"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000115>depressor of the lower lip</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>quadratus labii inferioris</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>quadratus menti</oboInOwl:hasExactSynonym>
@@ -323,6 +320,10 @@
                         <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
                         <owl:someValuesFrom rdf:resource="&obo;UBERON_0001835"/>
                     </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;RO_0002163"/>
+                        <owl:someValuesFrom rdf:resource="&obo;MFMO0000123"/>
+                    </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
@@ -337,9 +338,81 @@
 
     <owl:Class rdf:about="&obo;MFMO0000123">
         <rdfs:label xml:lang="en">depressor labii inferioris</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;MFMO_0000005"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO0000124"/>
+                        <owl:someValuesFrom rdf:resource="&obo;MFMO0000122"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
+                        <owl:someValuesFrom rdf:resource="&obo;MFMO_0000058"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
+                        <owl:someValuesFrom rdf:resource="&obo;UBERON_0001684"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
+                        <owl:someValuesFrom rdf:resource="&obo;UBERON_0001835"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;RO_0002163"/>
+                        <owl:someValuesFrom rdf:resource="&obo;MFMO0000122"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;mfmo.owl#superficial_to"/>
+                        <owl:someValuesFrom rdf:resource="&obo;MFMO0000122"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000005"/>
+        <oboInOwl:hasExactSynonym>depressor of the lower lip</oboInOwl:hasExactSynonym>
         <obo:IAO_0000115>A muscle of facial expression, innervated by the facial nerve, attached to the skin of the lower lip, orbicularis oris muscle, and mandible, and superficial and lateral to the mentalis muscle. See Diogo et al., 2009; Burrows et al., 2011)</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>quadratus labii inferioris</oboInOwl:hasExactSynonym>
         <oboInOwl:hasDbXref>UBERON_0001581</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>quadratus menti</oboInOwl:hasExactSynonym>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFMO0000126 -->
+
+    <owl:Class rdf:about="&obo;MFMO0000126">
+        <rdfs:label xml:lang="en">depressor anguli oris</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;MFMO_0000005"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO0000124"/>
+                        <owl:someValuesFrom rdf:resource="&obo;MFMO0000126"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
+                        <owl:someValuesFrom rdf:resource="&obo;MFMO_0000058"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
+                        <owl:someValuesFrom rdf:resource="&obo;UBERON_0001684"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
+                        <owl:someValuesFrom rdf:resource="&obo;UBERON_0001835"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;mfmo.owl#superficial_to"/>
+                        <owl:someValuesFrom rdf:resource="&obo;MFMO_0000059"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;MFMO_0000005"/>
+        <obo:IAO_0000115>A muscle of facial expression, innervated by the facial nerve, attached to the mandible, skin of the lower lip in the region of the angle of the oral opening, orbicularis oris, and lateral to the depressor anguli oris muscle. </obo:IAO_0000115>
+        <oboInOwl:hasDbXref>UBERON_0008597</oboInOwl:hasDbXref>
     </owl:Class>
     
 
