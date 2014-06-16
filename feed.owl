@@ -389,7 +389,7 @@
                     <rdf:Description rdf:about="&obo;MFMO_0000005"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="&obo;MFMO0000124"/>
-                        <owl:someValuesFrom rdf:resource="&obo;MFMO0000126"/>
+                        <owl:someValuesFrom rdf:resource="&obo;MFMO0000123"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
