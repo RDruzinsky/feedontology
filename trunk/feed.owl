@@ -303,6 +303,47 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/MFMO0000122 -->
+
+    <owl:Class rdf:about="&obo;MFMO0000122">
+        <rdfs:label xml:lang="en">mentalis</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;MFMO_0000005"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
+                        <owl:someValuesFrom rdf:resource="&obo;MFMO_0000058"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
+                        <owl:someValuesFrom rdf:resource="&obo;UBERON_0001684"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
+                        <owl:someValuesFrom rdf:resource="&obo;UBERON_0001835"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;MFMO_0000005"/>
+        <obo:IAO_0000115>A muscle of facial expression, innervated by the facial nerve, attached to the skin of the lower lip, the orbicularis oris muscle, and the mandible. See Diogo et al., 2009; Burrows et al., 2011)</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>UBERON_0008596</oboInOwl:hasDbXref>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFMO0000123 -->
+
+    <owl:Class rdf:about="&obo;MFMO0000123">
+        <rdfs:label xml:lang="en">depressor labii inferioris</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFMO_0000005"/>
+        <obo:IAO_0000115>A muscle of facial expression, innervated by the facial nerve, attached to the skin of the lower lip, orbicularis oris muscle, and mandible, and superficial and lateral to the mentalis muscle. See Diogo et al., 2009; Burrows et al., 2011)</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>UBERON_0001581</oboInOwl:hasDbXref>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/MFMO_0000002 -->
 
     <owl:Class rdf:about="&obo;MFMO_0000002">
