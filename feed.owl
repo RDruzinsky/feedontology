@@ -106,6 +106,33 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/MFMO0000142 -->
+
+    <owl:ObjectProperty rdf:about="&obo;MFMO0000142">
+        <rdfs:label xml:lang="en">dorsal to</rdfs:label>
+        <oboInOwl:hasDbXref>PATO_0001233</oboInOwl:hasDbXref>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFMO0000143 -->
+
+    <owl:ObjectProperty rdf:about="&obo;MFMO0000143">
+        <rdfs:label xml:lang="en">ventral to</rdfs:label>
+        <oboInOwl:hasDbXref>PATO_0001196</oboInOwl:hasDbXref>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFMO0000144 -->
+
+    <owl:ObjectProperty rdf:about="&obo;MFMO0000144">
+        <rdfs:label xml:lang="en">angle</rdfs:label>
+        <oboInOwl:hasDbXref>PATO_0002326</oboInOwl:hasDbXref>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/MFMO_0000001 -->
 
     <owl:ObjectProperty rdf:about="&obo;MFMO_0000001">
@@ -556,6 +583,26 @@
         <rdfs:label xml:lang="en">levator anguli oris</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000005"/>
         <oboInOwl:hasDbXref>UBERON_0008595</oboInOwl:hasDbXref>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFMO0000140 -->
+
+    <owl:Class rdf:about="&obo;MFMO0000140">
+        <rdfs:label xml:lang="en">depressor septi nasi</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFMO_0000005"/>
+        <oboInOwl:hasDbXref>UBERON_0008589</oboInOwl:hasDbXref>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFMO0000141 -->
+
+    <owl:Class rdf:about="&obo;MFMO0000141">
+        <rdfs:label xml:lang="en">risorius</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFMO_0000005"/>
+        <oboInOwl:hasDbXref>UBERON_0008598</oboInOwl:hasDbXref>
     </owl:Class>
     
 
