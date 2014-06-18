@@ -562,7 +562,11 @@
     <owl:Class rdf:about="&obo;MFMO0000137">
         <rdfs:label xml:lang="en">zygomaticus minor</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000005"/>
+        <obo:IAO_0000115>Facial muscle attached to the orbicularis oris muscle, anterior root of the zygomatic arch (zygomatic bone or maxilla), and skin in the region of the caudal border of the orbicularis oculi muscle. The muscle is often described as having two heads, one attached to the maxilla and the other attached to the skin overlying the orbicularis oculi. See Diogo 2008; Diogo et al., 2009; Burrows et al.., 2011., also DuBrul, 1980.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>UBERON_0008594</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>musculus quadratus labii superioris, zygomatic head</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>square muscle of the upper lip, zygomatic head</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>musculus zygomaticus minor</oboInOwl:hasExactSynonym>
     </owl:Class>
     
 
@@ -572,6 +576,7 @@
     <owl:Class rdf:about="&obo;MFMO0000138">
         <rdfs:label xml:lang="en">zygomaticus major</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000005"/>
+        <obo:IAO_0000115>Facial muscle attached to the modiolus, corner (angle) of the mouth, and zygomatic bone. See Diogo 2008; Diogo et al., 2009; Burrows et al.., 2011., also DuBrul, 1980.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>UBERON_0008593</oboInOwl:hasDbXref>
     </owl:Class>
     
@@ -642,6 +647,16 @@
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0000166"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFMO0000146 -->
+
+    <owl:Class rdf:about="&obo;MFMO0000146">
+        <rdfs:label xml:lang="en">zygomatic bone</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/FMA_52747</oboInOwl:hasDbXref>
     </owl:Class>
     
 
