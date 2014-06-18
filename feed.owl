@@ -288,18 +288,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MFMO0000121 -->
-
-    <owl:Class rdf:about="&obo;MFMO0000121">
-        <rdfs:label xml:lang="en">depressor labii inferioris</rdfs:label>
-        <obo:IAO_0000115>depressor of the lower lip</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym>quadratus labii inferioris</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>quadratus menti</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>depressor of the lower lip</oboInOwl:hasExactSynonym>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/MFMO0000122 -->
 
     <owl:Class rdf:about="&obo;MFMO0000122">
@@ -413,6 +401,161 @@
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000005"/>
         <obo:IAO_0000115>A muscle of facial expression, innervated by the facial nerve, attached to the mandible, skin of the lower lip in the region of the angle of the oral opening, orbicularis oris, and lateral to the depressor anguli oris muscle. </obo:IAO_0000115>
         <oboInOwl:hasDbXref>UBERON_0008597</oboInOwl:hasDbXref>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFMO0000127 -->
+
+    <owl:Class rdf:about="&obo;MFMO0000127">
+        <rdfs:label xml:lang="en">occipitalis</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;MFMO_0000005"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
+                        <owl:someValuesFrom rdf:resource="&obo;MFMO0000128"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
+                        <owl:someValuesFrom rdf:resource="&obo;MFMO_0000099"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;MFMO_0000005"/>
+        <obo:IAO_0000115>A muscle of the skin of the head (scalp), innervated by the facial nerve, attached to the cranium in the nuchal (occipital) region and to the facia of the scalp (galea aponurotica or epicranial aponeurosis in humans). In mammals other than humans, there is no large facia present and the most rostral fibers of the occipitalis are attached to the skin near or even overlapping with the fibers of the frontalis muscle.See Diogo 2008; Diogo et al., 2009; Burrows et al.., 2011.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>occipital belly of occipitofrontalis or epicranius (humans)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>venter occipitalis (humans)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasDbXref>UBERON_0010947</oboInOwl:hasDbXref>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFMO0000128 -->
+
+    <owl:Class rdf:about="&obo;MFMO0000128">
+        <rdfs:label xml:lang="en">occipital region of cranium</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;MFMO_0000048"/>
+                    <rdf:Description rdf:about="&obo;UBERON_0005902"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;MFMO_0000048"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFMO0000129 -->
+
+    <owl:Class rdf:about="&obo;MFMO0000129">
+        <rdfs:label>A muscle of the skin of the head (scalp), innervated by the facial nerve, attached to facia of the skin superior to the orbits (superciliary region), overlapping with the procerus muscles, and attched to the facia of the scalp (galea aponurotica or epicranial aponeurosis in humans). In mammals other than humans, there is no large facia present and the most rostral fibers of the occipitalis are attached to the skin near or even overlapping with the fibers of the frontalis muscle.See Diogo 2008; Diogo et al., 2009; Burrows et al.., 2011.</rdfs:label>
+        <rdfs:label xml:lang="en">frontalis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFMO_0000005"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFMO0000130 -->
+
+    <owl:Class rdf:about="&obo;MFMO0000130">
+        <rdfs:label xml:lang="en">orbicularis oculi</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFMO_0000005"/>
+        <oboInOwl:hasDbXref>UBERON_0001578</oboInOwl:hasDbXref>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFMO0000131 -->
+
+    <owl:Class rdf:about="&obo;MFMO0000131">
+        <rdfs:label xml:lang="en">procerus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFMO_0000005"/>
+        <oboInOwl:hasDbXref>UBERON_0008588</oboInOwl:hasDbXref>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFMO0000132 -->
+
+    <owl:Class rdf:about="&obo;MFMO0000132">
+        <rdfs:label xml:lang="en">corrugator supercilii</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFMO_0000005"/>
+        <oboInOwl:hasDbXref>FMA_46794</oboInOwl:hasDbXref>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFMO0000133 -->
+
+    <owl:Class rdf:about="&obo;MFMO0000133">
+        <rdfs:label xml:lang="en">depressor supercilii</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFMO_0000005"/>
+        <oboInOwl:hasDbXref>UBERON_0008591</oboInOwl:hasDbXref>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFMO0000134 -->
+
+    <owl:Class rdf:about="&obo;MFMO0000134">
+        <rdfs:label xml:lang="en">nasalis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFMO_0000005"/>
+        <oboInOwl:hasDbXref>UBERON_0010953</oboInOwl:hasDbXref>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFMO0000135 -->
+
+    <owl:Class rdf:about="&obo;MFMO0000135">
+        <rdfs:label xml:lang="en">levator labii superioris alaeque nasi</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFMO_0000005"/>
+        <oboInOwl:hasDbXref>UBERON_0008592</oboInOwl:hasDbXref>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFMO0000136 -->
+
+    <owl:Class rdf:about="&obo;MFMO0000136">
+        <rdfs:label xml:lang="en">levator labii superioris</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFMO_0000005"/>
+        <oboInOwl:hasDbXref>UBERON_0001580</oboInOwl:hasDbXref>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFMO0000137 -->
+
+    <owl:Class rdf:about="&obo;MFMO0000137">
+        <rdfs:label xml:lang="en">zygomaticus minor</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFMO_0000005"/>
+        <oboInOwl:hasDbXref>UBERON_0008594</oboInOwl:hasDbXref>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFMO0000138 -->
+
+    <owl:Class rdf:about="&obo;MFMO0000138">
+        <rdfs:label xml:lang="en">zygomaticus major</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFMO_0000005"/>
+        <oboInOwl:hasDbXref>UBERON_0008593</oboInOwl:hasDbXref>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFMO0000139 -->
+
+    <owl:Class rdf:about="&obo;MFMO0000139">
+        <rdfs:label xml:lang="en">levator anguli oris</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFMO_0000005"/>
+        <oboInOwl:hasDbXref>UBERON_0008595</oboInOwl:hasDbXref>
     </owl:Class>
     
 
@@ -2634,6 +2777,15 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0001759"/>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0003716</oboInOwl:hasDbXref>
         <rdfs:comment>Term in Uberon is equivalent but the definition needs revision.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0005902 -->
+
+    <owl:Class rdf:about="&obo;UBERON_0005902">
+        <rdfs:label>occipital region</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
     </owl:Class>
     
 
