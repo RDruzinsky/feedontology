@@ -601,8 +601,47 @@
 
     <owl:Class rdf:about="&obo;MFMO0000141">
         <rdfs:label xml:lang="en">risorius</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;MFMO_0000005"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO0000142"/>
+                        <owl:someValuesFrom rdf:resource="&obo;MFMO_0000059"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO0000143"/>
+                        <owl:someValuesFrom rdf:resource="&obo;MFMO0000138"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
+                        <owl:someValuesFrom rdf:resource="&obo;MFMO_0000075"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
+                        <owl:someValuesFrom rdf:resource="&obo;MFMO_0000099"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000005"/>
+        <obo:IAO_0000115>Facial muscle that attaches to the facia of the masseter muscle and the facia of the skin in the region of the corner (angle) of the mouth. Even in species in which this muscle is present, it is highly variable. A true risorius muscle may only be present in Hominins (humans and great apes). See Diogo 2008; Diogo et al., 2009; Burrows et al.., 2011., also DuBrul, 1980.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>UBERON_0008598</oboInOwl:hasDbXref>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFMO0000145 -->
+
+    <owl:Class rdf:about="&obo;MFMO0000145">
+        <rdfs:label xml:lang="en">angle of oral opening</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;MFMO0000144"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000166"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;UBERON_0000166"/>
     </owl:Class>
     
 
