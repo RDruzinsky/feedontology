@@ -325,11 +325,11 @@
                     <rdf:Description rdf:about="&obo;MFMO_0000005"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
-                        <owl:someValuesFrom rdf:resource="&obo;MFMO_0000058"/>
+                        <owl:someValuesFrom rdf:resource="&obo;MFMO0000147"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
-                        <owl:someValuesFrom rdf:resource="&obo;UBERON_0001684"/>
+                        <owl:someValuesFrom rdf:resource="&obo;MFMO_0000058"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
@@ -343,8 +343,8 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000005"/>
+        <obo:IAO_0000115>A muscle of facial expression, innervated by the facial nerve, attached to the skin of the lower lip and inferior to the lower lip (in humans this region is called the chin or mental region), the orbicularis oris muscle, and the mandible in the symphyseal region. See Diogo et al., 2009; Burrows et al., 2011)</obo:IAO_0000115>
         <oboInOwl:hasDbXref>UBERON_0008596</oboInOwl:hasDbXref>
-        <obo:IAO_0000115>A muscle of facial expression, innervated by the facial nerve, attached to the skin of the lower lip and inferior to the lower lip (in humans this region is called the chin or mental region), the orbicularis oris muscle, and the mandible. See Diogo et al., 2009; Burrows et al., 2011)</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -589,10 +589,11 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000005"/>
-        <obo:IAO_0000115>Facial muscle attached to the orbicularis oris muscle, anterior root of the zygomatic arch (zygomatic bone or maxilla), and skin in the region of the caudal border of the orbicularis oculi muscle. The muscle is often described as having two heads, one attached to the maxilla and the other attached to the skin overlying the orbicularis oculi. See Diogo 2008; Diogo et al., 2009; Burrows et al.., 2011., also DuBrul, 1980.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>UBERON_0008594</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>musculus quadratus labii superioris, zygomatic head</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>auriculolabialis superior</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasExactSynonym>square muscle of the upper lip, zygomatic head</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115>Facial muscle attached to the orbicularis oris muscle, anterior root of the zygomatic arch (zygomatic bone or maxilla), and skin in the region of the caudal border of the orbicularis oculi muscle. The muscle is often described as having two heads, one attached to the maxilla and the other attached to the skin overlying the orbicularis oculi.  In many mammals this muscle also has an attachment to the cartilage of the external ear, in which case it is called the auriculolabialis superior. See Diogo 2008; Diogo et al., 2009; Burrows et al.., 2011., also DuBrul, 1980.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>musculus zygomaticus minor</oboInOwl:hasExactSynonym>
     </owl:Class>
     
@@ -631,8 +632,9 @@
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000005"/>
         <oboInOwl:hasExactSynonym>zygomatic muscle</oboInOwl:hasExactSynonym>
-        <obo:IAO_0000115>Facial muscle attached to the modiolus, corner (angle) of the mouth, and zygomatic bone. See Diogo 2008; Diogo et al., 2009; Burrows et al.., 2011., also DuBrul, 1980.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>UBERON_0008593</oboInOwl:hasDbXref>
+        <oboInOwl:hasRelatedSynonym>auriculolabialis superior</oboInOwl:hasRelatedSynonym>
+        <obo:IAO_0000115>Facial muscle attached to the modiolus, corner (angle) of the mouth, and zygomatic bone. This muscle is ventral to the zygomaticus minor and dorsal to the platysma muscle.  In many mammals this muscle also has an attachment to the cartilage of the external ear, in which case it is called the auriculolabialis inferior. See Diogo 2008; Diogo et al., 2009; Burrows et al.., 2011., also DuBrul, 1980.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -685,7 +687,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000005"/>
-        <obo:IAO_0000115>Facial muscle that attaches to the facia of the masseter muscle and the facia of the skin in the region of the corner (angle) of the mouth. Even in species in which this muscle is present, it is highly variable. A true risorius muscle may only be present in Hominins (humans and great apes). See Diogo 2008; Diogo et al., 2009; Burrows et al.., 2011., also DuBrul, 1980.</obo:IAO_0000115>
+        <obo:IAO_0000115>Facial muscle that attaches to the fascia of the masseter muscle and the facia of the skin in the region of the corner (angle) of the mouth. Even in species in which this muscle is present, it is highly variable. A true risorius muscle may only be present in Hominins (humans and great apes). See Diogo 2008; Diogo et al., 2009; Burrows et al.., 2011., also DuBrul, 1980.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>UBERON_0008598</oboInOwl:hasDbXref>
     </owl:Class>
     
@@ -711,7 +713,17 @@
     <owl:Class rdf:about="&obo;MFMO0000146">
         <rdfs:label xml:lang="en">zygomatic bone</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
-        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/FMA_52747</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001683</oboInOwl:hasDbXref>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFMO0000147 -->
+
+    <owl:Class rdf:about="&obo;MFMO0000147">
+        <rdfs:label xml:lang="en">symphyseal region</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;UBERON_0001684"/>
+        <obo:IAO_0000115>The region of the mandible on or near the midline (near the mandiblular symphysis, UBERON_0006606)</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -781,18 +793,20 @@
         <rdfs:label>muscles innervated by the facial nerve</rdfs:label>
         <rdfs:label>facial muscle</rdfs:label>
         <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0001647"/>
-            </owl:Restriction>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;UBERON_0001630"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
+                        <owl:someValuesFrom rdf:resource="&obo;UBERON_0001647"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;RO_0002202"/>
+                        <owl:someValuesFrom rdf:resource="&obo;UBERON_0003066"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
         </owl:equivalentClass>
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0002202"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0003066"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="&obo;UBERON_0001630"/>
         <rdfs:comment>Term in Uberon is equivalent but the definition needs revision.</rdfs:comment>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001577</oboInOwl:hasDbXref>
     </owl:Class>
@@ -836,6 +850,7 @@
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;UBERON_0001630"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
                         <owl:someValuesFrom rdf:resource="&obo;UBERON_0001649"/>
@@ -847,7 +862,6 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="&obo;UBERON_0001630"/>
         <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
         <obo:IAO_0000115>Muscles innervated by the glossopharyngeal nerve (Cranial Nerve IX).</obo:IAO_0000115>
         <rdfs:comment>Request new term.</rdfs:comment>
@@ -916,6 +930,7 @@
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;UBERON_0001630"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
                         <owl:someValuesFrom rdf:resource="&obo;UBERON_0001759"/>
@@ -931,7 +946,6 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="&obo;UBERON_0001630"/>
         <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
         <rdfs:comment>Request new term.</rdfs:comment>
         <obo:IAO_0000115>Muscles innervated by the vagus nerve (Cranial Nerve X).</obo:IAO_0000115>
@@ -1021,7 +1035,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="&obo;MFMO_0000013"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFMO_0000018"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1033,7 +1047,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="&obo;MFMO_0000018"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFMO_0000013"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1650,6 +1664,7 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;UBERON_0001630"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
                         <owl:someValuesFrom rdf:resource="&obo;mfmo.owl#hypoglossal_nerve"/>
@@ -1661,7 +1676,6 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="&obo;UBERON_0001630"/>
         <obo:IAO_0000115>Muscles innervated by the hypoglossal nerve (Cranial Nerve XII).</obo:IAO_0000115>
         <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
         <rdfs:comment>Request new term.</rdfs:comment>
@@ -1790,6 +1804,7 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;UBERON_0001630"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
                         <owl:someValuesFrom rdf:resource="&obo;mfmo.owl#spinal_nerve"/>
@@ -1801,7 +1816,6 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="&obo;UBERON_0001630"/>
         <rdfs:comment>Request new term.</rdfs:comment>
         <obo:IAO_0000115>Muscles innervated by a spinal nerve.</obo:IAO_0000115>
     </owl:Class>
@@ -1944,6 +1958,7 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;UBERON_0001630"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
                         <owl:someValuesFrom rdf:resource="&obo;MFMO_0000093"/>
@@ -1955,7 +1970,6 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="&obo;UBERON_0001630"/>
         <obo:IAO_0000115>Muscle innervated by the trigeminal nerve (Cranial Nerve V).</obo:IAO_0000115>
         <obo:IAO_0000119>http://www.feedexp.org</obo:IAO_0000119>
         <rdfs:comment>Request new term.</rdfs:comment>
@@ -2037,14 +2051,13 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&obo;UBERON_0001630"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
+                        <owl:someValuesFrom rdf:resource="&obo;MFMO_0000108"/>
+                    </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
                         <owl:someValuesFrom rdf:resource="&obo;MFMO_0000093"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;RO_0002371"/>
-                        <owl:someValuesFrom rdf:resource="&obo;MFMO_0000108"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="&obo;mfmo.owl#attached_to_lateral_surface_of"/>
@@ -2253,14 +2266,14 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000072"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
-                <owl:someValuesFrom rdf:resource="&obo;MFMO_0000044"/>
+                <owl:onProperty rdf:resource="&obo;mfmo.owl#attached_to_medial_surface_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0001684"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;mfmo.owl#attached_to_medial_surface_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0001684"/>
+                <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFMO_0000044"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Ready for review.</rdfs:comment>
