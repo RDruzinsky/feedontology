@@ -1138,6 +1138,313 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/MFMO0000180 -->
+
+    <owl:Class rdf:about="&obo;MFMO0000180">
+        <rdfs:label xml:lang="en">adductor mandibulae internus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFMO_0000072"/>
+        <oboInOwl:hasExactSynonym>mAMI</oboInOwl:hasExactSynonym>
+        <rdfs:comment>From FEED reptile spreadsheet</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFMO0000181 -->
+
+    <owl:Class rdf:about="&obo;MFMO0000181">
+        <rdfs:label xml:lang="en">pterygoideus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFMO_0000072"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFMO0000180"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>From FEED reptile spreadsheet</rdfs:comment>
+        <oboInOwl:hasExactSynonym>mPt</oboInOwl:hasExactSynonym>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFMO0000182 -->
+
+    <owl:Class rdf:about="&obo;MFMO0000182">
+        <rdfs:label xml:lang="en">pterygoideus externus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFMO_0000072"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFMO0000181"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFMO0000183 -->
+
+    <owl:Class rdf:about="&obo;MFMO0000183">
+        <rdfs:label xml:lang="en">pterygoideus internus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFMO_0000072"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFMO0000181"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFMO0000184 -->
+
+    <owl:Class rdf:about="&obo;MFMO0000184">
+        <rdfs:label xml:lang="en">pseudotemporalis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFMO_0000072"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFMO0000180"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:hasExactSynonym>mPst</oboInOwl:hasExactSynonym>
+        <rdfs:comment>From FEED reptile spreadsheet</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFMO0000185 -->
+
+    <owl:Class rdf:about="&obo;MFMO0000185">
+        <rdfs:label xml:lang="en">pseudotemporalis superficialis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFMO_0000072"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFMO0000184"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>From FEED reptile spreadsheet</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFMO0000186 -->
+
+    <owl:Class rdf:about="&obo;MFMO0000186">
+        <rdfs:label xml:lang="en">pseudotemporalis profundus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFMO_0000072"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFMO0000184"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>From FEED reptile spreadsheet</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFMO0000187 -->
+
+    <owl:Class rdf:about="&obo;MFMO0000187">
+        <rdfs:label xml:lang="en">intramandibularis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFMO_0000072"/>
+        <rdfs:comment>From FEED reptile spreadsheet</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFMO0000188 -->
+
+    <owl:Class rdf:about="&obo;MFMO0000188">
+        <rdfs:label xml:lang="en">pterygoideus atypicus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFMO_0000072"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFMO0000182"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:hasExactSynonym>mPtAt</oboInOwl:hasExactSynonym>
+        <rdfs:comment>From FEED reptile spreadsheet</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFMO0000189 -->
+
+    <owl:Class rdf:about="&obo;MFMO0000189">
+        <rdfs:label xml:lang="en">pterygoideus typicus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFMO_0000072"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFMO0000182"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>From FEED reptile spreadsheet</rdfs:comment>
+        <oboInOwl:hasExactSynonym>mPtTy</oboInOwl:hasExactSynonym>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFMO0000190 -->
+
+    <owl:Class rdf:about="&obo;MFMO0000190">
+        <rdfs:label xml:lang="en">adductor mandibulae posterior</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFMO_0000072"/>
+        <rdfs:comment>From FEED reptile spreadsheet</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFMO0000191 -->
+
+    <owl:Class rdf:about="&obo;MFMO0000191">
+        <rdfs:label xml:lang="en">constrictor internus dorsalis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFMO_0000072"/>
+        <oboInOwl:hasExactSynonym>mCID</oboInOwl:hasExactSynonym>
+        <rdfs:comment>From FEED reptile spreadsheet</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFMO0000192 -->
+
+    <owl:Class rdf:about="&obo;MFMO0000192">
+        <rdfs:label xml:lang="en">levator bulbi</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFMO_0000072"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFMO0000191"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>From FEED reptile spreadsheet</rdfs:comment>
+        <oboInOwl:hasExactSynonym>mLBul</oboInOwl:hasExactSynonym>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFMO0000193 -->
+
+    <owl:Class rdf:about="&obo;MFMO0000193">
+        <rdfs:label xml:lang="en">levator pterygoidei</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFMO_0000072"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFMO0000191"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>From FEED reptile spreadsheet</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFMO0000194 -->
+
+    <owl:Class rdf:about="&obo;MFMO0000194">
+        <rdfs:label xml:lang="en">protractor pterygoidei</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFMO_0000072"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFMO0000191"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>From FEED reptile spreadsheet</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFMO0000195 -->
+
+    <owl:Class rdf:about="&obo;MFMO0000195">
+        <rdfs:label xml:lang="en">intermandibularis posterior</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFMO_0000005"/>
+        <rdfs:comment>From FEED reptile spreadsheet</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFMO0000196 -->
+
+    <owl:Class rdf:about="&obo;MFMO0000196">
+        <rdfs:label xml:lang="en">intermandibularis anterior</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFMO_0000072"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFMO0000197"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>From FEED reptile spreadsheet</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFMO0000197 -->
+
+    <owl:Class rdf:about="&obo;MFMO0000197">
+        <rdfs:label xml:lang="en">intermandibularis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFMO_0000072"/>
+        <rdfs:comment>From FEED reptile spreadsheet</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFMO0000198 -->
+
+    <owl:Class rdf:about="&obo;MFMO0000198">
+        <rdfs:label xml:lang="en">depressor mandibulae</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFMO_0000005"/>
+        <rdfs:comment>From FEED reptile spreadsheet</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFMO0000199 -->
+
+    <owl:Class rdf:about="&obo;MFMO0000199">
+        <rdfs:label xml:lang="en">cervicomandibularis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFMO_0000005"/>
+        <rdfs:comment>From FEED reptile spreadsheet</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFMO0000200 -->
+
+    <owl:Class rdf:about="&obo;MFMO0000200">
+        <rdfs:label xml:lang="en">omohyoideus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFMO_0000067"/>
+        <rdfs:comment>From FEED reptile spreadsheet</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFMO0000201 -->
+
+    <owl:Class rdf:about="&obo;MFMO0000201">
+        <rdfs:label xml:lang="en">sternohyoideus superficialis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFMO_0000067"/>
+        <rdfs:comment>From FEED reptile spreadsheet</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFMO0000202 -->
+
+    <owl:Class rdf:about="&obo;MFMO0000202">
+        <rdfs:label xml:lang="en">sternohyoideus profundus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFMO_0000067"/>
+        <rdfs:comment>From FEED reptile spreadsheet</rdfs:comment>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/MFMO_0000002 -->
 
     <owl:Class rdf:about="&obo;MFMO_0000002">
