@@ -877,6 +877,156 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/MFMO0000161 -->
+
+    <owl:Class rdf:about="&obo;MFMO0000161">
+        <rdfs:label xml:lang="en">branchiohyoideus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFMO_0000007"/>
+        <rdfs:comment>FEED reptile spreadsheet</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFMO0000162 -->
+
+    <owl:Class rdf:about="&obo;MFMO0000162">
+        <rdfs:label xml:lang="en">constrictor colli</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFMO_0000005"/>
+        <rdfs:comment>FEED reptile spreadsheet</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFMO0000163 -->
+
+    <owl:Class rdf:about="&obo;MFMO0000163">
+        <rdfs:label xml:lang="en">spinalis capitis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFMO_0000067"/>
+        <rdfs:comment>FEED reptile spreadsheet</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFMO0000164 -->
+
+    <owl:Class rdf:about="&obo;MFMO0000164">
+        <rdfs:label xml:lang="en">obliquus capitis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFMO_0000067"/>
+        <rdfs:comment>FEED reptile spreadsheet</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFMO0000165 -->
+
+    <owl:Class rdf:about="&obo;MFMO0000165">
+        <rdfs:label xml:lang="en">longus capitis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFMO_0000067"/>
+        <rdfs:comment>FEED reptile spreadsheet</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFMO0000166 -->
+
+    <owl:Class rdf:about="&obo;MFMO0000166">
+        <rdfs:label xml:lang="en">rectus cervicis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFMO_0000067"/>
+        <rdfs:comment>FEED reptile spreadsheet</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFMO0000167 -->
+
+    <owl:Class rdf:about="&obo;MFMO0000167">
+        <rdfs:label xml:lang="en">Adductor Mandibulae Externus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFMO_0000072"/>
+        <oboInOwl:hasExactSynonym>mAME</oboInOwl:hasExactSynonym>
+        <rdfs:comment>FEED reptile spreadsheet</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFMO0000168 -->
+
+    <owl:Class rdf:about="&obo;MFMO0000168">
+        <rdfs:label xml:lang="en">adductor Mandibulae Internus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFMO_0000072"/>
+        <rdfs:comment>FEED reptile spreadsheet</rdfs:comment>
+        <oboInOwl:hasExactSynonym>mAMI</oboInOwl:hasExactSynonym>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFMO0000169 -->
+
+    <owl:Class rdf:about="&obo;MFMO0000169">
+        <rdfs:label xml:lang="en">intramandibularis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFMO_0000072"/>
+        <rdfs:comment>FEED reptile spreadsheet</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFMO0000170 -->
+
+    <owl:Class rdf:about="&obo;MFMO0000170">
+        <rdfs:label xml:lang="en">adductor mandibulae externus medialis</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;UBERON_0001630"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
+                        <owl:someValuesFrom rdf:resource="&obo;MFMO_0000093"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;RO_0002202"/>
+                        <owl:someValuesFrom rdf:resource="&obo;MFMO_0000095"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFMO0000167"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFMO0000171 -->
+
+    <owl:Class rdf:about="&obo;MFMO0000171">
+        <rdfs:label xml:lang="en">adductor mandibulae externus superficialis</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;UBERON_0001630"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
+                        <owl:someValuesFrom rdf:resource="&obo;MFMO_0000093"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;RO_0002202"/>
+                        <owl:someValuesFrom rdf:resource="&obo;MFMO_0000095"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFMO0000167"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/MFMO_0000002 -->
 
     <owl:Class rdf:about="&obo;MFMO_0000002">
