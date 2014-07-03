@@ -980,6 +980,8 @@
                 <owl:someValuesFrom rdf:resource="&obo;MFMO0000167"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment>From FEED reptile spreadsheet</rdfs:comment>
+        <oboInOwl:hasExactSynonym>mAMEM</oboInOwl:hasExactSynonym>
     </owl:Class>
     
 
@@ -995,6 +997,143 @@
                 <owl:someValuesFrom rdf:resource="&obo;MFMO0000167"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment>From FEED reptile spreadsheet</rdfs:comment>
+        <oboInOwl:hasExactSynonym>mAMES</oboInOwl:hasExactSynonym>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFMO0000172 -->
+
+    <owl:Class rdf:about="&obo;MFMO0000172">
+        <rdfs:label xml:lang="en">ventrolateral head of mAMEM</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFMO_0000072"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFMO0000170"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:hasExactSynonym>mAMEMa</oboInOwl:hasExactSynonym>
+        <rdfs:comment>From FEED reptile spreadsheet</rdfs:comment>
+        <oboInOwl:hasExactSynonym>ventrolateral head of adductor mandibulae externus medialis</oboInOwl:hasExactSynonym>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFMO0000173 -->
+
+    <owl:Class rdf:about="&obo;MFMO0000173">
+        <rdfs:label xml:lang="en">anteromedial head of mAMEM</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFMO_0000072"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFMO0000170"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>From FEED reptile spreadsheet</rdfs:comment>
+        <oboInOwl:hasExactSynonym>mAMEMb</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>anteromedial head of adductor mandibulae externus medialis</oboInOwl:hasExactSynonym>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFMO0000174 -->
+
+    <owl:Class rdf:about="&obo;MFMO0000174">
+        <rdfs:label xml:lang="en">posterior head of mAMEM</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFMO_0000072"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFMO0000170"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:hasExactSynonym>mAMEMc</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>posterior head of adductor mandibulae externus medialis</oboInOwl:hasExactSynonym>
+        <rdfs:comment>From FEED reptile spreadsheet</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFMO0000175 -->
+
+    <owl:Class rdf:about="&obo;MFMO0000175">
+        <rdfs:label xml:lang="en">mLAO</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFMO_0000072"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFMO0000171"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>From FEED reptile spreadsheet</rdfs:comment>
+        <oboInOwl:hasExactSynonym>levator anguli oris</oboInOwl:hasExactSynonym>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFMO0000176 -->
+
+    <owl:Class rdf:about="&obo;MFMO0000176">
+        <rdfs:label xml:lang="en">retractor anguli oris</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFMO_0000072"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFMO0000171"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFMO0000177 -->
+
+    <owl:Class rdf:about="&obo;MFMO0000177">
+        <rdfs:label xml:lang="en">adductor mandibulae externus superficialis anterior</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFMO_0000072"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFMO0000171"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>From FEED reptile spreadsheet</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFMO0000178 -->
+
+    <owl:Class rdf:about="&obo;MFMO0000178">
+        <rdfs:label xml:lang="en">adductor mandibulae externus superficialis posterior</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFMO_0000072"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFMO0000171"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>From FEED reptile spreadsheet</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFMO0000179 -->
+
+    <owl:Class rdf:about="&obo;MFMO0000179">
+        <rdfs:label xml:lang="en">adductor mandibulae externus profundus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFMO_0000072"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFMO0000167"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:hasExactSynonym>mAMEP</oboInOwl:hasExactSynonym>
+        <rdfs:comment>From FEED reptile spreadsheet</rdfs:comment>
     </owl:Class>
     
 
