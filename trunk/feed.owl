@@ -482,6 +482,35 @@
     <owl:Class rdf:about="&obo;MFMO0000129">
         <rdfs:label>A muscle of the skin of the head (scalp), innervated by the facial nerve, attached to facia of the skin superior to the orbits (superciliary region), overlapping with the procerus muscles, and attched to the facia of the scalp (galea aponurotica or epicranial aponeurosis in humans). In mammals other than humans, there is no large facia present and the most rostral fibers of the occipitalis are attached to the skin near or even overlapping with the fibers of the frontalis muscle.See Diogo 2008; Diogo et al., 2009; Burrows et al.., 2011.</rdfs:label>
         <rdfs:label xml:lang="en">frontalis</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;MFMO_0000005"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
+                        <owl:someValuesFrom rdf:resource="&obo;MFMO0000149"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="&obo;MFMO_0000099"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="&obo;MFMO0000142"/>
+                                        <owl:someValuesFrom rdf:resource="&obo;MFMO0000148"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;RO_0002131"/>
+                        <owl:someValuesFrom rdf:resource="&obo;MFMO0000131"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000005"/>
     </owl:Class>
     
@@ -512,6 +541,7 @@
     <owl:Class rdf:about="&obo;MFMO0000132">
         <rdfs:label xml:lang="en">corrugator supercilii</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000005"/>
+        <obo:IAO_0000115>Muscle of facial expression, attached to  the skin in the medial palpebral region and the superciliary region, lateral and deep to the procerus muscle, and lateral to the depressor supercillii muscle.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>FMA_46794</oboInOwl:hasDbXref>
     </owl:Class>
     
@@ -588,7 +618,6 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="&obo;MFMO_0000005"/>
         <oboInOwl:hasDbXref>UBERON_0008594</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>musculus quadratus labii superioris, zygomatic head</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>auriculolabialis superior</oboInOwl:hasRelatedSynonym>
@@ -724,6 +753,126 @@
         <rdfs:label xml:lang="en">symphyseal region</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0001684"/>
         <obo:IAO_0000115>The region of the mandible on or near the midline (near the mandiblular symphysis, UBERON_0006606)</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFMO0000148 -->
+
+    <owl:Class rdf:about="&obo;MFMO0000148">
+        <rdfs:label xml:lang="en">orbit</rdfs:label>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_2001967</oboInOwl:hasDbXref>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFMO0000149 -->
+
+    <owl:Class rdf:about="&obo;MFMO0000149">
+        <rdfs:label xml:lang="en">scalp</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFMO_0000099"/>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0000403</oboInOwl:hasDbXref>
+        <rdfs:comment>Term in Uberon is equivalent, but definition needs revision.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFMO0000150 -->
+
+    <owl:Class rdf:about="&obo;MFMO0000150">
+        <rdfs:label xml:lang="en">posterior cricoarytenoid</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFMO_0000010"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFMO0000151 -->
+
+    <owl:Class rdf:about="&obo;MFMO0000151">
+        <rdfs:label xml:lang="en">ceratocricoideus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFMO0000150"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFMO0000152 -->
+
+    <owl:Class rdf:about="&obo;MFMO0000152">
+        <rdfs:label xml:lang="en">lateral cricoarytenoideus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFMO_0000010"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFMO0000153 -->
+
+    <owl:Class rdf:about="&obo;MFMO0000153">
+        <rdfs:label xml:lang="en">arytenoideus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFMO_0000010"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFMO0000154 -->
+
+    <owl:Class rdf:about="&obo;MFMO0000154">
+        <rdfs:label xml:lang="en">transverse arytenoideus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFMO0000153"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFMO0000155 -->
+
+    <owl:Class rdf:about="&obo;MFMO0000155">
+        <rdfs:label xml:lang="en">oblique arytenoideus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFMO0000153"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFMO0000156 -->
+
+    <owl:Class rdf:about="&obo;MFMO0000156">
+        <rdfs:label xml:lang="en">aryepiglotticus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFMO0000153"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFMO0000157 -->
+
+    <owl:Class rdf:about="&obo;MFMO0000157">
+        <rdfs:label xml:lang="en">thyroarytenoideus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFMO_0000010"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFMO0000158 -->
+
+    <owl:Class rdf:about="&obo;MFMO0000158">
+        <rdfs:label xml:lang="en">vocalis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFMO0000157"/>
+        <oboInOwl:hasExactSynonym>aryvocalis</oboInOwl:hasExactSynonym>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFMO0000159 -->
+
+    <owl:Class rdf:about="&obo;MFMO0000159">
+        <rdfs:label xml:lang="en">superior thyroarytenoideus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFMO0000157"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFMO0000160 -->
+
+    <owl:Class rdf:about="&obo;MFMO0000160">
+        <rdfs:label xml:lang="en">thyroepiglotticus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFMO0000157"/>
     </owl:Class>
     
 
@@ -1035,7 +1184,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="&obo;MFMO_0000018"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFMO_0000013"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1047,13 +1196,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="&obo;MFMO_0000013"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFMO_0000043"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="&obo;MFMO_0000043"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFMO_0000018"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasDbXref>NBO_0000079</oboInOwl:hasDbXref>
@@ -2106,14 +2255,14 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000075"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;mfmo.owl#deep_to"/>
-                <owl:someValuesFrom rdf:resource="&obo;MFMO_0000079"/>
+                <owl:onProperty rdf:resource="&obo;mfmo.owl#attached_to_ventral_surface_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFMO_0000108"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;mfmo.owl#attached_to_ventral_surface_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;MFMO_0000108"/>
+                <owl:onProperty rdf:resource="&obo;mfmo.owl#deep_to"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFMO_0000079"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasSynonym>Masseter deep portion (tiefe Portion)</oboInOwl:hasSynonym>
@@ -2708,6 +2857,7 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
                 <owl:someValuesFrom rdf:resource="&obo;MFMO_0000108"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000115>The anterior or rostral end of the zygomatic arch, which includes the temporal process of the zygomatic bone (UBERON_0004654), but also including some of the body of the zygomatic bone. It may also include the zygomatico-temporal suture and the most rostral portion of the zygomatic process of the temporal bone (UBERON_0004655).</obo:IAO_0000115>
         <rdfs:comment>Request new term but requires definition.</rdfs:comment>
     </owl:Class>
     
@@ -3300,12 +3450,12 @@ Term(s) in Uberon are equivalent but the definition needs revision.</rdfs:commen
                         <owl:someValuesFrom rdf:resource="&obo;MFMO_0000100"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
-                        <owl:someValuesFrom rdf:resource="&obo;UBERON_0011325"/>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
+                        <owl:someValuesFrom rdf:resource="&obo;MFMO_0000100"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
-                        <owl:allValuesFrom rdf:resource="&obo;MFMO_0000100"/>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
+                        <owl:someValuesFrom rdf:resource="&obo;UBERON_0011325"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
