@@ -1445,6 +1445,206 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/MFMO0000203 -->
+
+    <owl:Class rdf:about="&obo;MFMO0000203">
+        <rdfs:label xml:lang="en">hyoglossus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFMO_0000062"/>
+        <rdfs:comment>From FEED reptile spreadsheet</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFMO0000204 -->
+
+    <owl:Class rdf:about="&obo;MFMO0000204">
+        <rdfs:label xml:lang="en">genioglossus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFMO_0000062"/>
+        <rdfs:comment>From FEED reptile spreadsheet</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFMO0000205 -->
+
+    <owl:Class rdf:about="&obo;MFMO0000205">
+        <rdfs:label xml:lang="en">genioglossus medial</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFMO_0000062"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFMO0000204"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>From FEED reptile spreadsheet</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFMO0000206 -->
+
+    <owl:Class rdf:about="&obo;MFMO0000206">
+        <rdfs:label xml:lang="en">genioglossus lateral</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFMO_0000062"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFMO0000204"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>From FEED reptile spreadsheet</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFMO0000207 -->
+
+    <owl:Class rdf:about="&obo;MFMO0000207">
+        <rdfs:label xml:lang="en">genioglossus internal</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFMO_0000062"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFMO0000204"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>From FEED reptile spreadsheet</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFMO0000208 -->
+
+    <owl:Class rdf:about="&obo;MFMO0000208">
+        <rdfs:label xml:lang="en">mandibulohyoideus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFMO_0000062"/>
+        <rdfs:comment>From FEED reptile spreadsheet</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFMO0000209 -->
+
+    <owl:Class rdf:about="&obo;MFMO0000209">
+        <rdfs:label xml:lang="en">mandibulohyoideus part 1</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFMO_0000062"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFMO0000208"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>From FEED reptile spreadsheet</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFMO0000210 -->
+
+    <owl:Class rdf:about="&obo;MFMO0000210">
+        <rdfs:label xml:lang="en">mandibulohyoideus part 2</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFMO_0000062"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFMO0000208"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>From FEED reptile spreadsheet</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFMO0000211 -->
+
+    <owl:Class rdf:about="&obo;MFMO0000211">
+        <rdfs:label xml:lang="en">mandibulohyoideus part 3</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFMO_0000062"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFMO0000208"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>From FEED reptile spreadsheet</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFMO0000212 -->
+
+    <owl:Class rdf:about="&obo;MFMO0000212">
+        <rdfs:label xml:lang="en">branchiohyoideus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFMO_0000007"/>
+        <rdfs:comment>From FEED reptile spreadsheet</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFMO0000213 -->
+
+    <owl:Class rdf:about="&obo;MFMO0000213">
+        <rdfs:label xml:lang="en">intrinsic circularis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFMO_0000062"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFMO_0000065"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>From FEED reptile spreadsheet</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFMO0000214 -->
+
+    <owl:Class rdf:about="&obo;MFMO0000214">
+        <rdfs:label xml:lang="en">dorsoventral intrinsic tongue muscle</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFMO_0000062"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFMO_0000065"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>From FEED reptile spreadsheet</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFMO0000215 -->
+
+    <owl:Class rdf:about="&obo;MFMO0000215">
+        <rdfs:label xml:lang="en">transverse intrinsic tongue muscle</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFMO_0000062"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFMO_0000065"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>From FEED reptile spreadsheet</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFMO0000216 -->
+
+    <owl:Class rdf:about="&obo;MFMO0000216">
+        <rdfs:label xml:lang="en">longitudinal intrinsic tongue muscle</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFMO_0000062"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFMO_0000065"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>From FEED reptile spreadsheet</rdfs:comment>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/MFMO_0000002 -->
 
     <owl:Class rdf:about="&obo;MFMO_0000002">
