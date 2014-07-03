@@ -973,21 +973,7 @@
 
     <owl:Class rdf:about="&obo;MFMO0000170">
         <rdfs:label xml:lang="en">adductor mandibulae externus medialis</rdfs:label>
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&obo;UBERON_0001630"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
-                        <owl:someValuesFrom rdf:resource="&obo;MFMO_0000093"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;RO_0002202"/>
-                        <owl:someValuesFrom rdf:resource="&obo;MFMO_0000095"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;MFMO_0000072"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
@@ -1002,21 +988,7 @@
 
     <owl:Class rdf:about="&obo;MFMO0000171">
         <rdfs:label xml:lang="en">adductor mandibulae externus superficialis</rdfs:label>
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&obo;UBERON_0001630"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
-                        <owl:someValuesFrom rdf:resource="&obo;MFMO_0000093"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;RO_0002202"/>
-                        <owl:someValuesFrom rdf:resource="&obo;MFMO_0000095"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;MFMO_0000072"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
