@@ -133,6 +133,15 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/MFMO0000218 -->
+
+    <owl:ObjectProperty rdf:about="&obo;MFMO0000218">
+        <rdfs:label xml:lang="en">right</rdfs:label>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/PATO_0000367</oboInOwl:hasDbXref>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/MFMO_0000001 -->
 
     <owl:ObjectProperty rdf:about="&obo;MFMO_0000001">
@@ -181,6 +190,14 @@
     <!-- http://purl.obolibrary.org/obo/attaches_to -->
 
     <owl:ObjectProperty rdf:about="&obo;attaches_to"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/left -->
+
+    <owl:ObjectProperty rdf:about="&obo;left">
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/PATO_0000366</oboInOwl:hasDbXref>
+    </owl:ObjectProperty>
     
 
 
@@ -1641,6 +1658,27 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>From FEED reptile spreadsheet</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFMO0000217 -->
+
+    <owl:Class rdf:about="&obo;MFMO0000217">
+        <rdfs:label xml:lang="en">transversus mandibulae</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;MFMO_0000072"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;RO_0002371"/>
+                        <owl:onClass rdf:resource="&obo;UBERON_0001684"/>
+                        <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">2</owl:qualifiedCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>FEED spreadsheet</rdfs:comment>
     </owl:Class>
     
 
