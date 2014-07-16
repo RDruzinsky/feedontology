@@ -812,6 +812,7 @@ In Uberon the posterior cricoarytenoid and lateral cricoarytenoid are subClasses
     <owl:Class rdf:about="&obo;MFMO0000151">
         <rdfs:label xml:lang="en">ceratocricoideus</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFMO0000150"/>
+        <rdfs:comment>FMA has numerous terms that refer to various parts (fascicles, fascia, innervation) of ceratocricoid muscles but not the whole muscle (at least not in the Ontobee subset of the FMA.</rdfs:comment>
     </owl:Class>
     
 
@@ -880,6 +881,8 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
     <owl:Class rdf:about="&obo;MFMO0000157">
         <rdfs:label xml:lang="en">thyroarytenoideus</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000010"/>
+        <rdfs:comment>Uberon definition is pretty good but human-centric.</rdfs:comment>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0008576</oboInOwl:hasDbXref>
     </owl:Class>
     
 
@@ -889,7 +892,9 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
     <owl:Class rdf:about="&obo;MFMO0000158">
         <rdfs:label xml:lang="en">vocalis</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFMO0000157"/>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0008577</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>aryvocalis</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Uberon properly notes that the vocalis is a part of the thyroarytenoid muscle.</rdfs:comment>
     </owl:Class>
     
 
@@ -899,6 +904,7 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
     <owl:Class rdf:about="&obo;MFMO0000159">
         <rdfs:label xml:lang="en">superior thyroarytenoideus</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFMO0000157"/>
+        <rdfs:comment>Not in Ontobee.</rdfs:comment>
     </owl:Class>
     
 
@@ -908,6 +914,8 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
     <owl:Class rdf:about="&obo;MFMO0000160">
         <rdfs:label xml:lang="en">thyroepiglotticus</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFMO0000157"/>
+        <rdfs:comment>Not a part of the thyroarytenoid in Uberon.</rdfs:comment>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0010927</oboInOwl:hasDbXref>
     </owl:Class>
     
 
@@ -4041,6 +4049,7 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;mfmo.owl#middle_pharyngeal_constrictor_muscle"/>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0008585</oboInOwl:hasDbXref>
         <rdfs:comment>Ready for review.</rdfs:comment>
         <oboInOwl:hasSynonym>levator palati</oboInOwl:hasSynonym>
