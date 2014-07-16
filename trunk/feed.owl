@@ -799,6 +799,10 @@
     <owl:Class rdf:about="&obo;MFMO0000150">
         <rdfs:label xml:lang="en">posterior cricoarytenoid</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000010"/>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0008572</oboInOwl:hasDbXref>
+        <rdfs:comment>Uberon definition is pretty good but human-centric.
+
+In Uberon the posterior cricoarytenoid and lateral cricoarytenoid are subClasses of a &quot;cricoarytenoid&quot; class, but there is no anatomical basis for this class other than the similar names.</rdfs:comment>
     </owl:Class>
     
 
@@ -817,6 +821,8 @@
     <owl:Class rdf:about="&obo;MFMO0000152">
         <rdfs:label xml:lang="en">lateral cricoarytenoideus</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000010"/>
+        <rdfs:comment>Uberon definition is pretty good but human-centric</rdfs:comment>
+        <oboInOwl:hasDbXref>UBERON_0008573</oboInOwl:hasDbXref>
     </owl:Class>
     
 
@@ -826,6 +832,10 @@
     <owl:Class rdf:about="&obo;MFMO0000153">
         <rdfs:label xml:lang="en">arytenoideus</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000010"/>
+        <rdfs:comment>Uberon definition okay but wiki ref is very human-centric</rdfs:comment>
+        <oboInOwl:hasDbXref>UBERON_0010958</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>arytenoid muscle</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>musculus arytenoideus</oboInOwl:hasExactSynonym>
     </owl:Class>
     
 
@@ -835,6 +845,8 @@
     <owl:Class rdf:about="&obo;MFMO0000154">
         <rdfs:label xml:lang="en">transverse arytenoideus</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFMO0000153"/>
+        <rdfs:comment>Uberon definition pretty good.</rdfs:comment>
+        <oboInOwl:hasDbXref>UBERON_0008574</oboInOwl:hasDbXref>
     </owl:Class>
     
 
@@ -844,6 +856,8 @@
     <owl:Class rdf:about="&obo;MFMO0000155">
         <rdfs:label xml:lang="en">oblique arytenoideus</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFMO0000153"/>
+        <oboInOwl:hasDbXref>UBERON_0008575</oboInOwl:hasDbXref>
+        <rdfs:comment>Uberon definition pretty good but human-centric.</rdfs:comment>
     </owl:Class>
     
 
@@ -853,6 +867,10 @@
     <owl:Class rdf:about="&obo;MFMO0000156">
         <rdfs:label xml:lang="en">aryepiglotticus</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFMO0000153"/>
+        <rdfs:comment>Defintion in Uberon is okay but human-centric. 
+
+We consider this muscle a part of the arytenoid muscle complex but some workers describe it as a separate muscle.</rdfs:comment>
+        <oboInOwl:hasDbXref>UBERON_0011025</oboInOwl:hasDbXref>
     </owl:Class>
     
 
@@ -1990,13 +2008,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="&obo;MFMO_0000013"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFMO_0000038"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="&obo;MFMO_0000038"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFMO_0000013"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -3061,14 +3079,14 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000075"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;mfmo.owl#attached_to_ventral_surface_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;MFMO_0000108"/>
+                <owl:onProperty rdf:resource="&obo;mfmo.owl#deep_to"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFMO_0000079"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;mfmo.owl#deep_to"/>
-                <owl:someValuesFrom rdf:resource="&obo;MFMO_0000079"/>
+                <owl:onProperty rdf:resource="&obo;mfmo.owl#attached_to_ventral_surface_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFMO_0000108"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasSynonym>Masseter deep portion (tiefe Portion)</oboInOwl:hasSynonym>
@@ -3221,14 +3239,14 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000072"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;mfmo.owl#attached_to_medial_surface_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0001684"/>
+                <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFMO_0000044"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
-                <owl:someValuesFrom rdf:resource="&obo;MFMO_0000044"/>
+                <owl:onProperty rdf:resource="&obo;mfmo.owl#attached_to_medial_surface_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0001684"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Ready for review.</rdfs:comment>
@@ -3244,12 +3262,6 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
     <owl:Class rdf:about="&obo;MFMO_0000084">
         <rdfs:label>mylohyoid muscle</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000072"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0002163"/>
-                <owl:someValuesFrom rdf:resource="&obo;MFMO_0000073"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -3271,6 +3283,12 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002163"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFMO_0000073"/>
+            </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>The mylohyoid is a pharyngeal arch I muscle that participates in oral/pharyngeal behaviors and is innervated by the nerve to mylohyoid and attaches to the midline raphe linking right and left mylohyoid and the mandible.</obo:IAO_0000115>
         <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
@@ -3556,8 +3574,8 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000111"/>
         <obo:IAO_0000119>FEED group</obo:IAO_0000119>
         <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
-        <rdfs:comment>Ready for review.</rdfs:comment>
         <obo:IAO_0000115>A muscular arch-shaped structure (an anatomical cluster) that is composed of the musculus uvuli and parts of tensor veli palatini, levator veli palatini, palatoglossus and palatopharyngeus and attaches to the hard palate and modulates the connections between the oral cavity and pharynx soft tissue arch </obo:IAO_0000115>
+        <rdfs:comment>Ready for review.</rdfs:comment>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001733</oboInOwl:hasDbXref>
     </owl:Class>
     
