@@ -891,6 +891,17 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
 
     <owl:Class rdf:about="&obo;MFMO0000158">
         <rdfs:label xml:lang="en">vocalis</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;MFMO_0000072"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="&obo;MFMO0000157"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;MFMO0000157"/>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0008577</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>aryvocalis</oboInOwl:hasExactSynonym>
@@ -986,6 +997,7 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
         <rdfs:label xml:lang="en">Adductor Mandibulae Externus</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000072"/>
         <oboInOwl:hasExactSynonym>mAME</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Uberon has a couple of terms (e.g., UBERON_2000311) that refer to the entire adductor mandibulae complex but not individual parts. </rdfs:comment>
         <rdfs:comment>FEED reptile spreadsheet</rdfs:comment>
     </owl:Class>
     
@@ -998,6 +1010,7 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000072"/>
         <rdfs:comment>FEED reptile spreadsheet</rdfs:comment>
         <oboInOwl:hasExactSynonym>mAMI</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Uberon has a couple of terms (e.g., UBERON_2000311) that refer to the entire adductor mandibulae complex but not individual parts. </rdfs:comment>
     </owl:Class>
     
 
@@ -1023,6 +1036,7 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
                 <owl:someValuesFrom rdf:resource="&obo;MFMO0000167"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment>Uberon has a couple of terms (e.g., UBERON_2000311) that refer to the entire adductor mandibulae complex but not individual parts. </rdfs:comment>
         <rdfs:comment>From FEED reptile spreadsheet</rdfs:comment>
         <oboInOwl:hasExactSynonym>mAMEM</oboInOwl:hasExactSynonym>
     </owl:Class>
@@ -1040,6 +1054,7 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
                 <owl:someValuesFrom rdf:resource="&obo;MFMO0000167"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment>Uberon has a couple of terms (e.g., UBERON_2000311) that refer to the entire adductor mandibulae complex but not individual parts. </rdfs:comment>
         <rdfs:comment>From FEED reptile spreadsheet</rdfs:comment>
         <oboInOwl:hasExactSynonym>mAMES</oboInOwl:hasExactSynonym>
     </owl:Class>
@@ -1143,6 +1158,7 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
                 <owl:someValuesFrom rdf:resource="&obo;MFMO0000171"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment>Uberon has a couple of terms (e.g., UBERON_2000311) that refer to the entire adductor mandibulae complex but not individual parts. </rdfs:comment>
         <rdfs:comment>From FEED reptile spreadsheet</rdfs:comment>
     </owl:Class>
     
@@ -1159,6 +1175,7 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
                 <owl:someValuesFrom rdf:resource="&obo;MFMO0000171"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment>Uberon has a couple of terms (e.g., UBERON_2000311) that refer to the entire adductor mandibulae complex but not individual parts. </rdfs:comment>
         <rdfs:comment>From FEED reptile spreadsheet</rdfs:comment>
     </owl:Class>
     
@@ -1176,6 +1193,7 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>mAMEP</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Uberon has a couple of terms (e.g., UBERON_2000311) that refer to the entire adductor mandibulae complex but not individual parts. </rdfs:comment>
         <rdfs:comment>From FEED reptile spreadsheet</rdfs:comment>
     </owl:Class>
     
@@ -1188,6 +1206,7 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000072"/>
         <oboInOwl:hasExactSynonym>mAMI</oboInOwl:hasExactSynonym>
         <rdfs:comment>From FEED reptile spreadsheet</rdfs:comment>
+        <rdfs:comment>Uberon has a couple of terms (e.g., UBERON_2000311) that refer to the entire adductor mandibulae complex but not individual parts. </rdfs:comment>
     </owl:Class>
     
 
@@ -1338,6 +1357,7 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
         <rdfs:label xml:lang="en">adductor mandibulae posterior</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000072"/>
         <rdfs:comment>From FEED reptile spreadsheet</rdfs:comment>
+        <rdfs:comment>Uberon has a couple of terms (e.g., UBERON_2000311) that refer to the entire adductor mandibulae complex but not individual parts. </rdfs:comment>
     </owl:Class>
     
 
@@ -1366,6 +1386,7 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
         </rdfs:subClassOf>
         <rdfs:comment>From FEED reptile spreadsheet</rdfs:comment>
         <oboInOwl:hasExactSynonym>mLBul</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasDbXref>UBERON_3010651</oboInOwl:hasDbXref>
     </owl:Class>
     
 
@@ -1433,6 +1454,7 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
     <owl:Class rdf:about="&obo;MFMO0000197">
         <rdfs:label xml:lang="en">intermandibularis</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000072"/>
+        <oboInOwl:hasDbXref>UBERON_0010931</oboInOwl:hasDbXref>
         <rdfs:comment>From FEED reptile spreadsheet</rdfs:comment>
     </owl:Class>
     
@@ -1693,17 +1715,13 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
     <owl:Class rdf:about="&obo;MFMO0000217">
         <rdfs:label xml:lang="en">transversus mandibulae</rdfs:label>
         <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&obo;MFMO_0000072"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;RO_0002371"/>
-                        <owl:onClass rdf:resource="&obo;UBERON_0001684"/>
-                        <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">2</owl:qualifiedCardinality>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002371"/>
+                <owl:onClass rdf:resource="&obo;UBERON_0001684"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">2</owl:qualifiedCardinality>
+            </owl:Restriction>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;MFMO_0000072"/>
         <rdfs:comment>FEED spreadsheet</rdfs:comment>
     </owl:Class>
     
