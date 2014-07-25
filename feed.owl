@@ -352,10 +352,6 @@
                         <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
                         <owl:someValuesFrom rdf:resource="&obo;UBERON_0001835"/>
                     </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;RO_0002163"/>
-                        <owl:someValuesFrom rdf:resource="&obo;MFMO0000123"/>
-                    </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
@@ -375,10 +371,6 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="&obo;MFMO_0000005"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;MFMO0000124"/>
-                        <owl:someValuesFrom rdf:resource="&obo;MFMO0000122"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
                         <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
                         <owl:someValuesFrom rdf:resource="&obo;MFMO_0000058"/>
                     </owl:Restriction>
@@ -389,10 +381,6 @@
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
                         <owl:someValuesFrom rdf:resource="&obo;UBERON_0001835"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;RO_0002163"/>
-                        <owl:someValuesFrom rdf:resource="&obo;MFMO0000122"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="&obo;mfmo.owl#superficial_to"/>
@@ -2596,14 +2584,6 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
                         <owl:someValuesFrom rdf:resource="&obo;UBERON_0001685"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;RO_0002163"/>
-                        <owl:someValuesFrom rdf:resource="&obo;MFMO_0000060"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;RO_0002163"/>
-                        <owl:someValuesFrom rdf:resource="&obo;MFMO_0000084"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
                         <owl:onProperty rdf:resource="&obo;mfmo.owl#superficial_to"/>
                         <owl:someValuesFrom rdf:resource="&obo;MFMO_0000084"/>
                     </owl:Restriction>
@@ -2612,8 +2592,8 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
         </owl:equivalentClass>
         <rdfs:comment>Ready for review.</rdfs:comment>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0010943</oboInOwl:hasDbXref>
-        <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
-        <obo:IAO_0000115>The anterior digastric is a pharyngeal arch I muscle that participates in oral/pharygeal behaviors and is innervated by the nerve to mylohyoid and superficial to mylohyoid muscle, and lacks the midline raphe.</obo:IAO_0000115>
+        <obo:IAO_0000119>http://www.feedexp.org/</obo:IAO_0000119>
+        <obo:IAO_0000115>The anterior digastric is a pharyngeal arch I muscle that participates in oral/pharygeal behaviors and is innervated by the nerve to mylohyoid (a branch of the third division of the trigeminal nerve), is attached to the mandible and to the hyoid apparatus, and it is superficial to mylohyoid muscle.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -2637,10 +2617,10 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <obo:IAO_0000119>http://www.feedexp.org/</obo:IAO_0000119>
         <obo:IAO_0000115>Pharyngeal arch 1 muscle that participates in oral/pharyngeal behaviors, is innervated by the lateral pterygoid nerve branches, and attaches to the condylar process of the mandible and temporomandibular joint (TMJ) capsule, and the cranial base.</obo:IAO_0000115>
         <rdfs:comment>Ready for review.</rdfs:comment>
         <oboInOwl:hasSynonym>external pterygoid muscle</oboInOwl:hasSynonym>
-        <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0006719</oboInOwl:hasDbXref>
     </owl:Class>
     
@@ -2708,14 +2688,14 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000075"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;mfmo.owl#deep_to"/>
-                <owl:someValuesFrom rdf:resource="&obo;MFMO_0000079"/>
+                <owl:onProperty rdf:resource="&obo;mfmo.owl#attached_to_ventral_surface_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFMO_0000108"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;mfmo.owl#attached_to_ventral_surface_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;MFMO_0000108"/>
+                <owl:onProperty rdf:resource="&obo;mfmo.owl#deep_to"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFMO_0000079"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasSynonym>Masseter deep portion (tiefe Portion)</oboInOwl:hasSynonym>
@@ -2892,6 +2872,12 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
         <rdfs:label>mylohyoid muscle</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000072"/>
         <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002163"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFMO_0000073"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
@@ -2912,12 +2898,6 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0002163"/>
-                <owl:someValuesFrom rdf:resource="&obo;MFMO_0000073"/>
-            </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>The mylohyoid is a pharyngeal arch I muscle that participates in oral/pharyngeal behaviors and is innervated by the nerve to mylohyoid and attaches to the midline raphe linking right and left mylohyoid and the mandible.</obo:IAO_0000115>
         <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
