@@ -1467,7 +1467,7 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
     <!-- http://purl.obolibrary.org/obo/MFMO0000203 -->
 
     <owl:Class rdf:about="&obo;MFMO0000203">
-        <rdfs:label xml:lang="en">hyoglossus</rdfs:label>
+        <rdfs:label xml:lang="en">m. hyoglossus</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000062"/>
         <rdfs:comment>From FEED reptile spreadsheet</rdfs:comment>
     </owl:Class>
@@ -2644,14 +2644,14 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000075"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;mfmo.owl#deep_to"/>
-                <owl:someValuesFrom rdf:resource="&obo;MFMO_0000079"/>
+                <owl:onProperty rdf:resource="&obo;mfmo.owl#attached_to_ventral_surface_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFMO_0000108"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;mfmo.owl#attached_to_ventral_surface_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;MFMO_0000108"/>
+                <owl:onProperty rdf:resource="&obo;mfmo.owl#deep_to"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFMO_0000079"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasSynonym>Masseter deep portion (tiefe Portion)</oboInOwl:hasSynonym>
@@ -2804,14 +2804,14 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000072"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;mfmo.owl#attached_to_medial_surface_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0001684"/>
+                <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFMO_0000044"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
-                <owl:someValuesFrom rdf:resource="&obo;MFMO_0000044"/>
+                <owl:onProperty rdf:resource="&obo;mfmo.owl#attached_to_medial_surface_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0001684"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Ready for review.</rdfs:comment>
@@ -3139,8 +3139,8 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000111"/>
         <obo:IAO_0000119>FEED group</obo:IAO_0000119>
         <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
-        <obo:IAO_0000115>A muscular arch-shaped structure (an anatomical cluster) that is composed of the musculus uvuli and parts of tensor veli palatini, levator veli palatini, palatoglossus and palatopharyngeus and attaches to the hard palate and modulates the connections between the oral cavity and pharynx soft tissue arch </obo:IAO_0000115>
         <rdfs:comment>Ready for review.</rdfs:comment>
+        <obo:IAO_0000115>A muscular arch-shaped structure (an anatomical cluster) that is composed of the musculus uvuli and parts of tensor veli palatini, levator veli palatini, palatoglossus and palatopharyngeus and attaches to the hard palate and modulates the connections between the oral cavity and pharynx soft tissue arch </obo:IAO_0000115>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001733</oboInOwl:hasDbXref>
     </owl:Class>
     
