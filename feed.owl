@@ -3290,6 +3290,32 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OPBO0000221 -->
+
+    <owl:Class rdf:about="&obo;OPBO0000221">
+        <rdfs:label xml:lang="en">cricothyroid muscle</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;MFMO_0000010"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
+                        <owl:someValuesFrom rdf:resource="&obo;UBERON_0002375"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;mfmo.owl#attached_to_lateral_surface_of"/>
+                        <owl:someValuesFrom rdf:resource="&obo;MFMO_0000106"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001566</oboInOwl:hasDbXref>
+        <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
+        <obo:IAO_0000115>Intrinsic muscle of the larynx, innervated by the external division of the laryngeal nerve, a branch of the vagus nerve. It attaches to the anterolateral surface of the cricoid cartilage and the external surface of the thyroid cartilage.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/UBERON_0000166 -->
 
     <owl:Class rdf:about="&obo;UBERON_0000166">
