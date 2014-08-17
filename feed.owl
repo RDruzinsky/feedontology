@@ -310,7 +310,7 @@
     <!-- http://purl.obolibrary.org/obo/MFMO0000120 -->
 
     <owl:Class rdf:about="&obo;MFMO0000120">
-        <rdfs:label xml:lang="en">caninus</rdfs:label>
+        <rdfs:label xml:lang="en">caninus muscle</rdfs:label>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -335,7 +335,7 @@
     <!-- http://purl.obolibrary.org/obo/MFMO0000122 -->
 
     <owl:Class rdf:about="&obo;MFMO0000122">
-        <rdfs:label xml:lang="en">mentalis</rdfs:label>
+        <rdfs:label xml:lang="en">mentalis muscle</rdfs:label>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -365,7 +365,7 @@
     <!-- http://purl.obolibrary.org/obo/MFMO0000123 -->
 
     <owl:Class rdf:about="&obo;MFMO0000123">
-        <rdfs:label xml:lang="en">depressor labii inferioris</rdfs:label>
+        <rdfs:label xml:lang="en">depressor labii inferioris muscle</rdfs:label>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -402,7 +402,7 @@
     <!-- http://purl.obolibrary.org/obo/MFMO0000126 -->
 
     <owl:Class rdf:about="&obo;MFMO0000126">
-        <rdfs:label xml:lang="en">depressor anguli oris</rdfs:label>
+        <rdfs:label xml:lang="en">depressor anguli oris muscle</rdfs:label>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -440,7 +440,7 @@
     <!-- http://purl.obolibrary.org/obo/MFMO0000127 -->
 
     <owl:Class rdf:about="&obo;MFMO0000127">
-        <rdfs:label xml:lang="en">occipitalis</rdfs:label>
+        <rdfs:label xml:lang="en">occipitalis muscle</rdfs:label>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -486,7 +486,7 @@
 
     <owl:Class rdf:about="&obo;MFMO0000129">
         <rdfs:label>A muscle of the skin of the head (scalp), innervated by the facial nerve, attached to facia of the skin superior to the orbits (superciliary region), overlapping with the procerus muscles, and attched to the facia of the scalp (galea aponurotica or epicranial aponeurosis in humans). In mammals other than humans, there is no large facia present and the most rostral fibers of the occipitalis are attached to the skin near or even overlapping with the fibers of the frontalis muscle.See Diogo 2008; Diogo et al., 2009; Burrows et al.., 2011.</rdfs:label>
-        <rdfs:label xml:lang="en">frontalis</rdfs:label>
+        <rdfs:label xml:lang="en">frontalis muscle</rdfs:label>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -524,7 +524,7 @@
     <!-- http://purl.obolibrary.org/obo/MFMO0000130 -->
 
     <owl:Class rdf:about="&obo;MFMO0000130">
-        <rdfs:label xml:lang="en">orbicularis oculi</rdfs:label>
+        <rdfs:label xml:lang="en">orbicularis oculi muscle</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000005"/>
         <oboInOwl:hasDbXref>UBERON_0001578</oboInOwl:hasDbXref>
     </owl:Class>
@@ -534,7 +534,7 @@
     <!-- http://purl.obolibrary.org/obo/MFMO0000131 -->
 
     <owl:Class rdf:about="&obo;MFMO0000131">
-        <rdfs:label xml:lang="en">procerus</rdfs:label>
+        <rdfs:label xml:lang="en">procerus muscle</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000005"/>
         <oboInOwl:hasDbXref>UBERON_0008588</oboInOwl:hasDbXref>
     </owl:Class>
@@ -544,7 +544,7 @@
     <!-- http://purl.obolibrary.org/obo/MFMO0000132 -->
 
     <owl:Class rdf:about="&obo;MFMO0000132">
-        <rdfs:label xml:lang="en">corrugator supercilii</rdfs:label>
+        <rdfs:label xml:lang="en">corrugator supercilii muscle</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000005"/>
         <obo:IAO_0000115>Muscle of facial expression, attached to  the skin in the medial palpebral region and the superciliary region, lateral and deep to the procerus muscle, and lateral to the depressor supercillii muscle.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>FMA_46794</oboInOwl:hasDbXref>
@@ -555,7 +555,7 @@
     <!-- http://purl.obolibrary.org/obo/MFMO0000133 -->
 
     <owl:Class rdf:about="&obo;MFMO0000133">
-        <rdfs:label xml:lang="en">depressor supercilii</rdfs:label>
+        <rdfs:label xml:lang="en">depressor supercilii muscle</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000005"/>
         <oboInOwl:hasDbXref>UBERON_0008591</oboInOwl:hasDbXref>
     </owl:Class>
@@ -565,7 +565,7 @@
     <!-- http://purl.obolibrary.org/obo/MFMO0000134 -->
 
     <owl:Class rdf:about="&obo;MFMO0000134">
-        <rdfs:label xml:lang="en">nasalis</rdfs:label>
+        <rdfs:label xml:lang="en">nasalis muscle</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000005"/>
         <oboInOwl:hasDbXref>UBERON_0010953</oboInOwl:hasDbXref>
     </owl:Class>
@@ -575,7 +575,7 @@
     <!-- http://purl.obolibrary.org/obo/MFMO0000135 -->
 
     <owl:Class rdf:about="&obo;MFMO0000135">
-        <rdfs:label xml:lang="en">levator labii superioris alaeque nasi</rdfs:label>
+        <rdfs:label xml:lang="en">levator labii superioris alaeque nasi muscle</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000005"/>
         <oboInOwl:hasDbXref>UBERON_0008592</oboInOwl:hasDbXref>
     </owl:Class>
@@ -585,7 +585,7 @@
     <!-- http://purl.obolibrary.org/obo/MFMO0000136 -->
 
     <owl:Class rdf:about="&obo;MFMO0000136">
-        <rdfs:label xml:lang="en">levator labii superioris</rdfs:label>
+        <rdfs:label xml:lang="en">levator labii superioris muscle</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000005"/>
         <oboInOwl:hasDbXref>UBERON_0001580</oboInOwl:hasDbXref>
     </owl:Class>
@@ -676,7 +676,7 @@
     <!-- http://purl.obolibrary.org/obo/MFMO0000139 -->
 
     <owl:Class rdf:about="&obo;MFMO0000139">
-        <rdfs:label xml:lang="en">levator anguli oris</rdfs:label>
+        <rdfs:label xml:lang="en">levator anguli oris muscle</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000005"/>
         <oboInOwl:hasDbXref>UBERON_0008595</oboInOwl:hasDbXref>
     </owl:Class>
@@ -686,7 +686,7 @@
     <!-- http://purl.obolibrary.org/obo/MFMO0000140 -->
 
     <owl:Class rdf:about="&obo;MFMO0000140">
-        <rdfs:label xml:lang="en">depressor septi nasi</rdfs:label>
+        <rdfs:label xml:lang="en">depressor septi nasi muscle</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000005"/>
         <oboInOwl:hasDbXref>UBERON_0008589</oboInOwl:hasDbXref>
     </owl:Class>
@@ -696,7 +696,7 @@
     <!-- http://purl.obolibrary.org/obo/MFMO0000141 -->
 
     <owl:Class rdf:about="&obo;MFMO0000141">
-        <rdfs:label xml:lang="en">risorius</rdfs:label>
+        <rdfs:label xml:lang="en">risorius muscle</rdfs:label>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -785,7 +785,7 @@
     <!-- http://purl.obolibrary.org/obo/MFMO0000150 -->
 
     <owl:Class rdf:about="&obo;MFMO0000150">
-        <rdfs:label xml:lang="en">posterior cricoarytenoid</rdfs:label>
+        <rdfs:label xml:lang="en">posterior cricoarytenoid muscle</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000010"/>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0008572</oboInOwl:hasDbXref>
         <rdfs:comment>Uberon definition is pretty good but human-centric.
@@ -798,7 +798,7 @@ In Uberon the posterior cricoarytenoid and lateral cricoarytenoid are subClasses
     <!-- http://purl.obolibrary.org/obo/MFMO0000151 -->
 
     <owl:Class rdf:about="&obo;MFMO0000151">
-        <rdfs:label xml:lang="en">ceratocricoideus</rdfs:label>
+        <rdfs:label xml:lang="en">ceratocricoideus muscle</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFMO0000150"/>
         <rdfs:comment>FMA has numerous terms that refer to various parts (fascicles, fascia, innervation) of ceratocricoid muscles but not the whole muscle (at least not in the Ontobee subset of the FMA.</rdfs:comment>
     </owl:Class>
@@ -808,7 +808,7 @@ In Uberon the posterior cricoarytenoid and lateral cricoarytenoid are subClasses
     <!-- http://purl.obolibrary.org/obo/MFMO0000152 -->
 
     <owl:Class rdf:about="&obo;MFMO0000152">
-        <rdfs:label xml:lang="en">lateral cricoarytenoideus</rdfs:label>
+        <rdfs:label xml:lang="en">lateral cricoarytenoideus muscle</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000010"/>
         <rdfs:comment>Uberon definition is pretty good but human-centric</rdfs:comment>
         <oboInOwl:hasDbXref>UBERON_0008573</oboInOwl:hasDbXref>
@@ -819,7 +819,7 @@ In Uberon the posterior cricoarytenoid and lateral cricoarytenoid are subClasses
     <!-- http://purl.obolibrary.org/obo/MFMO0000153 -->
 
     <owl:Class rdf:about="&obo;MFMO0000153">
-        <rdfs:label xml:lang="en">arytenoideus</rdfs:label>
+        <rdfs:label xml:lang="en">arytenoideus muscle</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000010"/>
         <rdfs:comment>Uberon definition okay but wiki ref is very human-centric</rdfs:comment>
         <oboInOwl:hasDbXref>UBERON_0010958</oboInOwl:hasDbXref>
@@ -867,7 +867,7 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
     <!-- http://purl.obolibrary.org/obo/MFMO0000157 -->
 
     <owl:Class rdf:about="&obo;MFMO0000157">
-        <rdfs:label xml:lang="en">thyroarytenoideus</rdfs:label>
+        <rdfs:label xml:lang="en">thyroarytenoideus muscle</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000010"/>
         <rdfs:comment>Uberon definition is pretty good but human-centric.</rdfs:comment>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0008576</oboInOwl:hasDbXref>
@@ -878,11 +878,11 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
     <!-- http://purl.obolibrary.org/obo/MFMO0000158 -->
 
     <owl:Class rdf:about="&obo;MFMO0000158">
-        <rdfs:label xml:lang="en">vocalis</rdfs:label>
+        <rdfs:label xml:lang="en">vocalis muscle</rdfs:label>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&obo;MFMO_0000072"/>
+                    <rdf:Description rdf:about="&obo;MFMO_0000010"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
                         <owl:someValuesFrom rdf:resource="&obo;MFMO0000157"/>
@@ -901,7 +901,7 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
     <!-- http://purl.obolibrary.org/obo/MFMO0000159 -->
 
     <owl:Class rdf:about="&obo;MFMO0000159">
-        <rdfs:label xml:lang="en">superior thyroarytenoideus</rdfs:label>
+        <rdfs:label xml:lang="en">superior thyroarytenoideus muscle</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFMO0000157"/>
         <rdfs:comment>Not in Ontobee.</rdfs:comment>
     </owl:Class>
@@ -911,7 +911,7 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
     <!-- http://purl.obolibrary.org/obo/MFMO0000160 -->
 
     <owl:Class rdf:about="&obo;MFMO0000160">
-        <rdfs:label xml:lang="en">thyroepiglotticus</rdfs:label>
+        <rdfs:label xml:lang="en">thyroepiglotticus muscle</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFMO0000157"/>
         <rdfs:comment>Not a part of the thyroarytenoid in Uberon.</rdfs:comment>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0010927</oboInOwl:hasDbXref>
@@ -922,7 +922,7 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
     <!-- http://purl.obolibrary.org/obo/MFMO0000161 -->
 
     <owl:Class rdf:about="&obo;MFMO0000161">
-        <rdfs:label xml:lang="en">branchiohyoideus</rdfs:label>
+        <rdfs:label xml:lang="en">branchiohyoideus muscle</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000007"/>
         <rdfs:comment>FEED reptile spreadsheet</rdfs:comment>
     </owl:Class>
@@ -932,7 +932,7 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
     <!-- http://purl.obolibrary.org/obo/MFMO0000162 -->
 
     <owl:Class rdf:about="&obo;MFMO0000162">
-        <rdfs:label xml:lang="en">constrictor colli</rdfs:label>
+        <rdfs:label xml:lang="en">constrictor colli muscle</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000005"/>
         <rdfs:comment>FEED reptile spreadsheet</rdfs:comment>
     </owl:Class>
@@ -942,7 +942,7 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
     <!-- http://purl.obolibrary.org/obo/MFMO0000163 -->
 
     <owl:Class rdf:about="&obo;MFMO0000163">
-        <rdfs:label xml:lang="en">spinalis capitis</rdfs:label>
+        <rdfs:label xml:lang="en">spinalis capitis muscle</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000067"/>
         <rdfs:comment>FEED reptile spreadsheet</rdfs:comment>
     </owl:Class>
@@ -952,7 +952,7 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
     <!-- http://purl.obolibrary.org/obo/MFMO0000164 -->
 
     <owl:Class rdf:about="&obo;MFMO0000164">
-        <rdfs:label xml:lang="en">obliquus capitis</rdfs:label>
+        <rdfs:label xml:lang="en">obliquus capitis muscle</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000067"/>
         <rdfs:comment>FEED reptile spreadsheet</rdfs:comment>
     </owl:Class>
@@ -962,7 +962,7 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
     <!-- http://purl.obolibrary.org/obo/MFMO0000165 -->
 
     <owl:Class rdf:about="&obo;MFMO0000165">
-        <rdfs:label xml:lang="en">longus capitis</rdfs:label>
+        <rdfs:label xml:lang="en">longus capitis muscle</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000067"/>
         <rdfs:comment>FEED reptile spreadsheet</rdfs:comment>
     </owl:Class>
@@ -972,7 +972,7 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
     <!-- http://purl.obolibrary.org/obo/MFMO0000166 -->
 
     <owl:Class rdf:about="&obo;MFMO0000166">
-        <rdfs:label xml:lang="en">rectus cervicis</rdfs:label>
+        <rdfs:label xml:lang="en">rectus cervicis muscle</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000067"/>
         <rdfs:comment>FEED reptile spreadsheet</rdfs:comment>
     </owl:Class>
@@ -982,7 +982,7 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
     <!-- http://purl.obolibrary.org/obo/MFMO0000167 -->
 
     <owl:Class rdf:about="&obo;MFMO0000167">
-        <rdfs:label xml:lang="en">Adductor Mandibulae Externus</rdfs:label>
+        <rdfs:label xml:lang="en">adductor mandibulae externus muscle</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000072"/>
         <oboInOwl:hasExactSynonym>mAME</oboInOwl:hasExactSynonym>
         <rdfs:comment>Uberon has a couple of terms (e.g., UBERON_2000311) that refer to the entire adductor mandibulae complex but not individual parts. </rdfs:comment>
@@ -994,7 +994,7 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
     <!-- http://purl.obolibrary.org/obo/MFMO0000168 -->
 
     <owl:Class rdf:about="&obo;MFMO0000168">
-        <rdfs:label xml:lang="en">adductor Mandibulae Internus</rdfs:label>
+        <rdfs:label xml:lang="en">adductor mandibulae internus muscle</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000072"/>
         <rdfs:comment>FEED reptile spreadsheet</rdfs:comment>
         <oboInOwl:hasExactSynonym>mAMI</oboInOwl:hasExactSynonym>
@@ -1006,7 +1006,7 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
     <!-- http://purl.obolibrary.org/obo/MFMO0000169 -->
 
     <owl:Class rdf:about="&obo;MFMO0000169">
-        <rdfs:label xml:lang="en">intramandibularis</rdfs:label>
+        <rdfs:label xml:lang="en">intramandibularis muscle</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000072"/>
         <rdfs:comment>FEED reptile spreadsheet</rdfs:comment>
     </owl:Class>
@@ -1016,7 +1016,7 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
     <!-- http://purl.obolibrary.org/obo/MFMO0000170 -->
 
     <owl:Class rdf:about="&obo;MFMO0000170">
-        <rdfs:label xml:lang="en">adductor mandibulae externus medialis</rdfs:label>
+        <rdfs:label xml:lang="en">adductor mandibulae externus medialis muscle</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000072"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1034,7 +1034,7 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
     <!-- http://purl.obolibrary.org/obo/MFMO0000171 -->
 
     <owl:Class rdf:about="&obo;MFMO0000171">
-        <rdfs:label xml:lang="en">adductor mandibulae externus superficialis</rdfs:label>
+        <rdfs:label xml:lang="en">adductor mandibulae externus superficialis muscle</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000072"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1123,7 +1123,7 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
     <!-- http://purl.obolibrary.org/obo/MFMO0000176 -->
 
     <owl:Class rdf:about="&obo;MFMO0000176">
-        <rdfs:label xml:lang="en">retractor anguli oris</rdfs:label>
+        <rdfs:label xml:lang="en">retractor anguli oris muscle</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000072"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1138,7 +1138,7 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
     <!-- http://purl.obolibrary.org/obo/MFMO0000177 -->
 
     <owl:Class rdf:about="&obo;MFMO0000177">
-        <rdfs:label xml:lang="en">adductor mandibulae externus superficialis anterior</rdfs:label>
+        <rdfs:label xml:lang="en">adductor mandibulae externus superficialis anterior muscle</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000072"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1155,7 +1155,7 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
     <!-- http://purl.obolibrary.org/obo/MFMO0000178 -->
 
     <owl:Class rdf:about="&obo;MFMO0000178">
-        <rdfs:label xml:lang="en">adductor mandibulae externus superficialis posterior</rdfs:label>
+        <rdfs:label xml:lang="en">adductor mandibulae externus superficialis posterior muscle</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000072"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1172,7 +1172,7 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
     <!-- http://purl.obolibrary.org/obo/MFMO0000179 -->
 
     <owl:Class rdf:about="&obo;MFMO0000179">
-        <rdfs:label xml:lang="en">adductor mandibulae externus profundus</rdfs:label>
+        <rdfs:label xml:lang="en">adductor mandibulae externus profundus muscle</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000072"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1187,29 +1187,11 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MFMO0000180 -->
-
-    <owl:Class rdf:about="&obo;MFMO0000180">
-        <rdfs:label xml:lang="en">adductor mandibulae internus</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MFMO_0000072"/>
-        <oboInOwl:hasExactSynonym>mAMI</oboInOwl:hasExactSynonym>
-        <rdfs:comment>From FEED reptile spreadsheet</rdfs:comment>
-        <rdfs:comment>Uberon has a couple of terms (e.g., UBERON_2000311) that refer to the entire adductor mandibulae complex but not individual parts. </rdfs:comment>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/MFMO0000181 -->
 
     <owl:Class rdf:about="&obo;MFMO0000181">
-        <rdfs:label xml:lang="en">pterygoideus</rdfs:label>
+        <rdfs:label xml:lang="en">pterygoideus muscle</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000072"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="&obo;MFMO0000180"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:comment>From FEED reptile spreadsheet</rdfs:comment>
         <oboInOwl:hasExactSynonym>mPt</oboInOwl:hasExactSynonym>
     </owl:Class>
@@ -1219,7 +1201,7 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
     <!-- http://purl.obolibrary.org/obo/MFMO0000182 -->
 
     <owl:Class rdf:about="&obo;MFMO0000182">
-        <rdfs:label xml:lang="en">pterygoideus externus</rdfs:label>
+        <rdfs:label xml:lang="en">pterygoideus externus muscle</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000072"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1234,7 +1216,7 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
     <!-- http://purl.obolibrary.org/obo/MFMO0000183 -->
 
     <owl:Class rdf:about="&obo;MFMO0000183">
-        <rdfs:label xml:lang="en">pterygoideus internus</rdfs:label>
+        <rdfs:label xml:lang="en">pterygoideus internus muscle</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000072"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1249,14 +1231,8 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
     <!-- http://purl.obolibrary.org/obo/MFMO0000184 -->
 
     <owl:Class rdf:about="&obo;MFMO0000184">
-        <rdfs:label xml:lang="en">pseudotemporalis</rdfs:label>
+        <rdfs:label xml:lang="en">pseudotemporalis muscle</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000072"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="&obo;MFMO0000180"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>mPst</oboInOwl:hasExactSynonym>
         <rdfs:comment>From FEED reptile spreadsheet</rdfs:comment>
     </owl:Class>
@@ -1266,7 +1242,7 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
     <!-- http://purl.obolibrary.org/obo/MFMO0000185 -->
 
     <owl:Class rdf:about="&obo;MFMO0000185">
-        <rdfs:label xml:lang="en">pseudotemporalis superficialis</rdfs:label>
+        <rdfs:label xml:lang="en">pseudotemporalis superficialis muscle</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000072"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1282,7 +1258,7 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
     <!-- http://purl.obolibrary.org/obo/MFMO0000186 -->
 
     <owl:Class rdf:about="&obo;MFMO0000186">
-        <rdfs:label xml:lang="en">pseudotemporalis profundus</rdfs:label>
+        <rdfs:label xml:lang="en">pseudotemporalis profundus muscle</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000072"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1295,20 +1271,10 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MFMO0000187 -->
-
-    <owl:Class rdf:about="&obo;MFMO0000187">
-        <rdfs:label xml:lang="en">intramandibularis</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MFMO_0000072"/>
-        <rdfs:comment>From FEED reptile spreadsheet</rdfs:comment>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/MFMO0000188 -->
 
     <owl:Class rdf:about="&obo;MFMO0000188">
-        <rdfs:label xml:lang="en">pterygoideus atypicus</rdfs:label>
+        <rdfs:label xml:lang="en">pterygoideus atypicus muscle</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000072"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1325,7 +1291,7 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
     <!-- http://purl.obolibrary.org/obo/MFMO0000189 -->
 
     <owl:Class rdf:about="&obo;MFMO0000189">
-        <rdfs:label xml:lang="en">pterygoideus typicus</rdfs:label>
+        <rdfs:label xml:lang="en">pterygoideus typicus muscle</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000072"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1342,7 +1308,7 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
     <!-- http://purl.obolibrary.org/obo/MFMO0000190 -->
 
     <owl:Class rdf:about="&obo;MFMO0000190">
-        <rdfs:label xml:lang="en">adductor mandibulae posterior</rdfs:label>
+        <rdfs:label xml:lang="en">adductor mandibulae posterior muscle</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000072"/>
         <rdfs:comment>From FEED reptile spreadsheet</rdfs:comment>
         <rdfs:comment>Uberon has a couple of terms (e.g., UBERON_2000311) that refer to the entire adductor mandibulae complex but not individual parts. </rdfs:comment>
@@ -1353,7 +1319,7 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
     <!-- http://purl.obolibrary.org/obo/MFMO0000191 -->
 
     <owl:Class rdf:about="&obo;MFMO0000191">
-        <rdfs:label xml:lang="en">constrictor internus dorsalis</rdfs:label>
+        <rdfs:label xml:lang="en">constrictor internus dorsalis muscle</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000072"/>
         <oboInOwl:hasExactSynonym>mCID</oboInOwl:hasExactSynonym>
         <rdfs:comment>From FEED reptile spreadsheet</rdfs:comment>
@@ -1364,7 +1330,7 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
     <!-- http://purl.obolibrary.org/obo/MFMO0000192 -->
 
     <owl:Class rdf:about="&obo;MFMO0000192">
-        <rdfs:label xml:lang="en">levator bulbi</rdfs:label>
+        <rdfs:label xml:lang="en">levator bulbi muscle</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000072"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1382,7 +1348,7 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
     <!-- http://purl.obolibrary.org/obo/MFMO0000193 -->
 
     <owl:Class rdf:about="&obo;MFMO0000193">
-        <rdfs:label xml:lang="en">levator pterygoidei</rdfs:label>
+        <rdfs:label xml:lang="en">levator pterygoidei muscle</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000072"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1398,7 +1364,7 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
     <!-- http://purl.obolibrary.org/obo/MFMO0000194 -->
 
     <owl:Class rdf:about="&obo;MFMO0000194">
-        <rdfs:label xml:lang="en">protractor pterygoidei</rdfs:label>
+        <rdfs:label xml:lang="en">protractor pterygoidei muscle</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000072"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1414,7 +1380,7 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
     <!-- http://purl.obolibrary.org/obo/MFMO0000195 -->
 
     <owl:Class rdf:about="&obo;MFMO0000195">
-        <rdfs:label xml:lang="en">intermandibularis posterior</rdfs:label>
+        <rdfs:label xml:lang="en">intermandibularis posterior muscle</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000005"/>
         <rdfs:comment>From FEED reptile spreadsheet</rdfs:comment>
     </owl:Class>
@@ -1424,7 +1390,7 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
     <!-- http://purl.obolibrary.org/obo/MFMO0000196 -->
 
     <owl:Class rdf:about="&obo;MFMO0000196">
-        <rdfs:label xml:lang="en">intermandibularis anterior</rdfs:label>
+        <rdfs:label xml:lang="en">intermandibularis anterior muscle</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000072"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1440,7 +1406,7 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
     <!-- http://purl.obolibrary.org/obo/MFMO0000197 -->
 
     <owl:Class rdf:about="&obo;MFMO0000197">
-        <rdfs:label xml:lang="en">intermandibularis</rdfs:label>
+        <rdfs:label xml:lang="en">intermandibularis muscle</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000072"/>
         <oboInOwl:hasDbXref>UBERON_0010931</oboInOwl:hasDbXref>
         <rdfs:comment>From FEED reptile spreadsheet</rdfs:comment>
@@ -1451,7 +1417,7 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
     <!-- http://purl.obolibrary.org/obo/MFMO0000198 -->
 
     <owl:Class rdf:about="&obo;MFMO0000198">
-        <rdfs:label xml:lang="en">depressor mandibulae</rdfs:label>
+        <rdfs:label xml:lang="en">depressor mandibulae muscle</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000005"/>
         <rdfs:comment>From FEED reptile spreadsheet</rdfs:comment>
     </owl:Class>
@@ -1461,7 +1427,7 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
     <!-- http://purl.obolibrary.org/obo/MFMO0000199 -->
 
     <owl:Class rdf:about="&obo;MFMO0000199">
-        <rdfs:label xml:lang="en">cervicomandibularis</rdfs:label>
+        <rdfs:label xml:lang="en">cervicomandibularis muscle</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000005"/>
         <rdfs:comment>From FEED reptile spreadsheet</rdfs:comment>
     </owl:Class>
@@ -1481,7 +1447,7 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
     <!-- http://purl.obolibrary.org/obo/MFMO0000201 -->
 
     <owl:Class rdf:about="&obo;MFMO0000201">
-        <rdfs:label xml:lang="en">sternohyoideus superficialis</rdfs:label>
+        <rdfs:label xml:lang="en">sternohyoideus superficialis muscle</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000067"/>
         <rdfs:comment>From FEED reptile spreadsheet</rdfs:comment>
     </owl:Class>
@@ -1491,7 +1457,7 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
     <!-- http://purl.obolibrary.org/obo/MFMO0000202 -->
 
     <owl:Class rdf:about="&obo;MFMO0000202">
-        <rdfs:label xml:lang="en">sternohyoideus profundus</rdfs:label>
+        <rdfs:label xml:lang="en">sternohyoideus profundus muscle</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000067"/>
         <rdfs:comment>From FEED reptile spreadsheet</rdfs:comment>
     </owl:Class>
@@ -1511,7 +1477,7 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
     <!-- http://purl.obolibrary.org/obo/MFMO0000204 -->
 
     <owl:Class rdf:about="&obo;MFMO0000204">
-        <rdfs:label xml:lang="en">genioglossus</rdfs:label>
+        <rdfs:label xml:lang="en">genioglossus muscle</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000062"/>
         <rdfs:comment>From FEED reptile spreadsheet</rdfs:comment>
     </owl:Class>
@@ -1521,7 +1487,7 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
     <!-- http://purl.obolibrary.org/obo/MFMO0000205 -->
 
     <owl:Class rdf:about="&obo;MFMO0000205">
-        <rdfs:label xml:lang="en">genioglossus medial</rdfs:label>
+        <rdfs:label xml:lang="en">genioglossus medial muscle</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000062"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1537,7 +1503,7 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
     <!-- http://purl.obolibrary.org/obo/MFMO0000206 -->
 
     <owl:Class rdf:about="&obo;MFMO0000206">
-        <rdfs:label xml:lang="en">genioglossus lateral</rdfs:label>
+        <rdfs:label xml:lang="en">genioglossus lateral muscle</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000062"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1553,7 +1519,7 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
     <!-- http://purl.obolibrary.org/obo/MFMO0000207 -->
 
     <owl:Class rdf:about="&obo;MFMO0000207">
-        <rdfs:label xml:lang="en">genioglossus internal</rdfs:label>
+        <rdfs:label xml:lang="en">genioglossus internal muscle</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000062"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1569,7 +1535,7 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
     <!-- http://purl.obolibrary.org/obo/MFMO0000208 -->
 
     <owl:Class rdf:about="&obo;MFMO0000208">
-        <rdfs:label xml:lang="en">mandibulohyoideus</rdfs:label>
+        <rdfs:label xml:lang="en">mandibulohyoideus muscle</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000062"/>
         <rdfs:comment>From FEED reptile spreadsheet</rdfs:comment>
     </owl:Class>
@@ -1579,7 +1545,7 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
     <!-- http://purl.obolibrary.org/obo/MFMO0000209 -->
 
     <owl:Class rdf:about="&obo;MFMO0000209">
-        <rdfs:label xml:lang="en">mandibulohyoideus part 1</rdfs:label>
+        <rdfs:label xml:lang="en">mandibulohyoideus part 1 muscle</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000062"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1595,7 +1561,7 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
     <!-- http://purl.obolibrary.org/obo/MFMO0000210 -->
 
     <owl:Class rdf:about="&obo;MFMO0000210">
-        <rdfs:label xml:lang="en">mandibulohyoideus part 2</rdfs:label>
+        <rdfs:label xml:lang="en">mandibulohyoideus part 2 muscle</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000062"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1611,7 +1577,7 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
     <!-- http://purl.obolibrary.org/obo/MFMO0000211 -->
 
     <owl:Class rdf:about="&obo;MFMO0000211">
-        <rdfs:label xml:lang="en">mandibulohyoideus part 3</rdfs:label>
+        <rdfs:label xml:lang="en">mandibulohyoideus part 3 muscle</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000062"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1624,20 +1590,10 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MFMO0000212 -->
-
-    <owl:Class rdf:about="&obo;MFMO0000212">
-        <rdfs:label xml:lang="en">branchiohyoideus</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MFMO_0000007"/>
-        <rdfs:comment>From FEED reptile spreadsheet</rdfs:comment>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/MFMO0000213 -->
 
     <owl:Class rdf:about="&obo;MFMO0000213">
-        <rdfs:label xml:lang="en">intrinsic circularis</rdfs:label>
+        <rdfs:label xml:lang="en">intrinsic circularis muscle</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000062"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1701,7 +1657,7 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
     <!-- http://purl.obolibrary.org/obo/MFMO0000217 -->
 
     <owl:Class rdf:about="&obo;MFMO0000217">
-        <rdfs:label xml:lang="en">transversus mandibulae</rdfs:label>
+        <rdfs:label xml:lang="en">transversus mandibulae muscle</rdfs:label>
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;RO_0002371"/>
@@ -2688,14 +2644,14 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000075"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;mfmo.owl#attached_to_ventral_surface_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;MFMO_0000108"/>
+                <owl:onProperty rdf:resource="&obo;mfmo.owl#deep_to"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFMO_0000079"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;mfmo.owl#deep_to"/>
-                <owl:someValuesFrom rdf:resource="&obo;MFMO_0000079"/>
+                <owl:onProperty rdf:resource="&obo;mfmo.owl#attached_to_ventral_surface_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFMO_0000108"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasSynonym>Masseter deep portion (tiefe Portion)</oboInOwl:hasSynonym>
@@ -2768,7 +2724,7 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
     <!-- http://purl.obolibrary.org/obo/MFMO_0000080 -->
 
     <owl:Class rdf:about="&obo;MFMO_0000080">
-        <rdfs:label>pars reflexa</rdfs:label>
+        <rdfs:label>masseter muscle, pars reflexa</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000079"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -2814,7 +2770,7 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
     <!-- http://purl.obolibrary.org/obo/MFMO_0000082 -->
 
     <owl:Class rdf:about="&obo;MFMO_0000082">
-        <rdfs:label>zygomaticomandibularis, infraorbital portion</rdfs:label>
+        <rdfs:label>zygomaticomandibularis muscle, infraorbital portion</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000081"/>
         <rdfs:subClassOf>
             <owl:Class>
@@ -2848,14 +2804,14 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000072"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
-                <owl:someValuesFrom rdf:resource="&obo;MFMO_0000044"/>
+                <owl:onProperty rdf:resource="&obo;mfmo.owl#attached_to_medial_surface_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0001684"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;mfmo.owl#attached_to_medial_surface_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0001684"/>
+                <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFMO_0000044"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Ready for review.</rdfs:comment>
@@ -3024,7 +2980,7 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
     <!-- http://purl.obolibrary.org/obo/MFMO_0000089 -->
 
     <owl:Class rdf:about="&obo;MFMO_0000089">
-        <rdfs:label>tensor veli palatini</rdfs:label>
+        <rdfs:label>tensor veli palatini muscle</rdfs:label>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -3626,7 +3582,7 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
     <!-- http://purl.obolibrary.org/obo/mfmo.owl#levator_veli_palatini -->
 
     <owl:Class rdf:about="&obo;mfmo.owl#levator_veli_palatini">
-        <rdfs:label>levator veli palatini</rdfs:label>
+        <rdfs:label>levator veli palatini muscle</rdfs:label>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
