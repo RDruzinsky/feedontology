@@ -61,6 +61,18 @@
     
 
 
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasExactSynonym -->
+
+    <owl:AnnotationProperty rdf:about="&oboInOwl;hasExactSynonym"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym -->
+
+    <owl:AnnotationProperty rdf:about="&oboInOwl;hasRelatedSynonym"/>
+    
+
+
     <!-- http://www.geneontology.org/formats/oboInOwl#hasSynonym -->
 
     <owl:AnnotationProperty rdf:about="&oboInOwl;hasSynonym"/>
@@ -161,6 +173,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/RO_0002131 -->
+
+    <owl:ObjectProperty rdf:about="&obo;RO_0002131"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/RO_0002134 -->
 
     <owl:ObjectProperty rdf:about="&obo;RO_0002134">
@@ -178,6 +196,12 @@
     <!-- http://purl.obolibrary.org/obo/RO_0002202 -->
 
     <owl:ObjectProperty rdf:about="&obo;RO_0002202"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002221 -->
+
+    <owl:ObjectProperty rdf:about="&obo;RO_0002221"/>
     
 
 
@@ -2213,7 +2237,7 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
                     <rdf:Description rdf:about="&obo;UBERON_0001630"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
-                        <owl:someValuesFrom rdf:resource="&obo;mfmo.owl#hypoglossal_nerve"/>
+                        <owl:someValuesFrom rdf:resource="&obo;mfmo.owl#MFMO_0000301"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="&obo;RO_0002202"/>
@@ -2353,7 +2377,7 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
                     <rdf:Description rdf:about="&obo;UBERON_0001630"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
-                        <owl:someValuesFrom rdf:resource="&obo;mfmo.owl#spinal_nerve"/>
+                        <owl:someValuesFrom rdf:resource="&obo;mfmo.owl#MFMO_0000300"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="&obo;RO_0002202"/>
@@ -3029,7 +3053,7 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
     <owl:Class rdf:about="&obo;MFMO_0000091">
         <rdfs:label>cervical plexus</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000090"/>
-        <rdfs:subClassOf rdf:resource="&obo;mfmo.owl#spinal_nerve"/>
+        <rdfs:subClassOf rdf:resource="&obo;mfmo.owl#MFMO_0000300"/>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0003725</oboInOwl:hasDbXref>
         <rdfs:comment>Term in Uberon is equivalent but the definition needs revision.</rdfs:comment>
     </owl:Class>
@@ -3041,7 +3065,7 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
     <owl:Class rdf:about="&obo;MFMO_0000092">
         <rdfs:label>first cervical nerve</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000090"/>
-        <rdfs:subClassOf rdf:resource="&obo;mfmo.owl#spinal_nerve"/>
+        <rdfs:subClassOf rdf:resource="&obo;mfmo.owl#MFMO_0000300"/>
         <obo:IAO_0000115>Spinal nerve (paired) emerging from the first cervical segment superior to the first cervical vertebrae.</obo:IAO_0000115>
         <rdfs:comment>Request new term.</rdfs:comment>
     </owl:Class>
@@ -3594,13 +3618,59 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/mfmo.owl#hypoglossal_nerve -->
+    <!-- http://purl.obolibrary.org/obo/mfmo.owl#MFMO_0000300 -->
 
-    <owl:Class rdf:about="&obo;mfmo.owl#hypoglossal_nerve">
+    <owl:Class rdf:about="&obo;mfmo.owl#MFMO_0000300">
+        <rdfs:label>spinal nerve</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFMO_0000090"/>
+        <rdfs:comment></rdfs:comment>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001780</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0005197</oboInOwl:hasDbXref>
+        <rdfs:comment>Not sure what the point of having two classes in Uberon - Uberon1780 and Uberon5197.  I think they are, more or less, equivalent.  I prefer 5197 - RED
+Term(s) in Uberon are equivalent but the definition needs revision.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/mfmo.owl#MFMO_0000301 -->
+
+    <owl:Class rdf:about="&obo;mfmo.owl#MFMO_0000301">
         <rdfs:label>hypoglossal nerve</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000090"/>
-        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001650</oboInOwl:hasDbXref>
         <rdfs:comment>Term in Uberon is equivalent but the definition needs revision,</rdfs:comment>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001650</oboInOwl:hasDbXref>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/mfmo.owl#MFMO_0000302 -->
+
+    <owl:Class rdf:about="&obo;mfmo.owl#MFMO_0000302">
+        <rdfs:label>orangutan posterior digastric muscle</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFMO_0000060"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
+                        <owl:someValuesFrom rdf:resource="&obo;MFMO_0000044"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
+                        <owl:someValuesFrom rdf:resource="&obo;UBERON_0001684"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
+                        <owl:someValuesFrom rdf:resource="&obo;UBERON_0001647"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;mfmo.owl#superficial_to"/>
+                        <owl:someValuesFrom rdf:resource="&obo;MFMO_0000084"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>The posterior digastric muscle in orangutans does not have an attachment to the hyoid apparatus. It is attached to the posterior edge of the ascending ramus of the mandible. The anterior digastric muscle is absent in orangutans. Winkler, 1991</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -3670,38 +3740,6 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0010749</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonym>hyopharyngeus</oboInOwl:hasSynonym>
         <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/mfmo.owl#orangutan_posterior_digastric_muscle -->
-
-    <owl:Class rdf:about="&obo;mfmo.owl#orangutan_posterior_digastric_muscle">
-        <rdfs:label>orangutan posterior digastric muscle</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MFMO_0000060"/>
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
-                        <owl:someValuesFrom rdf:resource="&obo;MFMO_0000044"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
-                        <owl:someValuesFrom rdf:resource="&obo;UBERON_0001684"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
-                        <owl:someValuesFrom rdf:resource="&obo;UBERON_0001647"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;mfmo.owl#superficial_to"/>
-                        <owl:someValuesFrom rdf:resource="&obo;MFMO_0000084"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115>The posterior digastric muscle in orangutans does not have an attachment to the hyoid apparatus. It is attached to the posterior edge of the ascending ramus of the mandible. The anterior digastric muscle is absent in orangutans. Winkler, 1991</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -3800,20 +3838,6 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/mfmo.owl#spinal_nerve -->
-
-    <owl:Class rdf:about="&obo;mfmo.owl#spinal_nerve">
-        <rdfs:label>spinal nerve</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MFMO_0000090"/>
-        <rdfs:comment>Not sure what the point of having two classes in Uberon - Uberon1780 and Uberon5197.  I think they are, more or less, equivalent.  I prefer 5197 - RED
-Term(s) in Uberon are equivalent but the definition needs revision.</rdfs:comment>
-        <rdfs:comment></rdfs:comment>
-        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001780</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0005197</oboInOwl:hasDbXref>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/mfmo.owl#superior_pharyngeal_constrictor_muscle -->
 
     <owl:Class rdf:about="&obo;mfmo.owl#superior_pharyngeal_constrictor_muscle">
@@ -3880,6 +3904,17 @@ Term(s) in Uberon are equivalent but the definition needs revision.</rdfs:commen
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0010235</oboInOwl:hasDbXref>
         <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
         <obo:IAO_0000115>The muscle of the uvuli is an integral part of the soft palate and is innervated by Cranial Nerve X (Vagus via the pharyngeal plexus).</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/mfmo.owl/MFMO_0000303 -->
+
+    <owl:Class rdf:about="&obo;mfmo.owl/MFMO_0000303">
+        <rdfs:label xml:lang="en">stylopharyngeus muscle</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFMO_0000007"/>
+        <oboInOwl:hasDefinition>The stylopharyngeus muscle attaches to the styloid process of the temporal bone, the pharynx, and the thyroid cartilage and it is innervated by the glossopharyngeal nerve (CN IX).</oboInOwl:hasDefinition>
+        <oboInOwl:hasDbXref>UBERON_0008804</oboInOwl:hasDbXref>
     </owl:Class>
     
 
