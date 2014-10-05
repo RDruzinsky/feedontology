@@ -90,52 +90,52 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OPBO0000124 -->
+    <!-- http://purl.obolibrary.org/obo/OPBO_0000124 -->
 
-    <owl:ObjectProperty rdf:about="&obo;OPBO0000124">
+    <owl:ObjectProperty rdf:about="&obo;OPBO_0000124">
         <rdfs:label xml:lang="en">lateral to</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OPBO0000125 -->
+    <!-- http://purl.obolibrary.org/obo/OPBO_0000125 -->
 
-    <owl:ObjectProperty rdf:about="&obo;OPBO0000125">
+    <owl:ObjectProperty rdf:about="&obo;OPBO_0000125">
         <rdfs:label xml:lang="en">medial to</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OPBO0000142 -->
+    <!-- http://purl.obolibrary.org/obo/OPBO_0000142 -->
 
-    <owl:ObjectProperty rdf:about="&obo;OPBO0000142">
+    <owl:ObjectProperty rdf:about="&obo;OPBO_0000142">
         <rdfs:label xml:lang="en">dorsal to</rdfs:label>
         <oboInOwl:hasDbXref>PATO_0001233</oboInOwl:hasDbXref>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OPBO0000143 -->
+    <!-- http://purl.obolibrary.org/obo/OPBO_0000143 -->
 
-    <owl:ObjectProperty rdf:about="&obo;OPBO0000143">
+    <owl:ObjectProperty rdf:about="&obo;OPBO_0000143">
         <rdfs:label xml:lang="en">ventral to</rdfs:label>
         <oboInOwl:hasDbXref>PATO_0001196</oboInOwl:hasDbXref>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OPBO0000144 -->
+    <!-- http://purl.obolibrary.org/obo/OPBO_0000144 -->
 
-    <owl:ObjectProperty rdf:about="&obo;OPBO0000144">
+    <owl:ObjectProperty rdf:about="&obo;OPBO_0000144">
         <rdfs:label xml:lang="en">angle</rdfs:label>
         <oboInOwl:hasDbXref>PATO_0002326</oboInOwl:hasDbXref>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OPBO0000218 -->
+    <!-- http://purl.obolibrary.org/obo/OPBO_0000218 -->
 
-    <owl:ObjectProperty rdf:about="&obo;OPBO0000218">
+    <owl:ObjectProperty rdf:about="&obo;OPBO_0000218">
         <rdfs:label xml:lang="en">right</rdfs:label>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/PATO_0000367</oboInOwl:hasDbXref>
     </owl:ObjectProperty>
@@ -305,9 +305,9 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OPBO0000220 -->
+    <!-- http://purl.obolibrary.org/obo/OPBO_0000220 -->
 
-    <owl:Class rdf:about="&obo;OPBO0000220">
+    <owl:Class rdf:about="&obo;OPBO_0000220">
         <rdfs:label xml:lang="en">rumination</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OPBO_0000014"/>
         <obo:IAO_0000115>A mastication behavior in which regurgitated food is re-masticated.</obo:IAO_0000115>
