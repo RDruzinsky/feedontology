@@ -1734,6 +1734,46 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
     
 
 
+    <!-- http://purl.obolibrary.org/obo/MFMO0000325 -->
+
+    <owl:Class rdf:about="&obo;MFMO0000325">
+        <rdfs:label xml:lang="en">superior pharyngeal constrictor muscle</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFMO_0000010"/>
+        <obo:IAO_0000115>The superior constrictor is a muscle that is an integral part of the pharyngeal tube that is attached to the mandible, pterygomandibular raphe, basioccipital bone, pterygoid process and midline raphe and is innervated by Cranial Nerve X via the pharyngeal plexus.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>UBERON_0006329</oboInOwl:hasDbXref>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFMO0000326 -->
+
+    <owl:Class rdf:about="&obo;MFMO0000326">
+        <rdfs:label xml:lang="en">thyrohyoid muscle</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;RO_0002005"/>
+                        <owl:someValuesFrom rdf:resource="&obo;mfmo.owl#MFMO_0000301"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;attaches_to"/>
+                        <owl:someValuesFrom rdf:resource="&obo;MFMO_0000106"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;attaches_to"/>
+                        <owl:someValuesFrom rdf:resource="&obo;UBERON_0001685"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;MFMO_0000062"/>
+        <oboInOwl:hasDbXref>UBERON_0001110</oboInOwl:hasDbXref>
+        <obo:IAO_0000115>The thyrohyoid is a somitic muscle that participates in oral/pharyngeal behaviors and is innervated by C1 and Cranial Nerve XII (hypoglossal); it attaches to the thyroid cartilage and the hyoid apparatus.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/MFMO_0000002 -->
 
     <owl:Class rdf:about="&obo;MFMO_0000002">
@@ -2295,7 +2335,7 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
     <!-- http://purl.obolibrary.org/obo/MFMO_0000063 -->
 
     <owl:Class rdf:about="&obo;MFMO_0000063">
-        <rdfs:label>genioglossus muscle</rdfs:label>
+        <rdfs:label>Eutherian genioglossus muscle</rdfs:label>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -3385,6 +3425,17 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
     
 
 
+    <!-- http://purl.obolibrary.org/obo/MFMO_0000303 -->
+
+    <owl:Class rdf:about="&obo;MFMO_0000303">
+        <rdfs:label xml:lang="en">stylopharyngeus muscle</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFMO_0000007"/>
+        <oboInOwl:hasDefinition>The stylopharyngeus muscle attaches to the styloid process of the temporal bone, the pharynx, and the thyroid cartilage and it is innervated by the glossopharyngeal nerve (CN IX).</oboInOwl:hasDefinition>
+        <oboInOwl:hasDbXref>UBERON_0008804</oboInOwl:hasDbXref>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/MFMO_0000304 -->
 
     <owl:Class rdf:about="&obo;MFMO_0000304">
@@ -3412,7 +3463,6 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="&obo;MFMO_0000312"/>
         <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
         <obo:IAO_0000115>The levator veli palatini is part of the soft palate that attaches to the cranial base, pharyngotympanic tube and the soft palate and is innervated by Cranial Nerve X via the pharyngeal plexus.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0008585</oboInOwl:hasDbXref>
@@ -3546,6 +3596,37 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
     
 
 
+    <!-- http://purl.obolibrary.org/obo/MFMO_0000308 -->
+
+    <owl:Class rdf:about="&obo;MFMO_0000308">
+        <rdfs:label>uvular muscle</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;MFMO_0000010"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="&obo;MFMO_0000100"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
+                        <owl:someValuesFrom rdf:resource="&obo;MFMO_0000100"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
+                        <owl:someValuesFrom rdf:resource="&obo;UBERON_0011325"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0010235</oboInOwl:hasDbXref>
+        <obo:IAO_0000115>The muscle of the uvuli is an integral part of the soft palate and is innervated by Cranial Nerve X (Vagus via the pharyngeal plexus).</obo:IAO_0000115>
+        <rdfs:comment>Term in Uberon is equivalent but the definition needs revision.</rdfs:comment>
+        <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/MFMO_0000312 -->
 
     <owl:Class rdf:about="&obo;MFMO_0000312">
@@ -3578,9 +3659,9 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OPBO0000221 -->
+    <!-- http://purl.obolibrary.org/obo/MFMO_0000324 -->
 
-    <owl:Class rdf:about="&obo;OPBO0000221">
+    <owl:Class rdf:about="&obo;MFMO_0000324">
         <rdfs:label xml:lang="en">cricothyroid muscle</rdfs:label>
         <owl:equivalentClass>
             <owl:Class>
@@ -3597,8 +3678,8 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001566</oboInOwl:hasDbXref>
         <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001566</oboInOwl:hasDbXref>
         <obo:IAO_0000115>Intrinsic muscle of the larynx, innervated by the external division of the laryngeal nerve, a branch of the vagus nerve. It attaches to the anterolateral surface of the cricoid cartilage and the external surface of the thyroid cartilage.</obo:IAO_0000115>
     </owl:Class>
     
@@ -3608,6 +3689,24 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
 
     <owl:Class rdf:about="&obo;UBERON_0000166">
         <rdfs:label>oral opening</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000209 -->
+
+    <owl:Class rdf:about="&obo;UBERON_0000209">
+        <rdfs:label>frontal bone</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000210 -->
+
+    <owl:Class rdf:about="&obo;UBERON_0000210">
+        <rdfs:label>parietal bone</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
     </owl:Class>
     
 
@@ -3650,6 +3749,15 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000090"/>
         <rdfs:comment>Term in Uberon is equivalent but the definition needs revision.</rdfs:comment>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001649</oboInOwl:hasDbXref>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001678 -->
+
+    <owl:Class rdf:about="&obo;UBERON_0001678">
+        <rdfs:label>temporal bone</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
     </owl:Class>
     
 
@@ -3864,48 +3972,6 @@ Term(s) in Uberon are equivalent but the definition needs revision.</rdfs:commen
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000090"/>
         <rdfs:comment>Term in Uberon is equivalent but the definition needs revision,</rdfs:comment>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001650</oboInOwl:hasDbXref>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/mfmo.owl#MFMO_0000308 -->
-
-    <owl:Class rdf:about="&obo;mfmo.owl#MFMO_0000308">
-        <rdfs:label>uvular muscle</rdfs:label>
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&obo;MFMO_0000010"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
-                        <owl:someValuesFrom rdf:resource="&obo;MFMO_0000100"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
-                        <owl:someValuesFrom rdf:resource="&obo;MFMO_0000100"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
-                        <owl:someValuesFrom rdf:resource="&obo;UBERON_0011325"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:comment>Term in Uberon is equivalent but the definition needs revision.</rdfs:comment>
-        <obo:IAO_0000115>The muscle of the uvuli is an integral part of the soft palate and is innervated by Cranial Nerve X (Vagus via the pharyngeal plexus).</obo:IAO_0000115>
-        <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
-        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0010235</oboInOwl:hasDbXref>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/mfmo.owl/MFMO_0000303 -->
-
-    <owl:Class rdf:about="&obo;mfmo.owl/MFMO_0000303">
-        <rdfs:label xml:lang="en">stylopharyngeus muscle</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MFMO_0000007"/>
-        <oboInOwl:hasDefinition>The stylopharyngeus muscle attaches to the styloid process of the temporal bone, the pharynx, and the thyroid cartilage and it is innervated by the glossopharyngeal nerve (CN IX).</oboInOwl:hasDefinition>
-        <oboInOwl:hasDbXref>UBERON_0008804</oboInOwl:hasDbXref>
     </owl:Class>
     
 
@@ -4206,7 +4272,7 @@ Term(s) in Uberon are equivalent but the definition needs revision.</rdfs:commen
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://xmlns.com/foaf/0.1/depicts"/>
-                <owl:someValuesFrom rdf:resource="&obo;mfmo.owl#MFMO_0000308"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFMO_0000308"/>
             </owl:Restriction>
         </rdf:type>
         <rdfs:label>Human uvular muscle</rdfs:label>
