@@ -386,12 +386,6 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="&obo;OPBO_0000018"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
                 <owl:someValuesFrom rdf:resource="&obo;OPBO_0000013"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -405,6 +399,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
                 <owl:someValuesFrom rdf:resource="&obo;OPBO_0000043"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="&obo;OPBO_0000018"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasDbXref>NBO_0000079</oboInOwl:hasDbXref>
@@ -755,6 +755,15 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OPBO_0000056 -->
+
+    <owl:Class rdf:about="&obo;OPBO_0000056">
+        <rdfs:label xml:lang="en">feeding sequence</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPBO_0000017"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OPBO_0000220 -->
 
     <owl:Class rdf:about="&obo;OPBO_0000220">
@@ -762,6 +771,15 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
         <rdfs:subClassOf rdf:resource="&obo;OPBO_0000014"/>
         <obo:IAO_0000115>A mastication behavior in which regurgitated food is re-masticated.</obo:IAO_0000115>
         <obo:IAO_0000119>FEED Working Group</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/opbo.owl/OPBO_0000057 -->
+
+    <owl:Class rdf:about="&obo;opbo.owl/OPBO_0000057">
+        <rdfs:label xml:lang="en">bite</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPBO_0000012"/>
     </owl:Class>
     
 
