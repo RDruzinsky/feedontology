@@ -90,6 +90,25 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OPBO_0000001 -->
+
+    <owl:ObjectProperty rdf:about="&obo;OPBO_0000001">
+        <rdf:type rdf:resource="&owl;SymmetricProperty"/>
+        <rdfs:label>attached to</rdfs:label>
+        <owl:equivalentProperty rdf:resource="&obo;attaches_to"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPBO_0000003 -->
+
+    <owl:ObjectProperty rdf:about="&obo;OPBO_0000003">
+        <rdfs:label>innervated by</rdfs:label>
+        <owl:inverseOf rdf:resource="&obo;RO_0002134"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OPBO_0000124 -->
 
     <owl:ObjectProperty rdf:about="&obo;OPBO_0000124">
@@ -138,25 +157,6 @@
     <owl:ObjectProperty rdf:about="&obo;OPBO_0000218">
         <rdfs:label xml:lang="en">right</rdfs:label>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/PATO_0000367</oboInOwl:hasDbXref>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OPBO_0000001 -->
-
-    <owl:ObjectProperty rdf:about="&obo;OPBO_0000001">
-        <rdf:type rdf:resource="&owl;SymmetricProperty"/>
-        <rdfs:label>attached to</rdfs:label>
-        <owl:equivalentProperty rdf:resource="&obo;attaches_to"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OPBO_0000003 -->
-
-    <owl:ObjectProperty rdf:about="&obo;OPBO_0000003">
-        <rdfs:label>innervated by</rdfs:label>
-        <owl:inverseOf rdf:resource="&obo;RO_0002134"/>
     </owl:ObjectProperty>
     
 
@@ -305,17 +305,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OPBO_0000220 -->
-
-    <owl:Class rdf:about="&obo;OPBO_0000220">
-        <rdfs:label xml:lang="en">rumination</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;OPBO_0000014"/>
-        <obo:IAO_0000115>A mastication behavior in which regurgitated food is re-masticated.</obo:IAO_0000115>
-        <obo:IAO_0000119>FEED Working Group</obo:IAO_0000119>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/OPBO_0000011 -->
 
     <owl:Class rdf:about="&obo;OPBO_0000011">
@@ -403,13 +392,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="&obo;OPBO_0000038"/>
+                <owl:someValuesFrom rdf:resource="&obo;OPBO_0000013"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="&obo;OPBO_0000013"/>
+                <owl:someValuesFrom rdf:resource="&obo;OPBO_0000038"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -708,6 +697,71 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
         <oboInOwl:hasDbXref>NBO_0000545</oboInOwl:hasDbXref>
         <obo:IAO_0000115>A part of feeding behavior during which there is movement of food or liquid from out of the oropharynx and into the esophagus.</obo:IAO_0000115>
         <oboInOwl:hasSynonym>swallowing</oboInOwl:hasSynonym>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPBO_0000050 -->
+
+    <owl:Class rdf:about="&obo;OPBO_0000050">
+        <rdfs:label xml:lang="en">liquid swallow</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPBO_0000043"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPBO_0000051 -->
+
+    <owl:Class rdf:about="&obo;OPBO_0000051">
+        <rdfs:label xml:lang="en">solid swallow</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPBO_0000043"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPBO_0000052 -->
+
+    <owl:Class rdf:about="&obo;OPBO_0000052">
+        <rdfs:label xml:lang="en">sucking</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPBO_0000012"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPBO_0000053 -->
+
+    <owl:Class rdf:about="&obo;OPBO_0000053">
+        <rdfs:label xml:lang="en">regurgitation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPBO_0000012"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPBO_0000054 -->
+
+    <owl:Class rdf:about="&obo;OPBO_0000054">
+        <rdfs:label xml:lang="en">complete feeding sequence</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPBO_0000017"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPBO_0000055 -->
+
+    <owl:Class rdf:about="&obo;OPBO_0000055">
+        <rdfs:label xml:lang="en">complete drinking sequence</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPBO_0000054"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPBO_0000220 -->
+
+    <owl:Class rdf:about="&obo;OPBO_0000220">
+        <rdfs:label xml:lang="en">rumination</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPBO_0000014"/>
+        <obo:IAO_0000115>A mastication behavior in which regurgitated food is re-masticated.</obo:IAO_0000115>
+        <obo:IAO_0000119>FEED Working Group</obo:IAO_0000119>
     </owl:Class>
     
 
