@@ -908,6 +908,15 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OPBO_0000077 -->
+
+    <owl:Class rdf:about="&obo;OPBO_0000077">
+        <rdfs:label xml:lang="en">pharyngeal packing</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPBO_0000012"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OPBO_0000220 -->
 
     <owl:Class rdf:about="&obo;OPBO_0000220">
