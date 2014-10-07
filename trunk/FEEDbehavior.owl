@@ -386,25 +386,25 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="&obo;OPBO_0000013"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="&obo;OPBO_0000038"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
                 <owl:someValuesFrom rdf:resource="&obo;OPBO_0000043"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="&obo;OPBO_0000013"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
                 <owl:someValuesFrom rdf:resource="&obo;OPBO_0000018"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="&obo;OPBO_0000038"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasDbXref>NBO_0000079</oboInOwl:hasDbXref>
@@ -760,6 +760,150 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
     <owl:Class rdf:about="&obo;OPBO_0000056">
         <rdfs:label xml:lang="en">feeding sequence</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OPBO_0000017"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPBO_0000061 -->
+
+    <owl:Class rdf:about="&obo;OPBO_0000061">
+        <rdfs:label xml:lang="en">suckling</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPBO_0000012"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPBO_0000062 -->
+
+    <owl:Class rdf:about="&obo;OPBO_0000062">
+        <rdfs:label xml:lang="en">vocalization behavior</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPBO_0000012"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPBO_0000063 -->
+
+    <owl:Class rdf:about="&obo;OPBO_0000063">
+        <rdfs:label xml:lang="en">respiratory system process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPBO_0000012"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPBO_0000064 -->
+
+    <owl:Class rdf:about="&obo;OPBO_0000064">
+        <rdfs:label xml:lang="en">respiratory gaseous exchange</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPBO_0000063"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPBO_0000065 -->
+
+    <owl:Class rdf:about="&obo;OPBO_0000065">
+        <rdfs:label xml:lang="en">tongue flick</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPBO_0000012"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPBO_0000066 -->
+
+    <owl:Class rdf:about="&obo;OPBO_0000066">
+        <rdfs:label xml:lang="en">capture</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPBO_0000012"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPBO_0000067 -->
+
+    <owl:Class rdf:about="&obo;OPBO_0000067">
+        <rdfs:label xml:lang="en">manipulation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPBO_0000012"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPBO_0000068 -->
+
+    <owl:Class rdf:about="&obo;OPBO_0000068">
+        <rdfs:label xml:lang="en">re-positioning</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPBO_0000012"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPBO_0000069 -->
+
+    <owl:Class rdf:about="&obo;OPBO_0000069">
+        <rdfs:label xml:lang="en">crush</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPBO_0000012"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPBO_0000070 -->
+
+    <owl:Class rdf:about="&obo;OPBO_0000070">
+        <rdfs:label xml:lang="en">pharyngeal compression</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPBO_0000012"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPBO_0000071 -->
+
+    <owl:Class rdf:about="&obo;OPBO_0000071">
+        <rdfs:label xml:lang="en">lick</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPBO_0000012"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPBO_0000072 -->
+
+    <owl:Class rdf:about="&obo;OPBO_0000072">
+        <rdfs:label xml:lang="en">tear</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPBO_0000012"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPBO_0000073 -->
+
+    <owl:Class rdf:about="&obo;OPBO_0000073">
+        <rdfs:label xml:lang="en">inertial transport</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPBO_0000038"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPBO_0000074 -->
+
+    <owl:Class rdf:about="&obo;OPBO_0000074">
+        <rdfs:label xml:lang="en">tooth walk</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPBO_0000038"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPBO_0000075 -->
+
+    <owl:Class rdf:about="&obo;OPBO_0000075">
+        <rdfs:label xml:lang="en">inertial reduction</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPBO_0000012"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OPBO_0000076 -->
+
+    <owl:Class rdf:about="&obo;OPBO_0000076">
+        <rdfs:label xml:lang="en">roll</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OPBO_0000012"/>
     </owl:Class>
     
 
