@@ -631,7 +631,7 @@
     <!-- http://purl.obolibrary.org/obo/MFMO_0000047 -->
 
     <owl:Class rdf:about="&obo;MFMO_0000047">
-        <rdfs:label>clavicle</rdfs:label>
+        <rdfs:label>clavicle bone</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
         <rdfs:comment>Term in Uberon is equivalent.</rdfs:comment>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001105</oboInOwl:hasDbXref>
@@ -1343,14 +1343,14 @@
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000075"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;mfmo.owl#deep_to"/>
-                <owl:someValuesFrom rdf:resource="&obo;MFMO_0000079"/>
+                <owl:onProperty rdf:resource="&obo;mfmo.owl#attached_to_ventral_surface_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFMO_0000108"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;mfmo.owl#attached_to_ventral_surface_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;MFMO_0000108"/>
+                <owl:onProperty rdf:resource="&obo;mfmo.owl#deep_to"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFMO_0000079"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasSynonym>Masseter deep portion (tiefe Portion)</oboInOwl:hasSynonym>
@@ -1527,6 +1527,12 @@
         <rdfs:label>mylohyoid muscle</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000072"/>
         <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002163"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFMO_0000073"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
@@ -1547,12 +1553,6 @@
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0002163"/>
-                <owl:someValuesFrom rdf:resource="&obo;MFMO_0000073"/>
-            </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>The mylohyoid is a pharyngeal arch I muscle that participates in oral/pharyngeal behaviors and is innervated by the nerve to mylohyoid and attaches to the midline raphe linking right and left mylohyoid and the mandible.</obo:IAO_0000115>
         <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
@@ -1812,7 +1812,7 @@
     <!-- http://purl.obolibrary.org/obo/MFMO_0000098 -->
 
     <owl:Class rdf:about="&obo;MFMO_0000098">
-        <rdfs:label>scapula</rdfs:label>
+        <rdfs:label>scapula bone</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
         <rdfs:comment>Term in Uberon is equivalent but the definition needs revision.</rdfs:comment>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0006849</oboInOwl:hasDbXref>
@@ -1881,7 +1881,7 @@
     <!-- http://purl.obolibrary.org/obo/MFMO_0000104 -->
 
     <owl:Class rdf:about="&obo;MFMO_0000104">
-        <rdfs:label>sternum</rdfs:label>
+        <rdfs:label>sternum bone</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
         <rdfs:comment>Term in Uberon is equivalent but the definition needs revision.</rdfs:comment>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0000975</oboInOwl:hasDbXref>
@@ -3505,19 +3505,11 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
                     <rdf:Description rdf:about="&obo;MFMO_0000010"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
-                        <owl:someValuesFrom rdf:resource="&obo;MFMO_0000045"/>
+                        <owl:someValuesFrom rdf:resource="&obo;MFMO_0000097"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
-                        <owl:someValuesFrom rdf:resource="&obo;MFMO_0000103"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
-                        <owl:someValuesFrom rdf:resource="&obo;UBERON_0001684"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
-                        <owl:someValuesFrom rdf:resource="&obo;UBERON_0011349"/>
+                        <owl:someValuesFrom rdf:resource="&obo;MFMO_0000110"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
@@ -3532,11 +3524,19 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
                     <rdf:Description rdf:about="&obo;MFMO_0000010"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
-                        <owl:someValuesFrom rdf:resource="&obo;MFMO_0000097"/>
+                        <owl:someValuesFrom rdf:resource="&obo;MFMO_0000045"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
-                        <owl:someValuesFrom rdf:resource="&obo;MFMO_0000110"/>
+                        <owl:someValuesFrom rdf:resource="&obo;MFMO_0000103"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
+                        <owl:someValuesFrom rdf:resource="&obo;UBERON_0001684"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
+                        <owl:someValuesFrom rdf:resource="&obo;UBERON_0011349"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
@@ -3765,7 +3765,7 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
     <!-- http://purl.obolibrary.org/obo/UBERON_0001684 -->
 
     <owl:Class rdf:about="&obo;UBERON_0001684">
-        <rdfs:label>mandible</rdfs:label>
+        <rdfs:label>mandible bone</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001684</oboInOwl:hasDbXref>
         <rdfs:comment>Mandible is equivalent to dentary but none of the definitions in Uberon is perfect.  Unfortunately, the term is used in several different ways.  RED
@@ -3828,7 +3828,7 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
     <!-- http://purl.obolibrary.org/obo/UBERON_0002397 -->
 
     <owl:Class rdf:about="&obo;UBERON_0002397">
-        <rdfs:label>maxilla</rdfs:label>
+        <rdfs:label>maxilla bone</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0004657</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/MA_0001491</oboInOwl:hasDbXref>
