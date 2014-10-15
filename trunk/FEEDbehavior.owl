@@ -320,12 +320,6 @@
     <owl:Class rdf:about="&obo;OPBO_0000012">
         <rdfs:label>oral/pharyngeal behavior</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OPBO_0000011"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="&obo;OPBO_0000017"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000115>Oral/pharyngeal behaviors are movements that structures of the oral and/or pharyngeal regions participate in.</obo:IAO_0000115>
         <oboInOwl:hasSynonym>oro/pharyngeal behavior</oboInOwl:hasSynonym>
     </owl:Class>
@@ -337,12 +331,6 @@
     <owl:Class rdf:about="&obo;OPBO_0000013">
         <rdfs:label>chewing</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OPBO_0000012"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="&obo;OPBO_0000017"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <oboInOwl:hasBroadSynonym>chews</oboInOwl:hasBroadSynonym>
         <rdfs:comment>mastication is a synonym of chewing in the NBO</rdfs:comment>
         <obo:IAO_0000115>A part of feeding behavior during which food breakdown (mechanical and chemical) by structure(s) of the oropharyngeal apparatus occurs.</obo:IAO_0000115>
@@ -390,30 +378,6 @@
     <owl:Class rdf:about="&obo;OPBO_0000017">
         <rdfs:label>feeding behavior</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OPBO_0000012"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="&obo;OPBO_0000013"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="&obo;OPBO_0000043"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="&obo;OPBO_0000038"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="&obo;OPBO_0000018"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <oboInOwl:hasDbXref>NBO_0000079</oboInOwl:hasDbXref>
         <obo:IAO_0000115>Feeding behavior is an oral/pharyngeal behavior during which there is intake of food or liquid.</obo:IAO_0000115>
         <rdfs:comment>GO: eating behavior and feeding behavior are both terms. Our definition removes the use of &quot;associated with&quot;.</rdfs:comment>
@@ -426,12 +390,6 @@
     <owl:Class rdf:about="&obo;OPBO_0000018">
         <rdfs:label>ingestion behavior</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OPBO_0000012"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="&obo;OPBO_0000017"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:comment>GO term for Ingestion is a Cellular Process</rdfs:comment>
         <obo:IAO_0000115>Ingestion is part of feeding behavior during which there is movement of a food or liquid from outside the body into the oral cavity or pharynx.</obo:IAO_0000115>
         <oboInOwl:hasBroadSynonym>tongue feeding</oboInOwl:hasBroadSynonym>
@@ -640,12 +598,6 @@
     <owl:Class rdf:about="&obo;OPBO_0000038">
         <rdfs:label>intraoral transport</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OPBO_0000012"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="&obo;OPBO_0000017"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000119>Hiiemae, Karen (2000). The oro-facial complex in macaques: tongue and jaw movements in feeding. Old World Monkeys. Cambridge University Press, Cambridge, 214-236.
 
 ISBN 1139471368, 9781139471367</obo:IAO_0000119>
@@ -701,12 +653,6 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
     <owl:Class rdf:about="&obo;OPBO_0000043">
         <rdfs:label>swallow</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OPBO_0000012"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="&obo;OPBO_0000017"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <oboInOwl:hasDbXref>NBO_0000545</oboInOwl:hasDbXref>
         <obo:IAO_0000115>A part of feeding behavior during which there is movement of food or liquid from out of the oropharynx and into the esophagus.</obo:IAO_0000115>
         <oboInOwl:hasSynonym>swallowing</oboInOwl:hasSynonym>
@@ -778,7 +724,7 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
 
     <owl:Class rdf:about="&obo;OPBO_0000056">
         <rdfs:label xml:lang="en">feeding sequence</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;OPBO_0000017"/>
+        <rdfs:subClassOf rdf:resource="&obo;OPBO_0000054"/>
     </owl:Class>
     
 
@@ -788,12 +734,6 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
     <owl:Class rdf:about="&obo;OPBO_0000057">
         <rdfs:label xml:lang="en">bite</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OPBO_0000012"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="&obo;OPBO_0000017"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -849,12 +789,6 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
     <owl:Class rdf:about="&obo;OPBO_0000066">
         <rdfs:label xml:lang="en">capture</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OPBO_0000012"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="&obo;OPBO_0000017"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000115>Capture is an ingestion behavior where the jaw and/or tongue are used in prehension of prey.</obo:IAO_0000115>
     </owl:Class>
     
@@ -865,12 +799,6 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
     <owl:Class rdf:about="&obo;OPBO_0000067">
         <rdfs:label xml:lang="en">manipulation</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OPBO_0000012"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="&obo;OPBO_0000017"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000115>Manipulation is a feeding behavior that is movement of the food around the oral cavity.</obo:IAO_0000115>
     </owl:Class>
     
@@ -891,12 +819,6 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
     <owl:Class rdf:about="&obo;OPBO_0000069">
         <rdfs:label xml:lang="en">crush</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OPBO_0000012"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="&obo;OPBO_0000017"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000115>A type of chewing behavior  during which a single jaw closure often to kill something</obo:IAO_0000115>
     </owl:Class>
     
@@ -917,12 +839,6 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
     <owl:Class rdf:about="&obo;OPBO_0000071">
         <rdfs:label xml:lang="en">lick</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OPBO_0000012"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="&obo;OPBO_0000017"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <oboInOwl:hasSynonym>licking</oboInOwl:hasSynonym>
         <obo:IAO_0000115>Lick is protrusion of the tongue outside of the mouth.</obo:IAO_0000115>
     </owl:Class>
@@ -965,12 +881,6 @@ ISBN 1139471368, 9781139471367</obo:IAO_0000119>
     <owl:Class rdf:about="&obo;OPBO_0000075">
         <rdfs:label xml:lang="en">inertial reduction</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OPBO_0000012"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="&obo;OPBO_0000017"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000115>Inertial reduction is an ingestion behavior during which food breakdown occurs by using the inertia of the prey item.</obo:IAO_0000115>
     </owl:Class>
     
