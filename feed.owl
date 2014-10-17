@@ -333,7 +333,7 @@
 
     <!-- /http://purl.obolibrary.org/obo/MFMO_0000310 -->
 
-    <owl:Class rdf:about="/&obo;MFMO_0000310">
+    <owl:Class rdf:about="&obo;MFMO_0000310">
         <rdfs:label>inferior pharyngeal constrictor muscle</rdfs:label>
         <owl:equivalentClass>
             <owl:Class>
