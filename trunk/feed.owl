@@ -331,42 +331,9 @@
     
 
 
-    <!-- /http://purl.obolibrary.org/obo/MFMO_0000310 -->
+    <!-- http://purl.obolibrary.org/http://purl.obolibrary.org/obo/MFMO_0000310 -->
 
-    <owl:Class rdf:about="&obo;MFMO_0000310">
-        <rdfs:label>inferior pharyngeal constrictor muscle</rdfs:label>
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&obo;MFMO_0000010"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
-                        <owl:someValuesFrom rdf:resource="&obo;MFMO_0000008"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
-                        <owl:someValuesFrom rdf:resource="&obo;MFMO_0000106"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
-                        <owl:someValuesFrom rdf:resource="&obo;UBERON_0002375"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
-                        <owl:someValuesFrom rdf:resource="&obo;UBERON_0003716"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
-                        <owl:someValuesFrom rdf:resource="&obo;UBERON_0011325"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
-        <rdfs:comment>Ready for review.</rdfs:comment>
-        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001570</oboInOwl:hasDbXref>
-        <obo:IAO_0000115>This is a pharyngeal arch 4/6 muscle that is integral to the pharyngeal tube, participates in oral/pharyngeal behaviors, is innervated by the pharyngeal plexus of the vagus n. (CNX) and attaches to the laryngeal cartilages and the midline raphe.</obo:IAO_0000115>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/&obo;MFMO_0000310"/>
     
 
 
@@ -533,7 +500,7 @@
                     <rdf:Description rdf:about="&obo;MFMO_0000010"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
-                        <owl:someValuesFrom rdf:resource="/&obo;MFMO_0000310"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/&obo;MFMO_0000310"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
@@ -1503,14 +1470,14 @@
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000072"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;mfmo.owl#attached_to_medial_surface_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0001684"/>
+                <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFMO_0000044"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
-                <owl:someValuesFrom rdf:resource="&obo;MFMO_0000044"/>
+                <owl:onProperty rdf:resource="&obo;mfmo.owl#attached_to_medial_surface_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0001684"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Ready for review.</rdfs:comment>
@@ -3587,6 +3554,45 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
     
 
 
+    <!-- http://purl.obolibrary.org/obo/MFMO_0000310 -->
+
+    <owl:Class rdf:about="&obo;MFMO_0000310">
+        <rdfs:label>inferior pharyngeal constrictor muscle</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;MFMO_0000010"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
+                        <owl:someValuesFrom rdf:resource="&obo;MFMO_0000008"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
+                        <owl:someValuesFrom rdf:resource="&obo;MFMO_0000106"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
+                        <owl:someValuesFrom rdf:resource="&obo;UBERON_0002375"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
+                        <owl:someValuesFrom rdf:resource="&obo;UBERON_0003716"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
+                        <owl:someValuesFrom rdf:resource="&obo;UBERON_0011325"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001570</oboInOwl:hasDbXref>
+        <rdfs:comment>Ready for review.</rdfs:comment>
+        <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
+        <obo:IAO_0000115>This is a pharyngeal arch 4/6 muscle that is integral to the pharyngeal tube, participates in oral/pharyngeal behaviors, is innervated by the pharyngeal plexus of the vagus n. (CNX) and attaches to the laryngeal cartilages and the midline raphe.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/MFMO_0000312 -->
 
     <owl:Class rdf:about="&obo;MFMO_0000312">
@@ -3723,7 +3729,7 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
 
     <owl:Class rdf:about="&obo;UBERON_0001474">
         <rdfs:label>bone element</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
+        <rdfs:subClassOf rdf:resource="&obo;uberon_0004765"/>
     </owl:Class>
     
 
@@ -3925,7 +3931,7 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
 
     <owl:Class rdf:about="&obo;UBERON_0007844">
         <rdfs:label>cartilage element</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
+        <rdfs:subClassOf rdf:resource="&obo;uberon_0004765"/>
     </owl:Class>
     
 
@@ -3965,6 +3971,15 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
         <obo:IAO_0000115>part of the hyoid apparatus</obo:IAO_0000115>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0010272</oboInOwl:hasDbXref>
         <rdfs:comment>Term in Uberon is equivalent but the definition needs revision.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/uberon_0004765 -->
+
+    <owl:Class rdf:about="&obo;uberon_0004765">
+        <rdfs:label xml:lang="en">skeletal element</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
     </owl:Class>
     
 
@@ -4104,7 +4119,7 @@ Term(s) in Uberon are equivalent but the definition needs revision.</rdfs:commen
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://xmlns.com/foaf/0.1/depicts"/>
-                <owl:someValuesFrom rdf:resource="/&obo;MFMO_0000310"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/&obo;MFMO_0000310"/>
             </owl:Restriction>
         </rdf:type>
         <rdfs:label>Human inferior pharyngeal constrictor muscle</rdfs:label>
