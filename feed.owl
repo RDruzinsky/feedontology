@@ -13,12 +13,12 @@
 
 <rdf:RDF xmlns="&obo;mfmo.owl#"
      xml:base="&obo;mfmo.owl"
-     xmlns:obo="http://purl.obolibrary.org/obo/"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:obo="http://purl.obolibrary.org/obo/">
     <owl:Ontology rdf:about="&obo;mfmo.owl">
         <owl:imports rdf:resource="&obo;ro.owl"/>
         <owl:versionIRI rdf:resource="&obo;mfmo/2013-11-16/mfmo.owl"/>
@@ -331,12 +331,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/http://purl.obolibrary.org/obo/MFMO_0000310 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/&obo;MFMO_0000310"/>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/MFMO_0000002 -->
 
     <owl:Class rdf:about="&obo;MFMO_0000002">
@@ -368,13 +362,13 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:comment>The attachments of this muscle vary in mammals. The modiolus is a structure (or anatomical cluster) clearly present in humans and other primates but it&apos;s presence is less certain in other mammals (see Tomo et al., 2002 - DOI 10.1002/ar.10090; Diogo et al., 2008 - doi: 10.1111/j.1469-7580.2008.00953.x; Burrows et al., 2011 - DOI 10.1002/ar.21355; Lightoller, 1940, 1942). In cats (Tomo et al., 2002) there is no attachment to the maxilla.</rdfs:comment>
-        <obo:IAO_0000115>The buccinator is a muscle that is attached to the mandible, skin, pterygomandibular raphe and maxilla, and is innervated by Cranial Nerve VII and participates in oropharyngeal behavior.</obo:IAO_0000115>
-        <rdfs:comment>Ready for review.</rdfs:comment>
-        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001582</oboInOwl:hasDbXref>
         <obo:IAO_0000119>http://www.feedexp.org/</obo:IAO_0000119>
-        <oboInOwl:hasSynonym>buccinatorius</oboInOwl:hasSynonym>
         <oboInOwl:hasSynonym>the trumpter&apos;s muscle (in humans)</oboInOwl:hasSynonym>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001582</oboInOwl:hasDbXref>
+        <oboInOwl:hasSynonym>buccinatorius</oboInOwl:hasSynonym>
+        <rdfs:comment>Ready for review.</rdfs:comment>
+        <obo:IAO_0000115>The buccinator is a muscle that is attached to the mandible, skin, pterygomandibular raphe and maxilla, and is innervated by Cranial Nerve VII and participates in oropharyngeal behavior.</obo:IAO_0000115>
+        <rdfs:comment>The attachments of this muscle vary in mammals. The modiolus is a structure (or anatomical cluster) clearly present in humans and other primates but it&apos;s presence is less certain in other mammals (see Tomo et al., 2002 - DOI 10.1002/ar.10090; Diogo et al., 2008 - doi: 10.1111/j.1469-7580.2008.00953.x; Burrows et al., 2011 - DOI 10.1002/ar.21355; Lightoller, 1940, 1942). In cats (Tomo et al., 2002) there is no attachment to the maxilla.</rdfs:comment>
     </owl:Class>
     
 
@@ -445,9 +439,9 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000007"/>
-        <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
         <rdfs:comment>Request new term.</rdfs:comment>
         <obo:IAO_0000115>The ceratohyoideus is a muscle of Pharyngeal Arch III that participates in oral/pharyngeal behaviors and is innervated by the glossopharyngeal n. (CN IX), and attaches to the ceratohyal part of the hyoid apparatus and also to a non-ceratohyal part of the hyoid apparatus</obo:IAO_0000115>
+        <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -471,9 +465,9 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:comment>Request new term.</rdfs:comment>
         <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
         <obo:IAO_0000115>Muscles innervated by the glossopharyngeal nerve (Cranial Nerve IX).</obo:IAO_0000115>
-        <rdfs:comment>Request new term.</rdfs:comment>
     </owl:Class>
     
 
@@ -497,15 +491,6 @@
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&obo;MFMO_0000010"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/&obo;MFMO_0000310"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
-                        <owl:someValuesFrom rdf:resource="&obo;UBERON_0007268"/>
-                    </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
                         <owl:someValuesFrom rdf:resource="&obo;MFMO_0000008"/>
@@ -516,17 +501,14 @@
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
-                        <owl:someValuesFrom rdf:resource="&obo;UBERON_0003716"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
                         <owl:someValuesFrom rdf:resource="&obo;UBERON_0011325"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:comment>Ready for review.</rdfs:comment>
+        <rdfs:subClassOf rdf:resource="&obo;MFMO_0000010"/>
         <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
+        <rdfs:comment>Ready for review.</rdfs:comment>
         <obo:IAO_0000115>The cricopharyngeus is a pharyngeal arch 4/6 muscle that participates in oral/pharyngeal behaviors and is innervated by the pharyngeal plexus and the recurrent laryngeal n. (from Vagus, CN X), and is an integral part of the pharyngeal tube, and attaches to the cricoid cartilage and the midline raphe.  It acts as a sphincter between the pharynx and esophagus.</obo:IAO_0000115>
     </owl:Class>
     
@@ -555,9 +537,9 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
-        <rdfs:comment>Request new term.</rdfs:comment>
         <obo:IAO_0000115>Muscles innervated by the vagus nerve (Cranial Nerve X).</obo:IAO_0000115>
+        <rdfs:comment>Request new term.</rdfs:comment>
+        <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -567,8 +549,8 @@
     <owl:Class rdf:about="&obo;MFMO_0000044">
         <rdfs:label>base of cranium</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
-        <rdfs:comment>Term in Uberon is equivalent.</rdfs:comment>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0002517</oboInOwl:hasDbXref>
+        <rdfs:comment>Term in Uberon is equivalent.</rdfs:comment>
     </owl:Class>
     
 
@@ -600,8 +582,8 @@
     <owl:Class rdf:about="&obo;MFMO_0000047">
         <rdfs:label>clavicle bone</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0001474"/>
-        <rdfs:comment>Term in Uberon is equivalent.</rdfs:comment>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001105</oboInOwl:hasDbXref>
+        <rdfs:comment>Term in Uberon is equivalent.</rdfs:comment>
     </owl:Class>
     
 
@@ -628,8 +610,8 @@
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
-        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001043</oboInOwl:hasDbXref>
         <rdfs:comment>Term in Uberon is equivalent.</rdfs:comment>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001043</oboInOwl:hasDbXref>
     </owl:Class>
     
 
@@ -650,8 +632,8 @@
     <owl:Class rdf:about="&obo;MFMO_0000051">
         <rdfs:label>head somite</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
-        <rdfs:comment>Term in Uberon is equivalent.</rdfs:comment>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0005594</oboInOwl:hasDbXref>
+        <rdfs:comment>Term in Uberon is equivalent.</rdfs:comment>
     </owl:Class>
     
 
@@ -678,8 +660,8 @@
     <owl:Class rdf:about="&obo;MFMO_0000053">
         <rdfs:label>stylohyal bone</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0001685"/>
-        <obo:IAO_0000115>part of the hyoid apparatus</obo:IAO_0000115>
         <rdfs:comment>Request new term but definition needs revision.</rdfs:comment>
+        <obo:IAO_0000115>part of the hyoid apparatus</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -716,10 +698,10 @@
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0001684"/>
-        <oboInOwl:hasDbXref>Term in Uberon is equivalent but the definition needs revision.</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0004657</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/MA_0002816</oboInOwl:hasDbXref>
         <obo:IAO_0000115>articular part of the mandible bone</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>Term in Uberon is equivalent but the definition needs revision.</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/MA_0002816</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0004657</oboInOwl:hasDbXref>
     </owl:Class>
     
 
@@ -766,10 +748,10 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <obo:IAO_0000119>Burrows et al., 2011; Diogo et al., 2009</obo:IAO_0000119>
-        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0010933</oboInOwl:hasDbXref>
-        <rdfs:comment>Ready for review.</rdfs:comment>
         <obo:IAO_0000115>The orbicularis oris is a superficial facial muscle with fibers that encircle the opening of the oral cavity that attaches to the maxilla, mandible, skin and modiolus, and that participates in oral/pharyngeal behaviors, and is innervated by the facial nerve (CN VII).</obo:IAO_0000115>
+        <obo:IAO_0000119>Burrows et al., 2011; Diogo et al., 2009</obo:IAO_0000119>
+        <rdfs:comment>Ready for review.</rdfs:comment>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0010933</oboInOwl:hasDbXref>
         <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
     </owl:Class>
     
@@ -802,10 +784,10 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <obo:IAO_0000115>The platysma is a pharyngeal arch 2 muscle and a superficial facial muscle that participates in oral/pharyngeal behaviors and is innervated by the cervical branch of the facial nerve.  It attaches to the mandible and it attaches to the skin of the head, neck, and thoracic region where it is found superficial to the clavicle.  Burrows et al. (2011) argue that in hylobatids (and, presumably, other primates) the platysma in the region of the modiolus represents both the cervicale and myoides muscles.</obo:IAO_0000115>
         <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
-        <obo:IAO_0000119>see Diogo et al., 2009; Burrows et al., 2011</obo:IAO_0000119>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0005467</oboInOwl:hasDbXref>
+        <obo:IAO_0000119>see Diogo et al., 2009; Burrows et al., 2011</obo:IAO_0000119>
+        <obo:IAO_0000115>The platysma is a pharyngeal arch 2 muscle and a superficial facial muscle that participates in oral/pharyngeal behaviors and is innervated by the cervical branch of the facial nerve.  It attaches to the mandible and it attaches to the skin of the head, neck, and thoracic region where it is found superficial to the clavicle.  Burrows et al. (2011) argue that in hylobatids (and, presumably, other primates) the platysma in the region of the modiolus represents both the cervicale and myoides muscles.</obo:IAO_0000115>
         <rdfs:comment>Ready for review.</rdfs:comment>
     </owl:Class>
     
@@ -830,10 +812,10 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0010944</oboInOwl:hasDbXref>
+        <rdfs:comment>Ready for review.</rdfs:comment>
         <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
         <obo:IAO_0000115>The posterior digastric is a pharyngeal arch II muscle that participates in oral pharyngeal behavior, is innervated by the digastric branch of facial nerve and attaches to the posterior cranial base and the hyoid apparatus.  It is found superficial to the mylohyoid muscle.</obo:IAO_0000115>
-        <rdfs:comment>Ready for review.</rdfs:comment>
-        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0010944</oboInOwl:hasDbXref>
     </owl:Class>
     
 
@@ -861,10 +843,10 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000005"/>
-        <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0008712</oboInOwl:hasDbXref>
-        <rdfs:comment>Ready for review.</rdfs:comment>
+        <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
         <obo:IAO_0000115>The stylohyoid is a pharyngeal arch II muscle that participates in oral/pharygeal behaviors and is innervated by the stylohoid branch of the facial nerve and attaches to the stylohyal and the non-stylohyal part of the hyoid apparatus.</obo:IAO_0000115>
+        <rdfs:comment>Ready for review.</rdfs:comment>
     </owl:Class>
     
 
@@ -915,10 +897,10 @@
             </owl:Class>
         </owl:equivalentClass>
         <owl:disjointWith rdf:resource="&obo;MFMO_0000065"/>
-        <rdfs:comment>Ready for review.</rdfs:comment>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001571</oboInOwl:hasDbXref>
-        <obo:IAO_0000115>The genioglossus muscle is attached to the mandible and the tongue, and it is innervated by the hypoglossal nerve (CN XII).</obo:IAO_0000115>
         <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
+        <obo:IAO_0000115>The genioglossus muscle is attached to the mandible and the tongue, and it is innervated by the hypoglossal nerve (CN XII).</obo:IAO_0000115>
+        <rdfs:comment>Ready for review.</rdfs:comment>
     </owl:Class>
     
 
@@ -946,10 +928,10 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001572</oboInOwl:hasDbXref>
         <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
-        <rdfs:comment>Ready for review.</rdfs:comment>
         <obo:IAO_0000115>The hyoglossus muscle is attached to the hyoid and the tongue, and it is innervated by the hypoglossal nerve (CN XII).</obo:IAO_0000115>
+        <rdfs:comment>Ready for review.</rdfs:comment>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001572</oboInOwl:hasDbXref>
     </owl:Class>
     
 
@@ -974,8 +956,8 @@
             </owl:Class>
         </owl:equivalentClass>
         <obo:IAO_0000115>The intrinsic tongue muscles are an integral part of the tongue and completely contained within the tongue that are innervated by Cranial Nerve XII.</obo:IAO_0000115>
-        <rdfs:comment>Ready for review.</rdfs:comment>
         <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
+        <rdfs:comment>Ready for review.</rdfs:comment>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001576</oboInOwl:hasDbXref>
     </owl:Class>
     
@@ -1000,11 +982,11 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:comment>Ready for review.</rdfs:comment>
+        <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
         <obo:IAO_0000115>Styloglossus is a muscle that attaches to the tongue and stylohyal and is innervated by Cranial Nerve XII.
 </obo:IAO_0000115>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001573</oboInOwl:hasDbXref>
-        <rdfs:comment>Ready for review.</rdfs:comment>
-        <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -1061,9 +1043,9 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001565</oboInOwl:hasDbXref>
         <rdfs:comment>Ready for review.</rdfs:comment>
         <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001565</oboInOwl:hasDbXref>
         <obo:IAO_0000115>The geniohyoid is a muscle that attaches to the mandible and the hyoid apparatus and is innervated by the first cervical nerve (C1).</obo:IAO_0000115>
     </owl:Class>
     
@@ -1092,10 +1074,10 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000067"/>
-        <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
         <obo:IAO_0000115>The omohyoid is a somitic muscle that participates in oral/pharyngeal behaviors and is innervated by the cervical plexus; it attaches to the hyoid appratus and the scapula.</obo:IAO_0000115>
-        <rdfs:comment>Ready for review.</rdfs:comment>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001108</oboInOwl:hasDbXref>
+        <rdfs:comment>Ready for review.</rdfs:comment>
+        <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -1123,9 +1105,9 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000067"/>
-        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001107</oboInOwl:hasDbXref>
-        <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
         <rdfs:comment>Ready for review.</rdfs:comment>
+        <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001107</oboInOwl:hasDbXref>
         <obo:IAO_0000115>The sternohyoid is a somitic muscle that participates in oral/pharyngeal behaviors and is innervated by the cervical plexus; it attaches to the hyoid appratus and the sternum.</obo:IAO_0000115>
     </owl:Class>
     
@@ -1154,10 +1136,10 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000067"/>
-        <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
+        <obo:IAO_0000115>The sternothyroid is a somitic muscle that participates in oral/pharyngeal behaviors and is innervated by the cervical plexus; it attaches to the thyroid cartilage and the sternum.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001109</oboInOwl:hasDbXref>
         <rdfs:comment>Ready for review.</rdfs:comment>
-        <obo:IAO_0000115>The sternothyroid is a somitic muscle that participates in oral/pharyngeal behaviors and is innervated by the cervical plexus; it attaches to the thyroid cartilage and the sternum.</obo:IAO_0000115>
+        <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -1165,8 +1147,8 @@
     <!-- http://purl.obolibrary.org/obo/MFMO_0000072 -->
 
     <owl:Class rdf:about="&obo;MFMO_0000072">
-        <rdfs:label>muscles innervated by the trigeminal nerve</rdfs:label>
         <rdfs:label>trigeminal muscle</rdfs:label>
+        <rdfs:label>muscles innervated by the trigeminal nerve</rdfs:label>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -1183,8 +1165,8 @@
             </owl:Class>
         </owl:equivalentClass>
         <obo:IAO_0000115>Muscle innervated by the trigeminal nerve (Cranial Nerve V).</obo:IAO_0000115>
-        <obo:IAO_0000119>http://www.feedexp.org</obo:IAO_0000119>
         <rdfs:comment>Request new term.</rdfs:comment>
+        <obo:IAO_0000119>http://www.feedexp.org</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -1212,10 +1194,10 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:comment>Ready for review.</rdfs:comment>
+        <obo:IAO_0000115>The anterior digastric is a pharyngeal arch I muscle that participates in oral/pharygeal behaviors and is innervated by the nerve to mylohyoid (a branch of the third division of the trigeminal nerve), is attached to the mandible and to the hyoid apparatus, and it is superficial to mylohyoid muscle.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0010943</oboInOwl:hasDbXref>
         <obo:IAO_0000119>http://www.feedexp.org/</obo:IAO_0000119>
-        <obo:IAO_0000115>The anterior digastric is a pharyngeal arch I muscle that participates in oral/pharygeal behaviors and is innervated by the nerve to mylohyoid (a branch of the third division of the trigeminal nerve), is attached to the mandible and to the hyoid apparatus, and it is superficial to mylohyoid muscle.</obo:IAO_0000115>
+        <rdfs:comment>Ready for review.</rdfs:comment>
     </owl:Class>
     
 
@@ -1239,10 +1221,10 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <obo:IAO_0000119>http://www.feedexp.org/</obo:IAO_0000119>
-        <obo:IAO_0000115>Pharyngeal arch 1 muscle that participates in oral/pharyngeal behaviors, is innervated by the lateral pterygoid nerve branches, and attaches to the condylar process of the mandible and temporomandibular joint (TMJ) capsule, and the cranial base.</obo:IAO_0000115>
-        <rdfs:comment>Ready for review.</rdfs:comment>
         <oboInOwl:hasSynonym>external pterygoid muscle</oboInOwl:hasSynonym>
+        <rdfs:comment>Ready for review.</rdfs:comment>
+        <obo:IAO_0000115>Pharyngeal arch 1 muscle that participates in oral/pharyngeal behaviors, is innervated by the lateral pterygoid nerve branches, and attaches to the condylar process of the mandible and temporomandibular joint (TMJ) capsule, and the cranial base.</obo:IAO_0000115>
+        <obo:IAO_0000119>http://www.feedexp.org/</obo:IAO_0000119>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0006719</oboInOwl:hasDbXref>
     </owl:Class>
     
@@ -1271,10 +1253,10 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:comment>Ready for review.</rdfs:comment>
         <obo:IAO_0000119>doi:10.1093/icb/icr067</obo:IAO_0000119>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001597</oboInOwl:hasDbXref>
         <obo:IAO_0000115>Pharyngeal arch 1 muscle that participates in oral/pharyngeal behaviors, is innervated by masseteric nerve branches of the trigeminal nerve (CN V), and attaches to mandible and zygomatic arch.</obo:IAO_0000115>
-        <rdfs:comment>Ready for review.</rdfs:comment>
     </owl:Class>
     
 
@@ -1290,14 +1272,14 @@
                 <owl:someValuesFrom rdf:resource="&obo;MFMO_0000109"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <oboInOwl:hasSynonym>Masseter lateralis profunda pars ‘‘maxillo-mandibularis’’</oboInOwl:hasSynonym>
         <obo:IAO_0000119>doi:10.1093/icb/icr067</obo:IAO_0000119>
-        <oboInOwl:hasSynonym>Masseter lateralis portio profunda</oboInOwl:hasSynonym>
         <obo:IAO_0000115>The anterior masseter is a separable part of the masseter muscle that is attached to anterior root of zygomatic arch</obo:IAO_0000115>
-        <oboInOwl:hasSynonym>Masseter lateralis pars anterior</oboInOwl:hasSynonym>
-        <oboInOwl:hasSynonym>Anterior deep masseter</oboInOwl:hasSynonym>
         <oboInOwl:hasSynonym>Masseter deep portion (tiefe Portion)</oboInOwl:hasSynonym>
+        <oboInOwl:hasSynonym>Masseter lateralis profunda pars ‘‘maxillo-mandibularis’’</oboInOwl:hasSynonym>
+        <oboInOwl:hasSynonym>Masseter lateralis pars anterior</oboInOwl:hasSynonym>
+        <oboInOwl:hasSynonym>Masseter lateralis portio profunda</oboInOwl:hasSynonym>
         <oboInOwl:hasSynonym>Masseter lateralis profundus pars anterior</oboInOwl:hasSynonym>
+        <oboInOwl:hasSynonym>Anterior deep masseter</oboInOwl:hasSynonym>
         <oboInOwl:hasSynonym>Masseter major</oboInOwl:hasSynonym>
     </owl:Class>
     
@@ -1310,29 +1292,29 @@
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000075"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;mfmo.owl#deep_to"/>
-                <owl:someValuesFrom rdf:resource="&obo;MFMO_0000079"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;mfmo.owl#attached_to_ventral_surface_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;MFMO_0000108"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <oboInOwl:hasSynonym>Masseter deep portion (tiefe Portion)</oboInOwl:hasSynonym>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;mfmo.owl#deep_to"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFMO_0000079"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:hasSynonym>Masseter lateralis portio profunda</oboInOwl:hasSynonym>
-        <oboInOwl:hasSynonym>Masseter pars superficialis</oboInOwl:hasSynonym>
-        <obo:IAO_0000115>The deep masseter is a separable part of the masseter muscle that attaches to lateral surface and/or ventral border of zygomatic arch.</obo:IAO_0000115>
-        <oboInOwl:hasSynonym>Masseter pars profunda</oboInOwl:hasSynonym>
-        <oboInOwl:hasSynonym>Masseter lateralis pars posterior</oboInOwl:hasSynonym>
         <oboInOwl:hasSynonym>profunda masseter</oboInOwl:hasSynonym>
-        <obo:IAO_0000119>doi:10.1093/icb/icr067</obo:IAO_0000119>
-        <oboInOwl:hasSynonym>Posterior deep masseter</oboInOwl:hasSynonym>
-        <oboInOwl:hasSynonym>Superficial part of maxillo-mandibularis</oboInOwl:hasSynonym>
-        <oboInOwl:hasSynonym>Masseter lateralis profundus pars posterior</oboInOwl:hasSynonym>
-        <oboInOwl:hasSynonym>Masseter zygomaticus</oboInOwl:hasSynonym>
+        <oboInOwl:hasSynonym>Masseter lateralis pars posterior</oboInOwl:hasSynonym>
         <rdfs:comment>Ready for review.</rdfs:comment>
+        <obo:IAO_0000119>doi:10.1093/icb/icr067</obo:IAO_0000119>
+        <obo:IAO_0000115>The deep masseter is a separable part of the masseter muscle that attaches to lateral surface and/or ventral border of zygomatic arch.</obo:IAO_0000115>
+        <oboInOwl:hasSynonym>Superficial part of maxillo-mandibularis</oboInOwl:hasSynonym>
+        <oboInOwl:hasSynonym>Masseter deep portion (tiefe Portion)</oboInOwl:hasSynonym>
+        <oboInOwl:hasSynonym>Posterior deep masseter</oboInOwl:hasSynonym>
+        <oboInOwl:hasSynonym>Masseter lateralis profundus pars posterior</oboInOwl:hasSynonym>
+        <oboInOwl:hasSynonym>Masseter pars superficialis</oboInOwl:hasSynonym>
+        <oboInOwl:hasSynonym>Masseter pars profunda</oboInOwl:hasSynonym>
+        <oboInOwl:hasSynonym>Masseter zygomaticus</oboInOwl:hasSynonym>
     </owl:Class>
     
 
@@ -1356,10 +1338,10 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
-        <obo:IAO_0000119>doi:10.1093/icb/icr067</obo:IAO_0000119>
-        <obo:IAO_0000115>The posterior masseter is a separable part of the deep masseter muscle that attaches to the postero-ventral surface of the zygomatic arch.</obo:IAO_0000115>
         <oboInOwl:hasSynonym>Masseter lateralis profundus, pars posterior</oboInOwl:hasSynonym>
+        <obo:IAO_0000115>The posterior masseter is a separable part of the deep masseter muscle that attaches to the postero-ventral surface of the zygomatic arch.</obo:IAO_0000115>
         <rdfs:comment>Ready for review.</rdfs:comment>
+        <obo:IAO_0000119>doi:10.1093/icb/icr067</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -1375,14 +1357,14 @@
                 <owl:someValuesFrom rdf:resource="&obo;MFMO_0000055"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>The superficial masseter is a separable part of the masseter muscle, is superficial to all other masseter muscle parts, and attaches to the mandibular angle.</obo:IAO_0000115>
-        <rdfs:comment>Ready for review.</rdfs:comment>
-        <obo:IAO_0000119>doi:10.1093/icb/icr067</obo:IAO_0000119>
-        <oboInOwl:hasSynonym>Masseter pars superficialis</oboInOwl:hasSynonym>
         <oboInOwl:hasSynonym>Masseter superficialis</oboInOwl:hasSynonym>
-        <oboInOwl:hasSynonym>Masseter superficial portion (oberfla¨chliche Portion)</oboInOwl:hasSynonym>
+        <rdfs:comment>Ready for review.</rdfs:comment>
+        <oboInOwl:hasSynonym>Masseter pars superficialis</oboInOwl:hasSynonym>
+        <obo:IAO_0000119>doi:10.1093/icb/icr067</obo:IAO_0000119>
         <oboInOwl:hasSynonym>Masseter lateralis portio superficialis</oboInOwl:hasSynonym>
+        <obo:IAO_0000115>The superficial masseter is a separable part of the masseter muscle, is superficial to all other masseter muscle parts, and attaches to the mandibular angle.</obo:IAO_0000115>
         <oboInOwl:hasSynonym>Masseter superficialis and masseter intermedius</oboInOwl:hasSynonym>
+        <oboInOwl:hasSynonym>Masseter superficial portion (oberfla¨chliche Portion)</oboInOwl:hasSynonym>
     </owl:Class>
     
 
@@ -1398,9 +1380,9 @@
                 <owl:someValuesFrom rdf:resource="&obo;MFMO_0000079"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000119>doi:10.1093/icb/icr067</obo:IAO_0000119>
-        <rdfs:comment>Ready for review.</rdfs:comment>
         <obo:IAO_0000115>The pars reflexa is a separable part of the superficial masseter muscle that attaches to the medial surface of the mandible.</obo:IAO_0000115>
+        <rdfs:comment>Ready for review.</rdfs:comment>
+        <obo:IAO_0000119>doi:10.1093/icb/icr067</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -1416,19 +1398,19 @@
                 <owl:someValuesFrom rdf:resource="&obo;MFMO_0000108"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment>Ready for review.</rdfs:comment>
-        <oboInOwl:hasSynonym>Zygomaticomandibularis superioris</oboInOwl:hasSynonym>
-        <oboInOwl:hasSynonym>Masseter pars profunda</oboInOwl:hasSynonym>
+        <oboInOwl:hasSynonym>Zygomaticomandibularis anterior</oboInOwl:hasSynonym>
+        <oboInOwl:hasSynonym>Deep masseter anterior</oboInOwl:hasSynonym>
+        <oboInOwl:hasSynonym>Masseter medialis pars zygomaticomandibularis anterior</oboInOwl:hasSynonym>
+        <oboInOwl:hasSynonym>Masseter pars profundus</oboInOwl:hasSynonym>
+        <obo:IAO_0000115>The zygomaticomandibularis is a separable part of the masseter muscle that attaches to the medial surface of the zygomatic arch</obo:IAO_0000115>
         <oboInOwl:hasSynonym>Deep masseter</oboInOwl:hasSynonym>
         <obo:IAO_0000119>doi:10.1093/icb/icr067</obo:IAO_0000119>
-        <oboInOwl:hasSynonym>Masseter medialis pars anterior</oboInOwl:hasSynonym>
-        <oboInOwl:hasSynonym>Zygomaticomandibularis anterior</oboInOwl:hasSynonym>
-        <oboInOwl:hasSynonym>Masseter pars profundus</oboInOwl:hasSynonym>
+        <rdfs:comment>Ready for review.</rdfs:comment>
+        <oboInOwl:hasSynonym>Zygomaticomandibularis superioris</oboInOwl:hasSynonym>
         <oboInOwl:hasSynonym>Masseter profundus</oboInOwl:hasSynonym>
-        <oboInOwl:hasSynonym>Deep masseter anterior</oboInOwl:hasSynonym>
         <oboInOwl:hasSynonym>Deepest portion of masseter</oboInOwl:hasSynonym>
-        <obo:IAO_0000115>The zygomaticomandibularis is a separable part of the masseter muscle that attaches to the medial surface of the zygomatic arch</obo:IAO_0000115>
-        <oboInOwl:hasSynonym>Masseter medialis pars zygomaticomandibularis anterior</oboInOwl:hasSynonym>
+        <oboInOwl:hasSynonym>Masseter pars profunda</oboInOwl:hasSynonym>
+        <oboInOwl:hasSynonym>Masseter medialis pars anterior</oboInOwl:hasSynonym>
     </owl:Class>
     
 
@@ -1452,13 +1434,13 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
-        <rdfs:comment>Ready for review.</rdfs:comment>
-        <oboInOwl:hasSynonym>Masseter medialis pars infraorbitalis</oboInOwl:hasSynonym>
-        <oboInOwl:hasSynonym>Masseter medialis pars anterior</oboInOwl:hasSynonym>
-        <oboInOwl:hasSynonym>Anterior deep masseter infraorbital part</oboInOwl:hasSynonym>
         <obo:IAO_0000115>The zygomaticomandibularis infraorbital part, is a separable part of the zygomaticomandibularis that runs through the infraorbital foramen</obo:IAO_0000115>
+        <oboInOwl:hasSynonym>Masseter medialis pars anterior</oboInOwl:hasSynonym>
         <oboInOwl:hasSynonym>Maxillomandibularis</oboInOwl:hasSynonym>
+        <oboInOwl:hasSynonym>Masseter medialis pars infraorbitalis</oboInOwl:hasSynonym>
         <obo:IAO_0000119>doi:10.1093/icb/icr067</obo:IAO_0000119>
+        <rdfs:comment>Ready for review.</rdfs:comment>
+        <oboInOwl:hasSynonym>Anterior deep masseter infraorbital part</oboInOwl:hasSynonym>
     </owl:Class>
     
 
@@ -1470,20 +1452,20 @@
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000072"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
-                <owl:someValuesFrom rdf:resource="&obo;MFMO_0000044"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;mfmo.owl#attached_to_medial_surface_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;UBERON_0001684"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment>Ready for review.</rdfs:comment>
-        <obo:IAO_0000115>The medial pterygoid is a pharyngeal arch 1 muscle that participates in oral/pharyngeal behaviors and is innervated by the nerve to the medial pterygoid and attaches to the cranial base and the medial side of the mandibular angle.</obo:IAO_0000115>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFMO_0000044"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0006718</oboInOwl:hasDbXref>
+        <obo:IAO_0000115>The medial pterygoid is a pharyngeal arch 1 muscle that participates in oral/pharyngeal behaviors and is innervated by the nerve to the medial pterygoid and attaches to the cranial base and the medial side of the mandibular angle.</obo:IAO_0000115>
+        <rdfs:comment>Ready for review.</rdfs:comment>
     </owl:Class>
     
 
@@ -1521,10 +1503,10 @@
                 <owl:someValuesFrom rdf:resource="&obo;MFMO_0000073"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>The mylohyoid is a pharyngeal arch I muscle that participates in oral/pharyngeal behaviors and is innervated by the nerve to mylohyoid and attaches to the midline raphe linking right and left mylohyoid and the mandible.</obo:IAO_0000115>
-        <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
         <rdfs:comment>Ready for review.</rdfs:comment>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001564</oboInOwl:hasDbXref>
+        <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
+        <obo:IAO_0000115>The mylohyoid is a pharyngeal arch I muscle that participates in oral/pharyngeal behaviors and is innervated by the nerve to mylohyoid and attaches to the midline raphe linking right and left mylohyoid and the mandible.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1553,14 +1535,14 @@
             </owl:Class>
         </rdfs:subClassOf>
         <oboInOwl:hasSynonym>Temporal muscle posterior part</oboInOwl:hasSynonym>
-        <obo:IAO_0000115>Pharyngeal arch 1 muscle that is innervated by the deep temporal branches of the trigeminal nerve and attaches to the wall of the braincase (including the cranial vault) and mandible.</obo:IAO_0000115>
-        <oboInOwl:hasSynonym>Medial temporal</oboInOwl:hasSynonym>
-        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001598</oboInOwl:hasDbXref>
-        <oboInOwl:hasSynonym>Temporales</oboInOwl:hasSynonym>
-        <obo:IAO_0000119>doi:10.1093/icb/icr067</obo:IAO_0000119>
-        <rdfs:comment>Ready for review.</rdfs:comment>
-        <oboInOwl:hasSynonym>Posterior temporal</oboInOwl:hasSynonym>
         <oboInOwl:hasSynonym>Profunda temporalis</oboInOwl:hasSynonym>
+        <obo:IAO_0000115>Pharyngeal arch 1 muscle that is innervated by the deep temporal branches of the trigeminal nerve and attaches to the wall of the braincase (including the cranial vault) and mandible.</obo:IAO_0000115>
+        <oboInOwl:hasSynonym>Temporales</oboInOwl:hasSynonym>
+        <oboInOwl:hasSynonym>Medial temporal</oboInOwl:hasSynonym>
+        <rdfs:comment>Ready for review.</rdfs:comment>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001598</oboInOwl:hasDbXref>
+        <obo:IAO_0000119>doi:10.1093/icb/icr067</obo:IAO_0000119>
+        <oboInOwl:hasSynonym>Posterior temporal</oboInOwl:hasSynonym>
     </owl:Class>
     
 
@@ -1576,17 +1558,17 @@
                 <owl:someValuesFrom rdf:resource="&obo;MFMO_0000085"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <oboInOwl:hasSynonym>Temporalis lamina profunda</oboInOwl:hasSynonym>
-        <oboInOwl:hasSynonym>Medial temporal</oboInOwl:hasSynonym>
-        <oboInOwl:hasSynonym>Posterior temporal</oboInOwl:hasSynonym>
-        <obo:IAO_0000115>The deep temporalis muscle is a separable part of the temporalis muscle that  that attaches to the bony wall of the braincase and is deep to the superficial temporalis.</obo:IAO_0000115>
-        <oboInOwl:hasSynonym>Temporalis ‘‘Hauptmasse’’</oboInOwl:hasSynonym>
-        <obo:IAO_0000119>doi:10.1093/icb/icr067</obo:IAO_0000119>
         <oboInOwl:hasSynonym>Temporalis pars posterior</oboInOwl:hasSynonym>
-        <oboInOwl:hasSynonym>Temporalis posterior head</oboInOwl:hasSynonym>
-        <rdfs:comment>Ready for review.</rdfs:comment>
-        <oboInOwl:hasSynonym>Temporal muscle posterior part</oboInOwl:hasSynonym>
         <oboInOwl:hasSynonym>Temporalis pars profunda</oboInOwl:hasSynonym>
+        <obo:IAO_0000115>The deep temporalis muscle is a separable part of the temporalis muscle that  that attaches to the bony wall of the braincase and is deep to the superficial temporalis.</obo:IAO_0000115>
+        <oboInOwl:hasSynonym>Temporal muscle posterior part</oboInOwl:hasSynonym>
+        <obo:IAO_0000119>doi:10.1093/icb/icr067</obo:IAO_0000119>
+        <oboInOwl:hasSynonym>Medial temporal</oboInOwl:hasSynonym>
+        <rdfs:comment>Ready for review.</rdfs:comment>
+        <oboInOwl:hasSynonym>Temporalis ‘‘Hauptmasse’’</oboInOwl:hasSynonym>
+        <oboInOwl:hasSynonym>Posterior temporal</oboInOwl:hasSynonym>
+        <oboInOwl:hasSynonym>Temporalis lamina profunda</oboInOwl:hasSynonym>
+        <oboInOwl:hasSynonym>Temporalis posterior head</oboInOwl:hasSynonym>
     </owl:Class>
     
 
@@ -1610,16 +1592,16 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
-        <rdfs:comment>Ready for review.</rdfs:comment>
-        <oboInOwl:hasSynonym>Temporalis ‘‘T1’’</oboInOwl:hasSynonym>
-        <oboInOwl:hasSynonym>Temporal muscle anterolateral part</oboInOwl:hasSynonym>
-        <oboInOwl:hasSynonym>Temporalis anterior head</oboInOwl:hasSynonym>
-        <oboInOwl:hasSynonym>Temporalis pars superficialis</oboInOwl:hasSynonym>
-        <obo:IAO_0000115>The superficial temporalis muscle is a separable part of the temporalis muscle that attaches to the temporalis fascia</obo:IAO_0000115>
-        <oboInOwl:hasSynonym>Anterior temporal</oboInOwl:hasSynonym>
-        <oboInOwl:hasSynonym>Temporales</oboInOwl:hasSynonym>
         <obo:IAO_0000119>doi:10.1093/icb/icr067</obo:IAO_0000119>
+        <oboInOwl:hasSynonym>Temporalis pars superficialis</oboInOwl:hasSynonym>
+        <oboInOwl:hasSynonym>Anterior temporal</oboInOwl:hasSynonym>
+        <obo:IAO_0000115>The superficial temporalis muscle is a separable part of the temporalis muscle that attaches to the temporalis fascia</obo:IAO_0000115>
+        <oboInOwl:hasSynonym>Temporalis ‘‘T1’’</oboInOwl:hasSynonym>
+        <oboInOwl:hasSynonym>Temporalis anterior head</oboInOwl:hasSynonym>
         <oboInOwl:hasSynonym>Temporalis pars anterior</oboInOwl:hasSynonym>
+        <oboInOwl:hasSynonym>Temporal muscle anterolateral part</oboInOwl:hasSynonym>
+        <rdfs:comment>Ready for review.</rdfs:comment>
+        <oboInOwl:hasSynonym>Temporales</oboInOwl:hasSynonym>
     </owl:Class>
     
 
@@ -1635,8 +1617,8 @@
                 <owl:someValuesFrom rdf:resource="&obo;MFMO_0000112"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000119>doi:10.1093/icb/icr067</obo:IAO_0000119>
         <obo:IAO_0000115>The suprazygomatic part of the temporalis muscle is a separable part of the deep temporalis that attaches to the superior surface of the temporal root of the zygomatic arch.</obo:IAO_0000115>
+        <obo:IAO_0000119>doi:10.1093/icb/icr067</obo:IAO_0000119>
         <oboInOwl:hasSynonym>Zygomatic temporalis</oboInOwl:hasSynonym>
         <oboInOwl:hasSynonym>Temporalis pars suprazygomatica</oboInOwl:hasSynonym>
     </owl:Class>
@@ -1670,11 +1652,11 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <oboInOwl:hasSynonym>tensor palati</oboInOwl:hasSynonym>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0008586</oboInOwl:hasDbXref>
-        <rdfs:comment>Ready for review.</rdfs:comment>
+        <oboInOwl:hasSynonym>tensor palati</oboInOwl:hasSynonym>
         <obo:IAO_0000115>The tensor veli palatini is a muscle of the soft palate that attaches to the cranial base and pharyngotympanic tube, wraps around the pterygoid hamulus and then attaches to the midline palatal raphe of the soft palate that is innervated by the trigeminal nerve (cranial nerve (V3)).</obo:IAO_0000115>
         <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
+        <rdfs:comment>Ready for review.</rdfs:comment>
     </owl:Class>
     
 
@@ -1696,8 +1678,8 @@
         <rdfs:label>cervical plexus</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000090"/>
         <rdfs:subClassOf rdf:resource="&obo;mfmo.owl#MFMO_0000300"/>
-        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0003725</oboInOwl:hasDbXref>
         <rdfs:comment>Term in Uberon is equivalent but the definition needs revision.</rdfs:comment>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0003725</oboInOwl:hasDbXref>
     </owl:Class>
     
 
@@ -1741,8 +1723,8 @@
     <owl:Class rdf:about="&obo;MFMO_0000095">
         <rdfs:label>branchial arch 1</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
-        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0004362</oboInOwl:hasDbXref>
         <rdfs:comment>Term in Uberon is equivalent.</rdfs:comment>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0004362</oboInOwl:hasDbXref>
     </owl:Class>
     
 
@@ -1769,9 +1751,9 @@
     <owl:Class rdf:about="&obo;MFMO_0000097">
         <rdfs:label>pharyngotympanic tube</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
+        <oboInOwl:hasSynonym>auditory tube</oboInOwl:hasSynonym>
         <rdfs:comment>Term in Uberon is equivalent but the definition needs revision.</rdfs:comment>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0002393</oboInOwl:hasDbXref>
-        <oboInOwl:hasSynonym>auditory tube</oboInOwl:hasSynonym>
     </owl:Class>
     
 
@@ -1803,11 +1785,11 @@
     <owl:Class rdf:about="&obo;MFMO_0000100">
         <rdfs:label>soft palate</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000111"/>
-        <obo:IAO_0000119>FEED group</obo:IAO_0000119>
-        <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
         <obo:IAO_0000115>A muscular arch-shaped structure (an anatomical cluster) that is composed of the musculus uvuli and parts of tensor veli palatini, levator veli palatini, palatoglossus and palatopharyngeus and attaches to the hard palate and modulates the connections between the oral cavity and pharynx soft tissue arch </obo:IAO_0000115>
-        <rdfs:comment>Ready for review.</rdfs:comment>
+        <obo:IAO_0000119>FEED group</obo:IAO_0000119>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001733</oboInOwl:hasDbXref>
+        <rdfs:comment>Ready for review.</rdfs:comment>
+        <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -1828,8 +1810,8 @@
     <owl:Class rdf:about="&obo;MFMO_0000102">
         <rdfs:label>sphenoid bone</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0001474"/>
-        <rdfs:comment>Term in Uberon is equivalent but the definition needs revision.</rdfs:comment>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001677</oboInOwl:hasDbXref>
+        <rdfs:comment>Term in Uberon is equivalent but the definition needs revision.</rdfs:comment>
     </owl:Class>
     
 
@@ -1839,8 +1821,8 @@
     <owl:Class rdf:about="&obo;MFMO_0000103">
         <rdfs:label>pterygoid process of the sphenoid bone</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000102"/>
-        <rdfs:comment>Term in Uberon is equivalent but the definition needs revision.</rdfs:comment>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0004649</oboInOwl:hasDbXref>
+        <rdfs:comment>Term in Uberon is equivalent but the definition needs revision.</rdfs:comment>
     </owl:Class>
     
 
@@ -1861,8 +1843,8 @@
     <owl:Class rdf:about="&obo;MFMO_0000105">
         <rdfs:label>temporalis fascia</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
-        <rdfs:comment>Request new term but the definition needs revision.</rdfs:comment>
         <oboInOwl:hasSynonym>temporal fascia</oboInOwl:hasSynonym>
+        <rdfs:comment>Request new term but the definition needs revision.</rdfs:comment>
     </owl:Class>
     
 
@@ -1895,8 +1877,8 @@
     <owl:Class rdf:about="&obo;MFMO_0000108">
         <rdfs:label>zygomatic arch</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0001474"/>
-        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0002500</oboInOwl:hasDbXref>
         <rdfs:comment>Term in Uberon is equivalent but the definition needs revision.</rdfs:comment>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0002500</oboInOwl:hasDbXref>
     </owl:Class>
     
 
@@ -1912,8 +1894,8 @@
                 <owl:someValuesFrom rdf:resource="&obo;MFMO_0000108"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>The anterior or rostral end of the zygomatic arch, which includes the temporal process of the zygomatic bone (UBERON_0004654), but also including some of the body of the zygomatic bone. It may also include the zygomatico-temporal suture and the most rostral portion of the zygomatic process of the temporal bone (UBERON_0004655).</obo:IAO_0000115>
         <rdfs:comment>Request new term but requires definition.</rdfs:comment>
+        <obo:IAO_0000115>The anterior or rostral end of the zygomatic arch, which includes the temporal process of the zygomatic bone (UBERON_0004654), but also including some of the body of the zygomatic bone. It may also include the zygomatico-temporal suture and the most rostral portion of the zygomatic process of the temporal bone (UBERON_0004655).</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -2039,11 +2021,11 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000005"/>
-        <oboInOwl:hasExactSynonym>quadratus menti</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasDbXref>UBERON_0001581</oboInOwl:hasDbXref>
-        <oboInOwl:hasExactSynonym>depressor of the lower lip</oboInOwl:hasExactSynonym>
-        <obo:IAO_0000115>A muscle of facial expression, innervated by the facial nerve, attached to the skin of the lower lip, orbicularis oris muscle, and mandible, and superficial and lateral to the mentalis muscle. See Diogo et al., 2009; Burrows et al., 2011)</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>quadratus labii inferioris</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>depressor of the lower lip</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasDbXref>UBERON_0001581</oboInOwl:hasDbXref>
+        <obo:IAO_0000115>A muscle of facial expression, innervated by the facial nerve, attached to the skin of the lower lip, orbicularis oris muscle, and mandible, and superficial and lateral to the mentalis muscle. See Diogo et al., 2009; Burrows et al., 2011)</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>quadratus menti</oboInOwl:hasExactSynonym>
     </owl:Class>
     
 
@@ -2080,8 +2062,8 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000005"/>
-        <obo:IAO_0000115>A muscle of facial expression, innervated by the facial nerve, attached to the mandible, skin of the lower lip in the region of the angle of the oral opening, orbicularis oris, and lateral to the depressor anguli oris muscle. </obo:IAO_0000115>
         <oboInOwl:hasDbXref>UBERON_0008597</oboInOwl:hasDbXref>
+        <obo:IAO_0000115>A muscle of facial expression, innervated by the facial nerve, attached to the mandible, skin of the lower lip in the region of the angle of the oral opening, orbicularis oris, and lateral to the depressor anguli oris muscle. </obo:IAO_0000115>
     </owl:Class>
     
 
@@ -2107,9 +2089,9 @@
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000005"/>
         <oboInOwl:hasExactSynonym>occipital belly of occipitofrontalis or epicranius (humans)</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115>A muscle of the skin of the head (scalp), innervated by the facial nerve, attached to the cranium in the nuchal (occipital) region and to the facia of the scalp (galea aponurotica or epicranial aponeurosis in humans). In mammals other than humans, there is no large facia present and the most rostral fibers of the occipitalis are attached to the skin near or even overlapping with the fibers of the frontalis muscle.See Diogo 2008; Diogo et al., 2009; Burrows et al.., 2011.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>venter occipitalis (humans)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasDbXref>UBERON_0010947</oboInOwl:hasDbXref>
-        <obo:IAO_0000115>A muscle of the skin of the head (scalp), innervated by the facial nerve, attached to the cranium in the nuchal (occipital) region and to the facia of the scalp (galea aponurotica or epicranial aponeurosis in humans). In mammals other than humans, there is no large facia present and the most rostral fibers of the occipitalis are attached to the skin near or even overlapping with the fibers of the frontalis muscle.See Diogo 2008; Diogo et al., 2009; Burrows et al.., 2011.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -2195,8 +2177,8 @@
     <owl:Class rdf:about="&obo;MFMO_0000132">
         <rdfs:label xml:lang="en">corrugator supercilii muscle</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000005"/>
-        <oboInOwl:hasDbXref>FMA_46794</oboInOwl:hasDbXref>
         <obo:IAO_0000115>Muscle of facial expression, attached to  the skin in the medial palpebral region and the superciliary region, lateral and deep to the procerus muscle, and lateral to the depressor supercillii muscle.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>FMA_46794</oboInOwl:hasDbXref>
     </owl:Class>
     
 
@@ -2272,12 +2254,12 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <obo:IAO_0000115>Facial muscle attached to the orbicularis oris muscle, anterior root of the zygomatic arch (zygomatic bone or maxilla), and skin in the region of the caudal border of the orbicularis oculi muscle. The muscle is often described as having two heads, one attached to the maxilla and the other attached to the skin overlying the orbicularis oculi.  In many mammals this muscle also has an attachment to the cartilage of the external ear, in which case it is called the auriculolabialis superior. See Diogo 2008; Diogo et al., 2009; Burrows et al.., 2011., also DuBrul, 1980.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym>musculus zygomaticus minor</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>auriculolabialis superior</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasExactSynonym>musculus quadratus labii superioris, zygomatic head</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>square muscle of the upper lip, zygomatic head</oboInOwl:hasExactSynonym>
         <oboInOwl:hasDbXref>UBERON_0008594</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>square muscle of the upper lip, zygomatic head</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>musculus zygomaticus minor</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115>Facial muscle attached to the orbicularis oris muscle, anterior root of the zygomatic arch (zygomatic bone or maxilla), and skin in the region of the caudal border of the orbicularis oculi muscle. The muscle is often described as having two heads, one attached to the maxilla and the other attached to the skin overlying the orbicularis oculi.  In many mammals this muscle also has an attachment to the cartilage of the external ear, in which case it is called the auriculolabialis superior. See Diogo 2008; Diogo et al., 2009; Burrows et al.., 2011., also DuBrul, 1980.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -2314,10 +2296,10 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000005"/>
-        <oboInOwl:hasDbXref>UBERON_0008593</oboInOwl:hasDbXref>
         <obo:IAO_0000115>Facial muscle attached to the modiolus, corner (angle) of the mouth, and zygomatic bone. This muscle is ventral to the zygomaticus minor and dorsal to the platysma muscle.  In many mammals this muscle also has an attachment to the cartilage of the external ear, in which case it is called the auriculolabialis inferior. See Diogo 2008; Diogo et al., 2009; Burrows et al.., 2011., also DuBrul, 1980.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym>zygomatic muscle</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>auriculolabialis superior</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasDbXref>UBERON_0008593</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>zygomatic muscle</oboInOwl:hasExactSynonym>
     </owl:Class>
     
 
@@ -2436,10 +2418,10 @@
     <owl:Class rdf:about="&obo;MFMO_0000150">
         <rdfs:label xml:lang="en">posterior cricoarytenoid muscle</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000010"/>
-        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0008572</oboInOwl:hasDbXref>
         <rdfs:comment>Uberon definition is pretty good but human-centric.
 
 In Uberon the posterior cricoarytenoid and lateral cricoarytenoid are subClasses of a &quot;cricoarytenoid&quot; class, but there is no anatomical basis for this class other than the similar names.</rdfs:comment>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0008572</oboInOwl:hasDbXref>
     </owl:Class>
     
 
@@ -2483,8 +2465,8 @@ In Uberon the posterior cricoarytenoid and lateral cricoarytenoid are subClasses
     <owl:Class rdf:about="&obo;MFMO_0000154">
         <rdfs:label xml:lang="en">transverse arytenoideus muscle</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000153"/>
-        <rdfs:comment>Uberon definition pretty good.</rdfs:comment>
         <oboInOwl:hasDbXref>UBERON_0008574</oboInOwl:hasDbXref>
+        <rdfs:comment>Uberon definition pretty good.</rdfs:comment>
     </owl:Class>
     
 
@@ -2505,10 +2487,10 @@ In Uberon the posterior cricoarytenoid and lateral cricoarytenoid are subClasses
     <owl:Class rdf:about="&obo;MFMO_0000156">
         <rdfs:label xml:lang="en">aryepiglotticus muscle</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000153"/>
+        <oboInOwl:hasDbXref>UBERON_0011025</oboInOwl:hasDbXref>
         <rdfs:comment>Defintion in Uberon is okay but human-centric. 
 
 We consider this muscle a part of the arytenoid muscle complex but some workers describe it as a separate muscle.</rdfs:comment>
-        <oboInOwl:hasDbXref>UBERON_0011025</oboInOwl:hasDbXref>
     </owl:Class>
     
 
@@ -2518,8 +2500,8 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
     <owl:Class rdf:about="&obo;MFMO_0000157">
         <rdfs:label xml:lang="en">thyroarytenoideus muscle</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000010"/>
-        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0008576</oboInOwl:hasDbXref>
         <rdfs:comment>Uberon definition is pretty good but human-centric.</rdfs:comment>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0008576</oboInOwl:hasDbXref>
     </owl:Class>
     
 
@@ -2540,8 +2522,8 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000157"/>
-        <oboInOwl:hasExactSynonym>aryvocalis</oboInOwl:hasExactSynonym>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0008577</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>aryvocalis</oboInOwl:hasExactSynonym>
         <rdfs:comment>Uberon properly notes that the vocalis is a part of the thyroarytenoid muscle.</rdfs:comment>
     </owl:Class>
     
@@ -2562,8 +2544,8 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
     <owl:Class rdf:about="&obo;MFMO_0000160">
         <rdfs:label xml:lang="en">thyroepiglotticus muscle</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000157"/>
-        <rdfs:comment>Not a part of the thyroarytenoid in Uberon.</rdfs:comment>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0010927</oboInOwl:hasDbXref>
+        <rdfs:comment>Not a part of the thyroarytenoid in Uberon.</rdfs:comment>
     </owl:Class>
     
 
@@ -2634,8 +2616,8 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
         <rdfs:label xml:lang="en">adductor mandibulae externus muscle</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000072"/>
         <rdfs:comment>FEED reptile spreadsheet</rdfs:comment>
-        <oboInOwl:hasExactSynonym>mAME</oboInOwl:hasExactSynonym>
         <rdfs:comment>Uberon has a couple of terms (e.g., UBERON_2000311) that refer to the entire adductor mandibulae complex but not individual parts. </rdfs:comment>
+        <oboInOwl:hasExactSynonym>mAME</oboInOwl:hasExactSynonym>
     </owl:Class>
     
 
@@ -2646,8 +2628,8 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
         <rdfs:label xml:lang="en">adductor mandibulae internus muscle</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000072"/>
         <oboInOwl:hasExactSynonym>mAMI</oboInOwl:hasExactSynonym>
-        <rdfs:comment>Uberon has a couple of terms (e.g., UBERON_2000311) that refer to the entire adductor mandibulae complex but not individual parts. </rdfs:comment>
         <rdfs:comment>FEED reptile spreadsheet</rdfs:comment>
+        <rdfs:comment>Uberon has a couple of terms (e.g., UBERON_2000311) that refer to the entire adductor mandibulae complex but not individual parts. </rdfs:comment>
     </owl:Class>
     
 
@@ -2673,8 +2655,8 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
                 <owl:someValuesFrom rdf:resource="&obo;MFMO_0000167"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment>Uberon has a couple of terms (e.g., UBERON_2000311) that refer to the entire adductor mandibulae complex but not individual parts. </rdfs:comment>
         <rdfs:comment>From FEED reptile spreadsheet</rdfs:comment>
+        <rdfs:comment>Uberon has a couple of terms (e.g., UBERON_2000311) that refer to the entire adductor mandibulae complex but not individual parts. </rdfs:comment>
         <oboInOwl:hasExactSynonym>mAMEM</oboInOwl:hasExactSynonym>
     </owl:Class>
     
@@ -2691,9 +2673,9 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
                 <owl:someValuesFrom rdf:resource="&obo;MFMO_0000167"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <oboInOwl:hasExactSynonym>mAMES</oboInOwl:hasExactSynonym>
         <rdfs:comment>Uberon has a couple of terms (e.g., UBERON_2000311) that refer to the entire adductor mandibulae complex but not individual parts. </rdfs:comment>
         <rdfs:comment>From FEED reptile spreadsheet</rdfs:comment>
+        <oboInOwl:hasExactSynonym>mAMES</oboInOwl:hasExactSynonym>
     </owl:Class>
     
 
@@ -2709,9 +2691,9 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
                 <owl:someValuesFrom rdf:resource="&obo;MFMO_0000170"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <oboInOwl:hasExactSynonym>mAMEMa</oboInOwl:hasExactSynonym>
         <rdfs:comment>From FEED reptile spreadsheet</rdfs:comment>
         <oboInOwl:hasExactSynonym>ventrolateral head of adductor mandibulae externus medialis</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>mAMEMa</oboInOwl:hasExactSynonym>
     </owl:Class>
     
 
@@ -2763,8 +2745,8 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
                 <owl:someValuesFrom rdf:resource="&obo;MFMO_0000171"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <oboInOwl:hasExactSynonym>levator anguli oris</oboInOwl:hasExactSynonym>
         <rdfs:comment>From FEED reptile spreadsheet</rdfs:comment>
+        <oboInOwl:hasExactSynonym>levator anguli oris</oboInOwl:hasExactSynonym>
     </owl:Class>
     
 
@@ -2812,8 +2794,8 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
                 <owl:someValuesFrom rdf:resource="&obo;MFMO_0000171"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment>Uberon has a couple of terms (e.g., UBERON_2000311) that refer to the entire adductor mandibulae complex but not individual parts. </rdfs:comment>
         <rdfs:comment>From FEED reptile spreadsheet</rdfs:comment>
+        <rdfs:comment>Uberon has a couple of terms (e.g., UBERON_2000311) that refer to the entire adductor mandibulae complex but not individual parts. </rdfs:comment>
     </owl:Class>
     
 
@@ -2829,9 +2811,9 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
                 <owl:someValuesFrom rdf:resource="&obo;MFMO_0000167"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment>Uberon has a couple of terms (e.g., UBERON_2000311) that refer to the entire adductor mandibulae complex but not individual parts. </rdfs:comment>
-        <rdfs:comment>From FEED reptile spreadsheet</rdfs:comment>
         <oboInOwl:hasExactSynonym>mAMEP</oboInOwl:hasExactSynonym>
+        <rdfs:comment>From FEED reptile spreadsheet</rdfs:comment>
+        <rdfs:comment>Uberon has a couple of terms (e.g., UBERON_2000311) that refer to the entire adductor mandibulae complex but not individual parts. </rdfs:comment>
     </owl:Class>
     
 
@@ -2948,8 +2930,8 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
                 <owl:someValuesFrom rdf:resource="&obo;MFMO_0000182"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment>From FEED reptile spreadsheet</rdfs:comment>
         <oboInOwl:hasExactSynonym>mPtTy</oboInOwl:hasExactSynonym>
+        <rdfs:comment>From FEED reptile spreadsheet</rdfs:comment>
     </owl:Class>
     
 
@@ -2970,8 +2952,8 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
     <owl:Class rdf:about="&obo;MFMO_0000191">
         <rdfs:label xml:lang="en">constrictor internus dorsalis muscle</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000072"/>
-        <oboInOwl:hasExactSynonym>mCID</oboInOwl:hasExactSynonym>
         <rdfs:comment>From FEED reptile spreadsheet</rdfs:comment>
+        <oboInOwl:hasExactSynonym>mCID</oboInOwl:hasExactSynonym>
     </owl:Class>
     
 
@@ -2987,9 +2969,9 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
                 <owl:someValuesFrom rdf:resource="&obo;MFMO_0000191"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <oboInOwl:hasDbXref>UBERON_3010651</oboInOwl:hasDbXref>
-        <oboInOwl:hasExactSynonym>mLBul</oboInOwl:hasExactSynonym>
         <rdfs:comment>From FEED reptile spreadsheet</rdfs:comment>
+        <oboInOwl:hasExactSynonym>mLBul</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasDbXref>UBERON_3010651</oboInOwl:hasDbXref>
     </owl:Class>
     
 
@@ -3390,10 +3372,10 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
         <obo:IAO_0000115>The levator veli palatini is part of the soft palate that attaches to the cranial base, pharyngotympanic tube and the soft palate and is innervated by Cranial Nerve X via the pharyngeal plexus.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0008585</oboInOwl:hasDbXref>
+        <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
         <rdfs:comment>Ready for review.</rdfs:comment>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0008585</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonym>levator palati</oboInOwl:hasSynonym>
     </owl:Class>
     
@@ -3422,10 +3404,10 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
-        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001574</oboInOwl:hasDbXref>
-        <obo:IAO_0000115>Palatoglossus is a muscle that attaches to the soft palate and the tongue and is innervated by Cranial Nerve X via the pharyngeal plexus.</obo:IAO_0000115>
         <rdfs:comment>Ready for review.</rdfs:comment>
+        <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
+        <obo:IAO_0000115>Palatoglossus is a muscle that attaches to the soft palate and the tongue and is innervated by Cranial Nerve X via the pharyngeal plexus.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001574</oboInOwl:hasDbXref>
     </owl:Class>
     
 
@@ -3453,10 +3435,10 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
-        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0010234</oboInOwl:hasDbXref>
         <rdfs:comment>Ready for review.</rdfs:comment>
         <obo:IAO_0000115>Palatopharyngeus is a muscle that attaches to the palatine bones, soft palate, and pharynx and is innervated by Cranial Nerve X via the pharyngeal plexus.</obo:IAO_0000115>
+        <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0010234</oboInOwl:hasDbXref>
     </owl:Class>
     
 
@@ -3464,8 +3446,8 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
     <!-- http://purl.obolibrary.org/obo/MFMO_0000307 -->
 
     <owl:Class rdf:about="&obo;MFMO_0000307">
-        <rdfs:label>superior pharyngeal constrictor muscle</rdfs:label>
         <rdfs:label>salpingopharyngeus muscle</rdfs:label>
+        <rdfs:label>superior pharyngeal constrictor muscle</rdfs:label>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -3512,13 +3494,13 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:comment>Ready for review.</rdfs:comment>
+        <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
         <obo:IAO_0000115>Salpingopharyngeus is a muscle that attaches to pharyngotympanic tube and the pharynx and is innervated by pharyngeal plexus of CN X and participates in oral/pharyngeal behaviors
 </obo:IAO_0000115>
-        <rdfs:comment>Ready for review.</rdfs:comment>
-        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0010937</oboInOwl:hasDbXref>
-        <obo:IAO_0000115>The superior constrictor is a muscle that is an integral part of the pharyngeal tube that is attached to the mandible, pterygomandibular raphe, basioccipital bone, pterygoid process and midline raphe and is innervated by Cranial Nerve X via the pharyngeal plexus.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0006329</oboInOwl:hasDbXref>
-        <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
+        <obo:IAO_0000115>The superior constrictor is a muscle that is an integral part of the pharyngeal tube that is attached to the mandible, pterygomandibular raphe, basioccipital bone, pterygoid process and midline raphe and is innervated by Cranial Nerve X via the pharyngeal plexus.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0010937</oboInOwl:hasDbXref>
     </owl:Class>
     
 
@@ -3547,8 +3529,8 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
             </owl:Class>
         </owl:equivalentClass>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0010235</oboInOwl:hasDbXref>
-        <obo:IAO_0000115>The muscle of the uvuli is an integral part of the soft palate and is innervated by Cranial Nerve X (Vagus via the pharyngeal plexus).</obo:IAO_0000115>
         <rdfs:comment>Term in Uberon is equivalent but the definition needs revision.</rdfs:comment>
+        <obo:IAO_0000115>The muscle of the uvuli is an integral part of the soft palate and is innervated by Cranial Nerve X (Vagus via the pharyngeal plexus).</obo:IAO_0000115>
         <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
     </owl:Class>
     
@@ -3587,8 +3569,8 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
         </owl:equivalentClass>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001570</oboInOwl:hasDbXref>
         <rdfs:comment>Ready for review.</rdfs:comment>
-        <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
         <obo:IAO_0000115>This is a pharyngeal arch 4/6 muscle that is integral to the pharyngeal tube, participates in oral/pharyngeal behaviors, is innervated by the pharyngeal plexus of the vagus n. (CNX) and attaches to the laryngeal cartilages and the midline raphe.</obo:IAO_0000115>
+        <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -3616,11 +3598,11 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
-        <rdfs:comment>Ready for review.</rdfs:comment>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0010749</oboInOwl:hasDbXref>
-        <oboInOwl:hasSynonym>hyopharyngeus</oboInOwl:hasSynonym>
+        <rdfs:comment>Ready for review.</rdfs:comment>
         <obo:IAO_0000115>The middle constrictor is a pharyngeal arches 4/6 muscle that participates in oral/pharyngeal behaviors and is innervated by the pharyngeal plexus of Vagus (CN X) and attaches to the hyoid apparatus and the midline raphe.</obo:IAO_0000115>
+        <oboInOwl:hasSynonym>hyopharyngeus</oboInOwl:hasSynonym>
+        <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -3644,8 +3626,8 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001566</oboInOwl:hasDbXref>
+        <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
         <obo:IAO_0000115>Intrinsic muscle of the larynx, innervated by the external division of the laryngeal nerve, a branch of the vagus nerve. It attaches to the anterolateral surface of the cricoid cartilage and the external surface of the thyroid cartilage.</obo:IAO_0000115>
     </owl:Class>
     
@@ -3685,8 +3667,8 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000062"/>
-        <oboInOwl:hasDbXref>UBERON_0001110</oboInOwl:hasDbXref>
         <obo:IAO_0000115>The thyrohyoid is a somitic muscle that participates in oral/pharyngeal behaviors and is innervated by C1 and Cranial Nerve XII (hypoglossal); it attaches to the thyroid cartilage and the hyoid apparatus.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>UBERON_0001110</oboInOwl:hasDbXref>
     </owl:Class>
     
 
@@ -3751,8 +3733,8 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
     <owl:Class rdf:about="&obo;UBERON_0001647">
         <rdfs:label>facial nerve</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000090"/>
-        <rdfs:comment>Term in Uberon is equivalent but the definition needs revision.</rdfs:comment>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001647</oboInOwl:hasDbXref>
+        <rdfs:comment>Term in Uberon is equivalent but the definition needs revision.</rdfs:comment>
     </owl:Class>
     
 
@@ -3782,9 +3764,9 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
     <owl:Class rdf:about="&obo;UBERON_0001684">
         <rdfs:label>mandible bone</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0001474"/>
-        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001684</oboInOwl:hasDbXref>
         <rdfs:comment>Mandible is equivalent to dentary but none of the definitions in Uberon is perfect.  Unfortunately, the term is used in several different ways.  RED
 Term in Uberon is equivalent but the definition needs revision.</rdfs:comment>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001684</oboInOwl:hasDbXref>
     </owl:Class>
     
 
@@ -3804,8 +3786,8 @@ Term in Uberon is equivalent but the definition needs revision.</rdfs:comment>
     <owl:Class rdf:about="&obo;UBERON_0001759">
         <rdfs:label>vagus nerve</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000090"/>
-        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001759</oboInOwl:hasDbXref>
         <rdfs:comment>Term in Uberon is equivalent but the definition needs revision.</rdfs:comment>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001759</oboInOwl:hasDbXref>
     </owl:Class>
     
 
@@ -3833,9 +3815,9 @@ Term in Uberon is equivalent but the definition needs revision.</rdfs:comment>
     <owl:Class rdf:about="&obo;UBERON_0002375">
         <rdfs:label>cricoid cartilage</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0007844"/>
-        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0002375</oboInOwl:hasDbXref>
         <rdfs:comment>Term in Uberon is equivalent but the definition needs revision.
 Uberon &apos;external definition&apos; is better.</rdfs:comment>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0002375</oboInOwl:hasDbXref>
     </owl:Class>
     
 
@@ -3845,8 +3827,8 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
     <owl:Class rdf:about="&obo;UBERON_0002397">
         <rdfs:label>maxilla bone</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0001474"/>
-        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0004657</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/MA_0001491</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0004657</oboInOwl:hasDbXref>
     </owl:Class>
     
 
@@ -3878,8 +3860,8 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
     <owl:Class rdf:about="&obo;UBERON_0003115">
         <rdfs:label>branchial arch 4</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
-        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0003115</oboInOwl:hasDbXref>
         <rdfs:comment>Term in Uberon is equivalent.</rdfs:comment>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0003115</oboInOwl:hasDbXref>
     </owl:Class>
     
 
@@ -3920,8 +3902,8 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
     <owl:Class rdf:about="&obo;UBERON_0007268">
         <rdfs:label>upper esophageal sphincter muscle</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000010"/>
-        <rdfs:comment>Term in Uberon is equivalent but the definition needs revision.</rdfs:comment>
         <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
+        <rdfs:comment>Term in Uberon is equivalent but the definition needs revision.</rdfs:comment>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0007268</oboInOwl:hasDbXref>
     </owl:Class>
     
@@ -3951,8 +3933,8 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
     <owl:Class rdf:about="&obo;UBERON_0011349">
         <rdfs:label>pterygomandibular raphe</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;UBERON_0000465"/>
-        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0011349</oboInOwl:hasDbXref>
         <rdfs:comment>Term in Uberon is equivalent but the definition needs revision.</rdfs:comment>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0011349</oboInOwl:hasDbXref>
     </owl:Class>
     
 
@@ -3989,11 +3971,11 @@ Uberon &apos;external definition&apos; is better.</rdfs:comment>
     <owl:Class rdf:about="&obo;mfmo.owl#MFMO_0000300">
         <rdfs:label>spinal nerve</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000090"/>
+        <rdfs:comment>Not sure what the point of having two classes in Uberon - Uberon1780 and Uberon5197.  I think they are, more or less, equivalent.  I prefer 5197 - RED
+Term(s) in Uberon are equivalent but the definition needs revision.</rdfs:comment>
         <rdfs:comment></rdfs:comment>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001780</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0005197</oboInOwl:hasDbXref>
-        <rdfs:comment>Not sure what the point of having two classes in Uberon - Uberon1780 and Uberon5197.  I think they are, more or less, equivalent.  I prefer 5197 - RED
-Term(s) in Uberon are equivalent but the definition needs revision.</rdfs:comment>
     </owl:Class>
     
 
@@ -4116,12 +4098,6 @@ Term(s) in Uberon are equivalent but the definition needs revision.</rdfs:commen
 
     <owl:NamedIndividual rdf:about="http://upload.wikimedia.org/wikipedia/commons/2/22/Musculusconstrictorpharyngisinferior.png">
         <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Image"/>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://xmlns.com/foaf/0.1/depicts"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/&obo;MFMO_0000310"/>
-            </owl:Restriction>
-        </rdf:type>
         <rdfs:label>Human inferior pharyngeal constrictor muscle</rdfs:label>
     </owl:NamedIndividual>
     
@@ -4428,5 +4404,5 @@ Term(s) in Uberon are equivalent but the definition needs revision.</rdfs:commen
 
 
 
-<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
 
