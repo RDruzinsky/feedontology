@@ -1452,14 +1452,14 @@
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000072"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;mfmo.owl#attached_to_medial_surface_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0001684"/>
+                <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFMO_0000044"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
-                <owl:someValuesFrom rdf:resource="&obo;MFMO_0000044"/>
+                <owl:onProperty rdf:resource="&obo;mfmo.owl#attached_to_medial_surface_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0001684"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
@@ -1475,6 +1475,12 @@
     <owl:Class rdf:about="&obo;MFMO_0000084">
         <rdfs:label>mylohyoid muscle</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000072"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002163"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFMO_0000073"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -1496,12 +1502,6 @@
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0002163"/>
-                <owl:someValuesFrom rdf:resource="&obo;MFMO_0000073"/>
-            </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Ready for review.</rdfs:comment>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001564</oboInOwl:hasDbXref>
@@ -3454,11 +3454,19 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
                     <rdf:Description rdf:about="&obo;MFMO_0000010"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
-                        <owl:someValuesFrom rdf:resource="&obo;MFMO_0000097"/>
+                        <owl:someValuesFrom rdf:resource="&obo;MFMO_0000045"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
-                        <owl:someValuesFrom rdf:resource="&obo;MFMO_0000110"/>
+                        <owl:someValuesFrom rdf:resource="&obo;MFMO_0000103"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
+                        <owl:someValuesFrom rdf:resource="&obo;UBERON_0001684"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
+                        <owl:someValuesFrom rdf:resource="&obo;UBERON_0011349"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
@@ -3473,19 +3481,11 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
                     <rdf:Description rdf:about="&obo;MFMO_0000010"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
-                        <owl:someValuesFrom rdf:resource="&obo;MFMO_0000045"/>
+                        <owl:someValuesFrom rdf:resource="&obo;MFMO_0000097"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
-                        <owl:someValuesFrom rdf:resource="&obo;MFMO_0000103"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
-                        <owl:someValuesFrom rdf:resource="&obo;UBERON_0001684"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
-                        <owl:someValuesFrom rdf:resource="&obo;UBERON_0011349"/>
+                        <owl:someValuesFrom rdf:resource="&obo;MFMO_0000110"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
@@ -3673,6 +3673,66 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
     
 
 
+    <!-- http://purl.obolibrary.org/obo/MFMO_0000350 -->
+
+    <owl:Class rdf:about="&obo;MFMO_0000350">
+        <rdfs:label xml:lang="en">stapedius muscle</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;MFMO_0000005"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
+                        <owl:someValuesFrom rdf:resource="&obo;UBERON_0001678"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
+                        <owl:someValuesFrom rdf:resource="&obo;UBERON_0001687"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;MFMO_0000005"/>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001599</oboInOwl:hasDbXref>
+        <obo:IAO_0000115>The stapedius is a muscle of the middle ear in mammals. It attaches to the stapes bone and to the wall of the tympanic cavity of the temporal bone. It is innervated by the facial nerve.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFMO_0000351 -->
+
+    <owl:Class rdf:about="&obo;MFMO_0000351">
+        <rdfs:label xml:lang="en">tensor tympani muscle</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;MFMO_0000072"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
+                        <owl:someValuesFrom rdf:resource="&obo;MFMO_0000102"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
+                        <owl:someValuesFrom rdf:resource="&obo;UBERON_0001678"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
+                        <owl:someValuesFrom rdf:resource="&obo;UBERON_0001689"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
+                        <owl:someValuesFrom rdf:resource="&obo;UBERON_0002393"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;MFMO_0000072"/>
+        <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001600</oboInOwl:hasDbXref>
+        <obo:IAO_0000115>The tensor tympani muscle is a muscle of the middle ear in mammals. It is attached to the malleus bone, the cartilaginous auditory tube (pharyngotympanic tube), the greater wing of the sphenoid bone, and the wall of the tympanic cavity of the temporal bone. It is innervated by the trigeminal nerve.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/UBERON_0000166 -->
 
     <owl:Class rdf:about="&obo;UBERON_0000166">
@@ -3781,6 +3841,24 @@ Term in Uberon is equivalent but the definition needs revision.</rdfs:comment>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001687 -->
+
+    <owl:Class rdf:about="&obo;UBERON_0001687">
+        <rdfs:label>stapes bone</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;UBERON_0001474"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001689 -->
+
+    <owl:Class rdf:about="&obo;UBERON_0001689">
+        <rdfs:label>malleus bone</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;UBERON_0001474"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/UBERON_0001759 -->
 
     <owl:Class rdf:about="&obo;UBERON_0001759">
@@ -3818,6 +3896,15 @@ Term in Uberon is equivalent but the definition needs revision.</rdfs:comment>
         <rdfs:comment>Term in Uberon is equivalent but the definition needs revision.
 Uberon &apos;external definition&apos; is better.</rdfs:comment>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0002375</oboInOwl:hasDbXref>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0002393 -->
+
+    <owl:Class rdf:about="&obo;UBERON_0002393">
+        <rdfs:label>pharyngotympanic tube</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;UBERON_0007844"/>
     </owl:Class>
     
 
