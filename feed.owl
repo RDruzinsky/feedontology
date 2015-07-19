@@ -394,7 +394,6 @@
 
     <owl:Class rdf:about="&obo;MFMO_0000005">
         <rdfs:label>muscles innervated by the facial nerve</rdfs:label>
-        <rdfs:label>facial muscle</rdfs:label>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -410,6 +409,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <oboInOwl:hasExactSynonym>facial muscles</oboInOwl:hasExactSynonym>
         <rdfs:comment>Term in Uberon is equivalent but the definition needs revision.</rdfs:comment>
         <oboInOwl:hasDbXref>http://purl.obolibrary.org/obo/UBERON_0001577</oboInOwl:hasDbXref>
     </owl:Class>
@@ -1147,7 +1147,6 @@
     <!-- http://purl.obolibrary.org/obo/MFMO_0000072 -->
 
     <owl:Class rdf:about="&obo;MFMO_0000072">
-        <rdfs:label>trigeminal muscle</rdfs:label>
         <rdfs:label>muscles innervated by the trigeminal nerve</rdfs:label>
         <owl:equivalentClass>
             <owl:Class>
@@ -1166,6 +1165,7 @@
         </owl:equivalentClass>
         <obo:IAO_0000115>Muscle innervated by the trigeminal nerve (Cranial Nerve V).</obo:IAO_0000115>
         <rdfs:comment>Request new term.</rdfs:comment>
+        <oboInOwl:hasExactSynonym>trigeminal muscles</oboInOwl:hasExactSynonym>
         <obo:IAO_0000119>http://www.feedexp.org</obo:IAO_0000119>
     </owl:Class>
     
@@ -1292,14 +1292,14 @@
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000075"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;mfmo.owl#attached_to_ventral_surface_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;MFMO_0000108"/>
+                <owl:onProperty rdf:resource="&obo;mfmo.owl#deep_to"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFMO_0000079"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;mfmo.owl#deep_to"/>
-                <owl:someValuesFrom rdf:resource="&obo;MFMO_0000079"/>
+                <owl:onProperty rdf:resource="&obo;mfmo.owl#attached_to_ventral_surface_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFMO_0000108"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasSynonym>Masseter lateralis portio profunda</oboInOwl:hasSynonym>
@@ -1452,14 +1452,14 @@
         <rdfs:subClassOf rdf:resource="&obo;MFMO_0000072"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
-                <owl:someValuesFrom rdf:resource="&obo;MFMO_0000044"/>
+                <owl:onProperty rdf:resource="&obo;mfmo.owl#attached_to_medial_surface_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0001684"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;mfmo.owl#attached_to_medial_surface_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;UBERON_0001684"/>
+                <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFMO_0000044"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000119>http://www.feedexp.org/wiki/Mammalian_Muscle_Ontology_Workshop</obo:IAO_0000119>
@@ -3454,19 +3454,11 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
                     <rdf:Description rdf:about="&obo;MFMO_0000010"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
-                        <owl:someValuesFrom rdf:resource="&obo;MFMO_0000045"/>
+                        <owl:someValuesFrom rdf:resource="&obo;MFMO_0000097"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
-                        <owl:someValuesFrom rdf:resource="&obo;MFMO_0000103"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
-                        <owl:someValuesFrom rdf:resource="&obo;UBERON_0001684"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
-                        <owl:someValuesFrom rdf:resource="&obo;UBERON_0011349"/>
+                        <owl:someValuesFrom rdf:resource="&obo;MFMO_0000110"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
@@ -3481,11 +3473,15 @@ We consider this muscle a part of the arytenoid muscle complex but some workers 
                     <rdf:Description rdf:about="&obo;MFMO_0000010"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
-                        <owl:someValuesFrom rdf:resource="&obo;MFMO_0000097"/>
+                        <owl:someValuesFrom rdf:resource="&obo;MFMO_0000045"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
-                        <owl:someValuesFrom rdf:resource="&obo;MFMO_0000110"/>
+                        <owl:someValuesFrom rdf:resource="&obo;MFMO_0000103"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;MFMO_0000001"/>
+                        <owl:someValuesFrom rdf:resource="&obo;UBERON_0011349"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="&obo;MFMO_0000003"/>
